@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html dir="ltr" lang="en">
+	<head>
+        <title>{% if page.title %}{{ page.title }} | {% endif %} {{ site.name }}</title>
+        {% include head.html %}
+	</head>
+	<body id="pg-{{page.id}}">
+		<div id="container">
+            {% include header.html %}
+			<div id="content">
+                <div id="page">
+				    {{ content }}
+                </div>
+			</div>
+            {% include footer.html %}
+		</div>
+	</body>
+</html>
