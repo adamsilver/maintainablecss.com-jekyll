@@ -88,7 +88,7 @@ body {
     text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
     font-size: 62.5%;
-    background-color: #00A8A9;
+    background-color: #006a6a;
     color: #fff;
 }
 
@@ -116,10 +116,6 @@ hr {
 /**********************************************************
 * Content
 **********************************************************/
-
-#container {
-
-}
 
 #content {
 	max-width: 700px;
@@ -154,6 +150,20 @@ hr {
 	}
 }
 
+#content h3 {
+	margin: 0 20px 10px;
+	font-size: 1.7em;
+	line-height: 1.2em;
+	color: #fff;
+}
+
+@media(min-width: 600px) {
+	#content h3 {
+		font-size: 2em;
+		margin-bottom: 15px;
+	}
+}
+
 #content p {
 	margin: 0 20px 30px;
 	font-size: 1.6em;
@@ -165,5 +175,31 @@ hr {
 	#content p {
 		font-size: 2em;
 		margin-bottom: 45px;
+	}
+}
+
+#content ol,
+#content ul {
+	margin: 0 20px 35px 40px;
+}
+
+@media(min-width: 600px) {
+	#content ol,
+	#content ul {
+		margin-bottom: 45px;
+	}
+}
+
+#content ol li,
+#content ul li {
+	font-size: 1.7em;
+	line-height: 1.7em;
+	color: #fff;
+}
+
+@media(min-width: 600px) {
+	#content ol li,
+	#content ul li {
+		font-size: 2em;
 	}
 }
