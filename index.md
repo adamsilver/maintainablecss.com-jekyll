@@ -9,12 +9,17 @@ Warning: this is not even close to complete. I am commiting to live as I go. Who
 
 ## Chapters
 
-1. [Preface](#preface)
-2. A note about semantics
-3. How we begin
-4. Working out what is a module
-5. Writing a module
-6. Etc
+- [Preface](#preface)
+- A note about semantics
+- How we begin
+- Working out what is a module
+- Conventions
+- Writing a module
+- Don't be scared of IDs
+- Layouts and modules
+- Clearfix, red, pull-left bullshit
+- Reuse if you have to
+- IE hacks
 
 ## Preface
 
@@ -40,4 +45,30 @@ And semantics starts with the HTML. Let's begin there.
 
 Resets, base styles
 
+## Working out what is a module
+
+How to do this.
+
+## Conventions
+
+How I love lowerCamelCase but everyone does dashes. I will go with dashes to help everyone else but principles don't rely on dashes.
+
 ## Writing a module
+
+Coming soon.
+
+## Don't be scared of IDs
+
+Sometimes we have to use them. Such as labels.
+
+## Layouts and modules
+
+Use same approach. Discuss 1 column mobile and 2 column.
+
+## Clearfix, red, pull left
+
+Coming soon.
+
+## Reuse if you have to
+
+Duplication first then reuse if you have to - colors, fonts blah.
