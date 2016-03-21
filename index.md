@@ -5,4 +5,4 @@ id: home
 
 # Maintainable CSS
 
-Here it is
+Coming soon.

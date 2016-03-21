@@ -4,15 +4,11 @@
         <title>{% if page.title %}{{ page.title }} | {% endif %} {{ site.name }}</title>
         {% include head.html %}
 	</head>
-	<body id="pg-{{page.id}}">
+	<body>
 		<div id="container">
-            {% include header.html %}
 			<div id="content">
-                <div id="page">
-				    {{ content }}
-                </div>
+				{{ content }}
 			</div>
-            {% include footer.html %}
 		</div>
 	</body>
 </html>
