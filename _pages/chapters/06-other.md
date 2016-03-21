@@ -33,3 +33,4 @@ Duplication first then reuse if you have to - colors, fonts blah.
 - IE hacks
 - File organisation
 - State
+- icons with empty spans?
