@@ -119,8 +119,8 @@ hr {
 
 #content {
 	max-width: 700px;
-	margin: 0 auto 70px;
-	padding-top: 70px;
+	padding-top: 30px;
+	padding-top: 40px;
 }
 
 #content h1 {
@@ -192,7 +192,7 @@ hr {
 
 #content ol li,
 #content ul li {
-	font-size: 1.7em;
+	font-size: 1.6em;
 	line-height: 1.7em;
 	color: #fff;
 }
@@ -200,6 +200,26 @@ hr {
 @media(min-width: 600px) {
 	#content ol li,
 	#content ul li {
+		font-size: 2em;
+	}
+}
+
+#content blockquote {
+	margin: 0 30px 35px;
+	font-style: italic;
+}
+
+#content blockquote cite {
+	font-weight: bold;
+}
+
+.chapterNav {
+	padding: 30px 20px;
+	font-size: 1.6em;
+}
+
+@media(min-width: 600px) {
+	.chapterNav {
 		font-size: 2em;
 	}
 }

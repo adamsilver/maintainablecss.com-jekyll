@@ -1,0 +1,9 @@
+<div class="chapterNav">
+	<a href="/">Chapters</a>
+	{% if page.previousPage %}
+		| <a href="{{page.previousPage.href}}">Previous chapter</a>
+	{% endif %}
+	{% if page.nextPage %}
+		 | <a href="{{page.nextPage.href}}">Next chapter</a>
+	{% endif %}
+</div>
