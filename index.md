@@ -20,6 +20,8 @@ Warning: this is not even close to complete. I am commiting to live as I go. Who
 - Clearfix, red, pull-left bullshit
 - Reuse if you have to
 - IE hacks
+- File organisation
+- State
 
 ## Preface
 
