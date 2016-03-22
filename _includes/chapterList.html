@@ -1,0 +1,5 @@
+{% for page in site.pages %}
+	{% if page.layout == "chapter" %}
+		- [{{ page.title }}]({{page.url}})
+	{% endif %}
+{% endfor %}

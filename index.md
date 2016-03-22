@@ -5,10 +5,16 @@ id: home
 
 # Maintainable CSS
 
-Warning: this is not even close to complete. I am commiting to live as I go. Who knows when this will be complete. Awww deadlins&mdash;oops a typo.
+**Warning:** this is a complete work in progress. Read stuff and it will be a bit of a waste of time at this stage. I am designing and developing to live. #sorrynotsorry
 
 ## Chapters
 
-- [Preface](/chapters/1/)
-- [A note about semantics](/chapters/2/)
-- [How it starts](/chapters/3/)
+<ul>
+	{% for p in site.pages %}
+		{% if p.layout == "chapter" %}
+			<li>
+	  			<a href="{{ p.url }}">{{ p.title }}</a>
+			</li>
+		{% endif %}
+	{% endfor %}
+</ul>

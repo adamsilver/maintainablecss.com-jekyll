@@ -213,6 +213,31 @@ hr {
 	font-weight: bold;
 }
 
+#content p code {
+	background: #222;
+	font-size: 1.3em;
+}
+
+#content pre {
+	font-family: Monaco,'Courier New','Courier',monospace;
+	font-size: 1.9em;
+	background-color: #222;
+	margin-bottom: 30px;
+	padding: 20px;
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+@media(min-width: 600px) {
+	#content pre {
+		font-size: 2.6em;
+		margin-bottom: 45px;
+	}
+}
+
 .chapterNav {
 	padding: 30px 20px;
 	font-size: 1.6em;
