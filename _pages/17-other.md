@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: 6. Misc
-id: chapter6
-permalink: /chapters/6/
+title: 17. Misc
+id: chapter17
+permalink: /chapters/17/
 previousPage:
   href: /chapters/5
 ---

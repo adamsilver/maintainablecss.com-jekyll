@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: 5. Modules
-id: chapter5
-permalink: /chapters/5/
+title: 16. Modules
+id: chapter16
+permalink: /chapters/16/
 nextPage:
   href: /chapters/6/
 previousPage:
