@@ -9,7 +9,7 @@ previousPage:
 
 I don't know why as an industry we are so scared about using IDs. And don't get me wrong, I have read all the reasons but I still don't buy it.
 
-First, we have to use IDs sometimes. Form controls are linked to labels via `id` and `for` attributes.
+First, we have to use IDs sometimes. Form controls are linked to labels via `id` and `for` attributes. Sometimes we wish to use internal anchors to allow the user to scroll to various parts of the page. Both of these points improve the user experience.
 
 Second, an ID should be used to provide additional meaning to the developer. When I see an ID I know this thing is intended to be unique.
 
