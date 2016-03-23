@@ -7,10 +7,6 @@ previousPage:
   href: /chapters/5
 ---
 
-## Don't be scared of IDs
-
-Sometimes we have to use them. Such as labels.
-
 ## Layouts and modules
 
 Use same approach. Discuss 1 column mobile and 2 column.
@@ -36,7 +32,6 @@ Duplication first then reuse if you have to - colors, fonts blah.
 - icons with empty spans?
 
 ## Other random notes
-
 
 1. CSS 'variables' or just abstracting the common parts for reuse
 
