@@ -1,12 +1,7 @@
 ---
 layout: chapter
-title: 4. Conventions
-id: chapter4
+title: Conventions
 permalink: /chapters/4/
-nextPage:
-  href: /chapters/5/
-previousPage:
-  href: /chapters/3
 ---
 
 It's not advisable to be airy fairy but this little detail is both important and not important all that same time.

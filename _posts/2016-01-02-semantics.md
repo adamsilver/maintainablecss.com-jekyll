@@ -1,12 +1,7 @@
 ---
 layout: chapter
-title: 2. Naming stuff
-id: chapter2
+title: Semantics
 permalink: /chapters/2/
-nextPage:
-  href: /chapters/3/
-previousPage:
-  href: /chapters/1
 ---
 
 > &ldquo;There are only two hard things in Computer Science: cache invalidation and naming things.&rdquo;

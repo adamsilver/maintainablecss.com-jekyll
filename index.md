@@ -9,12 +9,8 @@ id: home
 
 ## Chapters
 
-<ul>
-	{% for p in site.pages %}
-		{% if p.layout == "chapter" %}
-			<li>
-	  			<a href="{{ p.url }}">{{ p.title }}</a>
-			</li>
-		{% endif %}
+<ol>
+	{% for post in site.posts reversed %}
+		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
 	{% endfor %}
-</ul>
+</ol>

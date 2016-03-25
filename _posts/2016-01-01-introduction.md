@@ -1,10 +1,7 @@
 ---
 layout: chapter
-title: 1. Introduction
-id: chapter1
+title: Introduction
 permalink: /chapters/1/
-nextPage:
-  href: /chapters/2/
 ---
 
 **As a developer you should be able to edit a module or add a new module to the codebase without concerning yourself with overzealous, pre-existing styles that will ultimately result on overrides for you and the next developer.**
