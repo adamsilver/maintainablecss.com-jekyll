@@ -1,80 +1,4 @@
 /**********************************************************
-* Droid sans
-**********************************************************/
-
-@font-face {
-    font-family: 'droid sans';
-    src: url('../fonts/DroidSans-webfont.eot');
-    src: url('../fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/DroidSans-webfont.woff') format('woff'),
-         url('../fonts/DroidSans-webfont.ttf') format('truetype'),
-         url('../fonts/DroidSans-webfont.svg#droid_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'droid sans';
-    src: url('../fonts/DroidSans-Bold-webfont.eot');
-    src: url('../fonts/DroidSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/DroidSans-Bold-webfont.woff') format('woff'),
-         url('../fonts/DroidSans-Bold-webfont.ttf') format('truetype'),
-         url('../fonts/DroidSans-Bold-webfont.svg#droid_sansbold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
-/**********************************************************
-* Droid serif
-**********************************************************/
-
-@font-face {
-    font-family: 'droid serif';
-    src: url('../fonts/DroidSerif-webfont.eot');
-    src: url('../fonts/DroidSerif-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/DroidSerif-webfont.woff') format('woff'),
-         url('../fonts/DroidSerif-webfont.ttf') format('truetype'),
-         url('../fonts/DroidSerif-webfont.svg#droid_serifregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'droid serif';
-    src: url('../fonts/DroidSerif-Bold-webfont.eot');
-    src: url('../fonts/DroidSerif-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/DroidSerif-Bold-webfont.woff') format('woff'),
-         url('../fonts/DroidSerif-Bold-webfont.ttf') format('truetype'),
-         url('../fonts/DroidSerif-Bold-webfont.svg#droid_serifbold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'droid serif';
-    src: url('../fonts/DroidSerif-Italic-webfont.eot');
-    src: url('../fonts/DroidSerif-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/DroidSerif-Italic-webfont.woff') format('woff'),
-         url('../fonts/DroidSerif-Italic-webfont.ttf') format('truetype'),
-         url('../fonts/DroidSerif-Italic-webfont.svg#droid_serifitalic') format('svg');
-    font-weight: normal;
-    font-style: italic;
-
-}
-
-@font-face {
-    font-family: 'droid serif';
-    src: url('../fonts/DroidSerif-BoldItalic-webfont.eot');
-    src: url('../fonts/DroidSerif-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/DroidSerif-BoldItalic-webfont.woff') format('woff'),
-         url('../fonts/DroidSerif-BoldItalic-webfont.ttf') format('truetype'),
-         url('../fonts/DroidSerif-BoldItalic-webfont.svg#droid_serifbold_italic') format('svg');
-    font-weight: bold;
-    font-style: italic;
-}
-
-/**********************************************************
 * General
 **********************************************************/
 
@@ -84,7 +8,7 @@
 }
 
 body {
-	font-family: 'droid serif', helvetica, arial;
+	font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,Ubuntu,segoe ui,arial,sans-serif;
     text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
     font-size: 62.5%;
@@ -106,24 +30,17 @@ a:active {
 	color: #fff;
 }
 
-hr {
-	height: 1px;
-	background-color: #eee;
-	border: none;
-	margin-bottom: 45px;
-}
-
 /**********************************************************
 * Content
 **********************************************************/
 
-#content {
+.m-content {
 	max-width: 700px;
 	padding-top: 30px;
 	padding-top: 40px;
 }
 
-#content h1 {
+.m-content h1 {
 	margin: 0 20px 20px;
 	font-size: 3em;
 	line-height: 1.2em;
@@ -131,12 +48,12 @@ hr {
 }
 
 @media(min-width: 600px) {
-	#content h1 {
+	.m-content h1 {
 		font-size: 4.5em;
 	}
 }
 
-#content h2 {
+.m-content h2 {
 	margin: 0 20px 10px;
 	font-size: 2em;
 	line-height: 1.2em;
@@ -144,13 +61,13 @@ hr {
 }
 
 @media(min-width: 600px) {
-	#content h2 {
+	.m-content h2 {
 		font-size: 2.3em;
 		margin-bottom: 15px;
 	}
 }
 
-#content h3 {
+.m-content h3 {
 	margin: 0 20px 10px;
 	font-size: 1.7em;
 	line-height: 1.2em;
@@ -158,67 +75,68 @@ hr {
 }
 
 @media(min-width: 600px) {
-	#content h3 {
+	.m-content h3 {
 		font-size: 2em;
 		margin-bottom: 15px;
 	}
 }
 
-#content p {
+.m-content p {
 	margin: 0 20px 30px;
-	font-size: 1.6em;
+	font-size: 1.8em;
 	line-height: 1.7em;
 	color: #fff;
+	font-family: georgia;
 }
 
 @media(min-width: 600px) {
-	#content p {
-		font-size: 2em;
+	.m-content p {
+		font-size: 2.2em;
 		margin-bottom: 45px;
 	}
 }
 
-#content ol,
-#content ul {
+.m-content ol,
+.m-content ul {
 	margin: 0 20px 35px 40px;
 }
 
 @media(min-width: 600px) {
-	#content ol,
-	#content ul {
+	.m-content ol,
+	.m-content ul {
 		margin-bottom: 45px;
 	}
 }
 
-#content ol li,
-#content ul li {
+.m-content ol li,
+.m-content ul li {
 	font-size: 1.6em;
 	line-height: 1.7em;
 	color: #fff;
 }
 
 @media(min-width: 600px) {
-	#content ol li,
-	#content ul li {
+	.m-content ol li,
+	.m-content ul li {
 		font-size: 2em;
 	}
 }
 
-#content blockquote {
+.m-content blockquote {
 	margin: 0 30px 35px;
 	font-style: italic;
 }
 
-#content blockquote cite {
+.m-content blockquote cite {
 	font-weight: bold;
 }
 
-#content p code {
+.m-content p code {
 	background: #222;
 	font-size: 1.3em;
 }
 
-#content pre {
+.m-content pre {
 	font-family: Monaco,'Courier New','Courier',monospace;
 	font-size: 1.9em;
 	background-color: #222;
@@ -232,19 +150,23 @@ hr {
 }
 
 @media(min-width: 600px) {
-	#content pre {
+	.m-content pre {
 		font-size: 2.6em;
 		margin-bottom: 45px;
 	}
 }
 
-.chapterNav {
+/**********************************************************
+* Chapter navigation
+**********************************************************/
+
+.m-chapterNavigation {
 	padding: 30px 20px;
 	font-size: 1.6em;
 }
 
 @media(min-width: 600px) {
-	.chapterNav {
+	.m-chapterNavigation {
 		font-size: 2em;
 	}
 }
