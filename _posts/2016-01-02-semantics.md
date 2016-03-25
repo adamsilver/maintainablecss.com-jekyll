@@ -7,21 +7,13 @@ permalink: /chapters/2/
 > &ldquo;There are only two hard things in Computer Science: cache invalidation and naming things.&rdquo;
 <br>&mdash; Phil Karlton
 
-Naming stuff is not something to gloss over so we won't do that.
+Naming stuff is important. First thing to note is that how we name stuff in HTML is what matters the most. Foundations are the most important, because anything else is papering over the cracks and will only last so long.
 
-First thing to note is that how we name stuff in HTML is what matters the most. If you fuck this up or drink-coding at the time you design your HTML then the problem has already begun.
+Whilst it's obvious you should use a table for tabular data, and a link for a link, and a paragraph for a paragraph (though there are plenty of examples of people not doing this) this stuff is obvious so Maintainable CSS doesn't address this.
 
-**Don't do this! Think!**
+I am talking about the additional class names (and ids) we sprinkle all over our HTML to give it additional meaning and hooks for CSS and Javascript to come along and enhance it as appropriate.
 
-Foundations are the most important, because anything else is papering over the cracks and will only last so long.
-
-And whilst it's obvious you should use a table for tabular data, and a link for a link, and a paragraph to represent a paragraph, this stuff is obvious so I am not really talking about this.
-
-I am talking about the additional class names (and ids) we sprinkle all over our HTML to give it additional meaning and hooks for CSS and Javascript to come along and enhance it.
-
-Ultimately what I am saying comes down to one very simple statement. One that is so often bent and misinterpreted to the detriment of the project. That statement is:
-
-> Name something based on what it *is*, not what it *does*, and not how it looks.
+Ultimately, what you *must* not break is this statement: ** Name something based on what it *is*, not what it *does*, and not how it looks.**
 
 ## Examples
 

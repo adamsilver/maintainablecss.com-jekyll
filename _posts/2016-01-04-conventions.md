@@ -4,22 +4,8 @@ title: Conventions
 permalink: /chapters/4/
 ---
 
-It's not advisable to be airy fairy but this little detail is both important and not important all that same time.
+I don't really care too much about the differences betweem lower camel case, upper camel case, dashes and underscores but what is important is consistency.
 
-Most CSS developers will use dashes to separate words in class names or ids etc. But I use lower camel case.
+You can decide to be different. There may well be a good reason to be different.
 
-	// this
-	.someClassName {
-		/* ... */
-	}
-
-	// not this
-	.some-class-name {
-		/* ... */
-	}
-
-With that said, whether we use dashes or not does not affect the approach and architecture of Maintainable CSS. Use whichever you prefer.
-
-For the sake of everyone else, I will use dashes for all examples.
-
-Let's move along shall we?
+The conventions used in Maintainable CSS are a choice. And they will be explained in deeper chapters.

@@ -4,7 +4,9 @@ title: Introduction
 permalink: /chapters/1/
 ---
 
-**As a developer you should be able to edit a module or add a new module to the codebase without concerning yourself with overzealous, pre-existing styles that will ultimately result on overrides for you and the next developer.**
+Maintainable CSS has 1 simple goal:
+
+You should be able to edit an existing feature or add a new feature to your codebase without having to worry that overzealous, pre-existing styles will harm you (or the next developer) to the point that you will rely on overriding.
 
 Maintainable CSS is not something you can download. It's a set of principles, guides and conventions that not only allow you to write CSS with piece of mind, but that also means your CSS is maintainable and scalable.
 
@@ -12,7 +14,7 @@ These conventions are useful for tiny projects with 1 person on the team and equ
 
 ## What does maintainable even mean?
 
-It means I want to edit a module without having to worry that I have just fucked other modules on the site that I am not even aware of. It also means that if I write some new code, then my first or second job *isn't* to override a bunch of styles that I have just inherited.
+It means I want to edit a module without having to worry that I have just fucked other modules on the site that I am not even aware of. It also means that if I write some new code, then my first job *isn't* to override a bunch of styles that I have just inherited.
 
 ## What does scalable even mean?
 
