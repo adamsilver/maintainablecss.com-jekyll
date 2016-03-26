@@ -16,25 +16,25 @@ You will see what I mean when we carry out some examples together and ultimately
 
 ## Identifying a module from the visual design
 
-Examples coming soon.
+Coming soon.
 
 ## Example: Shopping basket
 
-	.m-basket {}
+	.basket {}
 
-	.m-basket-title {}
+	.basket-title {}
 
-	.m-basket-item {}
+	.basket-item {}
 
-	.m-basket-removeButton {}
+	.basket-removeButton {}
 
-Now let's say that we now had a mini basket throughout the checkout process. So there was a basket on the checkout and it looked different and was a cut down summary version&mdash;for exmaple there was no remove button. We have lot's of options. It could be known as `m-orderSummary` or it might be `m-basketSummary` or `m-miniBasket`.
+Now let's say that we now had a mini basket throughout the checkout process. So there was a basket on the checkout and it looked different and was a cut down summary version&mdash;for exmaple there was no remove button. We have lot's of options. It could be known as `orderSummary` or it might be `basketSummary` or `miniBasket`.
 
 All of these names are semantic, all of these names are module friendly and unique. So pick whatever you prefer after you have given it some thought.
 
-On a project I was recently on we ended up with `m-orderSummary`.
+On a project I was recently on we ended up with `orderSummary`.
 
-	.m-orderSummary {}
+	.orderSummary {}
 
-	.m-orderSummary-title {}
+	.orderSummary-title {}
 

@@ -3,3 +3,7 @@ markdown: kramdown
 permalink: /articles/:title/
 url: http://maintainablecss.com
 include: ['_pages']
+collections:
+  chapters:
+    output: true
+    permalink: /chapters/:title/

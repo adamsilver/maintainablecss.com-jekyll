@@ -10,7 +10,7 @@ id: home
 ## Chapters
 
 <ol>
-	{% for post in site.posts reversed %}
-		<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+	{% for chapter in site.chapters %}
+		<li><a href="{{ chapter.url }}">{{ chapter.title }}</a></li>
 	{% endfor %}
 </ol>

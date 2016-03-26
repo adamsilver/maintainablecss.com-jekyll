@@ -10,14 +10,14 @@ We want to communicate this via a css class.
 
 So let's say our module is called *header*.
 
-	.m-header {}
+	.header {}
 
 If we need this to have a disabled state we need to do add this
 
-	.m-header-disabled {
+	.header-disabled {
 		/* something that makes it look disabled */
 	}
 
 And the HTML needs to have *both* classes
 
-	<div class="m-header m-header-disabled"></div>
+	<div class="header header-disabled"></div>
