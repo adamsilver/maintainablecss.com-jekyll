@@ -1,9 +1,15 @@
 <div class="chapterNavigation">
-	<a href="/">Chapters</a>
-	{% if page.previous %}
-		| <a class="chapterNavigation-previous" href="{{page.previous.url}}">Previous</a>
-	{% endif %}
-	{% if page.next %}
-		| <a class="chapterNavigation-next" href="{{page.next.url}}">Next</a>
-	{% endif %}
+	<a class="chapterNavigation-allChapters" href="/">All chapters</a>
+	<div class="chapterNavigation-nextPreviousWrapper">
+		{% if page.previous %}
+			<div class="chapterNavigation-previous">
+				<a  href="{{page.previous.url}}">&lt; Previous</a>
+			</div>
+		{% endif %}
+		{% if page.next %}
+			<div class="chapterNavigation-next">
+				<a  href="{{page.next.url}}">Next &gt;</a>
+			</div>
+		{% endif %}
+	</div>
 </div>

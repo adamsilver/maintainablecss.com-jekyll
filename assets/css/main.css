@@ -163,12 +163,32 @@ a:active {
 .chapterNavigation {
 	padding: 30px 20px;
 	font-size: 1.6em;
+	overflow: hidden;
+	max-width: 660px;
 }
 
 @media(min-width: 600px) {
 	.chapterNavigation {
 		font-size: 2em;
 	}
+}
+
+.chapterNavigation-allChapters {
+	float: left;
+}
+
+.chapterNavigation-nextPreviousWrapper {
+	float: right;
+}
+
+.chapterNavigation-previous {
+	float: left;
+	padding-right: 5px;
+}
+
+.chapterNavigation-next {
+	float: left;
+	padding-left: 5px;
 }
 
 /**********************************************************
