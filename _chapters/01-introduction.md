@@ -4,11 +4,11 @@ title: Introduction
 permalink: /chapters/1/
 ---
 
-Maintainable CSS has 1 simple goal:
+*Maintainable CSS* has one goal:
 
-You should be able to edit an existing feature or add a new feature to your codebase without having to worry that overzealous, pre-existing styles will harm you (or the next developer) to the point that you will rely on overriding.
+> To ensure that as a developer, I can edit an existing feature (or add a new one) to the codebase without worrying that overzealous, pre-existing styles will cause me a problem and require me to override or avert all together by adding unnecessary styles.
 
-Maintainable CSS is not something you can download. It's a set of principles, guides and conventions that not only allow you to write CSS with piece of mind, but that also means your CSS is maintainable and scalable.
+*Maintainable CSS* is not something you can download. It's a set of principles, guides and conventions that not only allow you to write CSS with piece of mind, but that also means your CSS is maintainable and scalable.
 
 These conventions are useful for tiny projects with 1 person on the team and equally they are useful for huge projects with 100 people on the team.
 

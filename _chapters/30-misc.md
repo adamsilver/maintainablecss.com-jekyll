@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: Misc
+title: Miscellaneous notes
 permalink: /chapters/30/
 ---
 

@@ -4,7 +4,7 @@ title: Semantics
 permalink: /chapters/2/
 ---
 
-Naming stuff is super important, but it can also be difficult. With those two points in mind, putting effort into is not wasted.
+Naming stuff is both important and sometimes difficult. So developer effort here is not something that goes to waste.
 
 > &ldquo;There are only two hard things in Computer Science: cache invalidation and naming things.&rdquo;
 <br>&mdash; Phil Karlton
@@ -17,7 +17,7 @@ Whilst it's important that you use the right element for the job, it's obvious t
 
 ## It's about the additional *hooks*
 
-What Maintainable CSS *does* care about is the additional class names (and IDs) we place on in our HTML in order to provide additional meaning but ultimately *hooks* for CSS and Javascript to enhance as appropriate.
+What *Maintainable CSS* *does* care about is the additional class names (and IDs) we place on in our HTML in order to provide additional meaning but ultimately *hooks* for CSS and Javascript to enhance as appropriate.
 
 ## The one rule you must not break
 
@@ -56,7 +56,7 @@ If you name something based on what it is, then it will never have to change.
 
 For example a shopping basket is always a shopping basket. Styles might change, behaviour might change, but it will always be the shopping basket.
 
-*Why else?*
+**Why else?**
 
 Okay say you have a class name that means the element floats left with a particular width in a system. That class name is only likely to be meaningful at a particular breakpoint.
 
