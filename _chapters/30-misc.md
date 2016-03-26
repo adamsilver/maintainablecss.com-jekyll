@@ -12,6 +12,6 @@ permalink: /chapters/30/
 - Overrides/opting in and opting out
 - Conditional IE fixes, IE6, IE7, IE8
 - File splits
-- Wording -section/details/primary/wrapper/container/item/items
+- Wording -section / details / primary / wrapper / container / item / items
 - Must look at user style overrides for font size and body 62.5% before writing this for a refresher.
 - Resets, base styles
