@@ -4,7 +4,7 @@ title: Semantics
 permalink: /chapters/2/
 ---
 
-Naming stuff is both important and sometimes difficult. So developer effort here is not something that goes to waste.
+Naming stuff is both important and difficult, so putting time and effort into naming something is not a wasted act.
 
 > &ldquo;There are only two hard things in Computer Science: cache invalidation and naming things.&rdquo;
 <br>&mdash; Phil Karlton
@@ -23,9 +23,11 @@ What *Maintainable CSS* *does* care about is the additional class names (and IDs
 
 When it comes to naming, **an element must be named based on with it *is*&mdash;not what it *looks* like or how it *behaves*.**
 
-## Examples
+Basically, just ask yourself *what am I looking at?*.
 
-### Good
+More explicitly here are some examples for you.
+
+## Semantic class names
 
 	/* good */
 	.header {}
@@ -34,9 +36,9 @@ When it comes to naming, **an element must be named based on with it *is*&mdash;
 
 	.product {}
 
-	.search-esults {}
+	.search-results {}
 
-### Bad
+## Non semantic class names
 
 	.red {}
 
@@ -72,4 +74,4 @@ Okay say you have a class name that means the element floats left with a particu
 
 Suddenly, column1 is named based on how it looks, but it now doesn't look like that at certain breakpoints. It's now misleading. However, the shopping basket is still a shopping basket when it's big and when it's small, it just looks (and perhaps behaves differently).
 
-For further information you cean read [why semantic HTML is important](http://adamsilver.io/articles/why-semantic-html-is-so-important/).
+For further information you can read [Why Semantic HTML Is So Important](http://adamsilver.io/articles/why-semantic-html-is-so-important/).

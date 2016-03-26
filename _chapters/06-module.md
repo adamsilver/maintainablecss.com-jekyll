@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: Modules
-permalink: /chapters/16/
+permalink: /chapters/6/
 ---
 
 A module is a section of the page that represents a piece of functionality in it's own right.

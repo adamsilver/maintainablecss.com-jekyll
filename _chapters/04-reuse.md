@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: Reuse
-permalink: /chapters/8/
+permalink: /chapters/4/
 ---
 
 Typically, reuse is important when it comes to software engineering and I strive for it every day.
