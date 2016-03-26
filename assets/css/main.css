@@ -160,13 +160,13 @@ a:active {
 * Chapter navigation
 **********************************************************/
 
-.m-chapterNavigation {
+.chapterNavigation {
 	padding: 30px 20px;
 	font-size: 1.6em;
 }
 
 @media(min-width: 600px) {
-	.m-chapterNavigation {
+	.chapterNavigation {
 		font-size: 2em;
 	}
 }
