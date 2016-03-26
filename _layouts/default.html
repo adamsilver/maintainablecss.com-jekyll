@@ -5,8 +5,10 @@
         {% include head.html %}
 	</head>
 	<body>
-		<div class="m-content">
+        {% include warning.html %}
+		<div class="content">
 			{{ content }}
 		</div>
+        {% include warning.html %}
 	</body>
 </html>
