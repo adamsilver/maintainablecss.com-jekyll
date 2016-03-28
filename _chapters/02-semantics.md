@@ -4,10 +4,12 @@ title: Semantics
 permalink: /chapters/2/
 ---
 
-Naming stuff is both important and difficult, so putting time and effort into naming something is not a wasted act.
+Naming stuff is both important and difficult. It is not a coincidence that the topic of semantics is discussed this early in the *Maintainable CSS* guidelines.
 
 > &ldquo;There are only two hard things in Computer Science: cache invalidation and naming things.&rdquo;
-<br>&mdash; Phil Karlton
+<br>&mdash; <cite>Phil Karlton</cite>
+
+It's imperative that this chapter is understood and followed because if it isn't, CSS (and Javascript) become far more painful to write.
 
 HTML and CSS are tied together so if you make your HTML meaningful then CSS becomes equally meaningful in the process.
 
@@ -15,9 +17,9 @@ HTML and CSS are tied together so if you make your HTML meaningful then CSS beco
 
 Whilst it's important that you use the right element for the job, it's obvious that you should use a `<table>` for tabular data, `<a>` for a link and a `<p>` for a paragraph, so Maintainable CSS doesn't concern itself with this.
 
-## It's about the additional *hooks*
+## It's about the *additional* hooks
 
-What *Maintainable CSS* *does* care about is the additional class names (and IDs) we place on in our HTML in order to provide additional meaning but ultimately *hooks* for CSS and Javascript to enhance as appropriate.
+What *Maintainable CSS* *does* care about is the additional class names (and IDs) we place on in our HTML in order to provide additional meaning. Ultimately these are hooks for CSS and Javascript to enhance as appropriate.
 
 ## The one rule you must not break
 
@@ -25,30 +27,26 @@ When it comes to naming, **an element must be named based on with it *is*&mdash;
 
 Basically, just ask yourself *what am I looking at?*.
 
-More explicitly here are some examples for you.
+## Non semantic HTML
 
-## Semantic class names
+Let's take a look at a few non semantic HTML modules.
 
-	/* good */
-	.header {}
+	<div class="red pull-left"></div>
+	<div class="grid row"></div>
+	<div class="col-xs-4"></div>
 
-	.basket {}
+The clue above is that firstly, all the class names describe the *look* of the content, not what the content *is*. Secondly, because there are many aspects to *look* there are many class names per element.
 
-	.product {}
+## Semantic HTML
 
-	.search-results {}
+Let's take a look at a few semantic HTML modules.
 
-## Non semantic class names
+	<div class="header"></div>
+	<div class="basket"></div>
+	<div class="product"></div>
+	<div class="searchResults"></div>
 
-	.red {}
-
-	.pull-left {}
-
-	.clearfix {}
-
-	.grid {}
-
-	.col-xs-4 {}
+The clue is that each of these class names describe what each module *is*. I don't have a clue what it looks like or how it behaves. Nor should I &mdash; that's the job of CSS and Javascript. Also, notice how there is just one class name per module, there is no need for two.
 
 ## Why shouldn't you name something based on what it looks like?
 
