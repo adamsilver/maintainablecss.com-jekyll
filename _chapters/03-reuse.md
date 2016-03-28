@@ -1,7 +1,6 @@
 ---
 layout: chapter
 title: Reuse
-permalink: /chapters/3/
 ---
 
 Much like Semantics, there is a good reason why the topic of Reuse is placed so early on in *Maintainable CSS* &mdash; that's because the principles of DRY are valid and ever present throughout software engineering practices.
@@ -10,11 +9,12 @@ However, I think it's fair to say that when it comes to CSS, striving for reuse 
 
 I take a duplication-first approach to development anyway. Duplication is the simplest strategy. Don't get me wrong duplication is not advised without thought. It's just that the process of duplication allows you as a developer to feel the pain first, then realise that abstraction (for reuse) is worth your time and will add value.
 
-But, when it comes to CSS, reuse can be very problematic and this has been discussed briefly in the chapter on Semantics. However, let's take a slightly different look:
+But, when it comes to CSS, reuse can be very problematic and this has been discussed briefly in the chapter on Semantics. However, let's take a slightly closer look with some additional problematic examples:
 
-1. Clearfix
-2. Red
+## Example 1: Clearfix
 
-The interesting thing about each of these class names is how they are nothing to do with what the element is, but to do with how the element *looks*. This breaks [semantics](/chapters/2/) which in turn break foundations which cause all sorts of problems.
+Coming soon
 
-(Flesh out)
+## Example 2: Red
+
+Coming soon.

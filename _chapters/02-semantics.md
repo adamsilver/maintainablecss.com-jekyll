@@ -1,7 +1,6 @@
 ---
 layout: chapter
 title: Semantics
-permalink: /chapters/2/
 ---
 
 Naming stuff is both important and difficult. It is not a coincidence that the topic of semantics is discussed this early in the *Maintainable CSS* guidelines.

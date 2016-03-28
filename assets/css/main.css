@@ -99,6 +99,7 @@ a:active {
 .content ol,
 .content ul {
 	margin: 0 20px 35px 40px;
+	font-family: georgia;
 }
 
 @media(min-width: 600px) {

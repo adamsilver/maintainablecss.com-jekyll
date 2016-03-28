@@ -1,7 +1,6 @@
 ---
 layout: chapter
 title: State
-permalink: /chapters/7/
 ---
 
 **What do I mean by state?** Is the module *showing* or *hiding*. Is it *active* or *inactive*, is it in a *loading* state or not? Each of these potentially mean that the UI *looks* different.

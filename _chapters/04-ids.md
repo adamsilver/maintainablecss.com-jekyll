@@ -1,10 +1,7 @@
 ---
 layout: chapter
-title: IDs
-permalink: /chapters/5/
+title: Don't use IDs
 ---
-
-## Don't use IDs for style
 
 IDs are problematic because of their super powers with regards to [specificity](http://www.w3.org/TR/css3-selectors/#specificity) so don't use them in CSS.
 

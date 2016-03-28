@@ -1,7 +1,6 @@
 ---
 layout: chapter
 title: Modules
-permalink: /chapters/6/
 ---
 
 A module is a section of the page that represents a piece of functionality in it's own right.
@@ -38,3 +37,6 @@ On a project I was recently on we ended up with `orderSummary`.
 
 	.orderSummary-title {}
 
+## Misc Notes:
+
+You should be able to plop a module into any other "container" and it doesn't go to shit. Or should it???? Think about this rule.
