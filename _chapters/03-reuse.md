@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: Reuse
-permalink: /chapters/4/
+permalink: /chapters/3/
 ---
 
 Much like Semantics, there is a good reason why the topic of Reuse is placed so early on in *Maintainable CSS* &mdash; that's because the principles of DRY are valid and ever present throughout software engineering practices.

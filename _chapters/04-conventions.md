@@ -1,7 +1,7 @@
 ---
 layout: chapter
 title: Conventions
-permalink: /chapters/3/
+permalink: /chapters/4/
 ---
 
 Whether you choose to utilise lower (or upper) camel case or use (double) dashes or underscores to delimit your CSS it really doesn't matter.
