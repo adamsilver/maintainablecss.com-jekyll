@@ -55,6 +55,10 @@ Let's take a look at a few non semantic HTML modules.
 
 The clue above is that firstly, all the class names describe the *look* of the content, not what the content *is*. Secondly, because there are many aspects to *look* there are many class names per element.
 
+If you're going to write non semantic HTML like this why not just go full hog and use the style attribute:
+
+	<div style="color: red; float: left; width: 25%;"></div>
+
 ## Semantic HTML examples
 
 Let's take a look at a few semantic HTML modules.
