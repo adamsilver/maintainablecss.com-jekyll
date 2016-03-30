@@ -26,7 +26,28 @@ When it comes to naming, **an element must be named based on with it *is*&mdash;
 
 Basically, just ask yourself *what am I looking at?*.
 
-## Non semantic HTML
+## How I used to write HTML
+
+I have pretty much always written semantic HTML but I haven't always followed *Maintainable CSS* guidelines.
+
+This is how I used to write a module:
+
+	<div class="basket">
+		<div class="heading">
+			<h1>Your basket</h1>
+		</div>
+		<div class="whatever"></div>
+	</div>
+
+The module container is `.basket`. Everything inside relates to it. And each class name is semantic&mdash;it describes what each thing is, not how it looks, or how it behaves. 
+
+However the problem is that because CSS cascades, there is nothing to stop me having a ".heading" module which will be applied to the ".heading" *component* inside the ".basket" module. 
+
+This is one of the problems *Maintainable CSS* solves as we will see in later chapters.
+
+## Why write semantic HTML?
+
+## Non semantic HTML examples
 
 Let's take a look at a few non semantic HTML modules.
 
@@ -36,7 +57,7 @@ Let's take a look at a few non semantic HTML modules.
 
 The clue above is that firstly, all the class names describe the *look* of the content, not what the content *is*. Secondly, because there are many aspects to *look* there are many class names per element.
 
-## Semantic HTML
+## Semantic HTML examples
 
 Let's take a look at a few semantic HTML modules.
 
