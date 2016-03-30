@@ -21,6 +21,10 @@ It means I want to edit a module without having to worry that I have just fucked
 
 This means when the CSS gets bigger, is it harder to edit existing code and add new code. If you have ever inherited a large CSS codebase I am sure you can sympathise with these problems.
 
+## What does modular even mean?
+
+Coming soon.
+
 ## Who is this for?
 
 These conventions are useful for tiny projects with 1 person on the team and equally they are useful for huge projects with 100 people on the team. And whether your design is set in stone for th next 5 years or will evolve frequently, *Maintainable CSS* can help.
