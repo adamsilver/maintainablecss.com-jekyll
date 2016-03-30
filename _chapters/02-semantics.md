@@ -41,11 +41,9 @@ This is how I used to write a module:
 
 The module container is `.basket`. Everything inside relates to it. And each class name is semantic&mdash;it describes what each thing is, not how it looks, or how it behaves. 
 
-However the problem is that because CSS cascades, there is nothing to stop me having a ".heading" module which will be applied to the ".heading" *component* inside the ".basket" module. 
+However the problem is that because CSS cascades, there is nothing to stop me having a "heading" module which will be applied to the "heading" *component* inside the ".basket" module. This is obviously not what we want. We want them to be styled completely differently.
 
 This is one of the problems *Maintainable CSS* solves as we will see in later chapters.
-
-## Why write semantic HTML?
 
 ## Non semantic HTML examples
 
