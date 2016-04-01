@@ -7,6 +7,22 @@ title: State
 
 We want to communicate this via a css class.
 
+## Ensuring state is encapsulated to the module
+
+Let's say the module is called *myModule*.
+
+You could apply an `isActive` state to the module as follows:
+
+	<div class="myModule isActive"></div>
+
+But it is likely a state such as `isActive` is going to be used on many different modules, and what it means to be active might very well be different across modules.
+
+Therefor this breaks the main rule of *Maintainable CSS* by inheriting overzealous styles that weren't intended that way.
+
+So I suggest that state is prefixed with the module name...
+
+## How to do it?
+
 So let's say our module is called *myModule*.
 
 	.myModule {}
