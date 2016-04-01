@@ -36,7 +36,3 @@ On a project I was recently on we ended up with `orderSummary`.
 	.orderSummary {}
 
 	.orderSummary-title {}
-
-## Misc Notes:
-
-You should be able to plop a module into any other "container" and it doesn't go to shit. Or should it???? Think about this rule.
