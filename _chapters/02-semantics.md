@@ -3,28 +3,26 @@ layout: chapter
 title: Semantics
 ---
 
-Naming stuff is both important and difficult. It is not a coincidence that the topic of semantics is discussed this early in the *Maintainable CSS* guidelines.
+Naming is both important and difficult. It is not a coincidence that the topic of semantics is discussed so early on, in the *Maintainable CSS* guidelines.
 
 > &ldquo;There are only two hard things in Computer Science: cache invalidation and naming things.&rdquo;
 <br>&mdash; <cite>Phil Karlton</cite>
 
 It's imperative that this chapter is understood and followed because if it isn't, CSS (and Javascript) become far more painful to write.
 
-HTML and CSS are tied together so if you make your HTML meaningful then CSS becomes equally meaningful in the process.
-
 ## It's not *just* about the right element
 
-Whilst it's important that you use the right element for the job, it's obvious that you should use a `<table>` for tabular data, `<a>` for a link and a `<p>` for a paragraph, so Maintainable CSS doesn't concern itself with this.
+Yes, it's important that you use the right element for the job! It goes without saying that you should use a `<table>` for tabular data, an `<a>` for a link and a `<p>` for a paragraph&mdash;however *Maintainable CSS* doesn't concern itself with this particular aspect of semantics.
 
-## It's about the *additional* hooks
+## It's about the classes we add
 
-What *Maintainable CSS* *does* care about is the additional class names (and IDs) we place on in our HTML in order to provide additional meaning. Ultimately these are hooks for CSS and Javascript to enhance as appropriate.
+What *Maintainable CSS* *does* care about is the class names (and IDs) we place in our HTML, in order to provide *additional* meaning. Ultimately these are hooks for CSS (and Javascript) to enhance as appropriate.
 
 ## The one rule you must not break
 
 When it comes to naming, **an element must be named based on with it *is*&mdash;not what it *looks* like or how it *behaves*.**
 
-Basically, just ask yourself *what am I looking at?*.
+Basically, just ask yourself *what am I looking at?*
 
 ## How I used to write HTML
 
@@ -39,9 +37,17 @@ This is how I used to write a module:
 		<div class="whatever"></div>
 	</div>
 
-The module container is `.basket`. Everything inside relates to it. And each class name is semantic&mdash;it describes what each thing is, not how it looks, or how it behaves. 
+The module container is `.basket`. Everything inside relates to it. And each class name is semantic&mdash;it describes what each thing is, not how it looks, or how it behaves...
 
-However the problem is that because CSS cascades, there is nothing to stop me having a "heading" module which will be applied to the "heading" *component* inside the ".basket" module. This is obviously not what we want. We want them to be styled completely differently.
+However, the problem is that because CSS cascades, there is nothing to stop me having a "heading" module which will be applied to the "heading" *component* inside the ".basket" module as follows:
+
+	/* basket module (heading component) */
+	.basket .heading { ... }
+
+	/* heading module
+	.heading { ... }
+
+This is obviously not what we want. We want them to be styled completely differently and for each section not to affect each other.
 
 This is one of the problems *Maintainable CSS* solves as we will see in later chapters.
 
@@ -53,9 +59,9 @@ Let's take a look at a few non semantic HTML modules.
 	<div class="grid row"></div>
 	<div class="col-xs-4"></div>
 
-The clue above is that firstly, all the class names describe the *look* of the content, not what the content *is*. Secondly, because there are many aspects to *look* there are many class names per element.
+The clue above is that firstly, all the class names describe the *look* of the content, not what the content *is*. Secondly, because of the choice to architect code like this, there are no many class names per element, causing HTML bloat.
 
-If you're going to write non semantic HTML like this why not just go full hog and use the style attribute:
+If you're going to write non semantic HTML like this, you may as well use the style attribute instead:
 
 	<div style="color: red; float: left; width: 25%;"></div>
 
