@@ -33,3 +33,7 @@ If you take one of the units away, the rest still works just fine. I don't need 
 ## Who is this for?
 
 These conventions are useful for tiny projects with 1 person on the team and equally they are useful for huge projects with 100 people on the team. And whether your design is set in stone for the next 5 years or will evolve frequently, *MaintainableCSS* can help.
+
+## How hard is this to learn?
+
+It's very easy to learn. Read the guides and you'll see.

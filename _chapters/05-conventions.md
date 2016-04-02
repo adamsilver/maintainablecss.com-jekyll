@@ -12,9 +12,9 @@ What matters is *consistency*.
 
 	.<moduleName>[-<componentName>][-<state>] {}
 
-Some examples:
+If we take a module called searchResults, that is made up of other elements and might also have a loading state (think AJAX), then we might end up with the following semantic class names:
 
-	/* module container/root */
+	/* module container */
 	.searchResults {}
 
 	/* components of a module */
@@ -25,4 +25,4 @@ Some examples:
 	/* state */
 	.searchResults-isLoading {}
 
-I will go into lot's more detail in later chapters.
+More information can be found in upcoming chapters about *modules* and *state*.

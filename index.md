@@ -3,9 +3,9 @@ layout: default
 id: home
 ---
 
-# Maintainable CSS
+# MaintainableCSS
 
-*Maintainable CSS* is an approach to writing CSS that is easy to maintain and scales well. Find out more by running through each short chapter.
+*MaintainableCSS* is an approach to writing CSS that is modular, and easy to maintain. Find out more by running through each short chapter.
 
 ## Chapters
 
