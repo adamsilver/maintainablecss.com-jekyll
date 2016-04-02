@@ -1,6 +1,7 @@
 ---
 layout: chapter
 title: State
+section: Core
 ---
 
 **What do I mean by state?** Is the module *showing* or *hiding*. Is it *active* or *inactive*, is it in a *loading* state or not? Each of these potentially mean that the UI *looks* different.
@@ -17,7 +18,7 @@ You could apply an `isActive` state to the module as follows:
 
 But it is likely a state such as `isActive` is going to be used on many different modules, and what it means to be active might very well be different across modules.
 
-Therefor this breaks the main rule of *Maintainable CSS* by inheriting overzealous styles that weren't intended that way.
+Therefor this breaks the main rule of *MaintainableCSS* by inheriting overzealous styles that weren't intended that way.
 
 So I suggest that state is prefixed with the module name...
 
@@ -54,5 +55,3 @@ If you wanted to apply state to to just the title then you would apply `myModule
 		<p class="myModule-title myModule-isDisabled">The title</p>
 		<p class="myModule-somethingElse">Something else</p>
 	</div>
-
-That's state sorted.

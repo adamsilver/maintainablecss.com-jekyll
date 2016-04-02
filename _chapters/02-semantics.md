@@ -1,9 +1,10 @@
 ---
 layout: chapter
 title: Semantics
+section: Background
 ---
 
-Naming is both important and difficult. It is not a coincidence that the topic of semantics is discussed so early on, in the *Maintainable CSS* guidelines.
+Naming is both important and difficult. It is not a coincidence that the topic of semantics is discussed so early on, in the *MaintainableCSS* guidelines.
 
 > &ldquo;There are only two hard things in Computer Science: cache invalidation and naming things.&rdquo;
 <br>&mdash; <cite>Phil Karlton</cite>
@@ -12,11 +13,11 @@ It's imperative that this chapter is understood and followed because if it isn't
 
 ## It's not *just* about the right element
 
-Yes, it's important that you use the right element for the job! It goes without saying that you should use a `<table>` for tabular data, an `<a>` for a link and a `<p>` for a paragraph&mdash;however *Maintainable CSS* doesn't concern itself with this particular aspect of semantics.
+Yes, it's important that you use the right element for the job! It goes without saying that you should use a `<table>` for tabular data, an `<a>` for a link and a `<p>` for a paragraph&mdash;however *MaintainableCSS* doesn't concern itself with this particular aspect of semantics.
 
 ## It's about the classes we add
 
-What *Maintainable CSS* *does* care about is the class names (and IDs) we place in our HTML, in order to provide *additional* meaning. Ultimately these are hooks for CSS (and Javascript) to enhance as appropriate.
+What *MaintainableCSS* *does* care about is the class names (and IDs) we place in our HTML, in order to provide *additional* meaning. Ultimately these are hooks for CSS (and Javascript) to enhance as appropriate.
 
 ## The one rule you must not break
 
@@ -26,7 +27,7 @@ Basically, just ask yourself *what am I looking at?*
 
 ## How I used to write HTML
 
-I have pretty much always written semantic HTML but I haven't always followed *Maintainable CSS* guidelines.
+I have pretty much always written semantic HTML but I haven't always followed *MaintainableCSS* guidelines.
 
 This is how I used to write a module:
 
@@ -49,7 +50,7 @@ However, the problem is that because CSS cascades, there is nothing to stop me h
 
 This is obviously not what we want. We want them to be styled completely differently and for each section not to affect each other.
 
-This is one of the problems *Maintainable CSS* solves as we will see in later chapters.
+This is one of the problems *MaintainableCSS* solves as we will see in later chapters.
 
 ## Non semantic HTML examples
 
@@ -74,7 +75,7 @@ Let's take a look at a few semantic HTML modules.
 	<div class="product"></div>
 	<div class="searchResults"></div>
 
-The clue is that each of these class names describe what each module *is*. I don't have a clue what it looks like or how it behaves. Nor should I &mdash; that's the job of CSS and Javascript. Also, notice how there is just one class name per module, there is no need for two.
+The clue is that each of these class names describe what each module *is*. I don't have a clue what it looks like or how it behaves. Nor should I &mdash; that's the job of CSS and Javascript. Also, notice how there is just one class name per module&mdash;we don't need anymore.
 
 ## Why shouldn't you name something based on what it looks like?
 

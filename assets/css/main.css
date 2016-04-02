@@ -111,7 +111,7 @@ a:active {
 
 .content ol li,
 .content ul li {
-	font-size: 1.6em;
+	font-size: 1.8em;
 	line-height: 1.7em;
 	color: #fff;
 }
@@ -119,7 +119,7 @@ a:active {
 @media(min-width: 600px) {
 	.content ol li,
 	.content ul li {
-		font-size: 2em;
+		font-size: 2.2em;
 	}
 }
 

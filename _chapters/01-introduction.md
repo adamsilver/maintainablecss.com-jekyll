@@ -1,19 +1,20 @@
 ---
 layout: chapter
 title: Introduction
+section: Preface
 ---
 
-*Maintainable CSS* is an approach to writing CSS that helps you, your current team and your future team to maintain CSS.
+*MaintainableCSS* is an approach to writing CSS that helps you, your current team and your future team to maintain CSS.
 
-## What is the goal of *Maintainable CSS*?
+## What is the goal of *MaintainableCSS*?
 
-If I had to sum up the overarching goal of *Maintainable CSS* in one paragraph it would be as follows:
+If I had to sum up the overarching goal of *MaintainableCSS* in one paragraph it would be as follows:
 
 **To ensure that as a developer, I can edit an existing feature (or add a new one) to the codebase without worrying that overzealous, pre-existing styles will cause a problem for me or that I will cause regression elsewhere.**
 
 ## There is nothng to download
 
-*Maintainable CSS* is not something you can download. It's a set of principles, guides and conventions that not only allow you to write CSS with piece of mind, but that also means your CSS is maintainable and scalable.
+*MaintainableCSS* is not something you can download. It's a set of principles, guides and conventions that not only allow you to write CSS with piece of mind, but that also means your CSS is maintainable and scalable.
 
 ## What does maintainable even mean?
 
@@ -31,4 +32,4 @@ If you take one of the units away, the rest still works just fine. I don't need 
 
 ## Who is this for?
 
-These conventions are useful for tiny projects with 1 person on the team and equally they are useful for huge projects with 100 people on the team. And whether your design is set in stone for the next 5 years or will evolve frequently, *Maintainable CSS* can help.
+These conventions are useful for tiny projects with 1 person on the team and equally they are useful for huge projects with 100 people on the team. And whether your design is set in stone for the next 5 years or will evolve frequently, *MaintainableCSS* can help.
