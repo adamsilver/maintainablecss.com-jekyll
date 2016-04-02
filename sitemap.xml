@@ -17,4 +17,14 @@
     {% endif %}
     {% endif %}
     {% endfor %}
+
+    {% for page in site.chapters %}
+    {% if page.layout != nil %}
+    {% if page.layout != 'feed' %}
+    <url>
+        <loc>{{site.url}}{{ page.url | remove: 'index.html' }}</loc>
+    </url>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
 </urlset>
