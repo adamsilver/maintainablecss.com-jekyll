@@ -75,7 +75,7 @@ The more condition you have, the more complicated it is to touch (read: maintain
 
 Following the principle of *duplication first*, it would be highly advised to create a brand new module. In a recent project, we named the module *orderSummary*. We could have easily named it *basketSummary* or *checkoutBasket* or *basketCutDownVersion*.
 
-Now, the name *is* important &mdash; it must be semantic &dmash; which all of these are. But, even *more* important, is the fact that a new module has been created, rather than trying to reuse the existing similar module.
+Now, the name *is* important &mdash; it must be semantic &mdash; which all of these are. But, even *more* important, is the fact that a new module has been created, rather than trying to reuse the existing similar module.
 
 We have now acheived the ability to style this new module as we wish, whilst also being able to edit the other basket module, without fear of regression or inheriting other styles we don't want.
 
