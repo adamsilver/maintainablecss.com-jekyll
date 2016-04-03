@@ -9,6 +9,8 @@ id: home
 
 ## Chapters
 
+I have grouped the chapters in to various sections. If you want the *how* without the *why* then you can jump to the Core section.
+
 ### Preface
 
 <ol>
