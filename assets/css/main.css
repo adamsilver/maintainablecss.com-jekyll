@@ -8,7 +8,7 @@
 }
 
 body {
-	font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,Ubuntu,segoe ui,arial,sans-serif;
+	font-family: -apple-system, 'avenir next', avenir, roboto, noto, ubuntu, 'helvetica neue', helvetica, arial, sans-serif;
     text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
     font-size: 62.5%;
@@ -17,6 +17,7 @@ body {
 
 a:link,
 a:visited {
+	color: #000;
 }
 
 a:hover,
@@ -25,6 +26,7 @@ a:focus {
 }
 
 a:active {
+	color: #39CCCC;
 }
 
 /**********************************************************
@@ -51,28 +53,28 @@ a:active {
 
 .content h2 {
 	margin: 0 20px 10px;
-	font-size: 2em;
+	font-size: 2.2em;
 	line-height: 1.2em;
 	max-width: 700px;
 }
 
 @media(min-width: 600px) {
 	.content h2 {
-		font-size: 2.3em;
+		font-size: 2.5em;
 		margin-bottom: 15px;
 	}
 }
 
 .content h3 {
 	margin: 0 20px 10px;
-	font-size: 1.7em;
+	font-size: 1.8em;
 	line-height: 1.2em;
 	max-width: 700px;
 }
 
 @media(min-width: 600px) {
 	.content h3 {
-		font-size: 2em;
+		font-size: 2.2em;
 		margin-bottom: 15px;
 	}
 }
@@ -81,7 +83,7 @@ a:active {
 	margin: 0 20px 30px;
 	font-size: 1.8em;
 	line-height: 1.7em;
-	font-family: georgia;
+	/*font-family: georgia;*/
 	max-width: 700px;
 }
 
@@ -95,7 +97,7 @@ a:active {
 .content ol,
 .content ul {
 	margin: 0 20px 35px 40px;
-	font-family: georgia;
+	/*font-family: georgia;*/
 	max-width: 700px;
 }
 
@@ -130,14 +132,14 @@ a:active {
 }
 
 .content p code {
-	background: #e5e5e5;
+	background: #ddd;
 	font-size: 1.3em;
 }
 
 .content pre {
 	font-family: Monaco,'Courier New','Courier',monospace;
 	font-size: 1.9em;
-	background-color: #e5e5e5;
+	background-color: #DDDDDD;
 	margin-bottom: 30px;
 	padding: 20px;
 	white-space: pre-wrap;       /* css-3 */
@@ -162,6 +164,7 @@ a:active {
 	padding: 30px 20px;
 	font-size: 1.6em;
 	overflow: hidden;
+	background-color: #39CCCC;
 }
 
 @media(min-width: 600px) {
@@ -195,6 +198,6 @@ a:active {
 .warning {
 	padding: 30px 20px;
 	font-size: 1.6em;
-	background-color: red;
+	background-color: #FF4136;
 	color: fff;
 }
