@@ -5,7 +5,7 @@ id: home
 
 # MaintainableCSS
 
-*MaintainableCSS* is an approach to writing CSS that is modular, and easy to maintain. Find out more by running through each short chapter.
+An approach to architecting modular and easy to maintain CSS for teams and codebases big and small.
 
 ## Benefits of Maintainable CSS
 

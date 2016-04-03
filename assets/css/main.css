@@ -48,6 +48,10 @@ a:active {
 	float: left;
 }
 
+.logo a {
+	text-decoration: none;
+}
+
 /**********************************************************
 * Navigation
 **********************************************************/
@@ -61,6 +65,10 @@ a:active {
 	float: left;
 	margin-left: 15px;
 	text-decoration: none;
+}
+
+a.navigation-isActive {
+	font-weight: bold;
 }
 
 /**********************************************************
