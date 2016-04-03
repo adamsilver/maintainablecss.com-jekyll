@@ -2,6 +2,7 @@
 layout: chapter
 title: Conventions
 section: Core
+permalink: /chapters/conventions/
 ---
 
 Whether you choose to utilise lower (or upper) camel case or use (double) dashes or underscores to delimit your CSS it really doesn't matter.

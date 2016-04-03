@@ -2,6 +2,7 @@
 layout: chapter
 title: Introduction
 section: Preface
+permalink: /chapters/introduction/
 ---
 
 *MaintainableCSS* is an approach to writing CSS that helps you, your current team and your future team to maintain CSS.

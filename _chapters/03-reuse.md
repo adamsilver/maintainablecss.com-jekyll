@@ -2,6 +2,7 @@
 layout: chapter
 title: Reuse
 section: Background
+permalink: /chapters/reuse/
 ---
 
 Like the previous chapter on Semantics, it is not a coincidence that this chapter is placed so early on in *MaintainableCSS* guides.

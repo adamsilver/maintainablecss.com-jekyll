@@ -2,6 +2,7 @@
 layout: chapter
 title: Modules
 section: Core
+permalink: /chapters/modules/
 ---
 
 *A module is a distinct, indepenent unit, that can be combined with other modules to form a more complex structure. In a living room, you can consider the TV, the sofa and the wall art, modules. All coming together to create a useable room.*
@@ -80,7 +81,3 @@ Now, the name *is* important &mdash; it must be semantic &mdash; which all of th
 We have now acheived the ability to style this new module as we wish, whilst also being able to edit the other basket module, without fear of regression or inheriting other styles we don't want.
 
 If the design changes, upgrading these modules is now very easy to do.
-
-## How to identify a module
-
-Coming soon.

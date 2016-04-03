@@ -2,6 +2,7 @@
 layout: chapter
 title: Don't use IDs
 section: Background
+permalink: /chapters/ids/
 ---
 
 IDs are problematic because of their super powers with regards to [specificity](http://www.w3.org/TR/css3-selectors/#specificity) so avoid them as hooks for styling.

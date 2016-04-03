@@ -24,37 +24,10 @@ An approach to architecting modular and easy to maintain CSS for teams and codeb
 
 ## Chapters
 
-I have grouped the chapters in to various sections. If you want the *how* without the *why* then you can jump to the Core section.
+I have grouped the chapters in to various sections. If you want the *how* without the *why* then feel free to jump to the Core section.
 
-### Preface
+[Read chapters now](/chapters/)
 
-<ol>
-	{% for chapter in site.chapters %}
-		{% if chapter.section == 'Preface' %}
-			<li><a href="{{ chapter.url }}">{{ chapter.title }}</a></li>
-		{% endif %}
-	{% endfor %}
-</ol>
-
-### Background
-
-<ol start="2">
-	{% for chapter in site.chapters %}
-		{% if chapter.section == 'Background' %}
-			<li><a href="{{ chapter.url }}">{{ chapter.title }}</a></li>
-		{% endif %}
-	{% endfor %}
-</ol>
-
-### Core
-
-<ol start="5">
-	{% for chapter in site.chapters %}
-		{% if chapter.section == 'Core' %}
-			<li><a href="{{ chapter.url }}">{{ chapter.title }}</a></li>
-		{% endif %}
-	{% endfor %}
-</ol>
 
 ## Got a question, issue or suggestion?
 
