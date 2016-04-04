@@ -12,25 +12,25 @@ Naming is both important and difficult. It is not a coincidence that the topic o
 
 It's imperative that this chapter is understood and followed because if it isn't, CSS (and Javascript) become far more painful to write.
 
-## It's not *just* about the right element
+## It's about the classes
 
 Yes, it's important that you use the right element for the job! It goes without saying that you should use a `<table>` for tabular data, an `<a>` for a link and a `<p>` for a paragraph&mdash;however *MaintainableCSS* doesn't concern itself with this particular aspect of semantics.
 
-## It's about the classes we add
-
 What *MaintainableCSS* *does* care about is the class names (and IDs) we place in our HTML, in order to provide *additional* meaning. Ultimately these are hooks for CSS (and Javascript) to enhance as appropriate.
 
-## The one rule you must not break
+## The one rule you must abide by
 
-When it comes to naming, **an element must be named based on with it *is*&mdash;not what it *looks* like or how it *behaves*.**
+If you had to take just one thing away from this guide it's this:
 
-Basically, just ask yourself *what am I looking at?*
+**You must name an element based on what it *is*&mdash;not what it *looks* like or how it *behaves*.**
+
+To achieve this, just ask yourself *what am I looking at?* Don't try and describe how it looks or what it behaves like.
 
 ## How I used to write HTML
 
-I have pretty much always written semantic HTML but I haven't always followed *MaintainableCSS* guidelines.
+I have pretty much always written semantic HTML but I haven't always followed the *MaintainableCSS* guidelines, and therefore have encountered some of the problems it solves.
 
-This is how I used to write a module:
+This is how I used to write a module &mdash; here is a basket module:
 
 	<div class="basket">
 		<div class="heading">
@@ -39,19 +39,24 @@ This is how I used to write a module:
 		<div class="whatever"></div>
 	</div>
 
-The module container is `.basket`. Everything inside relates to it. And each class name is semantic&mdash;it describes what each thing is, not how it looks, or how it behaves...
+It's modularised based on the module container. And the CSS for this might look like this
 
-However, the problem is that because CSS cascades, there is nothing to stop me having a "heading" module which will be applied to the "heading" *component* inside the ".basket" module as follows:
+	.basket {}
 
-	/* basket module (heading component) */
-	.basket .heading { ... }
+	.basket .heading {}
+
+	.basket .whatever {}
+
+As you can see each selector begins with the container class name. This is how it is modular. There are 2 problems with this 1 minor and 1 is a major problem. Both of which are solved by *MaintainableCSS*.
+
+The first, is that these selectors are nested which aren't as performant as they might be. Not that I am a fan of premature optimisation, and have rarely encountered CSS performance problems. Regardless, flat selectors are the most performant.
+
+The second, is that due to the cascade, the heading *component* inside the basket *module* could easily receive styles pertaining to a pre-existing heading *module* like so:
 
 	/* heading module
 	.heading { ... }
 
-This is obviously not what we want. We want them to be styled completely differently and for each section not to affect each other.
-
-This is one of the problems *MaintainableCSS* solves as we will see in later chapters.
+This is obviously not what we want. We want them to be styled completely differently and for each section not to affect each other as per the goals of *MaintainableCSS*.
 
 ## Non semantic HTML examples
 

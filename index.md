@@ -7,7 +7,7 @@ id: home
 
 An approach to architecting modular and easy to maintain CSS for teams and codebases big and small.
 
-## Benefits of Maintainable CSS
+## Benefits of MaintainableCSS
 
 1. **Modular and encapsulated** styles that don't bleed or cascade without *your* permission.
 2. **Any design, any website** &mdash; completely flexible to *your* requirements.

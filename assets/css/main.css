@@ -224,7 +224,7 @@ a.navigation-isActive {
 	white-space: -pre-wrap;      /* Opera 4-6 */
 	white-space: -o-pre-wrap;    /* Opera 7 */
 	word-wrap: break-word;       /* Internet Explorer 5.5+ */
-	max-width: 800px;
+	max-width: 760px;
 	margin-left: auto;
 	margin-right: auto;
 }
