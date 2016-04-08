@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: chapter
 id: chapters
 permalink: /chapters/
 ---
