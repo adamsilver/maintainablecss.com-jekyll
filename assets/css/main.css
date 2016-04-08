@@ -275,7 +275,7 @@ a.navigation-isActive {
 .hero {
 	padding-left: 20px;
 	padding-right: 20px;
-	padding-top: 50px;
+	padding-top: 25px;
 	padding-bottom: 50px;
 }
 
@@ -297,6 +297,10 @@ a.navigation-isActive {
 	}
 }
 
+.hero h2 {
+	text-align: center;
+}
+
 .hero p {
 	text-align: center;
 }
@@ -316,7 +320,7 @@ a.navigation-isActive {
 **********************************************************/
 
 .benefits {
-	padding: 40px 20px;
+	padding: 80px 20px 40px;
 	background-color: #f5f5f5;
 	margin-bottom: 40px;
 }
@@ -344,4 +348,28 @@ a.navigation-isActive {
 .benefit p {
 	text-align: center;
 	max-width: 500px;
+}
+
+.benefit-button {
+	border-radius: 30px;
+	border: 1px solid #bbb;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 10px 30px;
+	font-size: 0.75em;
+	background-color: #f5f5f5;
+}
+
+/**********************************************************
+* Got question
+**********************************************************/
+
+.gotQuestion {}
+
+.gotQuestion h2 {
+	text-align: center;
+}
+
+.gotQuestion p {
+	text-align: center;
 }

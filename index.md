@@ -5,9 +5,13 @@ id: home
 
 <div class="hero">
 	<h1>MaintainableCSS</h1>
-	<p>For people who wish to write CSS without worrying that overzealous, pre-existing styles will cause a problem in one form or other. A thoughtful and experienced approach to styles.</p>
+	<p>Write CSS without worrying that overzealous, pre-existing styles will cause problems. An approach to writing <em>modular</em>, <em>scalable</em> and of course <em>maintainable</em> CSS.</p>
 	<p><a class="hero-button" href="/chapters/">Read now</a></p>
 </div>
+<!--
+	<h2>Maintainable &mdash; Adjective</h2>
+	<p>Keep in good condition. Keep at the same level.</p>
+-->
 
 <div class="benefits">
 	<h2>Benefits of MaintainableCSS</h2>
@@ -17,52 +21,58 @@ id: home
 			<p>Styles don't bleed or cascade without your permission</p>
 		</div>
 		<div class="benefit">
-			<h3>Any design, any website</h3>
-			<p>Completely flexible to your requirements.</p>
+			<h3>Any design requirements</h3>
+			<p>Completely flexible to your needs.</p>
 		</div>
 		<div class="benefit">
-			<h3>Requires no tooling</h3>
-			<p>But you can if you want to.</p>
+			<h3>No tooling required</h3>
+			<p>But you can use tooling if you want to.</p>
 		</div>
 		<div class="benefit">
-			<h3>Little to learn</h3>
-			<p>Read the guides and see</p>
+			<h3>Easy to learn</h3>
+			<p>Read the guides and see.</p>
 		</div>
 		<div class="benefit">
-			<h3>Small or big</h3>
-			<p>Works whatever size project</p>
+			<h3>Any size project</h3>
+			<p>Whatever size project you have, <em>MaintainableCSS</em> will help.</p>
 		</div>
 		<div class="benefit">
-			<h3>Retrospective addition</h3>
-			<p>Use it in your current project and start to feel the benefits bit by bit.</p>
+			<h3>Upgrade in your own time</h3>
+			<p>You can start applying the approach today, bit by bit. You don't need to upgrade the whole project in one go.</p>
 		</div>
 		<div class="benefit">
-			<h3>No problem of specificity</h3>
-			<p>Learn to avoid problems of specificity and require no overrides. Like every piece of CSS you write is a blank canvas.</p>
+			<h3>No problems of specificity</h3>
+			<p>Avoid problems of specificity and override hell. Write CSS as if you always have a blank canvas.</p>
 		</div>
 		<div class="benefit">
 			<h3>Managing state is easy</h3>
-			<p>Change look and feel based on state with ease.</p>
+			<p>Change the look and feel based on states such as <em>loadng</em>, <em>disabled</em> and <em>hiding</em>.</p>
 		</div>
 		<div class="benefit">
 			<h3>No worry of regression</h3>
-			<p>When you change existing styles.</p>
+			<p>When you change existing styles, have no fear that you might have caused regression elsewhere.</p>
 		</div>
 		<div class="benefit">
 			<h3>Any team size</h3>
-			<p>Helpful in a team of one, vital in a team of more.</p>
+			<p>Useful in a team of one or in a team of 100.</p>
 		</div>
 		<div class="benefit">
 			<h3>Semantic HTML and CSS</h3>
-			<p>Easy to understand code, even if your new to the codebase.</p>
+			<p>MaintainableCSS embraces semantic HTML and CSS, so you get all the benefits too.</p>
 		</div>
 		<div class="benefit">
-			<h3>High performance</h3>
-			<p>Flat and performant selectors.</p>
+			<h3>High performance CSS</h3>
+			<p>Flat and performant selectors by convention.</p>
+		</div>
+		<div class="benefit">
+			<h3>AB testing and easy upgrading</h3>
+			<p>Want to test module variants against each other? MaintainableCSS makes this easy.</p>
+			<p><a class="benefit-button" href="/chapters/">Read now</a></p>
 		</div>
 	</div>
 </div>
 
-## Got a question, issue or suggestion?
-
-Just [raise an issue for discussion](http://github.com/adamsilver/maintainablecss.com/issues/new/) on Github.
+<div class="gotQuestion">
+	<h2>Got a question, issue or suggestion?</h2>
+	<p>Just <a href="http://github.com/adamsilver/maintainablecss.com/issues/new/">raise an issue for discussion</a> on Github.</p>
+</div>

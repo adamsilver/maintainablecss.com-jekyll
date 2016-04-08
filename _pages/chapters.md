@@ -35,3 +35,13 @@ permalink: /chapters/
 		{% endif %}
 	{% endfor %}
 </ol>
+
+## Extras
+
+<ol start="8">
+	{% for chapter in site.chapters %}
+		{% if chapter.section == 'Extras' %}
+			<li><a href="{{ chapter.url }}">{{ chapter.title }}</a></li>
+		{% endif %}
+	{% endfor %}
+</ol>
