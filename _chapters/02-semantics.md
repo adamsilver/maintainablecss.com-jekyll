@@ -5,7 +5,15 @@ section: Background
 permalink: /chapters/semantics/
 ---
 
-In short: Name something based on what it is, not how it *looks* or *behaves*.
+It's not just about the elements, it's about the additional class names we add as hooks for our CSS and Javascript to enhance.
+
+Semantic HTML doesn't just refer to the elements that we use. It's pretty obvious that an `<a>` should be used for a link and a `table` should be used for tabular data. But, more importantly it's about using semantic class names.
+
+**In short:** Name something based on what it is, not how it *looks* or *behaves*.
+
+## Why? Because it breaks the reuse rule!
+
+If you don't use semantics class names, then you will likely be repeating yourself. Go read that chapter.
 
 ## Why? Because it's easier to understand!
 
@@ -47,20 +55,26 @@ If you have visual class names all over the HTML, then there is no reliable way 
 
 If you name something based on what it is, you won't have to touch the HTML again in a dramatic way. I.e. a heading is always a heading, but the styles and behaviour might change.
 
-## Also
+## Why? Because reuse makes debugging more difficult
 
-Naming is both important and difficult. It is not a coincidence that the topic of semantics is discussed so early on, in the *MaintainableCSS* guidelines.
+When debugging an element, there will be several applicable CSS selectors playing a part making it noisey.
 
-> &ldquo;There are only two hard things in Computer Science: cache invalidation and naming things.&rdquo;
-<br>&mdash; <cite>Phil Karlton</cite>
+## Final thoughts about semantics
 
-It's imperative that this chapter is understood and followed because if it isn't, CSS (and Javascript) become far more painful to write.
+Naming is both important and difficult. It's not a coincidence that the topic of semantics is discussed so early on, because it's a corner stone of *MaintainableCSS*
+
+<!-- > &ldquo;There are only two hard things in Computer Science: cache invalidation and naming things.&rdquo;
+<br>&mdash; <cite>Phil Karlton</cite> -->
+
+<!--
 
 ## It's about the classes
 
 Yes, it's important that you use the right element for the job! It goes without saying that you should use a `<table>` for tabular data, an `<a>` for a link and a `<p>` for a paragraph&mdash;however *MaintainableCSS* doesn't concern itself with this particular aspect of semantics.
 
 What *MaintainableCSS* *does* care about is the class names (and IDs) we place in our HTML, in order to provide *additional* meaning. Ultimately these are hooks for CSS (and Javascript) to enhance as appropriate.
+
+
 
 ## How I used to write HTML
 
@@ -144,3 +158,5 @@ Okay say you have a class name that means the element floats left with a particu
 Suddenly, column1 is named based on how it looks, but it now doesn't look like that at certain breakpoints. It's now misleading. However, the shopping basket is still a shopping basket when it's big and when it's small, it just looks (and perhaps behaves differently).
 
 For further information you can read [Why Semantic HTML Is So Important](http://adamsilver.io/articles/why-semantic-html-is-so-important/).
+
+-->
