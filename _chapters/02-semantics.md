@@ -5,6 +5,50 @@ section: Background
 permalink: /chapters/semantics/
 ---
 
+In short: Name something based on what it is, not how it *looks* or *behaves*.
+
+## Why? Because it's easier to understand!
+
+Whether you're looking at the HTML or the CSS, you know what you're affecting. With visual class names you end up having to sprinkle several class names on to each element, ending up with a vauge understanding of the intention of these visual class names. This is hard to maintain.
+
+## Why? Because we are building responsive websites!
+
+Styles often need changing based on viewport size. For example, you might float elements on big screens and not on small screens. So if you have a class called `clearfix` but you don't clear on small screens, then you now have misleading code.
+
+If you use semantic class names, then you can style them differently based on media queries making it easier to maintain.
+
+## Why? Because you get a performance improvement!
+
+This is a very small reason but when you have one class name per element, you end up with lighter HTML. With visual classes you end up with multiple class names per element and that can add up.
+
+## Why? Because semantic class names are easier to find!
+
+If an element has classes based on how it looks such as .red or .clearfix or .pull-left etc, then these classes will be all over the codebase. So if you’re trying to hunt for a particular piece of HTML, the class name is not going to help you.
+
+On the other hand, if your class names are semantic, a search is likely going to hunt down the HTML in question. Same goes for the CSS. This makes it easier to maintain.
+
+## Why? Because you don't want unexpected regression!
+
+If you have utility non-semantic classes that describe the look then when you edit one of these classes, they will propogate to every single element with that class. Which normally means a developer, is too scared to touch an existing utility class because it is likely it will cause a regression.
+
+When you use semantic class names, they are unique, so when editing one, it will only apply to the module in question.
+
+## Why? Because you don't want to be afraid to update code!
+
+As with the unexpected regressions above, if you use a bunch of utility class names and they are applied all over a large codebase, it's likely you're scared to touch them or delete them. You will end up with redundant code or a pain for testing.
+
+## Why? Because it helps automated functional testing
+
+Automated functional tests work by searching for particular elements, interacting with them (typing in text, clicking buttons and links) and verifying based on that.
+
+If you have visual class names all over the HTML, then there is no reliable way to target particular elements.
+
+## Why? Because general maintainance
+
+If you name something based on what it is, you won't have to touch the HTML again in a dramatic way. I.e. a heading is always a heading, but the styles and behaviour might change.
+
+## Also
+
 Naming is both important and difficult. It is not a coincidence that the topic of semantics is discussed so early on, in the *MaintainableCSS* guidelines.
 
 > &ldquo;There are only two hard things in Computer Science: cache invalidation and naming things.&rdquo;
@@ -17,14 +61,6 @@ It's imperative that this chapter is understood and followed because if it isn't
 Yes, it's important that you use the right element for the job! It goes without saying that you should use a `<table>` for tabular data, an `<a>` for a link and a `<p>` for a paragraph&mdash;however *MaintainableCSS* doesn't concern itself with this particular aspect of semantics.
 
 What *MaintainableCSS* *does* care about is the class names (and IDs) we place in our HTML, in order to provide *additional* meaning. Ultimately these are hooks for CSS (and Javascript) to enhance as appropriate.
-
-## The one rule you must abide by
-
-If you had to take just one thing away from this guide it's this:
-
-**You must name an element based on what it *is*&mdash;not what it *looks* like or how it *behaves*.**
-
-To achieve this, just ask yourself *what am I looking at?* Don't try and describe how it looks or what it behaves like.
 
 ## How I used to write HTML
 

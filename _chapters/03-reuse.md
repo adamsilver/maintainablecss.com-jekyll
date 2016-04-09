@@ -17,13 +17,11 @@ If you don't repeat yourself you'll end up with classes such as: red, clearfix, 
 
 	<div class="clearfix pull-left red etc"></div>
 
-With bloat comes a degrade in performance.
+Bloat makes it harder to maintain, and degrades performance.
 
 ## Why? Because reuse makes debugging more difficult
 
 When debugging an element, there will be several applicable CSS selectors playing a part making it noisey.
-
-	Put screenshot of that here
 
 ## Why? Because granular styles aren't worth bothering with!
 
