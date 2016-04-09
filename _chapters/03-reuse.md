@@ -54,7 +54,15 @@ And put it in a relevant file, colours.css, fonts.css etc, with a relevant comme
 
 ## What about mixins?
 
-Coming soon. Keep.
+CSS preprocessors allow you to create mixins which sound great and seemingly appear to give you the best of both worlds.
+
+However, you have to be very careful to update a mixin because it propagates in all instances just like utility classes. You become scared to touch and then you create new mixins that are slightly different causing redundancy and maintainance problems.
+
+Also, mixins can become very complicated with lots of params, conditionality and large declarations of styles. All of this makes it complicated and complicated is hard to maintain.
+
+To mitigate, you can make mixins really granular. For example you could have a "red text" mixin which is certainly better. But then again, the declaration of that mixin is basically the same as a declaration of red text. Might as well just declare that instead.
+
+If you need to update it in multiple places, then a search and replace will do it. And even if you did use a mixin, when red changes to orange, you will have to do a search and replace anyway.
 
 ## Final thoughts on reuse
 
