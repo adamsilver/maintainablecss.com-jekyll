@@ -65,6 +65,10 @@ id: home
 			<p>Flat and performant selectors by convention.</p>
 		</div>
 		<div class="benefit">
+			<h3>Find redundant code easily</h3>
+			<p>It's easy to spot redundant code. Find it. Delete it.</p>
+		</div>
+		<div class="benefit">
 			<h3>AB testing and easy upgrading</h3>
 			<p>Want to test module variants against each other? MaintainableCSS makes this easy.</p>
 			<p><a class="benefit-button" href="/chapters/">Read now</a></p>
