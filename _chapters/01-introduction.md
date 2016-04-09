@@ -5,13 +5,11 @@ section: Preface
 permalink: /chapters/introduction/
 ---
 
-*MaintainableCSS* is an approach to writing CSS that helps you and your team (current and future) maintain CSS.
+*MaintainableCSS* is an approach to architecting and writing CSS that helps you and your team of developers. Write modular, scalable and maintainable code with some very simple rules.
 
 ## What is the goal of *MaintainableCSS*?
 
-If I had to sum up the overarching goal of *MaintainableCSS* in one paragraph it would be as follows:
-
-**To ensure that as a developer, I can edit an existing feature (or add a new one) to the codebase without worrying that overzealous, pre-existing styles will cause a problem for me or that I will cause regression elsewhere.**
+The single goal of *MaintainableCSS* is to ensure that as a developer, I can edit an existing feature (or add a new one) to the codebase without worrying that overzealous, pre-existing styles will cause a problem for me or that I will cause unexpected regression elsewhere.
 
 ## There is nothing to download
 
@@ -27,9 +25,11 @@ This means that when the CSS increases in size, it *doesn't* make the maintainin
 
 ## What does modular even mean?
 
-A module is a distinct, indepenent unit, that can be combined with other modules to form a more complex structure. In a living room, you can consider the TV, the sofa and the wall art modules. All coming together to create a useable room.
+A module is a distinct, indepenent unit, that can be combined with other modules to form a more complex structure.
 
-If you take one of the units away, the rest still works just fine. I don't need any aspect of the TV to be able to sit on the sofa. Okay you get the picture :)
+In a living room, you can consider the TV, the sofa and the wall art modules. All coming together to create a useable room.
+
+If you take one of the units away, the rest still works just fine. I don't need the TV to be able to sit on the sofa etc. Okay you get the picture!
 
 ## Who is this for?
 
