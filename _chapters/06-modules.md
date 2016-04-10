@@ -9,44 +9,27 @@ A module is a distinct, independent unit, that can be combined with other module
 
 In a living room, you can consider the TV, the sofa and the wall art modules. All coming together to create a useable room.
 
-If you take one of the units away, the rest still works just fine. I don't need the TV to be able to sit on the sofa etc. Okay you get the picture!
+If you take one of the units away, the rest still works just fine. I don't need the TV to be able to sit on the sofa etc.
 
-## What could be a module?
-
-Here are 10 examples of a module:
-
-1. Header
-2. Footer
-3. Search Form
-4. Sign up form
-5. Shopping basket
-6. Article
-7. Product list
-8. Navigation
-9. Filter
-10. Homepage promotional item.
+**In a website each of these can be considered modules:** header, footer, search form, sign up form, shopping basket, article, product list, navigation, homepage promo, archive list etc.
 
 ## Modules vs components
 
-As we have just seen, a *module* is something useful in it's own right. But also, a module is made up of bits and pieces that make it useful.
+A module is made up of components. Without the components the module is incomplete or broken.
 
-For example, a piece of wall art is made up of a frame, a picture, the glass and the nail. Without these pieces it renders the module useless. These pieces are what I call *components*.
+For example a sofa is made up of the frame, upholstry, legs, cushions and back pillows. These are all required components to make the sofa function as desired.
 
-Sometimes, it can be difficult to make a choice between whether something is a module or a component. For example, the header might be a module. The header might contain a logo, a navigation and a global search form.
+With all of this said, sometimes it can be tricky to decide whether something is a component or something is a module. For example a header is a module. It might contain a logo and a navigation menu as part of it.
 
-It could be argued that the logo is a component of the header. Because without the logo, the header provides no value and that it needs the container in order to position it to (typically) the top left of the header.
+Are these components or modules? Ultimately it doesn't matter too much and you can use you're own experience to decide. For me, in a recent project it made sense for the logo to be a component of the header, and the navigation menu to be a module within the header module.
 
-But equally, the logo is valuable in it's own right and could easily be considered a module (within a module). Either way that is no problem. *MaintainableCSS* doesn't concern itself. That choice is up to you.
+Regardless, *MaintainableCSS* doesn't force anything because it doesn't know *your* project requirements. I merely address this point because sometimes we can get hung up on these things and most of the time, it is very clear what a module is.
 
-And also, it makes sense that navigation might reside in the header, but it is most certainly a useful independent unit regardless of the header.
+And all said and done, it's very easy to change your mind and swap a component for a module as the conventions are so simple.
 
-And it must be noted that, the visual design might have an impact in what becomes a module. For example the navigation might be positioned to the right of the header with a `float: right` but it is visually positioned in a header module. The header module will 'clear' the float.
+## Walkthrough: creating a module
 
-In this particular example, I would *still* make the navigation a module itself. It's just a module within a module. No problem, and again don't worry too much. It is very easy to convert a component into a module and vice versa.
-
-## Let's create a module: Shopping basket
-
-Let's take a simple example, a shopping basket. Typically, a basket contains a title, a bunch of items, each item might have a remove button. So we might end up with the following HTML:
+Let's build a module together. We're going to build a simplified shipping basket module which is made up of a title, a bunch of products with each product containing a title and a remove button. Here is the HTML we might typically use:
 
 	<div class="basket">
 		<h2 class="basket-title">Basket</h2>
@@ -72,16 +55,14 @@ And the selectors for that:
 
 	.basket-removeButton {}
 
+## Walkthrough: avoiding reuse
+
 Now, let's say that during the checkout process there is a similar (but different) cut down version of the basket&mdash;perhaps it has a title of "Order summary" as opposed to basket. Perhaps it doesn't have the capbility of removing products.
 
-What you might be tempted to do, is to try and reuse the basket. But as we discussed in the chapter about Reuse, this is problematic. Firstly, you're template/partial will require conditional logic within.
+What you might be tempted to do, is to try and reuse the basket. But as we discussed in the chapter about Reuse, this is problematic for several reasons.
 
-The more condition you have, the more complicated it is to touch (read: maintain). And, now whatever changes you make might causes issues in *all* of the places where it is used.
+Additionally, your template or partial will require conditional logic within. The more condition you have, the more complicated it is to touch. And, whatever changes you make might causes regression in *all* of the other places where it is used, making it hard to maintain.
 
-Following the principle of *duplication first*, it would be highly advised to create a brand new module. In a recent project, we named the module *orderSummary*. We could have easily named it *basketSummary* or *checkoutBasket* or *basketCutDownVersion*.
+Following the principle of *duplication first*, it would be highly advised to create a brand new module. In a recent project, we named the module *orderSummary* although interestingly it *looks* very similar to the basket.
 
-Now, the name *is* important &mdash; it must be semantic &mdash; which all of these are. But, even *more* important, is the fact that a new module has been created, rather than trying to reuse the existing similar module.
-
-We have now acheived the ability to style this new module as we wish, whilst also being able to edit the other basket module, without fear of regression or inheriting other styles we don't want.
-
-If the design changes, upgrading these modules is now very easy to do.
+Now we have semantic naming, module encapsulation which makes maintainance very easy. If the design is changed for just one of these modules we can upgrade with minimal effort and without fear of regression.

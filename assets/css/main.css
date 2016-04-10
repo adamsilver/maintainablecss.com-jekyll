@@ -241,17 +241,16 @@ a.navigation-isActive {
 **********************************************************/
 
 .chapterNavigation {
-	padding: 20px;
 	font-size: 1.5em;
 	overflow: hidden;
 	background-color: #39CCCC;
 }
 
-.chapterNavigation-allChapters {
-}
-
-.chapterNavigation-nextPreviousWrapper {
+.chapterNavigation-inner {
 	overflow: hidden;
+	max-width: 760px;
+	padding: 20px;
+	margin: 0 auto;
 }
 
 .chapterNavigation-previous {
@@ -261,10 +260,6 @@ a.navigation-isActive {
 
 .chapterNavigation-next {
 	float: right;
-}
-
-.chapterNavigation-previous a,
-.chapterNavigation-next a {
 	text-decoration: none;
 }
 
@@ -358,13 +353,17 @@ a.navigation-isActive {
 	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
 
 @media(min-width: 600px) {
 	.benefits h2 {
 		font-size: 3.5em;
 	}
+}
+
+.benefit {
+	margin-bottom: 40px;
 }
 
 .benefit h3 {
@@ -472,6 +471,11 @@ a.navigation-isActive {
 	padding: 40px;
 }
 
+.chapterList h2 {
+	max-width: 700px;
+	margin: 0 auto 20px;
+}
+
 .chapterList-isCurrentPage {
 	padding-left: 5px;
 	font-weight: bold;
@@ -484,5 +488,6 @@ a.navigation-isActive {
 }
 
 .chapterList li {
+	margin-left: 15px;
 	margin-bottom: 5px;
 }
