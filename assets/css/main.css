@@ -368,7 +368,9 @@ a.navigation-isActive {
 }
 
 .benefit {
-	margin-bottom: 40px;
+	border-bottom: 1px dotted #aaa;
+    max-width: 600px;
+    margin: 0 auto 40px;
 }
 
 .benefit h3 {
