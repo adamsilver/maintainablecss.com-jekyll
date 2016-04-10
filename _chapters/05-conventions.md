@@ -5,17 +5,14 @@ section: Core
 permalink: /chapters/conventions/
 ---
 
-Whether you choose to utilise lower (or upper) camel case or use (double) dashes or underscores to delimit your CSS it really doesn't matter.
+Conventions can be a bone of contention amongst engineers, but what matters most is readability and consistency. With that said, *MaintainableCSS* has the following convention:
 
-What matters is *consistency*.
-
-*MaintainableCSS* has the following conventions:
-
+	/* Square brackets denote optional parts */
 	.<moduleName>[-<componentName>][-<state>] {}
 
-If we take a module called searchResults, that is made up of other elements and might also have a loading state (think AJAX), then we might end up with the following semantic class names:
+Here are some real examples pertaining to a "search results" module:
 
-	/* module container */
+	/* module container/root */
 	.searchResults {}
 
 	/* components of a module */
@@ -23,7 +20,9 @@ If we take a module called searchResults, that is made up of other elements and 
 
 	.searchResults-item {}
 
-	/* state */
+	/* state: such as AJAX loading */
 	.searchResults-isLoading {}
 
-More information can be found in upcoming chapters about *modules* and *state*.
+Each of these class names are semantic. Module, component and state are all delimitted by dashes. Each bit is written in lowerCamelCase.
+
+We will see this convention used in all upcoming chapters.
