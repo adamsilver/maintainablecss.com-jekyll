@@ -256,10 +256,16 @@ a.navigation-isActive {
 
 .chapterNavigation-previous {
 	float: left;
+	text-decoration: none;
 }
 
 .chapterNavigation-next {
 	float: right;
+}
+
+.chapterNavigation-previous a,
+.chapterNavigation-next a {
+	text-decoration: none;
 }
 
 /**********************************************************
@@ -475,4 +481,8 @@ a.navigation-isActive {
 	max-width: 700px;
 	margin: 0 auto;
 	font-size: 1.5em;
+}
+
+.chapterList li {
+	margin-bottom: 5px;
 }
