@@ -271,7 +271,7 @@ a.navigation-isActive {
 	padding-right: 20px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background-color: #39CCCC;
+	background-color: #50E2E2;
 }
 
 @media(min-width: 600px) {
@@ -314,18 +314,21 @@ a.navigation-isActive {
 	}
 }
 
-.hero-button {
+.hero-button:link,
+.hero-button:visited {
 	border-radius: 30px;
-	border: 1px solid #000;
 	text-transform: uppercase;
 	text-decoration: none;
-	padding: 10px 30px;
-	font-size: 0.75em;
-	background-color: #f9f9f9;
+	padding: 15px 70px;
+	font-size: 0.7em;
+	background-color: #0D8E8E;
+	color: #ffffff;
+	font-weight: bold;
+	letter-spacing: 0.04em;
 }
 
 .hero-button:hover {
-	background-color: #eee;
+	background-color: #086565;
 }
 
 /**********************************************************
