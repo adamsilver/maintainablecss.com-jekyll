@@ -5,7 +5,7 @@ id: home
 
 <div class="hero">
 	<h1>MaintainableCSS</h1>
-	<p>Write CSS without worrying that overzealous, pre-existing styles will cause problems. An approach to writing <em>modular</em>, <em>scalable</em> and of course <em>maintainable</em> CSS.</p>
+	<p>Write CSS without worrying that overzealous, pre-existing styles will cause problems. <em>MaintainableCSS</em> is an approach to writing <em>modular</em>, <em>scalable</em> and of course, <em>maintainable</em> CSS.</p>
 	<a class="hero-button" href="/chapters/">Read now</a>
 </div>
 <!--

@@ -11,14 +11,14 @@ permalink: /chapters/semantics/
 
 Semantic HTML isn't just about the elements we use&mdash;it's pretty obvious that you should use a `<a>` for a link, a `<table>` for tabular data and a `<p>` for a pargraph etc.
 
-But, more importantly, it's about the class names (and IDs) we add to the elements that provide *additional* hooks for the CSS (and Javascript) to enhance as appropriate.
+More importantly, it's about the class names (and IDs) we add, that provide *additional* hooks for CSS (and Javascript) to enhance as appropriate.
 
 It's easy to add class names without thought as to their naming but naming is very important.
 
 > &ldquo;There are only two hard things in Computer Science: cache invalidation and naming things.&rdquo;
 <br>&mdash; <cite>Phil Karlton</cite>
 
-This is because humans are good at understanding human communication and bad at understanding the abbreviated non-semantic abstractions.
+This is because humans are good at understanding human communication and bad at understanding abbreviated, non-semantic abstractions.
 
 ## Good and bad examples of class names
 
@@ -37,17 +37,17 @@ It's not clear at all *what* this HTML represents. You *might* have an idea of w
 	<div class="product"></div>
 	<div class="searchResults"></div>
 
-Here I know exactly what I am looking at. I know the intention of what this HTML represents. And I have no idea how it looks like. That's what the CSS is for.
+Here I know exactly what I am looking at. I know the intention of what this HTML represents. And I have no idea how it looks&mdash;that's what CSS is responsible for.
 
 So **why** else should we use semantic class names?
 
 ## Why? Because it breaks the reuse rule!
 
-If you don't use semantics class names, then you will likely be repeating yourself. Go read that chapter.
+If you don't use semantics class names, then you will likely be repeating yourself (this is covered in the next chapter).
 
 ## Why? Because it's easier to understand!
 
-Whether you're looking at the HTML or the CSS, you know what you're affecting. With visual class names you end up having to sprinkle several class names on to each element, ending up with a vauge understanding of the intention of these visual class names. This is hard to maintain.
+Whether you're looking at the HTML or the CSS, you know what you're affecting. With visual class names you end up having to sprinkle several class names on to each element, ending up with a vague understanding of the intention of these visual class names. This is hard to maintain.
 
 ## Why? Because we are building responsive websites!
 
@@ -55,21 +55,21 @@ Styles often need changing based on viewport size. For example, you might float 
 
 If you use semantic class names, then you can style them differently based on media queries making it easier to maintain.
 
-## Why? Because you get a performance improvement!
+## Why? Because you get a performance bump!
 
-This is a very small reason but when you have one class name per element, you end up with lighter HTML. With visual classes you end up with multiple class names per element and that can add up.
+This is a *very* small benefit but when you have one class name per element, you end up with smaller HTML. With visual classes you end up with multiple class names per element and that can add up.
 
 ## Why? Because semantic class names are easier to find!
 
-If an element has classes based on how it looks such as .red or .clearfix or .pull-left etc, then these classes will be all over the codebase. So if you’re trying to hunt for a particular piece of HTML, the class name is not going to help you.
+If an element has classes based on how it looks such as `.red` or `.clearfix` or `.pull-left` etc, then these classes will be all over the codebase. So if you’re trying to hunt for a particular piece of HTML, the class name is not going to help you.
 
-On the other hand, if your class names are semantic, a search is likely going to hunt down the HTML in question. Same goes for the CSS. This makes it easier to maintain.
+On the other hand, if your class names are semantic, a search will find the HTML in question. Same goes for the CSS. This makes it easier to maintain.
 
 ## Why? Because you don't want unexpected regression!
 
-If you have utility non-semantic classes that describe the look then when you edit one of these classes, they will propogate to every single element with that class. Which normally means a developer, is too scared to touch an existing utility class because it is likely it will cause a regression.
+If you have utility non-semantic classes that describe the look then when you edit one of these classes, they will propogate to every single element with that class. Which normally means a developer is too scared to touch an existing utility class because it is likely it will cause a regression.
 
-When you use semantic class names, they are unique, so when editing one, it will only apply to the module in question.
+Semantic class names are unique, so when editing one, you can be comforted that it will only apply to the module in question.
 
 ## Why? Because you don't want to be afraid to update code!
 
@@ -77,18 +77,25 @@ As with the unexpected regressions above, if you use a bunch of utility class na
 
 ## Why? Because it helps automated functional testing
 
-Automated functional tests work by searching for particular elements, interacting with them (typing in text, clicking buttons and links) and verifying based on that.
+Automated functional tests work by searching for particular elements, interacting with them (typing in text, clicking buttons and links etc) and verifying based on that.
 
 If you have visual class names all over the HTML, then there is no reliable way to target particular elements.
 
-## Why? Because general maintainance
+## Why? Because general maintainance concerns!
 
-If you name something based on what it is, you won't have to touch the HTML again in a dramatic way. I.e. a heading is always a heading, but the styles and behaviour might change.
+If you name something based on what it is, you won't have to touch the HTML again in a dramatic way i.e. a heading is always a heading. The styles might change but then you can update the CSS.
 
-## Why? Because reuse makes debugging more difficult
+## Why? Because reuse makes debugging more difficult!
 
-When debugging an element, there will be several applicable CSS selectors playing a part making it noisey.
+When debugging an element, there will be several applicable CSS selectors making it noisey to debug.
+
+<!--## Why? Because visual class names might declare the same property!
+
+It's likely that several different utility classes could refer to the same property meaning order matters and performance degrades.
+
+Think of an example of this.
+-->
 
 ## Final thoughts about semantics
 
-Semantic class names are a corner stone of the approach that *MaintainableCSS* advocates. Without this, everything else makes little sense so, name something what it is and everything else follows.
+Semantic class names are a corner stone of *MaintainableCSS*. Without this, everything else makes little sense. So name something based on what it is and everything else follows.
