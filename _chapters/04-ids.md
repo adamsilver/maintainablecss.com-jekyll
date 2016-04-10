@@ -5,7 +5,7 @@ section: Background
 permalink: /chapters/ids/
 ---
 
-**Summary:** *Don't* use IDs as hooks for styling. Only use class names.
+**Summary:** *Don't* use IDs as hooks for styling.
 
 ## Why? Because of specificity!
 

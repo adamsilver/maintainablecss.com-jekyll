@@ -25,9 +25,7 @@ This means that when the CSS increases in size, it *doesn't* make the maintainin
 
 ## What does modular even mean?
 
-A module is a distinct, indepenent unit, that can be combined with other modules to form a more complex structure.
-
-In a living room, you can consider the TV, the sofa and the wall art modules. All coming together to create a useable room.
+A module is a distinct, independent unit, that can be combined with other modules to form a more complex structure. In a living room, you can consider the TV, the sofa and the wall art modules. All coming together to create a useable room.
 
 If you take one of the units away, the rest still works just fine. I don't need the TV to be able to sit on the sofa etc. Okay you get the picture!
 
