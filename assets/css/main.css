@@ -263,6 +263,11 @@ a.navigation-isActive {
 	text-decoration: none;
 }
 
+.chapterNavigation-previous:active,
+.chapterNavigation-next:active {
+	color: #000;
+}
+
 /**********************************************************
 * Hero
 **********************************************************/
