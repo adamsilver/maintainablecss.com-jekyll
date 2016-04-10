@@ -6,7 +6,7 @@ id: home
 <div class="hero">
 	<h1>MaintainableCSS</h1>
 	<p>Write CSS without worrying that overzealous, pre-existing styles will cause problems. An approach to writing <em>modular</em>, <em>scalable</em> and of course <em>maintainable</em> CSS.</p>
-	<p><a class="hero-button" href="/chapters/">Read now</a></p>
+	<a class="hero-button" href="/chapters/">Read now</a>
 </div>
 <!--
 	<h2>Maintainable &mdash; Adjective</h2>
@@ -18,7 +18,7 @@ id: home
 	<div class="benefits-wrapper">
 		<div class="benefit">
 			<h3>Modular and encapsulated</h3>
-			<p>Styles don't bleed or cascade without your permission</p>
+			<p>Styles don't bleed or cascade without your permission.</p>
 		</div>
 		<div class="benefit">
 			<h3>Any design requirements</h3>
@@ -71,8 +71,8 @@ id: home
 		<div class="benefit">
 			<h3>AB testing and easy upgrading</h3>
 			<p>Want to test module variants against each other? MaintainableCSS makes this easy.</p>
-			<p><a class="benefit-button" href="/chapters/">Read now</a></p>
 		</div>
+		<a class="benefit-readNowButton" href="/chapters/">Read now</a>
 	</div>
 </div>
 

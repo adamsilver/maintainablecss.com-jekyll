@@ -271,13 +271,13 @@ a.navigation-isActive {
 	padding-right: 20px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background-color: #50E2E2;
+	background-color: #ddd;
 }
 
 @media(min-width: 600px) {
 	.hero {
-		padding-top: 150px;
-		padding-bottom: 140px;
+		padding-top: 110px;
+		padding-bottom: 100px;
 	}
 }
 
@@ -320,11 +320,15 @@ a.navigation-isActive {
 	text-transform: uppercase;
 	text-decoration: none;
 	padding: 15px 70px;
-	font-size: 0.7em;
+	font-size: 1.2em;
 	background-color: #0D8E8E;
 	color: #ffffff;
 	font-weight: bold;
 	letter-spacing: 0.04em;
+	width: 100px;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
 }
 
 .hero-button:hover {
@@ -336,7 +340,7 @@ a.navigation-isActive {
 **********************************************************/
 
 .benefits {
-	padding: 80px 20px 40px;
+	padding: 50px 20px;
 	background-color: #f5f5f5;
 	margin-bottom: 40px;
 }
@@ -370,7 +374,6 @@ a.navigation-isActive {
 
 .benefit p {
 	text-align: center;
-	text-align: center;
 	font-size: 1.8em;
 	line-height: 1.7em;
 	max-width: 700px;
@@ -386,18 +389,33 @@ a.navigation-isActive {
 	}
 }
 
-.benefit-button {
-	border-radius: 30px;
+.benefit-readNowButton:link,
+.benefit-readNowButton:visited {
+	/*border-radius: 30px;
 	border: 1px solid #000;
 	text-transform: uppercase;
 	text-decoration: none;
 	padding: 10px 30px;
 	font-size: 0.75em;
-	background-color: #fff;
+	background-color: #fff;*/
+
+	border-radius: 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 15px 70px;
+	font-size: 1.2em;
+	background-color: #0D8E8E;
+	color: #ffffff;
+	font-weight: bold;
+	letter-spacing: 0.04em;
+	width: 100px;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
 }
 
-.benefit-button:hover {
-	background-color: #eee;
+.benefit-readNowButton:hover {
+	background-color: #086565;
 }
 
 /**********************************************************
