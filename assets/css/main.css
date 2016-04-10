@@ -8,7 +8,7 @@
 }
 
 body {
-	font-family: -apple-system, 'avenir next', avenir, roboto, noto, ubuntu, 'helvetica neue', helvetica, arial, sans-serif;
+	font-family: 'helvetica neue', helvetica, arial, sans-serif;
     text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
     font-size: 62.5%;
@@ -245,12 +245,6 @@ a.navigation-isActive {
 	font-size: 1.5em;
 	overflow: hidden;
 	background-color: #39CCCC;
-}
-
-@media(min-width: 600px) {
-	.chapterNavigation {
-		font-size: 2em;
-	}
 }
 
 .chapterNavigation-allChapters {

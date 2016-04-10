@@ -1,23 +1,42 @@
 ---
 layout: chapter
-title: ID attributes
+title: Using IDs
 section: Background
 permalink: /chapters/ids/
 ---
 
-In short: **Don't** use IDs as hooks for styling. Only use class names. You may use IDs for other things as we will see shortly.
+**Summary:** *Don't* use IDs as hooks for styling. Only use class names.
 
-## Why? Because of specificity
+## Why? Because of specificity!
 
 [IDs over power class names](http://www.w3.org/TR/css3-selectors/#specificity) by orders of magnitude. For this reason you can't override an ID selector's style with a class name selector easily.
 
-And of course you can't have multiple IDs but you can have multiple class names. Useful for state as we will see in a later chapter.
+This becomes a problem when you need a way to provide additional meaning to the HTML, such as state, something we discuss in a chapter of its own.
 
-## But I need to use an ID?
+	#someModule {
+		color: red;
+	}
 
-ID's are useful and *necessary* for many aspects of web development, but CSS is not one of those. Here are two examples, both of which **improve the user experience**.
+	.someModule-override {
+		color: blue;
+	}
 
-1. **Form controls** are linked to labels via `id` and `for` attributes.
-2. **Internal anchors** work off of ID attributes.
+If you apply the ID and the class name to the element, the colour will always be red.
 
-Note: when you do use an ID, use the same conventions as described for classes. This helps keep components modular.
+	.someModule {
+		color: red;
+	}
+
+	.someModule-override {
+		color: blue;
+	}
+
+Now the colour will be blue as intended. So avoid Ids for style.
+
+## But, sometimes an ID is required?
+
+Sometimes using IDs is necessary. For example a form control is linked to a label by ID. And internal anchors are often bound using IDs too. Both of these improve the User Experience. Use as appropriate.
+
+## Final thoughts on IDs
+
+Avoid Ids as hooks for styling but if you need them for other things use them. As and when you do use IDs, stick to the naming conventions you would use for classes as explained in *MaintainableCSS*.

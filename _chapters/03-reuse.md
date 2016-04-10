@@ -5,7 +5,7 @@ section: Background
 permalink: /chapters/reuse/
 ---
 
-In short: **Don't** try and reuse CSS. **Do** take a duplication-first approach.
+**Summary:** *Don't* try and reuse CSS rules. Take a duplicate-first approach instead.
 
 ## Why? Because reuse breaks semantics!
 
