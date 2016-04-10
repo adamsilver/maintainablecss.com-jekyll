@@ -5,25 +5,19 @@ section: Core
 permalink: /chapters/state/
 ---
 
-**What do I mean by state?** Is the module *showing* or *hiding*. Is it *active* or *inactive*, is it in a *loading* state or not? Each of these potentially mean that the UI *looks* different.
+Often, particularly with richer user interfaces, we need to style modules or components to look different based on state. States such as *showing*, *hiding*, *active*, *inactive*, *disabled*, *loading*, *loaded* etc. To do this we must communicate this with an additional class name.
 
-We want to communicate this via a css class.
+## Encapsulating state
 
-## Ensuring state is encapsulated to the module
-
-Let's say the module is called *myModule*.
-
-You could apply an `isActive` state to the module as follows:
+Let's say a module is called *myModule*. You could apply an `isActive` class as follows:
 
 	<div class="myModule isActive"></div>
 
-But it is likely a state such as `isActive` is going to be used on many different modules, and what it means to be active might very well be different across modules.
+But it is likely a state such as `isActive` is going to be used on many different modules, and what it means to be active likely manifests itself different depending on the module.
 
-Therefor this breaks the main rule of *MaintainableCSS* by inheriting overzealous styles that weren't intended that way.
+For this reason this class actually breaks a fundamental rule of *MaintainableCSS* because we likely will inherit styles that weren't intended that way. So it's imperative that state is prefixed with the module name, just like components are...
 
-So I suggest that state is prefixed with the module name...
-
-## How to do it?
+## Applying state to a module
 
 So let's say our module is called *myModule*.
 
@@ -45,14 +39,12 @@ And the HTML needs to be as follows:
 
 	<div class="myModule myModule-isDisabled">
 		<p class="myModule-title">The title</p>
-		<p class="myModule-somethingElse">Something else</p>
 	</div>
 
-Note: the module container has both classes.
+## Applying state to a component
 
-If you wanted to apply state to to just the title then you would apply `myModule-title-isDisabled` to the title component as follows:
+If you wanted to apply state to to just the *title* component, then you would apply `myModule-title-isDisabled` to the title component as follows:
 
 	<div class="myModule">
 		<p class="myModule-title myModule-isDisabled">The title</p>
-		<p class="myModule-somethingElse">Something else</p>
 	</div>
