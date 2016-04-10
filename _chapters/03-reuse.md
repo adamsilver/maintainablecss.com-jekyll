@@ -39,16 +39,21 @@ Take `red`. Does this mean a red background? Does this mean red text? Does this 
 
 This sounds good but it isn't. You end up applying changes where you didn't mean to. Think regression. Alternatively, you end up scared to touch this utility class so you end up with `.red2`. Then you end up with redundant code. Obviously this is not fun to maintain.
 
-## What if really want to reuse a style?
+## What if I really want to reuse a style?
 
-It is extremely rare, but there are times when it really does make sense to reuse a style. In this case use the comma in your selectors:
+It is extremely rare, but there are times when it really does make sense to reuse a style. In this case use the comma in your selectors and place it in a well named file.
 
-	.someModule,
-	.anotherModule {
-		/*common styles*/
+For example let's say you wanted a bunch of different modules or components to have red text you might do this:
+
+	/* colours.css */
+
+	/* red text */
+	.someSelector,
+	.someOtherSelector {
+		colour: red;
 	}
 
-And put it in a relevant file, colours.css, fonts.css etc, with a relevant comment. But if one module deviates even a little bit, then take it out of the comma list and duplicate. You have to be very careful with this.
+Remember though that if any selector deviates, even a little bit, then remove it from the common list and duplicate. You must be very careful with something like this. Do it for convenience, not for performance. Your mileage may vary.
 
 ## What about mixins?
 
@@ -64,4 +69,4 @@ If you need to update it in multiple places, then a search and replace will do i
 
 ## Final thoughts on reuse
 
-Reuse and DRY are such important principles in software engineering but when it comes to CSS, it ironically makes maintainance harder. Avoid the reuse, enjoy the maintainability. Go for a duplication-first approach instead.
+Reuse and DRY are such important principles in software engineering but when it comes to CSS, it ironically makes maintainance harder. Avoid trying to reuse style rules and gain the benefits of easy to maintain CSS.
