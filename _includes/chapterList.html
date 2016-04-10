@@ -1,0 +1,13 @@
+<div class="chapterList">
+	<ol>
+		{% for chapter in site.chapters %}
+			<li>
+				<a
+					class="{% if chapter.title == page.title %}chapterList-isCurrentPage{% endif%}"
+					href="{{ chapter.url }}">
+						{{ chapter.title }}
+				</a>
+			</li>
+		{% endfor %}
+	</ol>
+</div>
