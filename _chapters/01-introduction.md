@@ -5,34 +5,32 @@ section: Preface
 permalink: /chapters/introduction/
 ---
 
-*MaintainableCSS* is an approach to architecting and writing CSS that helps you and your team of developers. Write modular, scalable and maintainable code with some very simple rules.
+*MaintainableCSS* is an approach to architecting and writing CSS that helps you and your team write modular, scalable and maintainable code.
 
-## What is the goal of *MaintainableCSS*?
-
-The single goal of *MaintainableCSS* is to ensure that as a developer, I can edit an existing feature (or add a new one) to the codebase without worrying that overzealous, pre-existing styles will cause a problem for me or that I will cause unexpected regression elsewhere.
+In practical terms, this means that as a developer I want to create new features, or edit existing features without having to worry about inheriting overzealous styles or that one feature may have unintended side effects on another, causing regression elsewhere.
 
 ## There is nothing to download
 
-*MaintainableCSS* is not something you can download. It's a set of principles, guides and conventions that not only allow you to write CSS with piece of mind, but that also means your CSS is maintainable and scalable.
+*MaintainableCSS* is not something you can download. It's a set of principles, guides and conventions that help you write CSS for large or small scale websites.
 
 ## What does maintainable even mean?
 
-It means I want to edit a module without having to worry that I have just fucked other modules on the site that I am not even aware of. It also means that if I write some new code, then my first job *isn't* to override a bunch of styles that I have just inherited. It also means that I can edit existing styles with confidence that I won't cause an unexpected regressions elsewhere.
+Having maintainable code means that I can edit a module and it's styles without worrying that I have negatively caused problems in other modules by accident. I want to be able to to write code that provides peace of mind knowing that my code is encapsulated.
 
 ## What does scalable even mean?
 
-This means that when the CSS increases in size, it *doesn't* make the maintaining of code (see above) any harder. If you have ever inherited a large, unmaintainable CSS codebase, I am sure you can sympathise with these problems.
+This means, that as the CSS codebase increases in size, that maintaining code (see previous point) isn't any harder. If you have ever inherited a large CSS codebase, and been worried about editing existing styles, you can sympathise with this.
 
 ## What does modular even mean?
 
-A module is a distinct, independent unit, that can be combined with other modules to form a more complex structure. In a living room, you can consider the TV, the sofa and the wall art modules. All coming together to create a useable room.
+A module is a distinct, independent unit, that can be combined with other modules to form a more complex structure. In a living room, you can consider the TV, the sofa and the wall art to be modules, all coming together to create a useable room.
 
-If you take one of the units away, the rest still works just fine. I don't need the TV to be able to sit on the sofa etc. Okay you get the picture!
+If you take one of the units away, the rest still works just fine. I don't need the TV to be able to sit on the sofa etc. In a website, the header, footer, product list, article etc can all be considered modules.
 
 ## Who is this for?
 
-These conventions are useful for tiny projects with 1 person on the team and equally they are useful for huge projects with 100 people on the team. And whether your design is set in stone for the next 5 years or will evolve frequently, *MaintainableCSS* can help.
+If you have ever experienced any pain in maintaining CSS, this book can help you avoid common problems. Whether your a team of 1 or 100, I think you will find useful advice for modularising your CSS. EVen more so if your site is constantly evolving.
 
 ## How hard is this to learn?
 
-It's very easy to learn. Read the guides and you'll see.
+I would say it's very easy to learn. You can read the entire book in under 20 minutes and apply the rules in minutes. Let me know if I am wrong though :).
