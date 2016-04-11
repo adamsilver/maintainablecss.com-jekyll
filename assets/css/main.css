@@ -64,7 +64,15 @@ a:active {
 
 .logo {
 	font-size: 1.5em;
-	float: left;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+@media(min-width: 400px) {
+	.logo {
+		float: left;
+		margin-bottom: 0;
+	}
 }
 
 .logo a {
@@ -77,12 +85,18 @@ a:active {
 
 .navigation {
 	font-size: 1.5em;
-	float: right;
+	text-align: center;
+}
+
+@media(min-width: 400px) {
+	.navigation {
+		float: right;
+	}
 }
 
 .navigation a {
-	float: left;
-	margin-left: 15px;
+	margin-left: 7px;
+	margin-right: 7px;
 	text-decoration: none;
 }
 
@@ -348,7 +362,6 @@ a.navigation-isActive {
 .benefits {
 	padding: 50px 20px;
 	background-color: #f5f5f5;
-	margin-bottom: 40px;
 }
 
 .benefits h2 {
@@ -431,18 +444,66 @@ a.navigation-isActive {
 }
 
 /**********************************************************
+* Chapters
+**********************************************************/
+
+.chapters {
+	background-color: #ddd;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.chapters-inner {
+	max-width: 700px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.chapters h2 {
+	font-size: 2.2em;
+	line-height: 1.2em;
+	margin-bottom: 10px;
+}
+
+@media(min-width: 600px) {
+	.chapters h2 {
+		font-size: 2.5em;
+		margin-bottom: 15px;
+	}
+}
+
+.chapters ol {
+	margin-left: 20px;
+	font-size: 1.8em;
+	line-height: 1.7em;
+}
+
+@media(min-width: 600px) {
+	.chapters ol {
+		font-size: 2.2em;
+	}
+}
+
+/**********************************************************
 * Got question
 **********************************************************/
 
+.gotQuestion {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #f5f5f5;
+}
+
+.gotQuestion-inner {
+	max-width: 700px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
 .gotQuestion h2 {
-	text-align: center;
 	font-size: 2.2em;
 	line-height: 1.2em;
-	max-width: 700px;
-	margin-left: auto;
-	margin-right: auto;
 	margin-bottom: 10px;
-	padding: 0 20px;
 }
 
 @media(min-width: 600px) {
@@ -453,14 +514,9 @@ a.navigation-isActive {
 }
 
 .gotQuestion p {
-	text-align: center;
 	font-size: 1.8em;
 	line-height: 1.7em;
-	max-width: 700px;
-	margin-left: auto;
-	margin-right: auto;
 	margin-bottom: 30px;
-	padding: 0 20px 10px;
 }
 
 @media(min-width: 600px) {

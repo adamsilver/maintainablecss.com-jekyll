@@ -76,7 +76,26 @@ id: home
 	</div>
 </div>
 
+<div class="chapters">
+	<div class="chapters-inner">
+		<h2>Chapters</h2>
+		<ol>
+			{% for chapter in site.chapters %}
+				<li>
+					<a
+						class="{% if chapter.title == page.title %}chapterList-isCurrentPage{% endif%}"
+						href="{{ chapter.url }}">
+							{{ chapter.title }}
+					</a>
+				</li>
+			{% endfor %}
+		</ol>
+	</div>
+</div>
+
 <div class="gotQuestion">
-	<h2>Got a question, issue or suggestion?</h2>
-	<p>Just <a href="http://github.com/adamsilver/maintainablecss.com/issues/new/">raise an issue for discussion</a> on Github.</p>
+	<div class="gotQuestion-inner">
+		<h2>Got a question, issue or suggestion?</h2>
+		<p>Just <a href="http://github.com/adamsilver/maintainablecss.com/issues/new/">raise an issue for discussion</a> on Github.</p>
+	</div>
 </div>
