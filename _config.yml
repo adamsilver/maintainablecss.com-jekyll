@@ -6,3 +6,4 @@ collections:
   chapters:
     output: true
     permalink: /:collection/:title/
+description: Write CSS without worrying that overzealous, pre-existing styles will cause problems. MaintainableCSS is an approach to writing modular, scalable and of course, maintainable CSS.

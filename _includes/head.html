@@ -4,15 +4,31 @@
 <meta property="og:locale" content="en_GB">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %} {{ site.name }}">
-<meta property="og:description" content="{% if page.title %}{{ page.title }} - {% endif %}">
+<meta property="og:description" content="{{ site.description }}">
 <meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html',''}}">
-<meta property="og:site_name" content="Maintainable CSS">
+<meta property="og:site_name" content="MaintainableCSS">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="{{ site.description }}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {% endif %} {{ site.name }}">
+<meta name="twitter:site" content="@adambsilver">
+<meta name="twitter:creator" content="@adambsilver">
+
+<meta itemprop="description" content="{{ site.description }}">
+
+<!--
+
+<meta property="og:image" content="http://www.theluckystrike.co.uk/wp-content/uploads/2012/02/mark-jenkins.jpg">
+<meta property="og:image:width" content="700">
+<meta property="og:image:height" content="340">
+
+<meta name="twitter:image" content="http://www.theluckystrike.co.uk/wp-content/uploads/2012/02/mark-jenkins.jpg" />
+
+-->
 
 <link rel="stylesheet" href="/assets/css/main.css" type="text/css" media="all">
 
 <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
-
-<link rel="shortcut icon" href="{{ site.url }}/favicon.png" media="all">
 
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ site.url }}/apple-touch-icon-57x57.png" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}/apple-touch-icon-114x114.png" />
