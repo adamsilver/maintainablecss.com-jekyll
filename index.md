@@ -46,7 +46,7 @@ id: home
 		</div>
 		<div class="benefit">
 			<h3>Managing state is easy</h3>
-			<p>Change the look and feel based on states such as <em>loadng</em>, <em>disabled</em> and <em>hiding</em>.</p>
+			<p>Change the look and feel based on states such as <em>loading</em>, <em>disabled</em> and <em>hiding</em>.</p>
 		</div>
 		<div class="benefit">
 			<h3>No worry of regression</h3>
