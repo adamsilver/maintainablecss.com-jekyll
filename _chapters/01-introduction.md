@@ -7,7 +7,7 @@ permalink: /chapters/introduction/
 
 *MaintainableCSS* is an approach to architecting and writing CSS that helps you and your team write modular, scalable and maintainable code.
 
-In practical terms, this means that as a developer I want to create new features, or edit existing features without having to worry about inheriting overzealous styles or that one feature may have unintended side effects on another, causing regression elsewhere.
+In practical terms, this means that as a developer I want to create new features, or edit existing features without having to concern myself with overriding styles I don't want applied, or worse that the code I write causes regression elsewhere.
 
 ## There is nothing to download
 
@@ -29,7 +29,7 @@ If you take one of the units away, the rest still works just fine. I don't need 
 
 ## Who is this for?
 
-If you have ever experienced any pain in maintaining CSS, this book can help you avoid common problems. Whether your a team of 1 or 100, I think you will find useful advice for modularising your CSS. EVen more so if your site is constantly evolving.
+If you have ever experienced any pain in maintaining CSS, this book can help you avoid common problems. Whether you're in a team of 1 or 100, I think you will find useful advice for modularising your CSS. EVen more so if your site is constantly evolving.
 
 ## How hard is this to learn?
 
