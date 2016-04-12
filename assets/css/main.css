@@ -63,15 +63,18 @@ a:active {
 **********************************************************/
 
 .logo {
-	font-size: 1.5em;
+	font-size: 2em;
 	text-align: center;
 	margin-bottom: 20px;
+	font-weight: bold;
 }
 
 @media(min-width: 400px) {
 	.logo {
 		float: left;
 		margin-bottom: 0;
+		font-size: 1.5em;
+		font-weight: normal;
 	}
 }
 
@@ -389,6 +392,7 @@ a.navigation-isActive {
 .benefit h3 {
 	text-align: center;
 	font-size: 2em;
+	margin-bottom: 7px;
 }
 
 @media(min-width: 600px) {
@@ -400,7 +404,7 @@ a.navigation-isActive {
 .benefit p {
 	text-align: center;
 	font-size: 1.8em;
-	line-height: 1.7em;
+	line-height: 1.4em;
 	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
