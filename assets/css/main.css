@@ -284,8 +284,8 @@ a.chapterNavigation-next:visited {
 	color: #fff;
 }
 
-.chapterNavigation-previous:active,
-.chapterNavigation-next:active {
+a.chapterNavigation-previous:active,
+a.chapterNavigation-next:active {
 	color: #000;
 }
 
