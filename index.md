@@ -76,22 +76,7 @@ id: home
 	</div>
 </div>
 
-<div class="chapters">
-	<div class="chapters-inner">
-		<h2>Chapters</h2>
-		<ol>
-			{% for chapter in site.chapters %}
-				<li>
-					<a
-						class="{% if chapter.title == page.title %}chapterList-isCurrentPage{% endif%}"
-						href="{{ chapter.url }}">
-							{{ chapter.title }}
-					</a>
-				</li>
-			{% endfor %}
-		</ol>
-	</div>
-</div>
+{% include chapterList.html %}
 
 <div class="gotQuestion">
 	<div class="gotQuestion-inner">

@@ -51,10 +51,6 @@ Styles often need changing based on viewport size. For example, you might float 
 
 If you use semantic class names, then you can style them differently based on media queries making it easier to maintain.
 
-## Why? Because you get a performance bump!
-
-This is a *very* small benefit but when you have one class name per element, you end up with smaller HTML. With visual classes you end up with multiple class names per element and that can add up.
-
 ## Why? Because semantic class names are easier to find!
 
 If an element has classes based on how it looks such as `.red`, `clearfix` and `.pull-left`, then these classes will be scattered all over the codebase&mdash;so if you’re trying to hunt for a particular piece of HTML, the class name is not going to help you.
@@ -84,6 +80,10 @@ If you name something based on what it is, you won't have to touch the HTML agai
 ## Why? Because utility classes increase noise when debugging!
 
 When debugging an element, there will be several applicable CSS selectors making it noisey to debug.
+
+## Why? Because you get a performance bump!
+
+This is a *very* small benefit but when you have one class name per element, you end up with smaller HTML. With visual classes you end up with multiple class names per element and that can add up.
 
 ## Why? Because it breaks the reuse rule!
 
