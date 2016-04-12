@@ -26,7 +26,7 @@ a:focus {
 }
 
 a:active {
-	color: #39CCCC;
+	color: #f45b72;
 }
 
 /**********************************************************
@@ -53,7 +53,7 @@ a:active {
 **********************************************************/
 
 .header {
-	background-color: #eee;
+	background-color: #222;
 	padding: 20px;
 	overflow: hidden;
 }
@@ -80,6 +80,7 @@ a:active {
 
 .logo a {
 	text-decoration: none;
+	color: #fff;
 }
 
 /**********************************************************
@@ -101,6 +102,11 @@ a:active {
 	margin-left: 7px;
 	margin-right: 7px;
 	text-decoration: none;
+	color: #fff;
+}
+
+.navigation a:active {
+	color: #f45b72;
 }
 
 a.navigation-isActive {
@@ -260,7 +266,7 @@ a.navigation-isActive {
 .chapterNavigation {
 	font-size: 1.5em;
 	overflow: hidden;
-	background-color: #0D8E8E;
+	background-color: #f45b72;
 }
 
 .chapterNavigation-inner {
@@ -274,14 +280,12 @@ a.chapterNavigation-previous:link,
 a.chapterNavigation-previous:visited {
 	float: left;
 	text-decoration: none;
-	color: #fff;
 }
 
 a.chapterNavigation-next:link,
 a.chapterNavigation-next:visited {
 	float: right;
 	text-decoration: none;
-	color: #fff;
 }
 
 a.chapterNavigation-previous:active,
@@ -298,7 +302,7 @@ a.chapterNavigation-next:active {
 	padding-right: 20px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background-color: #ddd;
+	background-color: #f45b72;
 }
 
 @media(min-width: 600px) {
@@ -348,7 +352,7 @@ a.chapterNavigation-next:active {
 	text-decoration: none;
 	padding: 15px 70px;
 	font-size: 1.2em;
-	background-color: #0D8E8E;
+	background-color: #222;
 	color: #ffffff;
 	font-weight: bold;
 	letter-spacing: 0.04em;
@@ -359,7 +363,7 @@ a.chapterNavigation-next:active {
 }
 
 .hero-button:hover {
-	background-color: #086565;
+	background-color: #444;
 }
 
 /**********************************************************
@@ -424,20 +428,12 @@ a.chapterNavigation-next:active {
 
 .benefit-readNowButton:link,
 .benefit-readNowButton:visited {
-	/*border-radius: 30px;
-	border: 1px solid #000;
-	text-transform: uppercase;
-	text-decoration: none;
-	padding: 10px 30px;
-	font-size: 0.75em;
-	background-color: #fff;*/
-
 	border-radius: 30px;
 	text-transform: uppercase;
 	text-decoration: none;
 	padding: 15px 70px;
 	font-size: 1.2em;
-	background-color: #0D8E8E;
+	background-color: #222;
 	color: #ffffff;
 	font-weight: bold;
 	letter-spacing: 0.04em;
@@ -448,7 +444,7 @@ a.chapterNavigation-next:active {
 }
 
 .benefit-readNowButton:hover {
-	background-color: #086565;
+	background-color: #444;
 }
 
 /**********************************************************
