@@ -39,6 +39,11 @@ a:active {
 	overflow: hidden;
 }
 
+.footer-inner {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
 .footer p {
 	color: #fff;
 	font-size: 1.5em;
@@ -54,8 +59,13 @@ a:active {
 
 .header {
 	background-color: #222;
-	padding: 20px;
+}
+
+.header-inner {
 	overflow: hidden;
+	padding: 20px;
+	max-width: 700px;
+	margin: 0 auto;
 }
 
 /**********************************************************
@@ -80,7 +90,7 @@ a:active {
 
 .logo a {
 	text-decoration: none;
-	color: #fff;
+	color: #f45b72;
 }
 
 /**********************************************************
@@ -111,6 +121,7 @@ a:active {
 
 a.navigation-isActive {
 	font-weight: bold;
+	color: #f45b72;
 }
 
 /**********************************************************
@@ -271,7 +282,7 @@ a.navigation-isActive {
 
 .chapterNavigation-inner {
 	overflow: hidden;
-	max-width: 760px;
+	max-width: 700px;
 	padding: 20px;
 	margin: 0 auto;
 }
@@ -302,7 +313,7 @@ a.chapterNavigation-next:active {
 	padding-right: 20px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-	background-color: #f45b72;
+	background-color: #F9D4DA;
 }
 
 @media(min-width: 600px) {
@@ -452,7 +463,7 @@ a.chapterNavigation-next:active {
 **********************************************************/
 
 .chapters {
-	background-color: #ddd;
+	background-color: #F9D4DA;
 	padding-top: 40px;
 	padding-bottom: 40px;
 }

@@ -78,9 +78,9 @@ id: home
 
 {% include chapterList.html %}
 
-<div class="gotQuestion">
+<!-- <div class="gotQuestion">
 	<div class="gotQuestion-inner">
 		<h2>Got a question, issue or suggestion?</h2>
 		<p>Just <a href="http://github.com/adamsilver/maintainablecss.com/issues/new/">raise an issue for discussion</a> on Github.</p>
 	</div>
-</div>
+</div> -->
