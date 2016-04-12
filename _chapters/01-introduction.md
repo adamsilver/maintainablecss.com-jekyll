@@ -29,7 +29,7 @@ If you take one of the units away, the rest still works just fine. I don't need 
 
 ## Who is this for?
 
-If you have ever experienced any pain in maintaining CSS, this book can help you avoid common problems. Whether you're in a team of 1 or 100, I think you will find useful advice for modularising your CSS. EVen more so if your site is constantly evolving.
+If you have ever experienced pain in maintaining CSS, this book can help you avoid common problems. Whether you're in a team of 1 or 100, I think you will find useful advice in this book. Even more so if your site is constantly evolving.
 
 ## How hard is this to learn?
 
