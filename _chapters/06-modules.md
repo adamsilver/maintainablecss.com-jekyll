@@ -19,9 +19,9 @@ If you take one of the units away, the rest still works just fine. I don't need 
 
 A module is made up of components. Without the components, the module is incomplete or broken.
 
-For example a sofa is made up of the frame, upholstry, legs, cushions and back pillows. These are all required components to make the sofa function as designed.
+For example a sofa is made up of the frame, upholstry, legs, cushions and back pillows, all of which are required components to allow the sofa to function as designed.
 
-A logo *module* might consist of copy, an image and a link: each of which are components. Without the image, the logo is broken, without the link, the logo is incomplete.
+A logo *module* might consist of copy, an image and a link, each of which are components. Without the image the logo is broken, without the link the logo is incomplete.
 
 ## Modules vs components
 
@@ -29,13 +29,11 @@ Sometimes it can be tricky to decide whether something is a component or a modul
 
 Ultimately it doesn't matter too much and you can use your own experience to decide. For me, in a recent project it made sense for the logo to be a component of the header, and the navigation menu to be a module within the header.
 
-Regardless, *MaintainableCSS* doesn't force anything because it cannot understand *your* project requirements like you do. This point is addressed because sometimes we can get hung up on these things, but most of the time it is very clear what is what.
-
-And afterall, it's extremely is to switch HTML class names from the component convention to the module convention and vice versa.
+Ultimately, only you understand *your* project requirements and if you get this wrong, changing a component for a module or vice versa is a very easy thing to do.
 
 ## Creating a module
 
-Let's build a module together. We're going to build a simplified shopping basket which is made up of these components: a title and some products each of which contains a title and a remove button. Here is the HTML we might typically use:
+Let's build a module together. We're going to build a simplified shopping basket which is made up of a title and some products each of which contain the product title and a remove button. Here is the HTML we might typically use:
 
 	<div class="basket">
 		<h2 class="basket-title">Basket</h2>
@@ -58,14 +56,20 @@ And the selectors for that:
 	.basket-productTitle {}
 	.basket-removeButton {}
 
+That was straight forward.
+
 ## Creating a second version of a module
 
-Now, let's say that during the checkout process there is a similar (but different) cut down version of the basket&mdash;perhaps it has a title of "Order Summary" as opposed to "Your Basket". Perhaps it doesn't have the capability to remove products.
+Now, let's say that during the checkout process there is a similar, cut-down version of the basket&mdash;perhaps it has a title of "Order Summary" as opposed to "Your Basket". And perhaps it doesn't have the capability to remove products.
 
-What you might be tempted to do, is to try and reuse the basket. But as we discussed in the chapter about Reuse, this is problematic for many reasons.
+### Don't be tempted to reuse
 
-Additionally, your template or partial will require conditional logic within. The more condition you have, the more complicated it is to touch. And, whatever changes you make, might causes regression in *all* of the other places where it is used, making it hard to maintain.
+You might be tempted to try and reuse the basket, but as we have learnt in the chapter about Reuse, this is problematic for many reasons.
 
-Following the principle of duplication, it would be highly advised to create a brand new module. In a recent project, we named the module `.orderSummary` although interestingly it *looks* very similar to the basket it was a different module and trying to reuse styles would have caused pain.
+Additionally, your template or partial will require conditional logic to handle the differences. The more conditionality you have, the more complicated it is to touch. And, due to this conditionality, the changes you make to the template might cause regression in a condition you're not currently testing, making it harder to maintain.
 
-Notice how with the code above we have ended up with Semantic naming and encapsulated styles making this very easy to maintain, upgrade or AB test as and when required without fear of regression elsewhere.
+### Duplicate duplicate duplicate
+
+*MaintainableCSS* of course, advises to duplicate the module instead. In a recent project, I named the new version `.orderSummary`. There was similarities but just a few differences was enough to duplicate instead of the pain of trying to reuse.
+
+Finally, notice how with the CSS above, we have ended up with Semantic naming and encapsulated styles, making this very easy to maintain, upgrade or AB test, as and when required without fear of regression elsewhere.
