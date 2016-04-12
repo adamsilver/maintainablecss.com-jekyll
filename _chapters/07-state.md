@@ -13,9 +13,9 @@ Let's say a module is called *myModule*. You could apply an `isActive` class as 
 
 	<div class="myModule isActive"></div>
 
-But it is likely a state such as `isActive` is going to be used on many different modules, and what it means to be active likely manifests itself different depending on the module.
+But it is likely that `isActive` is going to be used in many different modules, and what it means to be active is different depending on the module, so this breaks the fundamental rules of *MaintainableCSS* i.e. it's not encapsulated to the module in question.
 
-For this reason this class actually breaks a fundamental rule of *MaintainableCSS* because we likely will inherit styles that weren't intended that way. So it's imperative that state is prefixed with the module name, just like components are...
+For this reason, state must be prefixed with the module (or component) it pertains to...
 
 ## Applying state to a module
 
@@ -26,13 +26,9 @@ So let's say our module is called *myModule*.
 Here are some states we might need to apply to `myModule`.
 
 	.myModule-isDisabled {}
-
 	.myModule-isActive {}
-
 	.myModule-hasProducts {}
-
 	.myModule-isHidden {}
-
 	.myModule-isLoading {}
 
 And the HTML needs to be as follows:
@@ -48,3 +44,5 @@ If you wanted to apply state to to just the *title* component, then you would ap
 	<div class="myModule">
 		<p class="myModule-title myModule-isDisabled">The title</p>
 	</div>
+
+Phew, that was easy.
