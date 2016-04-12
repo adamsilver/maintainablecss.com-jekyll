@@ -260,7 +260,7 @@ a.navigation-isActive {
 .chapterNavigation {
 	font-size: 1.5em;
 	overflow: hidden;
-	background-color: #39CCCC;
+	background-color: #0D8E8E;
 }
 
 .chapterNavigation-inner {
@@ -270,14 +270,18 @@ a.navigation-isActive {
 	margin: 0 auto;
 }
 
-.chapterNavigation-previous {
+a.chapterNavigation-previous:link,
+a.chapterNavigation-previous:visited {
 	float: left;
 	text-decoration: none;
+	color: #fff;
 }
 
-.chapterNavigation-next {
+a.chapterNavigation-next:link,
+a.chapterNavigation-next:visited {
 	float: right;
 	text-decoration: none;
+	color: #fff;
 }
 
 .chapterNavigation-previous:active,
