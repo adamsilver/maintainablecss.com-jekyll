@@ -37,7 +37,7 @@ It's not clear at all *what* this HTML represents. You *might* have an idea of w
 	<div class="product"></div>
 	<div class="searchResults"></div>
 
-Here I know exactly what I am looking at. I know the intention of what this HTML represents. And I have no idea how it looks&mdash;that's what CSS is responsible for.
+Here I know exactly what I am looking at. I know the intention of what this HTML represents. And I have no idea how it looks&mdash;that's what CSS is responsible for. Semantic class names mean something to both HTML *and* CSS.
 
 So **why** else should we use semantic class names?
 
