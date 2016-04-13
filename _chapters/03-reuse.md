@@ -39,6 +39,12 @@ Take `red`. Does this mean a red background? Does this mean red text? Does this 
 
 This sounds good but it isn't. You end up applying changes where you didn't mean to. Think regression. Alternatively, you end up scared to touch this utility class so you end up with `.red2`. Then you end up with redundant code. Obviously this is not fun to maintain.
 
+## Why? Because non-semantic class names are hard to find!
+
+If an element has classes based on how it looks such as `.red`, `caret` and `.large`, then these classes will be scattered all over the codebase so searching for "red" will yield many results across the HTML templates. 
+
+If you use semantic class names, a search should yield just one result. And if it yields more than one result, then this should indicate a problem that needs dealing with.
+
 ## What if I really want to reuse a style?
 
 It is extremely rare, but there are times when it really does make sense to reuse a style. In this case use the comma in your selectors and place it in a well named file.
