@@ -13,11 +13,11 @@ If you don't repeat yourself, then you break semantics. Go read that chapter.
 
 ## Why? Because reuse causes bloat!
 
-If you don't repeat yourself you'll end up with classes such as: red, clearfix, pull-left, grid which leads to HTML bloat:
+If you attempt to reuse every single *rule* you'll end up with classes such as: `red`, `clearfix`, `pull-left`, `grid` which leads to HTML bloat:
 
 	<div class="clearfix pull-left red etc"></div>
 
-Bloat makes it harder to maintain, and degrades performance.
+Bloat makes it harder to maintain and degrades performance.
 
 ## Why? Because reuse makes debugging more difficult
 
