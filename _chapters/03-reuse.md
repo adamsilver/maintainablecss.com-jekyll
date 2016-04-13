@@ -41,7 +41,7 @@ This sounds good but it isn't. You end up applying changes where you didn't mean
 
 ## Why? Because non-semantic class names are hard to find!
 
-If an element has classes based on how it looks such as `.red`, `caret` and `.large`, then these classes will be scattered all over the codebase so searching for "red" will yield many results across the HTML templates. 
+If an element has classes based on how it looks such as `.red`, `.col-lg-4` and `.large`, then these classes will be scattered all over the codebase so searching for "red" will yield many results across the HTML templates. 
 
 If you use semantic class names, a search should yield just one result. And if it yields more than one result, then this should indicate a problem that needs dealing with.
 
