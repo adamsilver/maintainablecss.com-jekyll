@@ -4,6 +4,9 @@ id: home
 ---
 
 <div class="hero">
+
+	<img src="/assets/img/logo.png" width="231" height="46">
+
 	<h1>MaintainableCSS</h1>
 	<p>Write CSS without worrying that overzealous, pre-existing styles will cause problems. <em>MaintainableCSS</em> is an approach to writing <em>modular</em>, <em>scalable</em> and of course, <em>maintainable</em> CSS.</p>
 	<a class="hero-button" href="/chapters/introduction/">Read now</a>
