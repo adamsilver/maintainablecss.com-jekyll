@@ -13,11 +13,11 @@ If you don't repeat yourself, then you break semantics. Go read that chapter.
 
 ## Why? Because reuse causes bloat!
 
-If you don't repeat yourself you'll end up with classes such as: red, clearfix, pull-left, grid which leads to HTML bloat:
+If you attempt to reuse every single *rule* you'll end up with classes such as: `red`, `clearfix`, `pull-left`, `grid` which leads to HTML bloat:
 
 	<div class="clearfix pull-left red etc"></div>
 
-Bloat makes it harder to maintain, and degrades performance.
+Bloat makes it harder to maintain and degrades performance.
 
 ## Why? Because reuse makes debugging more difficult
 
@@ -38,6 +38,12 @@ Take `red`. Does this mean a red background? Does this mean red text? Does this 
 ## Why? Because updating a "utility" class applies to all instances.
 
 This sounds good but it isn't. You end up applying changes where you didn't mean to. Think regression. Alternatively, you end up scared to touch this utility class so you end up with `.red2`. Then you end up with redundant code. Obviously this is not fun to maintain.
+
+## Why? Because non-semantic class names are hard to find!
+
+If an element has classes based on how it looks such as `.red`, `.col-lg-4` and `.large`, then these classes will be scattered all over the codebase so searching for "red" will yield many results across the HTML templates. 
+
+If you use semantic class names, a search should yield just one result. And if it yields more than one result, then this should indicate a problem that needs dealing with.
 
 ## What if I really want to reuse a style?
 
