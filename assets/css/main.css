@@ -299,6 +299,10 @@ a.navigation-isActive {
 	background-color: #7FDBFF;
 }
 
+.chapterNavigation-last {
+	margin-bottom: 10px;
+}
+
 .chapterNavigation-inner {
 	overflow: hidden;
 	max-width: 700px;
