@@ -80,7 +80,7 @@ a:focus {
 	font-weight: bold;
 }
 
-@media(min-width: 320px) {
+@media(min-width: 280px) {
 	.logo {
 		float: left;
 		margin-bottom: 0;
@@ -103,7 +103,7 @@ a:focus {
 	text-align: center;
 }
 
-@media(min-width: 320px) {
+@media(min-width: 280px) {
 	.navigation {
 		float: right;
 		margin-top: 10px;
@@ -357,6 +357,10 @@ a.chapterNavigation-next:active {
 .hero img {
 	display: block;
 	margin: 0 auto 40px;
+	max-width: 350px;
+	min-width: 250px;
+	width: 100%;
+	height: auto;
 }
 
 .hero h1 {
