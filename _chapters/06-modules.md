@@ -3,6 +3,7 @@ layout: chapter
 title: Modules
 section: Core
 permalink: /chapters/modules/
+description: Learn the differences between, modules and components. Included is a walkthrough of how to build your first module.
 ---
 
 ## What's a module?

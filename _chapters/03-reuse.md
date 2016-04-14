@@ -3,6 +3,7 @@ layout: chapter
 title: Reuse
 section: Background
 permalink: /chapters/reuse/
+description: Learn why striving to reuse styles is a futile when it comes to CSS.
 ---
 
 **Summary:** *Don't* try and reuse CSS rules. Take a duplication-first approach instead.
