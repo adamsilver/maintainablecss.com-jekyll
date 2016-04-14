@@ -1,4 +1,4 @@
-<div class="chapterNavigation">
+<div class="chapterNavigation {% if include.last %}chapterNavigation-last {% endif %}">
 	<div class="chapterNavigation-inner">
 		{% if page.previous %}
 			<a class="chapterNavigation-previous" href="{{page.previous.url}}">&larr; Previous: {{page.previous.title}}</a>

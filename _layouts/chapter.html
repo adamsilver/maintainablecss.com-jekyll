@@ -11,16 +11,7 @@
 			<h1>{{page.title }}</h1>
            	{{ content }}
         </div>
-        <div class="chapterNavigation chapterNavigation-last">
-			<div class="chapterNavigation-inner">
-				{% if page.previous %}
-					<a class="chapterNavigation-previous" href="{{page.previous.url}}">&larr; Previous: {{page.previous.title}}</a>
-				{% endif %}
-				{% if page.next %}
-					<a class="chapterNavigation-next" href="{{page.next.url}}">Next: {{page.next.title}} &rarr;</a>
-				{% endif %}
-			</div>
-		</div>
+        {% include chapterNavigation.html last=true %}
         {% include chapterList.html %}
         {% include footer.html %}
 	</body>
