@@ -323,6 +323,18 @@ a.chapterNavigation-next:active {
 	color: #000;
 }
 
+.chapterNavigation-label {
+	position: absolute;
+	left: -999em;
+}
+
+@media(min-width: 360px) {
+	.chapterNavigation-label {
+		position: static;
+		left: auto;
+	}
+}
+
 /**********************************************************
 * Hero
 **********************************************************/
