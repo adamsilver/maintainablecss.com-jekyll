@@ -595,3 +595,34 @@ a.chapterNavigation-next:active {
 .chaptersContentWrapper {
 	background-color: #7FDBFF;
 }
+
+/**********************************************************
+* Share
+**********************************************************/
+
+.share {
+	padding-bottom: 60px;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.share-button:link,
+.share-button:visited {
+	border-radius: 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 12px 30px;
+	font-size: 1.1em;
+	background-color: #001F3F;
+	color: #ffffff;
+	font-weight: bold;
+	letter-spacing: 0.04em;
+	width: 150px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.share-button:hover {
+	background-color: #00162D;
+	color: #7FDBFF;
+}
