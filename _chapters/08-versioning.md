@@ -3,7 +3,7 @@ layout: chapter
 title: Versioning
 section: Extras
 permalink: /chapters/versioning/
-description: Learn how MaintainableCSS makes it really easy to upgrade modules, and AB test different module variants with this short guide.
+description: Learn how MaintainableCSS makes it really easy to upgrade and AB test modules for websites that are rapidly evolving.
 ---
 
 Sometimes versioning modules can be helpful when the features of a website evolve over time. For example you may want to A/B test two versions of a module to see what performs better. Or the website might be going through a brand refresh.

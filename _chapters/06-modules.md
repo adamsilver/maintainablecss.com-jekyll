@@ -3,7 +3,7 @@ layout: chapter
 title: Modules
 section: Core
 permalink: /chapters/modules/
-description: Learn the differences between, modules and components. Included is a walkthrough of how to build your first module.
+description: Learn the differences between modules and components and how to identify them in a design. We'll also code up some example modules together.
 ---
 
 ## What's a module?
