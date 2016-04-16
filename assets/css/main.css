@@ -53,7 +53,7 @@ a:focus {
 **********************************************************/
 
 .header {
-	background-color: #fff;
+	background-color: #eee;
 }
 
 .header-inner {
@@ -124,6 +124,7 @@ a:focus {
 	}
 }
 
+.navigation a:hover,
 .navigation a:active {
 	color: #7FDBFF;
 }
@@ -320,6 +321,8 @@ a.chapterNavigation-next:visited {
 	color: #fff;
 }
 
+a.chapterNavigation-previous:hover,
+a.chapterNavigation-next:hover,
 a.chapterNavigation-previous:active,
 a.chapterNavigation-next:active {
 	color: #7FDBFF;
@@ -601,9 +604,6 @@ a.chapterNavigation-next:active {
 	}
 }
 
-.chaptersContentWrapper {
-	background-color: #7FDBFF;
-}
 
 /**********************************************************
 * Share
