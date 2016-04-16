@@ -292,7 +292,7 @@ a.navigation-isActive {
 .chapterNavigation {
 	font-size: 1.5em;
 	overflow: hidden;
-	background-color: #7FDBFF;
+	background-color: #001F3F;
 }
 
 .chapterNavigation-last {
@@ -310,17 +310,19 @@ a.chapterNavigation-previous:link,
 a.chapterNavigation-previous:visited {
 	float: left;
 	text-decoration: none;
+	color: #fff;
 }
 
 a.chapterNavigation-next:link,
 a.chapterNavigation-next:visited {
 	float: right;
 	text-decoration: none;
+	color: #fff;
 }
 
 a.chapterNavigation-previous:active,
 a.chapterNavigation-next:active {
-	color: #000;
+	color: #7FDBFF;
 }
 
 .chapterNavigation-label {
