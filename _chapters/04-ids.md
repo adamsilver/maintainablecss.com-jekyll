@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: Using IDs
+title: IDs
 section: Background
 permalink: /chapters/ids/
 description: Learn why using IDs as hooks for styling are problematic and what you should do instead.
