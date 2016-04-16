@@ -3,6 +3,7 @@ layout: chapter
 title: Introduction
 section: Preface
 permalink: /chapters/introduction/
+description: An introduction to MaintainableCSS, an approach to writing modular, scalable and of course maintainable CSS.
 ---
 
 *MaintainableCSS* is an approach to architecting and writing CSS that helps you and your team write modular, scalable and maintainable code.

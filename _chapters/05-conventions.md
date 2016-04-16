@@ -3,6 +3,7 @@ layout: chapter
 title: Conventions
 section: Core
 permalink: /chapters/conventions/
+description: Learn the simple conventions that MaintainableCSS employs to write modules, components and state.
 ---
 
 Conventions can be a bone of contention amongst engineers, but what matters most is readability and consistency. With that said, *MaintainableCSS* has the following convention:
