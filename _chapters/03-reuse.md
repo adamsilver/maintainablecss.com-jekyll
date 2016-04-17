@@ -96,6 +96,14 @@ To mitigate, you can make mixins really granular. For example you could have a "
 
 If you need to update it in multiple places, then a search and replace will do it. And even if you did use a mixin, when red changes to orange, you will have to do a search and replace anyway.
 
+## What about performance?
+
+I don't have stats to hand, but I can very confidently say that it's not wise to practice premature optimisation. Let's say you have a very large CSS codebase (100kb).
+
+Firstly, I *guess* you *might* save yourself a few KB. Secondly, there are alternative paths to improving performance and thirdly, you probably have redundant code due to a lack of maintainability.
+
+Also consider that one or two images are likely to be far larger than the entire CSS so exerting energy here is probably of little value.
+
 ## Final thoughts on reuse
 
 Reuse and DRY are such important principles in software engineering but when it comes to CSS, it ironically makes maintainance harder. Avoid trying to reuse style rules and gain the benefits of easy to maintain CSS.
