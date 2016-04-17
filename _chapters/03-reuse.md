@@ -6,7 +6,7 @@ permalink: /chapters/reuse/
 description: Learn why avoding reuse and embracing repetition makes CSS maintenance easier.
 ---
 
-**Summary:** Embrace repetition. Don't try and reuse styles rules.
+**Summary:** Embrace repetition. Don't try and reuse styles.
 
 ## Why? Because reuse breaks semantics!
 
@@ -30,7 +30,29 @@ If you're going to do `<div class="red">` you may as will do `<div style="color:
 
 ## Why? Because styles change based on breakpoints.
 
-We build responsive sites. This means sometimes styles change based on viewport size. Sometimes something floats on big screens and not on small screens. So if you have a class called `clearfix` but you don't clear on small screens, then we now have misleading code.
+Building responsive sites mean that we style elements differently based on viewport size. Imagine trying to build a 2 column grid that:
+
+- has 50px and 20px padding on large and small screens respectively.
+- has 3em and 2em font-size on large and small screens respectively.
+- on small screens each column is stacked below each other. Note: "column" is now misleading.
+
+With this in mind how can you utilise these atomic class names: `.grid`, `.col`, `.pd50`, `.pd20`, `.fs2` and `fs3` and achieve these specs?
+
+	<div class="grid">
+	  <div class="col pd50 pd20 fs3 fs2">Column 1</div>
+	  <div class="col pd50 pd20 fs3 fs2">Column 2</div>
+	</div>
+
+You can see this just isn't going to work. You now need some crazy class names such as `fontSize3emWhenViewportIsLarge`. Are you feeling nauseous yet?
+
+Alternative take the following semantic mark-up that doesn't attempt to reuse styles:
+
+	<div class="someModule">
+	  <div class="someModule-someComponent"></div>
+	  <div class="someModule-someOtherComponent"></div>
+	</div>
+
+Ensuring this is styled as above is now a simple task with 6 CSS declarations needed in total, 3 of which reside within media queries.
 
 ## Why? Because visual class names don't hold enough meaning.
 
