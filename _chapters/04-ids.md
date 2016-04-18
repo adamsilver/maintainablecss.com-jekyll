@@ -8,7 +8,9 @@ description: Learn why using IDs as hooks for styling are problematic and what y
 
 **Summary:** *Don't* use IDs as hooks for styling.
 
-## Why? Because of specificity!
+**Why** shouldn't we use IDs for CSS?
+
+## Because of specificity issues.
 
 [IDs overpower class names](http://www.w3.org/TR/css3-selectors/#specificity) by orders of magnitude. For this reason you can't override an ID selector's style with a class name selector easily.
 

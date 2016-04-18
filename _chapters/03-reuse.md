@@ -6,13 +6,15 @@ permalink: /chapters/reuse/
 description: Learn why avoding reuse and embracing repetition makes CSS maintenance easier.
 ---
 
-**Summary:** Embrace repetition. Don't try and reuse styles.
+**Summary:** Don't try and reuse styles. Adopt a duplication-first approach.
 
-## Why? Because reuse breaks semantics.
+**Why** is attempting to reuse styles so problematic?
+
+## Because reuse breaks semantics.
 
 If you don't repeat yourself, then you break semantics. Go read that chapter.
 
-## Why? Because reuse causes bloat.
+## Because reuse causes bloat.
 
 If you attempt to reuse every single *rule* you'll end up with classes such as: `red`, `clearfix`, `pull-left`, `grid` which leads to HTML bloat:
 
@@ -20,15 +22,15 @@ If you attempt to reuse every single *rule* you'll end up with classes such as: 
 
 Bloat makes it harder to maintain and degrades performance.
 
-## Why? Because reuse makes debugging more difficult.
+## Because reuse makes debugging more difficult.
 
 When debugging an element, there will be several applicable CSS selectors playing a part making it noisey.
 
-## Why? Because granular styles aren't worth bothering with.
+## Because granular styles aren't worth bothering with.
 
 If you're going to do `<div class="red">` you may as will do `<div style="color: red"` which is more explicit anyway. But we don't want to do this because we don't want to mix concerns!
 
-## Why? Because styles change based on breakpoints.
+## Because styles change based on breakpoints.
 
 Building responsive sites mean that we style elements differently based on viewport size. Imagine trying to build a 2 column grid that:
 
@@ -54,15 +56,15 @@ Alternatively, take the following semantic mark-up that doesn't attempt to reuse
 
 Ensuring this is styled as specified above, is now a simple task with 6 CSS declarations needed in total, 3 of which reside within media queries.
 
-## Why? Because visual class names don't hold enough meaning.
+## Because visual class names don't hold much meaning.
 
 Take `red`. Does this mean a red background? Does this mean red text? Does this mean a red gradient? What tint of red does this mean?
 
-## Why? Because updating a "utility" class applies to all instances.
+## Because updating a "utility" class applies to all instances.
 
 This sounds good but it isn't. You end up applying changes where you didn't mean to. Think regression. Alternatively, you end up scared to touch this utility class so you end up with `.red2`. Then you end up with redundant code. Obviously this is not fun to maintain.
 
-## Why? Because non-semantic class names are hard to find.
+## Because non-semantic class names are hard to find.
 
 If an element has classes based on how it looks such as `.red`, `.col-lg-4` and `.large`, then these classes will be scattered all over the codebase so searching for "red" will yield many results across the HTML templates.
 
