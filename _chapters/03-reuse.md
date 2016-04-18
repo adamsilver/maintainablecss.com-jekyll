@@ -45,7 +45,7 @@ With this in mind how can you utilise these atomic class names: `.grid`, `.col`,
 
 You can see this just isn't going to work. You now need some crazy class names such as `fs3large`. This is just the tip of iceberg when it comes to maintainance issues.
 
-Alternative take the following semantic mark-up that doesn't attempt to reuse styles:
+Alternatively, take the following semantic mark-up that doesn't attempt to reuse styles:
 
 	<div class="someModule">
 	  <div class="someModule-someComponent"></div>
