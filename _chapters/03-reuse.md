@@ -106,7 +106,7 @@ Firstly, I *guess* you *might* save yourself a few KB. Secondly, there are alter
 
 Also consider that one or two images are likely to be far larger than the entire CSS so exerting energy here is probably of little value.
 
-## Is this in violating DRY principles?
+## Is this violating DRY principles?
 
 Attempting to reuse `float: left` as an example is akin to trying to reuse variable names in different Javascript objects. It's simply not in violation of DRY.
 
