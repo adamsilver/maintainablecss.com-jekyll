@@ -8,11 +8,11 @@ description: Learn why avoding reuse and embracing repetition makes CSS maintena
 
 **Summary:** Embrace repetition. Don't try and reuse styles.
 
-## Why? Because reuse breaks semantics!
+## Why? Because reuse breaks semantics.
 
 If you don't repeat yourself, then you break semantics. Go read that chapter.
 
-## Why? Because reuse causes bloat!
+## Why? Because reuse causes bloat.
 
 If you attempt to reuse every single *rule* you'll end up with classes such as: `red`, `clearfix`, `pull-left`, `grid` which leads to HTML bloat:
 
@@ -24,7 +24,7 @@ Bloat makes it harder to maintain and degrades performance.
 
 When debugging an element, there will be several applicable CSS selectors playing a part making it noisey.
 
-## Why? Because granular styles aren't worth bothering with!
+## Why? Because granular styles aren't worth bothering with.
 
 If you're going to do `<div class="red">` you may as will do `<div style="color: red"` which is more explicit anyway. But we don't want to do this because we don't want to mix concerns!
 
@@ -62,7 +62,7 @@ Take `red`. Does this mean a red background? Does this mean red text? Does this 
 
 This sounds good but it isn't. You end up applying changes where you didn't mean to. Think regression. Alternatively, you end up scared to touch this utility class so you end up with `.red2`. Then you end up with redundant code. Obviously this is not fun to maintain.
 
-## Why? Because non-semantic class names are hard to find!
+## Why? Because non-semantic class names are hard to find.
 
 If an element has classes based on how it looks such as `.red`, `.col-lg-4` and `.large`, then these classes will be scattered all over the codebase so searching for "red" will yield many results across the HTML templates.
 
