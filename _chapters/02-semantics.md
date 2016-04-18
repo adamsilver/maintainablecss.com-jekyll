@@ -62,7 +62,7 @@ On the other hand, if your class names are semantic, a search will find the HTML
 
 If you have utility non-semantic classes that describe the look then when you edit one of these classes, they will propogate to every single element with that class. Knowing CSS as you do, do you feel comfortable that the propagation didn't cause unexpected problems elsewhere?
 
-Semantic class names are unique, so when editing one, you *can* feel comfortable that your change only applies to the modulein question as you intended, making maintainance easier.
+Semantic class names are unique, so when editing one, you *can* feel comfortable that your change only applies to the module in question as you intended, making maintainance easier.
 
 ## Why? Because you don't want to be afraid to update code!
 
