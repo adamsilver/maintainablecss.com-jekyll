@@ -20,7 +20,7 @@ If you attempt to reuse every single *rule* you'll end up with classes such as: 
 
 Bloat makes it harder to maintain and degrades performance.
 
-## Why? Because reuse makes debugging more difficult
+## Why? Because reuse makes debugging more difficult.
 
 When debugging an element, there will be several applicable CSS selectors playing a part making it noisey.
 
