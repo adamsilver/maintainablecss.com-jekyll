@@ -106,6 +106,10 @@ Firstly, I *guess* you *might* save yourself a few KB. Secondly, there are alter
 
 Also consider that one or two images are likely to be far larger than the entire CSS so exerting energy here is probably of little value.
 
+## Is this in violating DRY principles?
+
+Attempting to reuse `float: left` as an example is akin to trying to reuse variable names in different Javascript objects. It's simply not in violation of DRY.
+
 ## Final thoughts on reuse
 
 Reuse and DRY are such important principles in software engineering but when it comes to CSS, it ironically makes maintainance harder. Avoid trying to reuse style rules and gain the benefits of easy to maintain CSS.
