@@ -88,7 +88,7 @@ Remember though that if any selector deviates, even a little bit, then remove it
 
 CSS preprocessors allow you to create mixins which sound great and seemingly appear to give you the best of both worlds.
 
-However, you have to be very careful to update a mixin because it propagates in all instances just like utility classes. You become scared to touch and then you create new mixins that are slightly different causing redundancy and maintainance problems.
+However, you have to be very careful to update a mixin because it propagates in all instances just like utility classes. You become scared to touch and then you create new mixins that are slightly different causing redundancy and maintenance problems.
 
 Also, mixins can become very complicated with lots of params, conditionality and large declarations of styles. All of this makes it complicated and complicated is hard to maintain.
 
@@ -98,7 +98,7 @@ If you need to update it in multiple places, then a search and replace will do i
 
 ## What about performance?
 
-I don't have stats to hand, but I can very confidently say that it's not wise to practice premature optimisation. Let's say you have a very large CSS codebase (100kb).
+I don't have stats to hand, but I can very confidently say that it's not wise to practice premature optimization. Let's say you have a very large CSS codebase (100kb).
 
 Firstly, I *guess* you *might* save yourself a few KB. Secondly, there are alternative paths to improving performance and thirdly, you probably have redundant code due to a lack of maintainability.
 
@@ -106,4 +106,4 @@ Also consider that one or two images are likely to be far larger than the entire
 
 ## Final thoughts on reuse
 
-Reuse and DRY are such important principles in software engineering but when it comes to CSS, it ironically makes maintainance harder. Avoid trying to reuse style rules and gain the benefits of easy to maintain CSS.
+Reuse and DRY are such important principles in software engineering but when it comes to CSS, it ironically makes maintenance harder. Avoid trying to reuse style rules and gain the benefits of easy to maintain CSS.
