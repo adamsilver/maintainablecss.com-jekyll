@@ -52,7 +52,7 @@ Alternatively, take the following semantic mark-up that doesn't attempt to reuse
 	  <div class="someModule-someOtherComponent"></div>
 	</div>
 
-Ensuring this is styled as above is now a simple task with 6 CSS declarations needed in total, 3 of which reside within media queries.
+Ensuring this is styled as specified above, is now a simple task with 6 CSS declarations needed in total, 3 of which reside within media queries.
 
 ## Why? Because visual class names don't hold enough meaning.
 
