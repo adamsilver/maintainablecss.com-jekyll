@@ -624,8 +624,8 @@ a.chapterNavigation-next:active {
 	text-decoration: none;
 	padding: 12px 30px;
 	font-size: 1.1em;
-	background-color: #001F3F;
-	color: #ffffff;
+	color: #001F3F;
+	background-color: #eee;
 	font-weight: bold;
 	letter-spacing: 0.04em;
 	width: 150px;
@@ -634,6 +634,5 @@ a.chapterNavigation-next:active {
 }
 
 .share-button:hover {
-	background-color: #00162D;
-	color: #7FDBFF;
+	background-color: #7FDBFF;
 }
