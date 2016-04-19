@@ -28,7 +28,7 @@ When debugging an element, there will be several applicable CSS selectors playin
 
 ## Because granular styles aren't worth bothering with.
 
-If you're going to do `<div class="red">` you may as will do `<div style="color: red"` which is more explicit anyway. But we don't want to do this because we don't want to mix concerns!
+If you're going to do `<div class="red">` you may as will do `<div style="color: red"` which is more explicit anyway. But we don't want to do this because we don't want to mix concerns.
 
 ## Because styles change based on breakpoints.
 
@@ -96,11 +96,11 @@ Also, mixins can become very complicated with lots of params, conditionality and
 
 To mitigate, you can make mixins really granular. For example you could have a "red text" mixin which is certainly better. But then again, the declaration of that mixin is basically the same as a declaration of red text. Might as well just declare that instead.
 
-If you need to update it in multiple places, then a search and replace will do it. And even if you did use a mixin, when red changes to orange, you will have to do a search and replace anyway.
+If you need to update it in multiple places, then a search and replace will do it. And even if you did use a mixin, when red changes to orange, you will have to do a search and replace anyway, because the mixin name will otherwise be misleading.
 
 ## What about performance?
 
-I don't have stats to hand, but I can very confidently say that it's not wise to practice premature optimisation. Let's say you have a very large CSS codebase (100kb).
+I don't have stats to hand, but I can very confidently say that it's not wise to practice premature optimisation. Let's say you have a very large CSS codebase (100KB or more).
 
 Firstly, I *guess* you *might* save yourself a few KB. Secondly, there are alternative paths to improving performance and thirdly, you probably have redundant code due to a lack of maintainability.
 
@@ -108,7 +108,7 @@ Also consider that one or two images are likely to be far larger than the entire
 
 ## Is this violating DRY principles?
 
-Attempting to reuse `float: left` as an example is akin to trying to reuse variable names in different Javascript objects. It's simply not in violation of DRY.
+Attempting to reuse `float: left` as an example, is akin to trying to reuse variable names in different Javascript objects. It's simply not in violation of DRY.
 
 ## Final thoughts on reuse
 

@@ -30,7 +30,7 @@ Try and spot the difference between non-semantic and semantic class names...
 	<div class="grid row"></div>
 	<div class="col-xs-4"></div>
 
-It's not clear at all *what* this HTML represents. You *might* have an idea of what these things *look like* but that is all.
+It's not clear at all *what* this HTML represents. You *might* have an *idea* of what these things *look like* (on small or large screens) but that is all.
 
 	<!-- good -->
 	<div class="header"></div>
@@ -62,7 +62,7 @@ On the other hand, if your class names are semantic, a search will find the HTML
 
 If you have utility non-semantic classes that describe the look then when you edit one of these classes, they will propogate to every single element with that class. Knowing CSS as you do, do you feel comfortable that the propagation didn't cause unexpected problems elsewhere?
 
-Semantic class names are unique, so when editing one, you *can* feel comfortable that your change only applies to the modulein question as you intended, making maintainance easier.
+Semantic class names are unique, so when editing one, you *can* feel comfortable that your change only applies to the module in question as you intended, making maintainance easier.
 
 ## Because you don't want to be afraid to update code.
 
