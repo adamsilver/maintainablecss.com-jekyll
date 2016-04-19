@@ -56,6 +56,12 @@ Alternatively, take the following semantic mark-up that doesn't attempt to reuse
 
 Ensuring this is styled as specified above, is now a simple task with 6 CSS declarations needed in total, 3 of which reside within media queries.
 
+## Because styles change based on states.
+
+How do you make `<a class="padding-left-20 red" href="#"></a>` to have padding 18px, a slight border, a background of grey and a text colour as a slightly darker shade of red when it's hovered or focused of active i.e. `:hover`,`:focus`, `:active` etc?
+
+The short answer is you can't. Try to avoid having to fix self-induced problems.
+
 ## Because visual class names don't hold much meaning.
 
 Take `red`. Does this mean a red background? Does this mean red text? Does this mean a red gradient? What tint of red does this mean?
