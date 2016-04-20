@@ -89,7 +89,7 @@ For example let's say you wanted a bunch of different modules or components to h
 	/* red text */
 	.someSelector,
 	.someOtherSelector {
-		colour: red;
+		color: red;
 	}
 
 Remember though that if any selector deviates, even a little bit, then remove it from the common list and duplicate. You must be very careful with something like this. Do it for convenience, not for performance. Your mileage may vary.
