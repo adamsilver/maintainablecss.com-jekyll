@@ -8,7 +8,7 @@ description: Learn why avoding reuse and embracing repetition makes CSS maintena
 
 **Summary:** Don't try and reuse styles. Adopt a duplication-first approach.
 
-It's funny, DRY is a cornerstone of best practice engineering, but mindlessly striving to reuse the bits *inbetween* the curly braces, is very problematic. Here's why:
+Don't take this the wrong way&mdash;MaintainableCSS has various strategies for reuse which I will talk about later. But trying to reuse the bits *inbetween* the curly braces is very problematic indeed. Here's why:
 
 ## Because reuse breaks semantics.
 
