@@ -72,9 +72,11 @@ This sounds good but it isn't. You end up applying changes where you didn't mean
 
 ## Because non-semantic class names are hard to find.
 
-If an element has classes based on how it looks such as `.red`, `.col-lg-4` and `.large`, then these classes will be scattered all over the codebase so searching for "red" will yield many results across the HTML templates.
+If an element has classes based on how it looks such as `.red`, `.col-lg-4` and `.large`, then these classes will be scattered all over the codebase so searching for "red" will yield many results across the HTML templates, making it hard to find the element in question.
 
 If you use semantic class names, a search should yield just one result. And if it yields more than one result, then this should indicate a problem that needs dealing with.
+
+Note: if you have a repeated *component* within a module, then searching might yield several results within 1 file. That is, a module being reusable would typically have one template.
 
 ## What if I really want to reuse a style?
 
