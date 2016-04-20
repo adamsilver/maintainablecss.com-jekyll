@@ -76,7 +76,7 @@ If an element has classes based on how it looks such as `.red`, `.col-lg-4` and 
 
 If you use semantic class names, a search should yield just one result. And if it yields more than one result, then this should indicate a problem that needs dealing with.
 
-Note: if you have a repeated *component* within a module, then searching might yield several results within 1 file. That is, a module being reusable would typically have one template.
+Note: if you have a repeated *component* within a module, then searching might yield several results within 1 file. That is, a module would typically live in a single template.
 
 ## What if I really want to reuse a style?
 
