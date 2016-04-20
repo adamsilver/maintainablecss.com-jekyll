@@ -12,7 +12,7 @@ Don't take this the wrong way&mdash;MaintainableCSS has various strategies for r
 
 ## Because reuse breaks semantics.
 
-If you stive to reuse the bits inbetween the curly braces to create "atomic" class names, then you encounter all the problems stated in the chapter about [Semantics](/chapters/semantics/). Go read that chapter now, if you haven't already.
+If you strive to reuse the bits inbetween the curly braces to create "atomic" class names, then you encounter all the problems stated in the chapter about [Semantics](/chapters/semantics/). Go read that chapter now, if you haven't already.
 
 ## Because reuse causes bloat.
 
