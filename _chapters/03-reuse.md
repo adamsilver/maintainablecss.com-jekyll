@@ -45,7 +45,7 @@ With this in mind how can you utilise these atomic class names: `.grid`, `.col`,
 	  <div class="col pd50 pd20 fs3 fs2">Column 2</div>
 	</div>
 
-You can see this just isn't going to work. You now need some crazy class names such as `fs3large`. This is just the tip of iceberg when it comes to maintainance issues.
+You can see this just isn't going to work. You now need some crazy class names such as `fs3large`. This is just the tip of iceberg when it comes to maintenance issues.
 
 Alternatively, take the following semantic mark-up that doesn't attempt to reuse styles:
 
@@ -98,7 +98,7 @@ Remember though that if any selector deviates, even a little bit, then remove it
 
 CSS preprocessors allow you to create mixins which sound great and seemingly appear to give you the best of both worlds.
 
-However, you have to be very careful to update a mixin because it propagates in all instances just like utility classes. You become scared to touch and then you create new mixins that are slightly different causing redundancy and maintainance problems.
+However, you have to be very careful to update a mixin because it propagates in all instances just like utility classes. You become scared to touch and then you create new mixins that are slightly different causing redundancy and maintenance problems.
 
 Also, mixins can become very complicated with lots of params, conditionality and large declarations of styles. All of this makes it complicated and complicated is hard to maintain.
 
