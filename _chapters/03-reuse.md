@@ -28,7 +28,7 @@ When debugging an element, there will be several applicable CSS selectors playin
 
 ## Because granular styles aren't worth bothering with.
 
-If you're going to do `<div class="red">` you may as well do `<div style="color: red"` which is more explicit anyway. But we don't want to do this because we don't want to mix concerns.
+If you're going to do `<div class="red">` you may as well do `<div style="color: red">` which is more explicit anyway. But we don't want to do this because we don't want to mix concerns.
 
 ## Because styles change based on breakpoints.
 
