@@ -82,6 +82,12 @@ If you name something based on what it is, you won't have to touch the HTML agai
 
 When debugging an element, there will be several applicable CSS selectors making it noisey to debug.
 
+## Because the standards recommend it.
+
+On using the class attribute, HTML5 specs say in 3.2.3.7:
+
+> "[...] authors are encouraged to use values that describe the nature of the content, rather than values that describe the desired presentation of the content."
+
 ## Because you get a performance bump.
 
 This is a *very* small benefit but when you have one class name per element, you end up with smaller HTML. With visual classes you end up with multiple class names per element and that can add up.
