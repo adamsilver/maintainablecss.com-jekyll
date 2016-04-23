@@ -5,44 +5,47 @@ permalink: /chapters/
 title: "Chapters"
 ---
 
+{% assign prefaceChapters = site.chapters | where:'section', 'Preface' %}
+{% assign backgroundChapters = site.chapters | where:'section', 'Background' %}
+{% assign coreChapters = site.chapters | where:'section', 'Core' %}
+{% assign extraChapters = site.chapters | where:'section', 'Extras' %}
+
 # Chapters
 
 ## Preface
 
 <ol>
-	{% for chapter in site.chapters %}
-		{% if chapter.section == 'Preface' %}
-			<li><a href="{{ chapter.url }}">{{ chapter.title }}</a></li>
-		{% endif %}
-	{% endfor %}
+  {% for chapter in prefaceChapters %}
+    <li><a href="{{ chapter.url }}">{{ chapter.title }}</a></li>
+  {% endfor %}
 </ol>
 
 ## Background
 
-<ol start="2">
-	{% for chapter in site.chapters %}
-		{% if chapter.section == 'Background' %}
-			<li><a href="{{ chapter.url }}">{{ chapter.title }}</a></li>
-		{% endif %}
-	{% endfor %}
+{% assign backgroundStart = prefaceChapters.size | plus: 1 %}
+
+<ol start="{{backgroundStart}}">
+  {% for chapter in backgroundChapters %}
+    <li><a href="{{ chapter.url }}">{{ chapter.title }}</a></li>
+  {% endfor %}
 </ol>
 
 ## Core
 
-<ol start="5">
-	{% for chapter in site.chapters %}
-		{% if chapter.section == 'Core' %}
-			<li><a href="{{ chapter.url }}">{{ chapter.title }}</a></li>
-		{% endif %}
+{% assign coreStart = backgroundStart | plus: backgroundChapters.size %}
+
+<ol start="{{coreStart}}">
+	{% for chapter in coreChapters %}
+		<li><a href="{{ chapter.url }}">{{ chapter.title }}</a></li>
 	{% endfor %}
 </ol>
 
 ## Extras
 
-<ol start="8">
-	{% for chapter in site.chapters %}
-		{% if chapter.section == 'Extras' %}
-			<li><a href="{{ chapter.url }}">{{ chapter.title }}</a></li>
-		{% endif %}
+{% assign extrasStart = coreStart | plus: coreChapters.size %}
+
+<ol start="{{extrasStart}}">
+	{% for chapter in extraChapters %}
+		<li><a href="{{ chapter.url }}">{{ chapter.title }}</a></li>
 	{% endfor %}
 </ol>
