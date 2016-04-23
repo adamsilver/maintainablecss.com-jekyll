@@ -38,7 +38,7 @@ It's not clear at all *what* this HTML represents. You *might* have an *idea* of
 	<div class="product"></div>
 	<div class="searchResults"></div>
 
-Here I know exactly what I am looking at. I know the intention of what this HTML represents. And I have no idea how it looks&mdash;that's what CSS is responsible for. Semantic class names mean something to both HTML *and* CSS.
+Here I know exactly what I am looking at. I know the intention of what this HTML represents. And I have no idea how it looks&mdash;that's what CSS is responsible for. Semantic class names mean something to both HTML *and* CSS (and JS).
 
 So **why** else should we use semantic class names?
 
@@ -76,7 +76,9 @@ If you have visual class names all over the HTML, then there is no reliable way 
 
 ## Because of general maintainance concerns.
 
-If you name something based on what it is, you won't have to touch the HTML again in a dramatic way i.e. a heading is always a heading. The styles might change but then you only have to update the CSS.
+If you name something based on what it is, you won't have to touch the HTML again i.e. a heading is always a heading, no matter what it *looks* like.
+
+The styling might change but you only have to update the CSS. This is otherwise known as Loose Coupling and this improves maintainability.
 
 ## Because utility classes increase noise when debugging.
 
