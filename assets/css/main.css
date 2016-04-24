@@ -636,3 +636,65 @@ a.chapterNavigation-next:active {
 .share-button:hover {
 	background-color: #7FDBFF;
 }
+
+/**********************************************************
+* Recs
+**********************************************************/
+
+.recommendations {
+	padding: 40px 20px 20px;
+}
+
+.recommendations-title {
+	font-size: 2.2em;
+	line-height: 1.2em;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #001F3F;
+}
+
+@media(min-width: 600px) {
+	.recommendations-title {
+		font-size: 2.5em;
+		margin-bottom: 35px;
+	}
+}
+
+.recommendations-item {
+	font-style: italic;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #001F3F;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-bottom: 1px dotted #aaa;
+	max-width: 500px;
+}
+
+@media(min-width: 600px) {
+	.recommendations-item {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+.recommendations-item:last-child {
+	border: none;
+	margin-bottom: 0;
+}
+
+.recommendations-item p {
+	font-size: 1.8em;
+    line-height: 1.7em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    color: #001F3F;
+    text-align: center;
+}
+
+.recommendations-item cite {
+	font-weight: bold;
+}
