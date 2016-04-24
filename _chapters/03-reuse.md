@@ -20,7 +20,7 @@ If you attempt to reuse every single *rule* you'll end up with classes such as: 
 
 	<div class="clearfix pull-left red etc"></div>
 
-Bloat makes it harder to maintain and degrades performance (allbeit in a minor way).
+Bloat makes it harder to maintain and degrades performance (albeit in a minor way).
 
 ## Because reuse makes debugging more difficult.
 

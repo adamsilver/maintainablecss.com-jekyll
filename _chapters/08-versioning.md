@@ -16,4 +16,4 @@ When you have multiple versions of a module in your codebase, it can be tempting
 	/* new version of module */
 	.someModuleVariant2 {}
 
-All you have to do is create two separate modules with a unique module name and you can edit each one indepentently and in your own time.
+All you have to do is create two separate modules with a unique module name and you can edit each one independently and in your own time.
