@@ -6,53 +6,75 @@ permalink: /chapters/organisation/
 description: Learn how MaintainableCSS suggests to organise your CSS files within your codebase.
 ---
 
-Organising your CSS files is important. When you organise your CSS well, it makes finding CSS and adding new CSS much easier, improving general maintainability.
+Well-organised CSS files are an important aspect of MaintainableCSS. We want to make our CSS easy to find, update and add to over time as projects evolve and increase in size.
 
-There are generally two options when it comes to file organisation:
+There are generally two approaches when it comes to organising your CSS. Let's discuss each in turn.
 
-## Method 1: Put CSS in a CSS folder
+## 1. Put CSS in a CSS folder
 
-	/css
+This approach places all CSS files in to a single folder as follows:
+
+	/path/to/css
 		/vendor
 		/yourApp
 			basket.css
 
-## Method 2: Put CSS within a module folder
+With this method, it's obvious where CSS lives. Often this folder might be copied elsewhere and prep'd for deploying to production. Having it all in one place simplifies this process.
+
+Whilst MaintainableCSS does a great job in making CSS modular, it is likely there will always be rules that are global, so having the easy decision to shove it all in one place leaves little room for error.
+
+This has been the approach that I have taken and been exposed to most often.
+
+## 2. Put CSS in a module folder
+
+This approach means that the CSS folder resides within the module it pertains to as follows:
 
 	/basket
+		/controllers
+			BasketController.js
 		/templates
-		/whatever
+			Basket.html
 		/css
 			basket.css
+	/header
+		...
 
-Global stuff? Where to put global stuff when putting stuff in modules?
+This approach is great because it groups related functionality under a single module folder. Whether it's CSS, Javascript, HTML, Controllers, Views, Partials or whatever else, having it all grouped in one place improves portability, and often you're working on multiple bits relating to the same feature so this makes sense.
+
+This to me makes more sense than the first approach, and when I have used it, it works well.
+
+As with the first approach, there is always *some* global CSS to write, so this will have to reside somewhere that doesn't have a natural home like modules do. You end up needing a "GlobalStuff" folder anyway.
 
 	/global
 		global.css
+		etc.css
+	/header
+		...
+	/basket
+		...
 
-	/module1
-		module1.css
-		module1.html
-		etc
+## The 32 CSS file limit problem
 
-## 32 file limit
+Whatever approach you decide to take you may well need to be aware of the 32 CSS file limit problem.
 
-Both organisation options suffer from the 32 file limit which occurs up until IE9, fixed in IE10. So if you have more than 32 modules which is pretty likely you're in trouble depending on your bundling approach.
+In short, you can't include more than 31 CSS files in an HTML document in some browsers up to Internet Explorer 9. What happens is any CSS that resides in an additional file will be ignored.
 
-If you're using a preprocessor, you're probably fine, but then debugging is harder.
+Meaning you can't create more than 31 files unless you jump through certain hoops to avoid this problem. For example, if you don't use a CSS preprocessor, then when you're in debug mode for local development, you're limited.
 
-If you're not using a preprocessor, then you will likely need to think about what deserves it's own file and what needs to be grouped and how those things are grouped.
+You could of course bundle these files into one, on save, but this can be problematic for development and debugging.
+
+If you do use a CSS preprocessor, you're likely already doing this and won't experience this problem. If so, move along now.
+
+If you want to debug the original CSS files, then you will have to get creative in using the 31 CSS files to their max.
 
 For example, recently on a shop the following was used to organise:
 
 	base.css
 	basket.css
 	brand.css
-	buttons.css
 	category.css
 	checkout.css
 	dashboard.css
-	department.css
 	editorial.css
 	forms.css
 	globalModules.css
