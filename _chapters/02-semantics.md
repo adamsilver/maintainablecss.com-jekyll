@@ -94,9 +94,9 @@ On using the class attribute, HTML5 specs say in 3.2.3.7:
 
 This is a *very* small benefit but when you have one class name per element, you end up with smaller HTML. With visual classes you end up with multiple class names per element and that can add up.
 
-## Because it breaks the reuse rule.
+## Because it adheres to the reuse rule.
 
-If you don't use semantic class names, then you will likely be breaking the rules of reuse. Go read the next chapter to find out more.
+If you don't use semantic class names, then you will likely be breaking the rules of reuse. Read the next chapter to find out more.
 
 <!--## Why? Because visual class names might declare the same property!
 
