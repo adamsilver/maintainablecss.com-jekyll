@@ -6,9 +6,9 @@ permalink: /chapters/organisation/
 description: Learn how MaintainableCSS suggests to organise your CSS files within your codebase.
 ---
 
-*"Where do I find CSS?"* and *"Where do I put CSS?"* are questions we need to be able to answer if we are to write maintainable CSS. Shoving everything into one file isn't fun, but yet we can't just create a separate file per module as will be discussed in a sec.
+Organising your CSS files is important. When you organise your CSS well, it makes finding CSS and adding new CSS much easier, improving general maintainability.
 
-There are generally two ways in which we can organise these things.
+There are generally two options when it comes to file organisation:
 
 ## Method 1: Put CSS in a CSS folder
 
