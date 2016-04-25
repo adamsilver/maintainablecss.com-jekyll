@@ -646,17 +646,19 @@ a.chapterNavigation-next:active {
 }
 
 .recommendations-title {
-	font-size: 2.2em;
-	line-height: 1.2em;
-	margin-bottom: 20px;
 	text-align: center;
+	font-size: 2.8em;
+	line-height: 1.2em;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
 	color: #001F3F;
 }
 
 @media(min-width: 600px) {
 	.recommendations-title {
-		font-size: 2.5em;
-		margin-bottom: 35px;
+		font-size: 3.5em;
 	}
 }
 
@@ -693,6 +695,12 @@ a.chapterNavigation-next:active {
     max-width: 500px;
     color: #001F3F;
     text-align: center;
+}
+
+@media(min-width: 600px) {
+	.recommendations-item p {
+		font-size: 2.2em;
+	}
 }
 
 .recommendations-item cite {
