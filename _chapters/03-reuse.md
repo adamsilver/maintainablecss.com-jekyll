@@ -24,7 +24,7 @@ Bloat makes it harder to maintain and degrades performance (albeit in a minor wa
 
 ## Because reuse makes debugging more difficult.
 
-When debugging an element, there will be several applicable CSS selectors playing a part making it noisey.
+When debugging an element, there will be several applicable CSS selectors playing a part making it noisy.
 
 ## Because granular styles aren't worth bothering with.
 
