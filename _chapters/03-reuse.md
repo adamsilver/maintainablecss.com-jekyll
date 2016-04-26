@@ -10,26 +10,6 @@ description: Learn why avoding reuse and embracing repetition makes CSS maintena
 
 Don't take this the wrong way&mdash;MaintainableCSS has various strategies for reuse which I will talk about later. But trying to reuse the bits *inbetween* the curly braces is very problematic indeed. Here's why:
 
-## Because reuse breaks semantics.
-
-If you strive to reuse the bits inbetween the curly braces to create "atomic" class names, then you encounter all the problems stated in the chapter about [Semantics](/chapters/semantics/). Read that chapter now, if you haven't already.
-
-## Because reuse causes bloat.
-
-If you attempt to reuse every single *rule* you'll end up with classes such as: `red`, `clearfix`, `pull-left`, `grid` which leads to HTML bloat:
-
-	<div class="clearfix pull-left red etc"></div>
-
-Bloat makes it harder to maintain and degrades performance (albeit in a minor way).
-
-## Because reuse makes debugging more difficult.
-
-When debugging an element, there will be several applicable CSS selectors playing a part making it noisy.
-
-## Because granular styles aren't worth bothering with.
-
-If you're going to do `<div class="red">` you may as well do `<div style="color: red">` which is more explicit anyway. But we don't want to do this because we don't want to mix concerns.
-
 ## Because styles change based on breakpoints.
 
 Building responsive sites mean that we style elements differently based on viewport size. Imagine trying to build a 2 column grid that:
@@ -62,6 +42,14 @@ How do you make `<a class="padding-left-20 red" href="#"></a>` to have padding 1
 
 The short answer is you can't. Try to avoid having to fix self-induced problems.
 
+## Because reuse makes debugging more difficult.
+
+When debugging an element, there will be several applicable CSS selectors playing a part making it noisy.
+
+## Because granular styles aren't worth bothering with.
+
+If you're going to do `<div class="red">` you may as well do `<div style="color: red">` which is more explicit anyway. But we don't want to do this because we don't want to mix concerns.
+
 ## Because visual class names don't hold much meaning.
 
 Take `red`. Does this mean a red background? Does this mean red text? Does this mean a red gradient? What tint of red does this mean?
@@ -77,6 +65,18 @@ If an element has classes based on how it looks such as `.red`, `.col-lg-4` and 
 If you use semantic class names, a search should yield just one result. And if it yields more than one result, then this should indicate a problem that needs dealing with.
 
 Note: if you have a repeated *component* within a module, then searching might yield several results within 1 file. That is, a module would typically live in a single template.
+
+## Because reuse breaks semantics.
+
+If you strive to reuse the bits inbetween the curly braces to create "atomic" class names, then you encounter all the problems stated in the chapter about [Semantics](/chapters/semantics/). Read that chapter now, if you haven't already.
+
+## Because reuse causes bloat.
+
+If you attempt to reuse every single *rule* you'll end up with classes such as: `red`, `clearfix`, `pull-left`, `grid` which leads to HTML bloat:
+
+	<div class="clearfix pull-left red etc"></div>
+
+Bloat makes it harder to maintain and degrades performance (albeit in a minor way).
 
 ## What if I really want to reuse a style?
 
