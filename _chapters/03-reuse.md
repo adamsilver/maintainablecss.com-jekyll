@@ -66,10 +66,6 @@ If you use semantic class names, a search should yield just one result. And if i
 
 Note: if you have a repeated *component* within a module, then searching might yield several results within 1 file. That is, a module would typically live in a single template.
 
-## Because reuse breaks semantics.
-
-If you strive to reuse the bits inbetween the curly braces to create "atomic" class names, then you encounter all the problems stated in the chapter about [Semantics](/chapters/semantics/). Read that chapter now, if you haven't already.
-
 ## Because reuse causes bloat.
 
 If you attempt to reuse every single *rule* you'll end up with classes such as: `red`, `clearfix`, `pull-left`, `grid` which leads to HTML bloat:
@@ -77,6 +73,10 @@ If you attempt to reuse every single *rule* you'll end up with classes such as: 
 	<div class="clearfix pull-left red etc"></div>
 
 Bloat makes it harder to maintain and degrades performance (albeit in a minor way).
+
+## Because reuse breaks semantics.
+
+If you strive to reuse the bits inbetween the curly braces to create "atomic" class names, then you encounter all the problems stated in the chapter about [Semantics](/chapters/semantics/). Read that chapter now, if you haven't already.
 
 ## What if I really want to reuse a style?
 
