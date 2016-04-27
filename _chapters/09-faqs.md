@@ -92,3 +92,7 @@ Then the Javascript is as follows:
 Whilst this latter one, might at first appear to be more maintainable, you have to be careful doing this. It might be that you want to drive other styles from this class. But what applies to one module may not apply to the other. 
 
 Which leads to the last option of prefixing Javascript related behaviour with a prefix of "js-".
+
+## This seems similar to BEM, why use it?
+
+It is similar to BEM. The conventions are a little different, the terminology is a little different and the rationale is very different. But all in all, if you're happy with BEM, stick with it.
