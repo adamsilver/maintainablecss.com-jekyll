@@ -59,3 +59,36 @@ Or you can just have a button as a module:
 	}
 
 There is nothing wrong with having a module within a module. You just have to be careful with the latter approach, because once you edit a style it propagates everywhere, and this can be problematic due to unexpected regression.
+
+## What about reusing common Javascript behaviour such as showing and hiding?
+<!--https://github.com/adamsilver/maintainablecss.com/issues/20-->
+
+Let's say you have 2 modules, Module A and Module B. Each of them look completely different, are completely different except they both have a collapsed state. Normally you would have some script that adds and removes the class in order to implement this.
+
+The first way is to have an option inside the Collapser Javascript component as follows:
+
+	var collapser1 = new Collapser(el, { cssHideClass: 'moduleA-isHidden' });
+	var collapser2 = new Collapser(el, { cssHideClass: 'moduleB-isHidden });
+
+The CSS might be:
+
+	/* hidden */
+	.moduleA-isHidden,
+	.moduleB-isHidden {
+		display: none;
+	}
+	
+If this becomes painful then you could consider a global state as follows:
+
+	.globalState-isHidden {
+		display: none;
+	}
+
+Then the Javascript is as follows:
+
+	var collapser1 = new Collapser(el});
+	var collapser2 = new Collapser(el);
+
+Whilst this latter one, might at first appear to be more maintainable, you have to be careful doing this. It might be that you want to drive other styles from this class. But what applies to one module may not apply to the other. 
+
+Which leads to the last option of prefixing Javascript related behaviour with a prefix of "js-".
