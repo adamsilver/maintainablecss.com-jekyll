@@ -6,24 +6,49 @@ permalink: /chapters/modifiers/
 description: Use modifiers to change appearance based on slight differences.
 ---
 
-There are times when reusing the parts between curly braces makes total sense, in particular when a module (or component) is almost identical. 
+Whilst previous chapters explain how a duplication-first approach is sensible in a lot of situations, at certain times reusing or abstracting common CSS rules can be crucial to writing maintainable CSS.
 
-**One example** I have experienced recently is an e-commerce site where each Category page has a header at the top but the `background-image` changes based on the category name as follows:
+## Example 1: Different background images
+
+One recent example I have is for an e-commerce site where each Category page has a header at the top but the background image changes based on the category name as follows:
 
 	<!-- when viewing the "boys" category page -->
-	<div class="categoryHeader categoryHeader-boys"></div>
+	<div class="categoryHeader categoryHeader-boys">...</div>
 
 	<!-- when viewing the "girls" category page -->
-	<div class="categoryHeader categoryHeader-girls"></div>
+	<div class="categoryHeader categoryHeader-girls">...</div>
 
-The CSS is identical, except for the `background-image` declaration based on the category.
+The CSS for each header is almost identical except for the modifier overrides:
 
-**Another example** I experienced recently was on the Product page. We designed product pages so that depending on the colour of the product we could optionally change the `background-colour` of the *Add To Basket* button.
+	.categoryHeader {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		/* etc */
+	}
 
-	<!-- when viewing a product without a custom colour applied -->
-	<input class="addToBasketButton">
+	.categoryHeader-boys {
+		background-image: url(/path/to/boys.jpg);
+	}
 
-	<!-- when viewing a product with a custom colour applied -->
+	.categoryHeader-girls {
+		background-image: url(/path/to/girls.jpg);
+	}
+
+## Example 2: Different colour buttons
+
+In the same site we designed Product pages so that depending on the colour of the product, we could optionally configure the background colour of the *Add To Basket* button to match, in the CMS.
+
+	<!-- when viewing a product with a green colour applied -->
 	<input class="addToBasketButton addToBasketButton-green">
 
-Easy.
+The CSS for the green button is identical except for the background-color as follows:
+
+	.addToBasketButton {
+		padding: 10px 30px;
+		text-align: center;
+		/* etc */
+	}
+
+	.addToBasketButton-green {
+		background-color: green;
+	}
