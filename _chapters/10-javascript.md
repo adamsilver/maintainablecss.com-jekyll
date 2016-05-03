@@ -1,43 +1,54 @@
 ---
 layout: chapter
-title: Versioning
+title: Javascript
 section: Extras
 permalink: /chapters/javascript/
 description: What does MaintainableCSS suggest when it comes to Javascript? Find out in this chapter.
 ---
 
-For example: There are 2 Modules used. Module-A and Module-B. Both will have the same state "isHidden" with exact the same css-code (display:none). 
-What would be best practice to keep css maintainable without losing the module states and without repeating the same css-code to every module-state class?
+Sometimes you have two completely different modules but they both have the same behaviour applied through Javascript. A rudimentary example would be two modules (or components for that matter) have the same state *isHidden* which equates to a `display: none`.
 
-This is something that I want to address, as you're not the first person to ask me about this.
+How should you handle this without losing the best practice MaintainableCSS guides described in previous chapters, without repeating the same CSS code in every module state class?
 
-If you have a JS constructor that was responsible for making an element show/hide then I would consider architecting it as follows:
+There are two approaches you can take.
 
-var collapser1 = new Collapser(el, { cssHideClass: 'moduleA-isHidden' });
-var collapser2 = new Collapser(el, { cssHideClass: 'moduleB-isHidden });
-Then I might consider this in the CSS using the comma for reuse:
+## 1. Reusing the same styles across modules
 
-/* hidden */
-.moduleA-isHidden,
-.moduleB-isHidden {
-display: none;
-}
+If you have a constructor that is responsible for making an element show (or hide) then I would consider specifying the specific module class names during instantiation:
 
-This is briefly addressed here: http://maintainablecss.com/chapters/reuse/#what-if-i-really-want-to-reuse-a-style
+	var module1Collasper = new Collapser(element1, {
+	    cssHideClass: 'moduleA-isHidden'
+	});
 
-However, if this becomes painful or should I say unmaintainable then you could consider slightly breaking away from STRICT MaintainableCSS guidelines:
+	var module2Collapser = new Collapser(element2, {
+	    cssHideClass: 'moduleB-isHidden
+	});
 
-.globalState-isHidden {
-     display: none;     
- }
-Then not requiring the option for each "collapser" because you can hard code it within the collapser object:
+Then I would likely reuse the CSS styles as follows:
 
-var collapser1 = new Collapser(el1);
-var collapser2 = new Collapser(el2);
-Whilst this latter one, might at first appear to be more maintainable, and less code, you have to be careful with it. The trade off is that if something is collapseable due to that class but also has other visual difference based on that state, then it's likely that you won't want the exact same visual look for all the modules that rely on "isHidden". Does that make sense?
+	/* isHidden */
+	.moduleA-isHidden,
+	.moduleB-isHidden {
+		display: none;
+	}
 
-I need to formalise the approach to this a bit more and it's high up on my list.
+However, if you find this approach causes maintainability issues for whatever reason then you could try an alternative approach.
 
-HTH for now.
+## 2. Add a global state class
 
-Update: it's also worth noting that this is a bit of a rare case, that might make more sense as a utility class. But as soon as ModuleA or ModuleB has different "isHidden" behaviour I wouldn't attempt to reuse it, and I would tie the functionality to the module in question as per the first approach above.
+If you find the first approach causes maintainability issues then it might be better to define a global state class for reuse across different modules:
+
+	.globalState-isHidden {
+	    display: none;
+	}
+
+In this scenario, you no longer need to comma delimit each module state, and you no longer need to specify the module state class during instantiation:
+
+	var module1Collasper = new Collapser(element1);
+	var module2Collasper = new Collapser(element2);
+
+Whilst this approach might *seem* to be more maintainable due to less code to update, it does require thought and care which in turn can be problematic in terms of maintainability.
+
+For example it might be that there are other visual differences specific to each module that hang off the *isHidden* state class. If there are any differences at all, I would factor it out in order to make the code easy to reason about, and to update without causing unexpected regression.
+
+<!-- display: flex vs display: block -->
