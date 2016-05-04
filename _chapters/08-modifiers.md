@@ -6,7 +6,9 @@ permalink: /chapters/modifiers/
 description: Use modifiers to change appearance based on slight differences.
 ---
 
-Whilst previous chapters explain how a duplication-first approach is sensible in a lot of situations, at certain times reusing or abstracting common CSS rules can be crucial to writing maintainable CSS.
+Modifiers are similiar to states in that they can change or override the style of a module. This can be useful when modules (or components) are almost identical but have slight differences as designed.
+
+When this is the case, reusing or abstracting common CSS rules is useful for maintainability. This is best explained with two examples:
 
 ## Example 1: Different background images
 
