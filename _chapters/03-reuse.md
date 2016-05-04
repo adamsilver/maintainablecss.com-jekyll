@@ -96,15 +96,17 @@ Remember though that if any selector deviates, even a little bit, then remove it
 
 ## What about mixins?
 
-CSS preprocessors allow you to create mixins which sound great and seemingly appear to give you the best of both worlds.
+CSS preprocessors allow you to create mixins which can be really helpful because they provide the best of both worlds but they should be designed with caution.
 
-However, you have to be very careful to update a mixin because it propagates in all instances just like utility classes. You become scared to touch and then you create new mixins that are slightly different causing redundancy and maintenance problems.
+You have to be very careful to update a mixin because it propagates in all instances just like utility classes. It can be problematic to edit and instead you create new mixins that are slightly different causing redundancy and maintenance problems.
 
 Also, mixins can become very complicated with lots of params, conditionality and large declarations of styles. All of this makes it complicated and complicated is hard to maintain.
 
 To mitigate, you can make mixins really granular. For example you could have a "red text" mixin which is certainly better. But then again, the declaration of that mixin is basically the same as a declaration of red text. Might as well just declare that instead.
 
-If you need to update it in multiple places, then a search and replace will do it. And even if you did use a mixin, when red changes to orange, you will have to do a search and replace anyway, because the mixin name will otherwise be misleading.
+If you need to update it in multiple places, then a search and replace might just do it, depending on your context. And even if you did use a mixin, when red changes to orange, you will have to do a search and replace anyway, because the mixin name will otherwise be misleading.
+
+This does not mean, mixins are bad, mixins can be very helpful depending on your situation, just use them with care.
 
 ## What about performance?
 
