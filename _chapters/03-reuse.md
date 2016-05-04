@@ -122,4 +122,4 @@ Attempting to reuse `float: left` as an example, is akin to trying to reuse vari
 
 ## Final thoughts on reuse
 
-Reuse and DRY are such important principles in software engineering but when it comes to CSS, it ironically makes maintainance harder. Avoid trying to reuse style rules and gain the benefits of easy to maintain CSS.
+Reuse and DRY are such important principles in software engineering but when it comes to CSS, striving to reuse too much ironically makes maintainance *harder*. However, there are times when reuse and abstraction makes sense which is discussed in later chapters.
