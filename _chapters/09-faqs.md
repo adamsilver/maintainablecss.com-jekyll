@@ -6,35 +6,34 @@ permalink: /chapters/faqs/
 description: Common questions answered
 ---
 
-## What about if I want to prototype something quickly?
+## When should I use this?
 
-MaintainableCSS is important for production quality CSS. If you're building something really quickly just for test purposes, feel free to use what you like.
+When you're working on a long-lived, bespokely designed website MaintainableCSS is probably an essential methodology to follow. But feel free not to use it, or take bits and pieces that you do like from the book.
 
-## Why do I need to prefix components with the module name?
+## What if I don't want to use it?
 
-I actually used to write HTML like this:
+Then you don't have to. You might find that it's not a good fit for your situation. That's fine :).
 
-	<div class="basket">
-		<div class="heading">
-		</div>
-	</div>
+## Why must I prefix components with the module name?
+
+Good question. I actually used to do it like this too but ran into problems...
+
+The HTML I used to write
+
+	<div class="basket"> <!-- module -->
+		<div class="heading"> <!-- component -->
 
 And CSS like this:
 
-	/* basket module */
+	/* module */
 	.basket {}
 
-	/* basket heading component */
+	/* heading component of basket module */
 	.basket .heading {}
 
-The problem comes when a component name matches the name of a module. By the convention above there is no differentiation between a component and a module. Imagine we have a module called "heading":
+The first problem is that within the HTML you can't differentiate between a module and a component which makes maintainence a bit harder.
 
-	/* heading module */
-	.heading {}
-
-In this case the `.basket .heading` *component* will incorrectly inherit the styles from the `.heading` *module*.
-
-"ieading" and "item" and many other words are meaningful to lots of different modules and components across a website but they might also be names for the module itself. Follow MaintainableCSS [conventions](/chapters/conventions/) means you avoid this problem.
+The second problem is that a `.basket .heading` *component* will incorrectly inherit the styles from the `.heading` *module* which is something we don't want.
 
 ## What about common styles that you use across different modules e.g. buttons?
 
@@ -60,39 +59,6 @@ Or you can just have a button as a module:
 
 There is nothing wrong with having a module within a module. You just have to be careful with the latter approach, because once you edit a style it propagates everywhere, and this can be problematic due to unexpected regression.
 
-## What about reusing common Javascript behaviour such as showing and hiding?
-<!--https://github.com/adamsilver/maintainablecss.com/issues/20-->
-
-Let's say you have 2 modules, Module A and Module B. Each of them look completely different, are completely different except they both have a collapsed state. Normally you would have some script that adds and removes the class in order to implement this.
-
-The first way is to have an option inside the Collapser Javascript component as follows:
-
-	var collapser1 = new Collapser(el, { cssHideClass: 'moduleA-isHidden' });
-	var collapser2 = new Collapser(el, { cssHideClass: 'moduleB-isHidden });
-
-The CSS might be:
-
-	/* hidden */
-	.moduleA-isHidden,
-	.moduleB-isHidden {
-		display: none;
-	}
-	
-If this becomes painful then you could consider a global state as follows:
-
-	.globalState-isHidden {
-		display: none;
-	}
-
-Then the Javascript is as follows:
-
-	var collapser1 = new Collapser(el});
-	var collapser2 = new Collapser(el);
-
-Whilst this latter one, might at first appear to be more maintainable, you have to be careful doing this. It might be that you want to drive other styles from this class. But what applies to one module may not apply to the other. 
-
-Which leads to the last option of prefixing Javascript related behaviour with a prefix of "js-".
-
 ## This seems similar to BEM, why use it?
 
-It is similar to BEM. The conventions are a little different, the terminology is a little different and the rationale is very different. But all in all, if you're happy with BEM, stick with it.
+It is similar to BEM. The conventions are a little different, the terminology is a little different and the rationale is different. But all in all, if you're happy with BEM (or any other methodology), stick with it unless it starts to cause you pain.
