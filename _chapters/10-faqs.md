@@ -3,7 +3,7 @@ layout: chapter
 title: Frequently Asked Questions
 section: Extras
 permalink: /chapters/faqs/
-description: Common questions answered
+description: Your questions about MaintainableCSS are answered here.
 ---
 
 ## When should I use this?
@@ -35,6 +35,8 @@ The first problem is that within the HTML you can't differentiate between a modu
 
 The second problem is that a `.basket .heading` *component* will incorrectly inherit the styles from the `.heading` *module* which is something we don't want.
 
+The third problem is down to portability.
+
 ## What about common styles that you use across different modules e.g. buttons?
 
 In the chapter about [Modules](/chapters/modules/) there is a component defined as `.basket-removeButton` but what if the styling for that is used in many places?
@@ -62,3 +64,7 @@ There is nothing wrong with having a module within a module. You just have to be
 ## This seems similar to BEM, why use it?
 
 It is similar to BEM. The conventions are a little different, the terminology is a little different and the rationale is different. But all in all, if you're happy with BEM (or any other methodology), stick with it unless it starts to cause you pain.
+
+## Got another question?
+
+Just hit me up on [Github](https://github.com/adamsilver/maintainablecss.com/issues/new) and I will get back to you, or add the answer to the book.
