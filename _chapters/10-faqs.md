@@ -6,24 +6,26 @@ permalink: /chapters/faqs/
 description: Your questions about MaintainableCSS are answered here.
 ---
 
+Can't find your answer here? Raise an issue on [Github](https://github.com/adamsilver/maintainablecss.com/issues/new) and I will get back to you as soon as I can. Thanks!
+
 ## When should I use this?
 
-When you're working on a long-lived, bespokely designed website MaintainableCSS is probably an essential methodology to follow. But feel free not to use it, or take bits and pieces that you do like from the book.
+MaintainableCSS is an approach that works well when building long-lived, bespokely designed responsive websites.
 
 ## What if I don't want to use it?
 
-Then you don't have to. You might find that it's not a good fit for your situation. That's fine :).
+If you don't like it, feel free not to use it, or take the bits and pieces that you do like&mdash;please tell me though what didn't work and why, as i'd love to know more so that we can learn together.
 
 ## Why must I prefix components with the module name?
 
-Good question. I actually used to do it like this too but ran into problems...
+Good question. I actually used to do write components without the prefix too but ran into problems...
 
-The HTML I used to write
+The HTML I used to write looked something like this:
 
 	<div class="basket"> <!-- module -->
 		<div class="heading"> <!-- component -->
 
-And CSS like this:
+And the CSS looked something like this:
 
 	/* module */
 	.basket {}
@@ -31,13 +33,13 @@ And CSS like this:
 	/* heading component of basket module */
 	.basket .heading {}
 
-The first problem is that within the HTML you can't differentiate between a module and a component which makes maintainence a bit harder.
+The first problem is that when viewing the HTML, you can't easily differentiate between a module and a component, which makes maintainence a bit harder.
 
-The second problem is that a `.basket .heading` *component* will incorrectly inherit the styles from the `.heading` *module* which is something we don't want.
+The second problem is that the `.basket .heading` *component* will incorrectly inherit the styles from the `.heading` *module* which is something we don't want, we want our styles encapsulated and bound to the module.
 
-The third problem is down to portability.
+<!-- perf and portability -->
 
-## What about common styles that you use across different modules e.g. buttons?
+<!--## What about common styles that you use across different modules e.g. buttons?
 
 In the chapter about [Modules](/chapters/modules/) there is a component defined as `.basket-removeButton` but what if the styling for that is used in many places?
 
@@ -59,12 +61,8 @@ Or you can just have a button as a module:
 		/* common styles */
 	}
 
-There is nothing wrong with having a module within a module. You just have to be careful with the latter approach, because once you edit a style it propagates everywhere, and this can be problematic due to unexpected regression.
+There is nothing wrong with having a module within a module. You just have to be careful with the latter approach, because once you edit a style it propagates everywhere, and this can be problematic due to unexpected regression.-->
 
-## This seems similar to BEM, why use it?
+## Isn't this the same as BEM?
 
-It is similar to BEM. The conventions are a little different, the terminology is a little different and the rationale is different. But all in all, if you're happy with BEM (or any other methodology), stick with it unless it starts to cause you pain.
-
-## Got another question?
-
-Just hit me up on [Github](https://github.com/adamsilver/maintainablecss.com/issues/new) and I will get back to you, or add the answer to the book.
+MaintainableCSS has been influenced by many people and other conventions. And yep, it has a lot of similarities to BEM. The conventions are a little different, the terminology is a little different and the rationale is different. But all in all, if you're happy with BEM (or any other methodology) stick with it unless it starts to cause you pain.
