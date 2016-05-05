@@ -12,7 +12,7 @@ Often, particularly with richer user interfaces, we need to style modules or com
 
 Let's say a module is called *myModule*. You could apply an `isActive` class as follows:
 
-	<div class="myModule isActive"></div>
+	<div class="myModule isActive">
 
 But it is likely that `isActive` is going to be used in many different modules, and what it means to be active is different depending on the module, so this breaks the fundamental rules of *MaintainableCSS* i.e. it's not encapsulated to the module in question.
 
@@ -35,15 +35,13 @@ Here are some states we might need to apply to `myModule`.
 And the HTML needs to be as follows:
 
 	<div class="myModule myModule-isDisabled">
-		<p class="myModule-title">The title</p>
-	</div>
+	    <p class="myModule-title">
 
 ## Applying state to a component
 
 If you wanted to apply state to to just the *title* component, then you would apply `myModule-title-isDisabled` to the title component as follows:
 
 	<div class="myModule">
-		<p class="myModule-title myModule-title-isDisabled">The title</p>
-	</div>
+       <p class="myModule-title myModule-title-isDisabled">
 
 Phew, that was easy.

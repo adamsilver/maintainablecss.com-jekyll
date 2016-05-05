@@ -70,7 +70,7 @@ Note: if you have a repeated *component* within a module, then searching might y
 
 If you attempt to reuse every single *rule* you'll end up with classes such as: `red`, `clearfix`, `pull-left`, `grid` which leads to HTML bloat:
 
-	<div class="clearfix pull-left red etc"></div>
+	<div class="clearfix pull-left red etc">
 
 Bloat makes it harder to maintain and degrades performance (albeit in a minor way).
 

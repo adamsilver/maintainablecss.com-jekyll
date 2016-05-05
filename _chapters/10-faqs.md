@@ -23,7 +23,7 @@ Good question. I actually used to do write components without the prefix too but
 The HTML I used to write looked something like this:
 
 	<div class="basket"> <!-- module -->
-		<div class="heading"> <!-- component -->
+	    <div class="heading"> <!-- component -->
 
 And the CSS looked something like this:
 

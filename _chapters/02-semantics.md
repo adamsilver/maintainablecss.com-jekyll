@@ -26,17 +26,17 @@ This is because humans are good at understanding human communication and bad at 
 Try and spot the difference between non-semantic and semantic class names...
 
 	<!-- bad -->
-	<div class="red pull-left"></div>
-	<div class="grid row"></div>
-	<div class="col-xs-4"></div>
+	<div class="red pull-left">
+	<div class="grid row">
+	<div class="col-xs-4">
 
 It's not clear at all *what* this HTML represents. You *might* have an *idea* of what these things *look like* (on small or large screens) but that is all.
 
 	<!-- good -->
-	<div class="header"></div>
-	<div class="basket"></div>
-	<div class="product"></div>
-	<div class="searchResults"></div>
+	<div class="header">
+	<div class="basket">
+	<div class="product">
+	<div class="searchResults">
 
 Here I know exactly what I am looking at. I know the intention of what this HTML represents. And I have no idea how it looks&mdash;that's what CSS is responsible for. Semantic class names mean something to both HTML *and* CSS (and JS).
 

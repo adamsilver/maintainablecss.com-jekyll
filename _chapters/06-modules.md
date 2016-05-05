@@ -37,13 +37,13 @@ Ultimately, only you understand *your* project requirements and if you get this 
 Let's build a module together. We're going to build a simplified shopping basket which is made up of a title and some products each of which contain the product title and a remove button. Here is the HTML we might typically use:
 
 	<div class="basket">
-		<h2 class="basket-title">Basket</h2>
-		<div class="basket-item">
-			<h3 class="basket-productTitle">Product title</h3>
-			<form>
-				<input type="submit" class="basket-removeButton" value="Remove">
-			</form>
-		</div>
+	    <h2 class="basket-title">Basket</h2>
+	    <div class="basket-item">
+	        <h3 class="basket-productTitle">Product title</h3>
+            <form>
+                <input type="submit" class="basket-removeButton" value="Remove">
+	        </form>
+	    </div>
 	</div>
 
 And the selectors for that:

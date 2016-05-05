@@ -15,25 +15,25 @@ When this is the case, reusing or abstracting common CSS rules is useful for mai
 One recent example I have is for an e-commerce site where each Category page has a header at the top but the background image changes based on the category name as follows:
 
 	<!-- when viewing the "boys" category page -->
-	<div class="categoryHeader categoryHeader-boys">...</div>
+	<div class="categoryHeader categoryHeader-boys">
 
 	<!-- when viewing the "girls" category page -->
-	<div class="categoryHeader categoryHeader-girls">...</div>
+	<div class="categoryHeader categoryHeader-girls">
 
 The CSS for each header is almost identical except for the modifier overrides:
 
 	.categoryHeader {
-		padding-top: 50px;
-		padding-bottom: 50px;
-		/* etc */
+	    padding-top: 50px;
+	    padding-bottom: 50px;
+	    /* etc */
 	}
 
 	.categoryHeader-boys {
-		background-image: url(/path/to/boys.jpg);
+	    background-image: url(/path/to/boys.jpg);
 	}
 
 	.categoryHeader-girls {
-		background-image: url(/path/to/girls.jpg);
+	    background-image: url(/path/to/girls.jpg);
 	}
 
 ## Example 2: Different colour buttons
@@ -46,11 +46,13 @@ In the same site we designed Product pages so that depending on the colour of th
 The CSS for the green button is identical except for the background-color as follows:
 
 	.addToBasketButton {
-		padding: 10px 30px;
-		text-align: center;
-		/* etc */
+	    padding: 10px 30px;
+	    text-align: center;
+	    /* etc */
 	}
 
 	.addToBasketButton-green {
-		background-color: green;
+	    background-color: green;
 	}
+
+Easy.
