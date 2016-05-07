@@ -10,7 +10,7 @@ Can't find your answer here? Raise an issue on [Github](https://github.com/adams
 
 ## When should I use this?
 
-MaintainableCSS is an approach that works well when building long-lived, bespokely designed responsive websites.
+MaintainableCSS is an approach that works well when building long-lived, bespokely designed responsive websites that you want to scale. It's also useful for websites that evolve over time.
 
 ## What if I don't want to use it?
 
