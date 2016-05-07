@@ -22,8 +22,8 @@ Good question. I actually used to write components without the prefix too but ra
 
 The HTML I used to write looked something like this:
 
-	<div class="basket"> <!-- module -->
-	    <div class="heading"> <!-- component -->
+	<div class="basket">
+	    <div class="heading">
 
 And the CSS looked something like this:
 
