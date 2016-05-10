@@ -16,6 +16,12 @@ MaintainableCSS is an approach that works well when building long-lived, bespoke
 
 If you don't like it, feel free not to use it, or take the bits and pieces that you do like&mdash;please tell me though what didn't work and why, as i'd love to know more so that we can learn together.
 
+## Isn't this the same as [insert methodology here]?
+
+These guides are the result of building many different types of websites and have been influenced by many experiences and the many people I have worked with.
+
+With that said, I think it bares most resemblance to BEM and ECSS, so if you're using those or any other methodology that works for you, stick with it. These guides will be here if and when required.
+
 ## Why must I prefix components with the module name?
 
 Good question. I actually used to write components without the prefix too but ran into problems...
@@ -62,7 +68,3 @@ Or you can just have a button as a module:
 	}
 
 There is nothing wrong with having a module within a module. You just have to be careful with the latter approach, because once you edit a style it propagates everywhere, and this can be problematic due to unexpected regression.-->
-
-## Isn't this the same as Methodology X?
-
-MaintainableCSS has evolved over many years, and has been influenced by many people. It shares a lot of similarities with BEM and ECSS. If you're using something that works for you, feel free to stick with it. MaintainableCSS will be right here as and when you need it :)
