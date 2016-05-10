@@ -3,25 +3,25 @@ layout: chapter
 title: Javascript
 section: Extras
 permalink: /chapters/javascript/
-description: What does MaintainableCSS suggest when it comes to Javascript? Find out in this chapter.
+description: How to write maintainable CSS and maintainable Javascript at the same time.
 ---
 
-You may want to apply the same behaviour through Javascript across different modules. A rudimentary example would be two modules (or components) that have the same state *isHidden* which equates to a `display: none`.
+You may want to use Javascript to apply the *same* behaviour to multiple modules (or components). A basic example would be two modules that have the same *isHidden* state which hides the module.
 
-How should you handle this without losing the best practice MaintainableCSS guides described in previous chapters, without repeating the same CSS code in every module state class?
+**How might you do this whilst adhering to MaintainableCSS guidelines and without having to repeat yourself?**
 
 There are two approaches you can take.
 
-## 1. Encapsulating states
+## 1. Encapsulating states to the module
 
-If you have a constructor that is responsible for making an element show (or hide) then consider specifying a class names during instantiation that pertains to the module:
+If you have a constructor that is responsible for making an element show (or hide) then consider specifying a class name that pertains to the module during instantiation:
 
 	var module1Collasper = new Collapser(element1, {
-	    cssHideClass: 'moduleA-isHidden'
+	  cssHideClass: 'moduleA-isHidden'
 	});
 
 	var module2Collapser = new Collapser(element2, {
-	    cssHideClass: 'moduleB-isHidden'
+	  cssHideClass: 'moduleB-isHidden'
 	});
 
 Then reuse the CSS styles as follows:
@@ -29,26 +29,26 @@ Then reuse the CSS styles as follows:
 	/* isHidden */
 	.moduleA-isHidden,
 	.moduleB-isHidden {
-		display: none;
+      display: none;
 	}
 
 However, if you find this approach causes maintainability issues for whatever reason then you could try an alternative approach...
 
-## 2. Creating a global state
+## 2. Creating a global state class
 
 If you find the first approach causes maintainability issues then it might be better to define a global state class for reuse across different modules:
 
 	.globalState-isHidden {
-	    display: none;
+      display: none;
 	}
 
-In this scenario, you no longer need to comma delimit each module state, and you no longer need to specify the module state class during instantiation:
+In this scenario, you no longer need to comma delimit each module state, and you no longer need to specify the module state class during instantiation as the `Collapser` constructor will reference the global class name from within:
 
 	var module1Collasper = new Collapser(element1);
 	var module2Collasper = new Collapser(element2);
 
-Whilst this approach might *seem* to be more maintainable due to less code to update, it does require thought and care which in turn can be problematic in terms of maintainability, previously discussed in [Reuse](/chapters/reuse/).
+Whilst this approach might *seem* to be more maintainable due to there being less code to update, it does require thought and care which in turn can be problematic.
 
-For example it might be that there are other visual differences specific to each module that hang off the *isHidden* state class. If there are any differences at all, I would factor it out in order to make the code easy to reason about, and to update without causing unexpected regression.
+For example it might be that there are other visual differences specific to each module that hang off the `isHidden` class. If there are any differences at all, it may well be better to go with the first approach described above as it's easier to reason about and update without causing unexpected regression.unexpected regression.
 
 <!-- display: flex vs display: block -->
