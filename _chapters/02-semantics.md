@@ -74,6 +74,10 @@ Automated functional tests work by searching for particular elements, interactin
 
 If you have visual class names all over the HTML, then there is no reliable way to target particular elements and act upon them.
 
+## Because it provides meaningful hooks for Javascript to enhance.
+
+Just like these hooks help automated testing, they are also useful to enhance behaviour with Javascript. Visual class names can't be used as a reliable way to target modules or components.
+
 ## Because of general maintainance concerns.
 
 If you name something based on what it is, you won't have to touch the HTML again i.e. a heading is always a heading, no matter what it *looks* like.
