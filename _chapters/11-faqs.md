@@ -60,6 +60,16 @@ The first problem is that when viewing the HTML, you can't easily differentiate 
 
 The second problem is that the `.basket .heading` *component* will incorrectly inherit the styles from the `.heading` *module* which is something we don't want, we want our styles encapsulated and bound to the module.
 
+Similarly, I recently built a shop where there was a *Delivery &amp; Returns* module and a Delivery &amp Returns *page* with the following CSS causing problems:
+
+	/* module */
+	.productDetails .deliveryAndReturns {}
+
+	/* page */
+	.deliveryAndReturns {}
+
+The page styles intefered with the module styles.
+
 <!-- perf and portability -->
 
 <!--## What about common styles that you use across different modules e.g. buttons?
