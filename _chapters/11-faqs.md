@@ -24,7 +24,7 @@ With that said, I think it bares most resemblance to BEM and ECSS, so if you're 
 
 ## Can I translate your book?
 
-It's already been translated to [Japanese](http://coliss.com/articles/build-websites/operation/css/maintainable-css-by-adam.html) and German and Spanish is on the way. So yes, please get in touch to find out how to do this.
+It's already been translated to [Japanese](http://coliss.com/articles/build-websites/operation/css/maintainable-css-by-adam.html) and German and Spanish are both on the way. So yes, please get in touch to find out how to do this.
 
 ## Why must I prefix components with the module name?
 
