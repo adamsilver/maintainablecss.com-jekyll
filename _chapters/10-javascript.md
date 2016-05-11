@@ -49,6 +49,6 @@ In this scenario, you no longer need to comma delimit each module state, and you
 
 Whilst this approach might *seem* to be more maintainable due to there being less code to update, it does require thought and care which in turn can be problematic.
 
-For example it might be that there are other visual differences specific to each module that hang off the `isHidden` class. If there are any differences at all, it may well be better to go with the first approach described above as it's easier to reason about and update without causing unexpected regression.unexpected regression.
+For example it might be that there are other visual differences specific to each module that hang off the *isHidden* class. If there are any differences at all, it may well be better to go with the first approach described above as it's easier to reason about and update without causing unexpected regression.
 
 <!-- display: flex vs display: block -->
