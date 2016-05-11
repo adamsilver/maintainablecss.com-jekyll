@@ -22,6 +22,10 @@ These guides are the result of building many different types of websites and hav
 
 With that said, I think it bares most resemblance to BEM and ECSS, so if you're using those or any other methodology that works for you, stick with it. These guides will be here if and when required.
 
+## Can I translate your book?
+
+It's already been translated to [Japanese](http://coliss.com/articles/build-websites/operation/css/maintainable-css-by-adam.html) and German is on the way. So yes, please get in touch to find out how to do this.
+
 ## Why must I prefix components with the module name?
 
 Good question. I actually used to write components without the prefix too but ran into problems...
