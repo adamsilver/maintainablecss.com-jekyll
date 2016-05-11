@@ -26,6 +26,19 @@ With that said, I think it bares most resemblance to BEM and ECSS, so if you're 
 
 It's already been translated to [Japanese](http://coliss.com/articles/build-websites/operation/css/maintainable-css-by-adam.html) and German and Spanish are both on the way. So yes, please get in touch to find out how to do this.
 
+## Must I give a class name to every element?
+
+The short answer is no.
+
+Most of the time it is better to provide and target elements via a class as it makes your code consistent, easy to reason about, performant and portable. But if you decide to do this: `.module h2` it's not going to be the end of the world.
+
+Also you may have to do something like that because you might be using Markdown (or a similar constraint) in which case you will *need* to target elements rather than class names as follows:
+
+	.someModule h1 {}
+	.someModule h2 {}
+	.someModule p {}
+	.someModule ul {}
+
 ## Why must I prefix components with the module name?
 
 Good question. I actually used to write components without the prefix too but ran into problems...
