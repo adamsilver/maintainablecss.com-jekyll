@@ -8,11 +8,8 @@ description: Learn why avoding reuse and embracing repetition makes CSS maintena
 
 **Summary:** Don't try and reuse styles. Adopt a duplication-first approach.
 
-Harry Roberts explains how DRY can be misinterpreted and unnecessary:
-
-> &ldquo;DRY is often misinterpreted as [...] never repeat the exact same thing twice at all [...]. This is impractical and usually counterproductive, and can lead to forced abstractions, over-thought and [over]-engineered code.&ldquo;
-
-> &ldquo;The key isn’t to avoid all repetition, but to normalise and abstract meaningful repetition. If two things happen to share the same declarations coincidentally, then we needn’t DRY anything out; that repetition is purely circumstantial and cannot be [...] abstracted.&rdquo;
+> &ldquo;DRY is often misinterpreted as the necessity to never repeat the exact same thing twice [...]. This is impractical and usually counterproductive, and can lead to forced abstractions, over-thought and [over]-engineered code.&ldquo;
+<br>&mdash; <cite>Harry Roberts, CSS Wizardy</cite>
 
 Don't take this the wrong way&mdash;MaintainableCSS has various strategies for reuse which I will talk about later. The problem is that trying to reuse the bits *inbetween* the curly braces is problematic. Here's why:
 
