@@ -109,7 +109,7 @@ To mitigate, you can make mixins really granular. For example you could have a "
 
 If you need to update it in multiple places, then a search and replace might just do it, depending on your context. And even if you did use a mixin, when red changes to orange, you will have to do a search and replace anyway, because the mixin name will otherwise be misleading.
 
-This does not mean mixins are "bad", mixins can be very helpful depending on your situation, just use them with care.
+This does not mean mixins are "bad", mixins can be very helpful depending on your situation. For example, being able to *clearfix* elements across different modules at different breakpoints is probably a very helpful thing to do for maintainability.
 
 ## What about performance?
 
