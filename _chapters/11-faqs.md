@@ -70,28 +70,39 @@ Similarly, I recently built a shop where there was a *Delivery &amp; Returns* mo
 
 The page styles intefered with the module styles.
 
-<!-- perf and portability -->
+## What about common styles used in many places e.g. buttons?
 
-<!--## What about common styles that you use across different modules e.g. buttons?
+Depending on your visual design requirements buttons can be problematic because they often have different spacing, floating, and other display rules depending on their location, not to mention media queries.
 
-In the chapter about [Modules](/chapters/modules/) there is a component defined as `.basket-removeButton` but what if the styling for that is used in many places?
+As a very *simple* example: in one module a primary button might be floated right within a container that has some text to the left of it. And in another module it might be centered with a fixed width and some small text beneath with `margin-bottom` for spacing.
 
-There are two approaches. Firstly, you can create a `buttons.css` file and have the following section:
+It becomes really tricky trying to abstract the common rules because you don't want to end up in a situation where you have to override, or worse that you're worried to update the abstracted set of CSS rules.
 
-	/***********************************
-	* Button style for primary actions
-	***********************************/
+However, if you do decide that abstraction is useful there are two approaches you can take.
+
+The first is to comma delimit several different buttons to apply the same styles as follows:
 
 	.basket-removeButton,
 	.another-loginButton,
-	.and-anotherDeleteButton {
-		/*common styles*/
+	.another-deleteButton {
+      /*common styles*/
 	}
 
-Or you can just have a button as a module:
+The second approach is to make a button into a module:
 
 	.primaryButton {
-		/* common styles */
+	  /*common styles*/
 	}
 
-There is nothing wrong with having a module within a module. You just have to be careful with the latter approach, because once you edit a style it propagates everywhere, and this can be problematic due to unexpected regression.-->
+On a recent project I actually went for something in between. I was building a checkout flow. On each page there was a "continue to next step" button that was identical on each of the pages. There was also a "back to previous step" link so I ended up with this:
+
+	.checkoutActions-continueButton {
+	  /*...*/
+	}
+
+	.checkoutActions-backButton {
+	  /*...*/
+	}
+
+This approach meant that I segmented the abstraction to known identical modules, improving maintainability without affecting other similar (but not identical) buttons.
+
