@@ -90,7 +90,7 @@ When debugging an element, there will be several applicable CSS selectors making
 
 ## Because the standards recommend it.
 
-On using the class attribute, HTML5 specs say in 3.2.3.7:
+On using the class attribute, HTML5 specs say in 3.2.5.7:
 
 > "[...] authors are encouraged to use values that describe the nature of the content, rather than values that describe the desired presentation of the content."
 
