@@ -106,3 +106,23 @@ On a recent project I actually went for something in between. I was building a c
 
 This approach meant that I segmented the abstraction to known identical modules, improving maintainability without affecting other similar (but not identical) buttons.
 
+## What about inheritance for things like h1's etc?
+
+If yor `h1`s are (almost always) identical on every page and every module then feel free to specify styles like this:
+
+	h1 {
+      font-size: ...;
+	  color: ...;
+	}
+
+However, in my experience, this is *rarely* the case, and so I wouldn't advise this&mdash;instead keep styles encapsulated to the module like this:
+
+	/* <h1 class="module-heading"> */
+	.module-heading {
+	  font-size: ...;
+	  color: ...;
+	}
+
+
+
+
