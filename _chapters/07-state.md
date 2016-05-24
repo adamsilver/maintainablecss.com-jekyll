@@ -39,7 +39,7 @@ And the HTML needs to be as follows:
 
 ## Applying state to a component
 
-If you wanted to apply state to to just the *title* component, then you would apply `myModule-title-isDisabled` to the title component as follows:
+If you wanted to apply state to just the *title* component, then you would apply `myModule-title-isDisabled` to the title component as follows:
 
 	<div class="myModule">
        <p class="myModule-title myModule-title-isDisabled">
