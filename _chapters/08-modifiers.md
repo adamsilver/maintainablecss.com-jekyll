@@ -55,4 +55,4 @@ The CSS for the green button is identical except for the background-color as fol
 	    background-color: green;
 	}
 
-You might have noticed "green". This is because "green" is the value that was entered in the CMS when the product was configured (similarly to the category example above)&mdash;green just happens to be the id.
+You might have noticed the word *green*. This is because green is the value that's entered via the CMS when the product is configured (similarly to the category example above)&mdash;green just happens to be the id.
