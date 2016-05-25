@@ -38,7 +38,7 @@ The CSS for each header is almost identical except for the modifier overrides:
 
 ## Example 2: Different colour buttons
 
-In the same site we designed Product pages so that depending on the colour of the product, we could optionally configure the background colour of the *Add To Basket* button to match, in the CMS.
+In the same site, we designed Product pages so that depending on the colour of the product, we could optionally configure the background colour of the *Add To Basket* button to match, in the CMS.
 
 	<!-- when viewing a product with a green colour applied -->
 	<input class="addToBasketButton addToBasketButton-green">
@@ -55,4 +55,4 @@ The CSS for the green button is identical except for the background-color as fol
 	    background-color: green;
 	}
 
-Easy.
+You might have noticed "green". This is because "green" is the value that was entered in the CMS when the product was configured (similarly to the category example above)&mdash;green just happens to be the id.
