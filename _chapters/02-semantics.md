@@ -62,11 +62,11 @@ On the other hand, if your class names are semantic, a search will find the HTML
 
 If you have utility non-semantic classes that describe the look then when you edit one of these classes, they will propagate to every single element with that class. Knowing CSS as you do, do you feel comfortable that the propagation didn't cause unexpected problems elsewhere?
 
-Semantic class names are unique, so when editing one, you *can* feel comfortable that your change only applies to the module in question as you intended, making maintainance easier.
+Semantic class names are unique, so when editing one, you *can* feel comfortable that your change only applies to the module in question as you intended, making maintenance easier.
 
 ## Because you don't want to be afraid to update code.
 
-Directly linked with the previous point about regression, when you don't feel comfortable touching code, you end up causing problems or being afraid to touch it at all. Therefore you end up with redundant code, increasing maintainance issues.
+Directly linked with the previous point about regression, when you don't feel comfortable touching code, you end up causing problems or being afraid to touch it at all. Therefore you end up with redundant code, increasing maintenance issues.
 
 ## Because it helps automated functional testing.
 
@@ -78,7 +78,7 @@ If you have visual class names all over the HTML, then there is no reliable way 
 
 Just like these hooks help automated testing, they are also useful to enhance behaviour with Javascript. Visual class names can't be used as a reliable way to target modules or components.
 
-## Because of general maintainance concerns.
+## Because of general maintenance concerns.
 
 If you name something based on what it is, you won't have to touch the HTML again i.e. a heading is always a heading, no matter what it *looks* like.
 
