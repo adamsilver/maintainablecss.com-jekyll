@@ -108,7 +108,7 @@ This approach meant that I segmented the abstraction to known identical modules,
 
 ## What about inheritance for things like h1's etc?
 
-If yor `h1`s are (almost always) identical on every page and every module then feel free to specify styles like this:
+If your `h1`s are (almost always) identical on every page and every module then feel free to specify styles like this:
 
 	h1 {
       font-size: ...;
