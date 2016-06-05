@@ -418,8 +418,8 @@ a.chapterNavigation-next:active {
 	text-decoration: none;
 	padding: 15px 70px;
 	font-size: 1.3em;
-	background-color: #7FDBFF;
-	color: #00162D;
+	border: 3px solid #7FDBFF;
+	color: #7FDBFF;
 	font-weight: bold;
 	letter-spacing: 0.04em;
 	width: 100px;
@@ -429,7 +429,8 @@ a.chapterNavigation-next:active {
 }
 
 .hero-button:hover {
-	color: #fff;
+	color: #001F3F;
+	background-color: #7FDBFF;
 }
 
 /**********************************************************
@@ -502,8 +503,8 @@ a.chapterNavigation-next:active {
 	text-decoration: none;
 	padding: 15px 70px;
 	font-size: 1.3em;
-	background-color: #001F3F;
-	color: #ffffff;
+	border: 3px solid #001F3F;
+	color: #001F3F;
 	font-weight: bold;
 	letter-spacing: 0.04em;
 	width: 100px;
@@ -625,7 +626,7 @@ a.chapterNavigation-next:active {
 	padding: 12px 30px;
 	font-size: 1.1em;
 	color: #001F3F;
-	background-color: #eee;
+	border: 2px solid #eee;
 	font-weight: bold;
 	letter-spacing: 0.04em;
 	width: 150px;
@@ -634,7 +635,7 @@ a.chapterNavigation-next:active {
 }
 
 .share-button:hover {
-	background-color: #7FDBFF;
+	background-color: #eee;
 }
 
 /**********************************************************
