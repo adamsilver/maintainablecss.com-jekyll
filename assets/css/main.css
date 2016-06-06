@@ -29,7 +29,7 @@ a:focus {
 **********************************************************/
 
 .footer {
-	background-color: #001F3F;
+	background-color: #eee;
 	padding: 20px;
 	overflow: hidden;
 }
@@ -40,12 +40,12 @@ a:focus {
 }
 
 .footer p {
-	color: #fff;
+	color: #001F3F;
 	font-size: 1.5em;
 }
 
 .footer a {
-	color: #fff;
+	color: #001F3F;
 }
 
 /**********************************************************
@@ -706,4 +706,82 @@ a.chapterNavigation-next:active {
 
 .recommendations-item cite {
 	font-weight: bold;
+}
+
+.subscribeForm {
+	background-color: #001F3F;
+}
+
+.subscribeForm-inner {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 700px;
+	padding: 20px;
+}
+
+.subscribeForm-heading {
+	font-size: 2.2em;
+    line-height: 1.2em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.subscribeForm p {
+	color: #fff;
+	font-size: 1.8em;
+    line-height: 1.7em;
+    margin-bottom: 20px;
+    max-width: 620px;
+}
+
+.subscribeForm-email {
+	text-decoration: none;
+	padding: 15px;
+	font-size: 1.5em;
+	color: #001F3F;
+	border: 2px solid #eee;
+	font-weight: bold;
+	letter-spacing: 0.04em;
+	margin: 0 auto;
+	-webkit-appearance: none;
+	background-color: #fff;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 15px;
+}
+
+@media(min-width: 650px) {
+	.subscribeForm-email {
+		display: inline-block;
+		max-width: 350px;
+		margin-right: 10px;
+	}
+}
+
+.subscribeForm-button {
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 17px;
+	font-size: 1.5em;
+	color: #001F3F;
+	font-weight: bold;
+	border: none;
+	letter-spacing: 0.04em;
+	text-align: center;
+	margin: 0 auto;
+	-webkit-appearance: none;
+	background-color: #7FDBFF;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+@media(min-width: 650px) {
+	.subscribeForm-button {
+		display: inline-block;
+		width: 240px;
+	}
+}
+
+.subscribeForm-button:hover {
+	background-color: #68CCF3;
 }

@@ -10,6 +10,7 @@
 			<h1>{{page.title }}</h1>
            	{{ content }}
         </div>
+        {% include subscribeForm.html %}
         {% include footer.html %}
 	</body>
 </html>
