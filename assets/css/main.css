@@ -707,3 +707,45 @@ a.chapterNavigation-next:active {
 .recommendations-item cite {
 	font-weight: bold;
 }
+
+.subscribe {
+	font-size: 1.8em;
+	line-height: 1.7em;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	padding: 0 20px 10px;
+	color: #001F3F;
+}
+
+.subscribe-email {
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 12px 30px;
+	font-size: 1.1em;
+	color: #001F3F;
+	border: 2px solid #eee;
+	font-weight: bold;
+	letter-spacing: 0.04em;
+	text-align: center;
+	margin: 0 auto;
+	-webkit-appearance: none;
+	background-color: #fff;
+}
+
+.subscribe-button {
+	border-radius: 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 12px 30px;
+	font-size: 1.1em;
+	color: #001F3F;
+	border: 2px solid #eee;
+	font-weight: bold;
+	letter-spacing: 0.04em;
+	text-align: center;
+	margin: 0 auto;
+	-webkit-appearance: none;
+	background-color: #fff;
+}
