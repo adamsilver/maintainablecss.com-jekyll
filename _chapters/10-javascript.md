@@ -16,7 +16,7 @@ There are two approaches you can take.
 
 If you have a constructor that is responsible for making an element show (or hide) then consider specifying a class name that pertains to the module during instantiation:
 
-	var module1Collasper = new Collapser(element1, {
+	var module1Collapser = new Collapser(element1, {
 	  cssHideClass: 'moduleA-isHidden'
 	});
 
