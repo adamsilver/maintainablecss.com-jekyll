@@ -10,7 +10,7 @@ Well-organised CSS files are an important aspect of MaintainableCSS. Finding CSS
 
 There are generally two approaches to consider. Let's discuss each in turn.
 
-## 1. The single CSS folder method
+## 1. CSS in one folder
 
 As per the name, all CSS resides in a single folder within your project. Something like this:
 
@@ -25,94 +25,53 @@ This is the approach I have taken and been exposed to the most.
 
 It's obvious where CSS lives whether it is a global rule such as `body {}` or if it's a module such as `.basket {}`. Additionally, these assets are often modified for deployment, and having them all in one place simplifies this task.
 
-## 2. The CSS in a module folder method
+## 2. CSS in separate folders
 
-This approach means that the CSS folder resides within the module it pertains to as follows:
+This option means that CSS resides within the module it pertains to:
 
 	/basket
 		/controllers
-			BasketController.js
+			...
 		/templates
-			Basket.html
+			...
+		/partials
+			...
+		/whatever
+			...
 		/css
 			basket.css
 	/header
 		...
 
-This approach is great because it groups related functionality under a single module folder. Whether it's CSS, Javascript, HTML, Controllers, Views, Partials or whatever else, having it all grouped in one place improves portability, and often you're working on multiple bits relating to the same feature so this makes sense.
+The nice thing with this is that all related functionality lives under a single folder relating to the module.
 
-This to me makes more sense than the first approach, and when I have used it, it works well.
+But what about global CSS?
 
-As with the first approach, there is always *some* global CSS to write, so this will have to reside somewhere that doesn't have a natural home like modules do. You end up needing a "GlobalStuff" folder anyway.
+You'll need a folder for global CSS (or global stuff in general) for rules applied globally. Something like:
 
 	/global
-		global.css
-		etc.css
-	/header
-		...
+		/css
+			resetPerhaps.css
+			global.css
+			etc.css
 	/basket
+		...as above...
+	/header
 		...
 
 ## The 32 CSS file limit problem
 
-Whatever approach you decide to take you may well need to be aware of the 32 CSS file limit problem.
+Whatever approach you decide to take you may need to be aware of the 31 CSS file limit.
 
-In short, you can't include more than 31 CSS files in an HTML document in some browsers up to Internet Explorer 9. What happens is any CSS that resides in an additional file will be ignored.
+In short, you can't include more than 31 CSS files in an HTML document in some browsers including Internet Explorer 9. What happens is any CSS that resides in an additional file will be ignored.
 
-Meaning you can't create more than 31 files unless you jump through certain hoops to avoid this problem. For example, if you don't use a CSS preprocessor, then when you're in debug mode for local development, you're limited.
+If you have a compilation step for local development&mdash;as would be the case if you're using a CSS preprocessor&mdash;you don't need to worry about this problem because all your files will be bundled up into one.
 
-You could of course bundle these files into one, on save, but this can be problematic for development and debugging.
+If you don't have a compilation step for local development&mdash;because debugging source files is easier this way&mdash;then like me, you may have to consider this 31 file limit.
 
-If you do use a CSS preprocessor, you're likely already doing this and won't experience this problem. If so, move along now.
+Your options:
 
-If you want to debug the original CSS files, then you will have to get creative in using the 31 CSS files to their max.
+1. Introduce a compilation step i.e. mimick what you're doing for production so that you can test in offending browsers such as IE9 when necessary.
+2. Make sure you don't go over 31 files.
 
-For example, recently on a shop the following was used to organise:
-
-	base.css
-	basket.css
-	brand.css
-	category.css
-	checkout.css
-	dashboard.css
-	editorial.css
-	forms.css
-	globalModules.css
-	header.css
-	homepage.css
-	productDetails.css
-	roadtTest.css
-	security.css
-	simpleBrand.css
-	staticPages.css
-	subCategory.css
-
-It's interesting because I don't think this is perfect or great but it's okay considering we decided not to use a preprocessor to make debugging and developing easier in some respects.
-
-But the thing is, buttons.css could have been shoved in global. Same goes for forms.css.
-
-Then you have header.css which is a global module but got so big that it warranted a file of it's own.
-
-And actually these are organised more by page, than module, because those modules are often only surfaced on a single page.
-
-All food for thought for deciding how to organise stuff.
-
-Also, bundling everything v.s. separate bundles per section or page.
-
-Could do account.css and shop.css etc. It's not perfect, but prefer easy debuggin and a pretty easy to navigate file system.
-
-Failing that, it's easy to search for a module in question as per the guidelines because the css will only reside in one place. So search to the rescue on that one.
-
-## Splitting out sections with a chunky comment
-
-	/****************************************
-	* Basket
-	****************************************/
-
-	.basket {
-		/* etc */
-	}
-
-	.basket-title {
-		/* etc */
-	}
+If you choose the latter, then you can't really go down the modular route, as several different modules will need to reside in the same file, depending on the size of your website etc.
