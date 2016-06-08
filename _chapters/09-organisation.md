@@ -6,26 +6,26 @@ permalink: /chapters/organisation/
 description: Learn how MaintainableCSS suggests to organise your CSS files within your codebase.
 ---
 
-Well-organised CSS files are an important aspect of MaintainableCSS. We want to make our CSS easy to find, update and add to over time as projects evolve and increase in size.
+Well-organised CSS files are an important aspect of MaintainableCSS. Finding CSS and knowing how to add to it, is important at all times, but moreso as a project evolves and gets bigger.
 
-There are generally two approaches when it comes to organising your CSS. Let's discuss each in turn.
+There are generally two approaches to consider. Let's discuss each in turn.
 
-## 1. Put CSS in a CSS folder
+## 1. The single CSS folder method
 
-This approach places all CSS files in to a single folder as follows:
+As per the name, all CSS resides in a single folder within your project. Something like this:
 
 	/path/to/css
 		/vendor
 		/yourApp
 			basket.css
 
-With this method, it's obvious where CSS lives. Often this folder might be copied elsewhere and prep'd for deploying to production. Having it all in one place simplifies this process.
+If you're using any third party CSS files, they should live in `/vendor`. Everything else should live in `/yourApp` (change the name to match your project).
 
-Whilst MaintainableCSS does a great job in making CSS modular, it is likely there will always be rules that are global, so having the easy decision to shove it all in one place leaves little room for error.
+This is the approach I have taken and been exposed to the most.
 
-This has been the approach that I have taken and been exposed to most often.
+It's obvious where CSS lives whether it is a global rule such as `body {}` or if it's a module such as `.basket {}`. Additionally, these assets are often modified for deployment, and having them all in one place simplifies this task.
 
-## 2. Put CSS in a module folder
+## 2. The CSS in a module folder method
 
 This approach means that the CSS folder resides within the module it pertains to as follows:
 
