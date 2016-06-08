@@ -26,17 +26,17 @@ This is because humans are good at understanding human communication and bad at 
 Try and spot the difference between non-semantic and semantic class names...
 
 	<!-- bad -->
-	<div class="red pull-left"></div>
-	<div class="grid row"></div>
-	<div class="col-xs-4"></div>
+	<div class="red pull-left">
+	<div class="grid row">
+	<div class="col-xs-4">
 
 It's not clear at all *what* this HTML represents. You *might* have an *idea* of what these things *look like* (on small or large screens) but that is all.
 
 	<!-- good -->
-	<div class="header"></div>
-	<div class="basket"></div>
-	<div class="product"></div>
-	<div class="searchResults"></div>
+	<div class="header">
+	<div class="basket">
+	<div class="product">
+	<div class="searchResults">
 
 Here I know exactly what I am looking at. I know the intention of what this HTML represents. And I have no idea how it looks&mdash;that's what CSS is responsible for. Semantic class names mean something to both HTML *and* CSS (and JS).
 
@@ -62,11 +62,11 @@ On the other hand, if your class names are semantic, a search will find the HTML
 
 If you have utility non-semantic classes that describe the look then when you edit one of these classes, they will propagate to every single element with that class. Knowing CSS as you do, do you feel comfortable that the propagation didn't cause unexpected problems elsewhere?
 
-Semantic class names are unique, so when editing one, you *can* feel comfortable that your change only applies to the module in question as you intended, making maintainance easier.
+Semantic class names are unique, so when editing one, you *can* feel comfortable that your change only applies to the module in question as you intended, making maintenance easier.
 
 ## Because you don't want to be afraid to update code.
 
-Directly linked with the previous point about regression, when you don't feel comfortable touching code, you end up causing problems or being afraid to touch it at all. Therefore you end up with redundant code, increasing maintainance issues.
+Directly linked with the previous point about regression, when you don't feel comfortable touching code, you end up causing problems or being afraid to touch it at all. Therefore you end up with redundant code, increasing maintenance issues.
 
 ## Because it helps automated functional testing.
 
@@ -74,7 +74,11 @@ Automated functional tests work by searching for particular elements, interactin
 
 If you have visual class names all over the HTML, then there is no reliable way to target particular elements and act upon them.
 
-## Because of general maintainance concerns.
+## Because it provides meaningful hooks for Javascript to enhance.
+
+Just like these hooks help automated testing, they are also useful to enhance behaviour with Javascript. Visual class names can't be used as a reliable way to target modules or components.
+
+## Because of general maintenance concerns.
 
 If you name something based on what it is, you won't have to touch the HTML again i.e. a heading is always a heading, no matter what it *looks* like.
 
@@ -86,7 +90,7 @@ When debugging an element, there will be several applicable CSS selectors making
 
 ## Because the standards recommend it.
 
-On using the class attribute, HTML5 specs say in 3.2.3.7:
+On using the class attribute, HTML5 specs say in 3.2.5.7:
 
 > "[...] authors are encouraged to use values that describe the nature of the content, rather than values that describe the desired presentation of the content."
 

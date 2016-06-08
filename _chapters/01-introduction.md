@@ -16,7 +16,7 @@ In practical terms, this means that as a developer I want to create new features
 
 ## What does maintainable even mean?
 
-Having maintainable code means that I can edit a module and it's styles without worrying that I have negatively caused problems in other modules by accident. I want to be able to write code that provides peace of mind knowing that my code is encapsulated.
+Having maintainable code means that I can edit a module and its styles without worrying that I have negatively caused problems in other modules by accident. I want to be able to write code that provides peace of mind knowing that my code is encapsulated.
 
 ## What does scalable even mean?
 
