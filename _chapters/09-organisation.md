@@ -71,7 +71,6 @@ If you **have a compilation step** for local development&mdash;as would be the c
 
 If you **don't have a compilation** step for local development&mdash;because debugging source files is easier this way&mdash;then like me, you may have to solve this problem. Your options are as follows:
 
-1. Introduce a compilation step i.e. mimick what you're doing for production so that you can test in offending browsers such as IE9 when necessary.
-2. Make sure you don't go over 31 files.
+The **first** option would be to introduce a compilation step i.e. mimick what you're doing for production, so you can&mdash;where necessary&mdash;debug in offending browsers such as IE9.
 
-If you choose the latter, then you can't really go down the modular route, as several different modules will need to reside in the same file, depending on the size of your website etc.
+The **second** option would be to make sure you don't go over 31 files. Choosing this option will likely mean you can't go down the modular route as your now limited to no more than 31 modules in an entire website.
