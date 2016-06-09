@@ -61,7 +61,7 @@ All related functionality lives under a single folder relating to the module. Lo
 	/header
        ...
 
-## The 32 CSS file limit problem
+## The 31 CSS file limit problem
 
 Whatever approach you decide to take you may need to be aware of the 31 CSS file limit problem.
 
