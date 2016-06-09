@@ -65,7 +65,7 @@ All related functionality lives under a single folder relating to the module. Lo
 
 Whatever approach you decide to take you may need to be aware of the 31 CSS file limit problem.
 
-In short, some browsers (such as IE9) will ignore all rules that are included in a 32nd file or above. For production this is fine, because you should be bundling and compressing your CSS for performance etc.
+In short, some browsers (such as IE9) will ignore all rules that are included in the 32nd file or above. For production this is fine, because you should be bundling and compressing your CSS for performance etc.
 
 If you **have a compilation step** for local development&mdash;as would be the case if you're using a CSS preprocessor&mdash;you don't need to worry about this problem, because all your files will be bundled up into one.
 
