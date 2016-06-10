@@ -10,13 +10,9 @@ There are only a few things to consider in order to write a maintainable CSS fil
 
 ## 1. Media Queries
 
-Generally speaking, the screen should adapt to the content, not the other way around. With this in mind it could be that some modules don't require any breakpoints when others require five for example. 
+Generally speaking, the screen should adapt to the content, not the other way around. This means that a modules breakpoints are determined by the module itself and not by a predetermined set of break point such as "small", "medium" and "large". Doing it this way would constrain the design and possibly degrade the User Experience.
 
-Attempting to crow bar all screens in to say 3 predefined breakpoints is something that is unecessarily constraining to a design, ultimately degrading the User Experience.
-
-In a site I worked on recently, the header had just one breakpoint based on the navigation being able to fit on one line or not. That breakpoint happened to be `500px`. Then below the header, there was a module that had a breakpoint of `650px` which is where the content needed a breakpoint to take into account the extra space available to it.
-
-For these reasons, styles residing in breakpoints should be located in very close proximity to a style not wrapped by a breakpoint. See below for an example:
+Therefore, all styles&mdash;even those that are wrapped in Media Queries&mdash;should be located next to other styles which apply to elements. See below for an example:
 
 	.basket {}
 
