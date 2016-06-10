@@ -28,15 +28,17 @@ For these reasons, styles residing in breakpoints should be located in very clos
 		.basket {}
 	}
 
+	.basket-heading
+
 ## States and modifiers
 
-Just like media queries they should reside next to the element they affect.
+Just like media queries, states and modifiers should be located in close proximity to the element they pertain to:
 
-	.whatever {}
+	.basket {}
 
-	.whatever-isWhatever {}
+	.basket-isHidden {}
 
-	/* then the rest */
+	.basket-heading {}
 
 ## Comments
 
