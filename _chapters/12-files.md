@@ -6,7 +6,7 @@ permalink: /chapters/files/
 description: What does a maintainable CSS file look like?
 ---
 
-Writing a maintainable CSS file is easy. There are just a few small things to consider:
+There are only a few things to consider in order to write a maintainable CSS file. But first, it's worth noting that these guides pertain to vanilla CSS. If you're using a CSS preprocessor, you can still take away the principles and apply them to the syntax of your chosen preprocessor.
 
 ## 1. Media Queries
 
@@ -28,7 +28,7 @@ For these reasons, styles residing in breakpoints should be located in very clos
 		.basket {}
 	}
 
-	.basket-heading
+	.basket-heading {}
 
 ## States and modifiers
 
