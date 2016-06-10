@@ -40,20 +40,24 @@ Just like media queries, states and modifiers should be located in close proximi
 
 	.basket-heading {}
 
+	.basket-heading-someModifier {}
+
 ## Comments
 
-Place a nice obvious comment between major parts of a CSS file. If you're using the first approach to file organisation, you will have multiple modules inside one file. Split them up as follows:
+If you have multiple modules residing in a single file, then it's useful to split up these modules with an obvious well named comment:
 	
 	/********************************************
-	* Module name
+	* Basket
 	********************************************/
 
-	.blah {}
+	.basket {}
 
-	.blah-a {}
+	.basket-heading {}
 
 	/********************************************
-	* Module name
+	* Banana
 	********************************************/
 
-	etc {}
+	.banana {}
+
+	.banana-details {}
