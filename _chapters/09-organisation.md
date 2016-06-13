@@ -8,7 +8,7 @@ description: Learn how MaintainableCSS suggests to organise your CSS files withi
 
 *Discoverability* is an important part of writing maintainable CSS. And, the ease of tracking down CSS, becomes more and more important as a project grows in size.
 
-There are generally two approaches to consider. Let's discuss each in turn.
+There are two approaches to consider. Let's discuss each in turn.
 
 ## 1. CSS in one folder
 
