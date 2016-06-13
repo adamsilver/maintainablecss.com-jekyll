@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: Files
+title: File layout
 section: Extras
-permalink: /chapters/files/
+permalink: /chapters/file-layout/
 description: What does a maintainable CSS file look like?
 ---
 
