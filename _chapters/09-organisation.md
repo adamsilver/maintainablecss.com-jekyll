@@ -3,7 +3,7 @@ layout: chapter
 title: Organisation
 section: Extras
 permalink: /chapters/organisation/
-description: Learn how to organise your CSS files within your codebase.
+description: Learn how to organise your CSS files.
 ---
 
 *Discoverability* is an important part of writing maintainable stylesheets and this becomes more important as a project grows in size over time.
