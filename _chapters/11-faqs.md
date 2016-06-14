@@ -125,7 +125,7 @@ However, in my experience, this is *rarely* the case, and so I wouldn't advise t
 
 ## Where do I put Media Queries?
 
-Generally speaking, the screen should adapt to the content, not the other way around. This means that a module's breakpoints are determined by the module itself, and *not* by a predetermined set of break point such as "small", "medium" and "large". Doing it this way would constrain the design and quite possibly degrade the User Experience unnecessarily.
+Generally speaking, the screen should adapt to the content, not the other way around. This means that a module's breakpoints are determined by the module itself, and *not* by a predetermined set of breakpoints such as "small", "medium" and "large". Doing it this way would constrain the design and quite possibly degrade the User Experience unnecessarily.
 
 Therefore, all styles&mdash;even those that are wrapped in Media Queries&mdash;should be located next to regular styles:
 
