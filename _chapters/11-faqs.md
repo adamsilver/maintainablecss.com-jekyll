@@ -123,6 +123,56 @@ However, in my experience, this is *rarely* the case, and so I wouldn't advise t
 	  color: ...;
 	}
 
+## Where do I put Media Queries?
 
+Generally speaking, the screen should adapt to the content, not the other way around. This means that a module's breakpoints are determined by the module itself, and *not* by a predetermined set of break point such as "small", "medium" and "large". Doing it this way would constrain the design and quite possibly degrade the User Experience unnecessarily.
 
+Therefore, all styles&mdash;even those that are wrapped in Media Queries&mdash;should be located next to regular styles:
 
+	.basket {}
+
+	@media(min-width: 500px) {
+        .basket {}
+	}
+
+	@media(min-width: 1000px) {
+	    .basket {}
+	}
+
+	.basket-heading {}
+
+## Where do I put modifiers and states?
+
+Just like media queries, states and modifiers should be located in close proximity to the element they pertain to:
+
+	.basket {}
+
+	.basket-isHidden {}
+
+	.basket-heading {}
+
+	.basket-heading-someModifier {}
+
+## Should I add comments?
+
+If you take an approach whereby multiple modules reside within a single CSS file, it's a good idea to segregate those with a chunky comment:
+
+	/********************************************
+	* Basket
+	********************************************/
+
+	.basket {}
+
+	.basket-heading {}
+
+	/********************************************
+	* Thinger
+	********************************************/
+
+	.thinger {}
+
+	.thinger-details {}
+
+## Can't find an answer here?
+
+Raise an issue on [Github](https://github.com/adamsilver/maintainablecss.com/issues/new) and I will get back to you as soon as I can. Thanks!
