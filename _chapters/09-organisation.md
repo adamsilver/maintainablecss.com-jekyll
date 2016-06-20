@@ -14,18 +14,18 @@ This approach places all CSS inside a single folder within your project:
 
 	/path/to/css
 	    /vendor
-            someLib.css
+            some3rdParty.css
             someOther3rdParty.css
 	    /yourApp
-	        resetPerhaps.css
+	        some.css
 	        global.css
 	        basket.css
 
-Third-party CSS files live under `/vendor` while the CSS you write should live under `yourApp` where you change the name of this to match the name of your project.
+Third-party CSS files live under `/vendor` while the CSS you write should live under `/yourApp` where *yourApp* is the name of your project.
 
 This approach normally simplifies the deployment process because typically, the act of bundling, compressing and other such tasks, are applied to a single target directory.
 
-This is the approach I have used most often, but that does not mean it's necessarily the best approach.
+This is the approach I have used most often, but that does not mean it's necessarily the best.
 
 ## 2. CSS in separate module folders
 
@@ -77,4 +77,4 @@ The *first* option would be to introduce a compilation step i.e. mimick what you
 
 The *second* option would be to make sure you don't go over 31 files. Choosing this option probably means you can't take the second, modular approach (described above) because most websites will require more than 31 modules.
 
-If you decide to limit the amount of CSS files you will need to work out how best to group modules into a single CSS folder. As an example, I recently grouped `.deliveryAddress`, `.paymentDetails` and `.orderConfirmation` modules within a `checkout.css` file.
+If you decide to limit the amount of CSS files you will need to work out how best to group modules into a single CSS folder. As an example, I recently grouped *deliveryAddress*, *paymentDetails* and *orderConfirmation* modules within the `checkout.css` file.
