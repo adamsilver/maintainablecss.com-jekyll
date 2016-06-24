@@ -44,8 +44,8 @@ If you find the first approach causes maintainability issues then it might be be
 
 In this scenario, you no longer need to comma delimit each module state, and you no longer need to specify the module state class during instantiation as the `Collapser` constructor will reference the global class name from within:
 
-	var module1Collasper = new Collapser(element1);
-	var module2Collasper = new Collapser(element2);
+	var module1Collapser = new Collapser(element1);
+	var module2Collapser = new Collapser(element2);
 
 Whilst this approach might *seem* to be more maintainable due to there being less code to update, it does require thought and care which in turn can be problematic.
 
