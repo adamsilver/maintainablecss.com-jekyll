@@ -1,4 +1,52 @@
 /**********************************************************
+* Lato
+**********************************************************/
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato/Lato-Regular.eot');
+	src: local('Lato Regular'), local('Lato-Regular'),
+		url('../fonts/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Lato/Lato-Regular.woff') format('woff'),
+		url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato/Lato-Italic.eot');
+	src: local('Lato Italic'), local('Lato-Italic'),
+		url('../fonts/Lato/Lato-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Lato/Lato-Italic.woff') format('woff'),
+		url('../fonts/Lato/Lato-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato/Lato-Bold.eot');
+	src: local('Lato Bold'), local('Lato-Bold'),
+		url('../fonts/Lato/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Lato/Lato-Bold.woff') format('woff'),
+		url('../fonts/Lato/Lato-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato/Lato-BoldItalic.eot');
+	src: local('Lato Bold Italic'), local('Lato-BoldItalic'),
+		url('../fonts/Lato/Lato-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Lato/Lato-BoldItalic.woff') format('woff'),
+		url('../fonts/Lato/Lato-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+/**********************************************************
 * General
 **********************************************************/
 
@@ -8,7 +56,7 @@
 }
 
 body {
-	font-family: 'helvetica neue', helvetica, arial, sans-serif;
+	font-family: Lato, 'helvetica neue', helvetica, arial, sans-serif;
     text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
     font-size: 62.5%;
@@ -177,19 +225,20 @@ a.navigation-isActive {
 }
 
 .content h3 {
-	font-size: 1.8em;
-	line-height: 1.2em;
+	font-size: 1.6em;
+	line-height: 1.2;
 	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10px;
 	padding: 0 20px;
 	color: #001F3F;
+	text-transform: uppercase;
 }
 
 @media(min-width: 600px) {
 	.content h3 {
-		font-size: 2.2em;
+		font-size: 1.9em;
 		margin-bottom: 15px;
 	}
 }
@@ -748,6 +797,7 @@ a.chapterNavigation-next:active {
 	width: 100%;
 	box-sizing: border-box;
 	margin-bottom: 15px;
+	font-family: Lato;
 }
 
 @media(min-width: 650px) {
@@ -773,6 +823,7 @@ a.chapterNavigation-next:active {
 	background-color: #7FDBFF;
 	width: 100%;
 	box-sizing: border-box;
+	font-family: Lato;
 }
 
 @media(min-width: 650px) {
