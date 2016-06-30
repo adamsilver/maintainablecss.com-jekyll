@@ -14,7 +14,7 @@ description: Learn why using IDs as hooks for styling are problematic and what y
 
 [IDs overpower class names](http://www.w3.org/TR/css3-selectors/#specificity) by orders of magnitude. For this reason you can't override an ID selector's style with a class name selector easily.
 
-This becomes a problem when you need a way to provide additional meaning to the HTML, such as state, something we discuss in a chapter of its own.
+This becomes a problem when you need a way to provide additional meaning to the HTML, such as state, something I discuss in a chapter of its own.
 
 	#someModule {
 	    color: red;
