@@ -106,7 +106,7 @@ On a recent project I actually went for something in between. I was building a c
 
 This approach meant that I segmented the abstraction to known identical modules, improving maintainability without affecting other similar (but not identical) buttons.
 
-## What about inheritance for things like h1's etc?
+## What about inheritance for things like h1s etc?
 
 If your `h1`s are (almost always) identical on every page and every module then feel free to specify styles like this:
 
