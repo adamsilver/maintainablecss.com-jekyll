@@ -38,7 +38,7 @@ Now the colour will be blue as intended.
 
 ## But, sometimes an ID is required?
 
-Sometimes using IDs is necessary. For example a form control is linked to a label by ID. And internal anchors are often bound using IDs too. Both of these improve the User Experience. Use as appropriate for additional behaviour, not for styling.
+Sometimes an ID is mandatory. For example a form control is linked to a label by ID. And internal anchors are often bound using IDs too. Both of these improve the User Experience. Use as appropriate for additional behaviour, not for styling.
 
 ## Final thoughts on IDs
 
