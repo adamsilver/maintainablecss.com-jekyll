@@ -11,7 +11,7 @@ description: Learn why avoding reuse and embracing repetition makes CSS maintena
 > &ldquo;DRY is often misinterpreted as the necessity to never repeat the exact same thing twice [...]. This is impractical and usually counterproductive, and can lead to forced abstractions, over-thought and [over]-engineered code.&ldquo;
 <br>&mdash; <cite>Harry Roberts, CSS Wizardy</cite>
 
-Don't take this the wrong way&mdash;MaintainableCSS has various strategies for reuse which I will talk about later. The problem is that trying to reuse the bits *inbetween* the curly braces is problematic. Here's why:
+Don't take this advice the wrong way. MaintainableCSS has various strategies for reuse which I will talk about later. The problem is that trying to reuse the bits *in-between* the curly braces is problematic. Here's why:
 
 ## 1. Because styles change based on breakpoints
 
@@ -41,7 +41,7 @@ Ensuring this is styled as specified above, is now a simple task with 6 CSS decl
 
 ## 2. Because styles change based on states
 
-How do you make `<a class="padding-left-20 red" href="#"></a>` to have padding 18px, a slight border, a background of grey and a text colour as a slightly darker shade of red when it's hovered or focused of active i.e. `:hover`,`:focus`, `:active` etc?
+How do you make `<a class="padding-left-20 red" href="#"></a>` have padding 18px, a slight border, a background of grey and a text colour as a slightly darker shade of red when it's hovered or focused of active i.e. `:hover`,`:focus`, `:active` etc?
 
 The short answer is you can't. Try to avoid having to fix self-induced problems.
 
