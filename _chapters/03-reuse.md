@@ -15,47 +15,53 @@ Don't take this advice the wrong way. MaintainableCSS has various strategies for
 
 ## 1. Because styles change based on breakpoints
 
-Building responsive sites mean that we style elements differently based on viewport size. Imagine trying to build a 2 column grid that:
+Responsive Design  means styling elements differently based on viewport size. Imagine coding a two-column grid to the following spec:
 
-- has 50px and 20px padding on large and small screens respectively.
-- has 3em and 2em font-size on large and small screens respectively.
-- on small screens each column is stacked below each other. Note: "column" is now misleading.
+1. Each column has 20px and 50px padding on "small" and "large" screens respectively.
+2. Each column has 2em and 3em font-size on "small" and "large" screens respectively.
+3. On small screens, the columns are stacked. Note: "column" is now a misleading class name.
 
-With this in mind how can you utilise these atomic class names: `.grid`, `.col`, `.pd50`, `.pd20`, `.fs2` and `fs3` and achieve these specs?
+Using atomic class names such as: `.grid`, `.col`, `.pd50`, `.pd20`, `.fs2` and `fs3` makes this difficult at best.
 
 	<div class="grid">
-	  <div class="col pd50 pd20 fs3 fs2">Column 1</div>
-	  <div class="col pd50 pd20 fs3 fs2">Column 2</div>
+	  <div class="col pd20 pd50 fs2 fs3">Column 1</div>
+	  <div class="col pd20 pd50 fs2 fs3">Column 2</div>
 	</div>
 
-You can see this just isn't going to work. You now need some crazy class names such as `fs3large`. This is just the tip of iceberg when it comes to maintenance issues.
+The latter class names override the former. There is no responsive behaviour here. To achieve this you need a crazy class name such as `.fs3large`.
 
-Alternatively, take the following semantic mark-up that doesn't attempt to reuse styles:
+This is merely scratching the surface of the problems you will face with this approach to CSS development.
+
+Alternatively, take the following semantic mark-up:
 
 	<div class="someModule">
 	  <div class="someModule-someComponent"></div>
 	  <div class="someModule-someOtherComponent"></div>
 	</div>
 
-Ensuring this is styled as specified above, is now a simple task with 6 CSS declarations needed in total, 3 of which reside within media queries.
+The styles are isolated to the module. And you can apply the rules flexibly within CSS. Just 6 CSS declarations are needed with 3 of those inside Media Queries.
+
+As an aside, consider how valuable a responsive grid system is. A visual layout should adapt to the *content*, not the other way around. The content should not adapt to a predefined responsive grid. That's poor design.
 
 ## 2. Because styles change based on states
 
-How do you make `<a class="padding-left-20 red" href="#"></a>` have padding 18px, a slight border, a background of grey and a text colour as a slightly darker shade of red when it's hovered or focused of active i.e. `:hover`,`:focus`, `:active` etc?
+Consider the following HTML:
 
-The short answer is you can't. Try to avoid having to fix self-induced problems.
+	<a class="padding-left-20 red" href="#"></a>
+
+Giving the element different styles on hover (e.g. padding or colour) becomes painful at best. It's better to avoid having to fix self-induced problems.
 
 ## 3. Because reuse makes debugging more difficult
 
-When debugging an element, there will be several applicable CSS selectors playing a part making it noisy.
+When inspecting an element, there are several applicable CSS selectors. You will have to look through these. With a semantic class name there is just one.
 
 ## 4. Because granular styles aren't worth bothering with
 
-If you're going to do `<div class="red">` you may as well do `<div style="color: red">` which is more explicit anyway. But we don't want to do this because we don't want to mix concerns.
+If you're going to do `<div class="red">` you may as well do `<div style="color: red">`. The latter is more explicit anyway. But this isn't advisable because it mixes concerns and removes the benefit of being able to cache CSS.
 
 ## 5. Because visual class names don't hold much meaning
 
-Take `red`. Does this mean a red background? Does this mean red text? Does this mean a red gradient? What tint of red does this mean?
+Take `.red` for example. This could mean a red background, text or a reddish gradient. Who knows.
 
 ## 6. Because updating a "utility" class applies to all instances
 
