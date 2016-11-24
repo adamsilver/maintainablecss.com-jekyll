@@ -105,30 +105,32 @@ Remember though that if any selector deviates, even a little bit, then remove it
 
 ## What about mixins?
 
-CSS preprocessors allow you to create mixins which can be really helpful because they provide the best of both worlds but they should be designed with caution.
+If you're using a CSS preprocessor, you can use mixins. They are helpful because they can provide the best of both worlds. 
 
-You have to be very careful to update a mixin because it propagates in all instances just like utility classes. It can be problematic to edit and instead you create new mixins that are slightly different causing redundancy and maintenance problems.
+But, you should use them with caution. Just like utility classes, updating a mixin propagates to all instances.
 
-Also, mixins can become very complicated with lots of params, conditionality and large declarations of styles. All of this makes it complicated and complicated is hard to maintain.
+Instead of updating a mixin, a developer could create a new, slightly different mixin. This causes redundancy.
 
-To mitigate, you can make mixins really granular. For example you could have a "red text" mixin which is certainly better. But then again, the declaration of that mixin is basically the same as a declaration of red text&mdash;might as well just declare that instead.
+Moreover, mixins can end up containing multiple parameters, conditionality and lots of rules. This makes CSS more complicated. Complicated is hard to maintain.
 
-If you need to update it in multiple places, then a search and replace might just do it, depending on your context. And even if you did use a mixin, when red changes to orange, you will have to do a search and replace anyway, because the mixin name will otherwise be misleading.
+To mitigate, you can create granular mixins. For example, you could have a "red text" mixin. This is better. However, the declaration of that mixin is basically the same as a declaring a rule: `color: red`. You might as well declare that instead.
 
-This does not mean mixins are "bad"&mdash;in fact they can be very helpful. For example, being able to apply *clearfix* rules across different elements at different breakpoints is probably a very helpful thing to do for maintainability. Just make sure to use them with care.
+If you need to update the rule in multiple places, a search and replace might be all you need. Even if you did use a mixin, if *red* changes to *orange*, for example, the name of the mixin will need to be changed anyway.
+
+I am not saying Mixins are bad. They can be helpful in some cases. For example, you might want to apply *clearfix* rules across different breakpoints. Use them with care.
 
 ## What about performance?
 
-I don't have stats to hand, but I can very confidently say that it's not wise to practice premature optimisation. Let's say you have a very large CSS codebase (100KB or more).
+I don't have stats to hand, but I know it's not wise to practice premature optimisation.
 
-Firstly, I *guess* you *might* save yourself a few KB. Secondly, there are alternative paths to improving performance and thirdly, you probably have redundant code due to a lack of maintainability.
+Even if you have a CSS codebase of 100kb or more, I doubt you can save that much anway. Compressing just one image will probably be more valuable than shaving CSS.
 
-Also consider that one or two images are likely to be far larger than the entire CSS so exerting energy here is probably of little value.
+Moreover, there are other ways to improve performance. And lastly, you probably have some redundancy in your CSS because of the problems discussed in this guide.
 
 ## Is this violating DRY principles?
 
-Attempting to reuse `float: left` as an example, is akin to trying to reuse variable names in different Javascript objects. It's simply not in violation of DRY.
+Attempting to reuse, for example `float: left`, is akin to trying to reuse variable names in different Javascript objects. It's simply not in violation of DRY.
 
 ## Final thoughts on reuse
 
-Reuse and DRY are such important principles in software engineering but when it comes to CSS, striving to reuse too much ironically makes maintenance *harder*. However, there are times when reuse and abstraction makes sense which is discussed in later chapters.
+Reuse and DRY are important principles in software engineering. But, striving to reuse CSS too much ironically makes maintenance *harder*. Lastly, there are times when reuse through abstraction makes sense which I discuss in later chapters.
