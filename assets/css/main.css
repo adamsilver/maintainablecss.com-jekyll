@@ -249,7 +249,7 @@ a.navigation-isActive {
 	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 	padding: 0 20px 10px;
 	color: #001F3F;
 }
@@ -257,7 +257,7 @@ a.navigation-isActive {
 @media(min-width: 600px) {
 	.content p {
 		font-size: 2.2em;
-		margin-bottom: 45px;
+		margin-bottom: 40px;
 	}
 }
 
@@ -266,7 +266,7 @@ a.navigation-isActive {
 	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 	padding: 0 20px 10px;
 	color: #001F3F;
 }
@@ -274,7 +274,7 @@ a.navigation-isActive {
 @media(min-width: 600px) {
 	.content ol,
 	.content ul {
-		margin-bottom: 45px;
+		margin-bottom: 60px;
 	}
 }
 
@@ -283,12 +283,14 @@ a.navigation-isActive {
 	font-size: 1.8em;
 	line-height: 1.7em;
 	margin-left: 30px;
+	margin-bottom: 5px;
 }
 
 @media(min-width: 600px) {
 	.content ol li,
 	.content ul li {
 		font-size: 2.2em;
+		margin-bottom: 10px;
 	}
 }
 
@@ -306,7 +308,9 @@ a.navigation-isActive {
 	font-weight: bold;
 }
 
-.content p code {
+.content p code,
+.content ul code,
+.content li code {
 	background: #ddd;
 	font-size: 1.3em;
 	color: #001F3F;
