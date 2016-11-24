@@ -30,25 +30,20 @@ It's already been translated to [Japanese](http://coliss.com/articles/build-webs
 
 The short answer is no.
 
-Most of the time it is better to provide and target elements via a class as it makes your code consistent, easy to reason about, performant and portable. But if you decide to do this: `.module h2` it's not going to be the end of the world.
+Most of the time it is better to provide and target elements via a class as it makes your code consistent, easy to reason about, performant and portable. But if you decide to do `.module h2` that's fine.
 
-Also you may have to do something like that because you might be using Markdown (or a similar constraint) in which case you will *need* to target elements rather than class names as follows:
-
-	.someModule h1 {}
-	.someModule h2 {}
-	.someModule p {}
-	.someModule ul {}
+You may have to do this anyway. For example when using Markdown (or a similar constraint) you will *need* to target elements because you don't control the output.
 
 ## Why must I prefix components with the module name?
 
-Good question. I actually used to write components without the prefix too but ran into problems...
+Good question. I used to write components without the prefix too but ran into problems...
 
-The HTML I used to write looked something like this:
+I used to do this:
 
 	<div class="basket">
 	    <div class="heading">
 
-And the CSS looked something like this:
+And this:
 
 	/* module */
 	.basket {}
@@ -56,11 +51,12 @@ And the CSS looked something like this:
 	/* heading component of basket module */
 	.basket .heading {}
 
-The first problem is that when viewing the HTML, you can't easily differentiate between a module and a component, which makes maintainence a bit harder.
+There are two problems:
 
-The second problem is that the `.basket .heading` *component* will incorrectly inherit the styles from the `.heading` *module* which is something we don't want, we want our styles encapsulated and bound to the module.
+1. When viewing HTML, you can't easily differentiate between a module and a component.
+2. A `.basket .heading` component will inadvertently inherit the styles from the `.heading` module. 
 
-Similarly, I recently built a shop where there was a *Delivery &amp; Returns* module and a Delivery &amp; Returns *page* with the following CSS causing problems:
+Similarly, I recently built a shop where there was a "Delivery &amp; Returns" *module* and a "Delivery &amp; Returns" *page*. The CSS was as follows:
 
 	/* module */
 	.productDetails .deliveryAndReturns {}
@@ -68,11 +64,11 @@ Similarly, I recently built a shop where there was a *Delivery &amp; Returns* mo
 	/* page */
 	.deliveryAndReturns {}
 
-The page styles intefered with the module styles.
+The page styles inherited the module styles causing regression.
 
-## What about common styles used in many places e.g. buttons?
+## What about common styles e.g. buttons?
 
-Depending on your visual design requirements buttons can be problematic because they often have different spacing, floating, and other display rules depending on their location, not to mention media queries.
+Depending on your visual design requirements buttons can be problematic. They often have different spacing, floating, and other display rules depending on their location. There is also Media Queries to consider.
 
 As a very *simple* example: in one module a primary button might be floated right within a container that has some text to the left of it. And in another module it might be centered with a fixed width and some small text beneath with `margin-bottom` for spacing.
 
