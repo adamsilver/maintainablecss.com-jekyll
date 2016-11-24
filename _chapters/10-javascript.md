@@ -42,13 +42,13 @@ If you find the first approach causes maintainability issues then it might be be
       display: none;
 	}
 
-In this scenario, you no longer need to comma delimit each module state, and you no longer need to specify the module state class during instantiation as the `Collapser` constructor will reference the global class name from within:
+In this scenario, you no longer need to comma delimit each module state, and you no longer need to specify a class during instantiation as the `Collapser` constructor will reference the global class name from within:
 
 	var module1Collapser = new Collapser(element1);
 	var module2Collapser = new Collapser(element2);
 
-Whilst this approach might *seem* to be more maintainable due to there being less code to update, it does require thought and care which in turn can be problematic.
+At first, this *seems* more maintainable because there is less code to update. But it does require consideration.
 
-For example it might be that there are other visual differences specific to each module that hang off the *isHidden* class. If there are any differences at all, it may well be better to go with the first approach described above as it's easier to reason about and update without causing unexpected regression.
+For example, there might be other visual differences specific to each module that hang off the *isHidden* class. If there are differences, it's probably better to go with the first approach. This way, you can avoid unexpected regression.
 
 <!-- display: flex vs display: block -->
