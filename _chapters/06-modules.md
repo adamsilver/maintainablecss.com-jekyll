@@ -63,14 +63,16 @@ That was straight forward.
 
 Now, let's say that during the checkout process there is a similar, cut-down version of the basket&mdash;perhaps it has a title of "Order Summary" as opposed to "Your Basket". And perhaps it doesn't have the capability to remove products.
 
-### Don't be tempted to reuse
+### Don't reuse
 
-You might be tempted to try and reuse the basket, but as we have learnt in the chapter about Reuse, this is problematic for many reasons.
+You might be tempted to reuse the basket, but as we have learnt in the chapter about Reuse, it's problematic for many reasons.
 
-Additionally, your template or partial will require conditional logic to handle the differences. The more conditionality you have, the more complicated it is to touch. And, due to this conditionality, the changes you make to the template might cause regression in a condition you're not currently testing, making it harder to maintain.
+Also, your template or partial will require conditional logic to handle the differences. The more conditionality you have, the more complicated it is to touch. And, due to this conditionality, the changes you make to the template might cause regression, in a condition you're not currently testing. This makes it harder to maintain.
 
-### Duplicate duplicate duplicate
+### Duplicate instead
 
-*MaintainableCSS* of course, advises to duplicate the module instead. In a recent project, I named the new version `.orderSummary`. There was similarities but just a few differences was enough to duplicate instead of the pain of trying to reuse.
+In a recent project, I named the new version `.orderSummary`. There were similarities but some differences too. This was enough to make duplication a much better option instead of the pain of trying to reuse.
+
+It's also worth noting that it's harsh to call this *duplication*. Duplication is copying the *same* thing. These two modules might *look similar* but they are not the same.
 
 Finally, notice how with the CSS above, we have ended up with Semantic naming and encapsulated styles, making this very easy to maintain, upgrade or AB test, as and when required without fear of regression elsewhere.
