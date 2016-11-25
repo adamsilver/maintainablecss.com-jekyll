@@ -20,7 +20,7 @@ If you take one of the units away, the rest still works just fine. I don't need 
 
 A module is made up of components. Without the components, the module is incomplete or broken.
 
-For example a sofa is made up of the frame, upholstry, legs, cushions and back pillows, all of which are required components to allow the sofa to function as designed.
+For example a sofa is made up of the frame, upholstery, legs, cushions and back pillows, all of which are required components to allow the sofa to function as designed.
 
 A logo *module* might consist of copy, an image and a link, each of which are components. Without the image the logo is broken, without the link the logo is incomplete.
 

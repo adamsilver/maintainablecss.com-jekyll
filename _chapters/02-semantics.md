@@ -86,7 +86,7 @@ The styling might change but you only have to update the CSS. This is otherwise 
 
 ## 9. Because utility classes increase noise when debugging
 
-When debugging an element, there will be several applicable CSS selectors making it noisey to debug.
+When debugging an element, there will be several applicable CSS selectors making it noisy to debug.
 
 ## 10. Because the standards recommend it
 

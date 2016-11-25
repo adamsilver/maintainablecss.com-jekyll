@@ -105,7 +105,7 @@ Remember though that if any selector deviates, even a little bit, then remove it
 
 ## What about mixins?
 
-If you're using a CSS preprocessor, you can use mixins. They are helpful because they can provide the best of both worlds. 
+If you're using a CSS preprocessor, you can use mixins. They are helpful because they can provide the best of both worlds.
 
 But, you should use them with caution. Just like utility classes, updating a mixin propagates to all instances.
 
@@ -123,7 +123,7 @@ I am not saying Mixins are bad. They can be helpful in some cases. For example, 
 
 I don't have stats to hand, but I know it's not wise to practice premature optimisation.
 
-Even if you have a CSS codebase of 100kb or more, I doubt you can save that much anway. Compressing just one image will probably be more valuable than shaving CSS.
+Even if you have a CSS codebase of 100kb or more, I doubt you can save that much anyway. Compressing just one image will probably be more valuable than shaving CSS.
 
 Moreover, there are other ways to improve performance. And lastly, you probably have some redundancy in your CSS because of the problems discussed in this guide.
 

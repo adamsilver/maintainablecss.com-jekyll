@@ -24,6 +24,6 @@ Here are some real examples pertaining to a "search results" module:
 	/* state: such as AJAX loading */
 	.searchResults-isLoading {}
 
-Each of these class names are semantic. Module, component and state are all delimitted by dashes. Each bit is written in lowerCamelCase.
+Each of these class names are semantic. Module, component and state are all delimited by dashes. Each bit is written in lowerCamelCase.
 
-We will see this convention used in all upcoming chapters.
+You will see this convention in upcoming chapters.
