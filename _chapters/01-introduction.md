@@ -34,4 +34,4 @@ If you've ever experienced pain when writing or maintaining CSS, this book can h
 
 ## Is this hard to learn?
 
-No. The entire book can be read in under 20 minutes which gives you the rationale. And when you're convinced you can apply the rules instantly. Let me know if you have trouble and I will help you.
+No. The entire book can be read in under 20 minutes which gives you the rationale. And when you're convinced you can apply the rules instantly. If you *do* have trouble, let me know and I will help you.
