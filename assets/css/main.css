@@ -249,7 +249,7 @@ a.navigation-isActive {
 	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 	padding: 0 20px 10px;
 	color: #001F3F;
 }
@@ -257,7 +257,7 @@ a.navigation-isActive {
 @media(min-width: 600px) {
 	.content p {
 		font-size: 2.2em;
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 	}
 }
 
@@ -266,7 +266,8 @@ a.navigation-isActive {
 	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 40px;
+	margin-bottom: 25px;
+	margin-top: -20px;
 	padding: 0 20px 10px;
 	color: #001F3F;
 }
@@ -274,7 +275,7 @@ a.navigation-isActive {
 @media(min-width: 600px) {
 	.content ol,
 	.content ul {
-		margin-bottom: 60px;
+		margin-bottom: 30px;
 	}
 }
 

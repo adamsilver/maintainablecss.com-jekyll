@@ -8,19 +8,22 @@ description: An introduction to MaintainableCSS, an approach to writing modular,
 
 *MaintainableCSS* is an approach to architecting and writing CSS that helps you and your team write modular, scalable and maintainable code.
 
-This means that you want to create new (or edit existing) features, without having to concern yourself with overriding styles you don't want applied. Or worse that the code you write causes regression elsewhere.
+This guide will help you write CSS:
 
-## There is nothing to download
+- without having to override styles and,
+- without causing unexpected regression.
 
-*MaintainableCSS* is not something you can download. It's a set of principles, guides and conventions that help you write CSS for large or small scale websites.
+## There's nothing to download
+
+*MaintainableCSS* is not something you can download. It's a set of principles, guides and conventions to help you write CSS for small and large scale websites.
 
 ## What does maintainable mean?
 
-Maintainable code means that you can edit a module and its styles without worrying that you have negatively caused problems elsewhere by accident.
+Maintainable code means that you can edit a module and its styles without worrying that you have accidentally caused problems elsewhere.
 
 ## What does scalable mean?
 
-Scalable code means that as the size of the CSS increases, maintaining code isn't any harder. If you have ever inherited a large CSS codebase, and been worried about editing existing styles, you can sympathise with this.
+Scalable code means that as the size of the CSS increases, the code is still easy to maintain. If you have ever inherited a large CSS codebase, and been worried about making changes, you'll sympathise with me on this.
 
 ## What does modular mean?
 
@@ -34,4 +37,4 @@ If you've ever experienced pain when writing or maintaining CSS, this book can h
 
 ## Is this hard to learn?
 
-No. The entire book can be read in under 20 minutes which gives you the rationale. And when you're convinced you can apply the rules instantly. If you *do* have trouble, let me know and I will help you.
+No. This book not only tells you how to do it. But it also gives you the *why*. All of which can be read in less than 20 minutes.
