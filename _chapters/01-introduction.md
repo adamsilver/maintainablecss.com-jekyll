@@ -8,11 +8,6 @@ description: An introduction to MaintainableCSS, an approach to writing modular,
 
 *MaintainableCSS* is an approach to architecting and writing CSS that helps you and your team write modular, scalable and maintainable code.
 
-This guide will help you write CSS:
-
-- without having to override styles and,
-- without causing unexpected regression.
-
 ## There's nothing to download
 
 *MaintainableCSS* is not something you can download. It's a set of principles, guides and conventions to help you write CSS for small and large scale websites.
