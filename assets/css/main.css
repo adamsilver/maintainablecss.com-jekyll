@@ -65,7 +65,7 @@ a:focus {
 
 @media(min-width: 320px) {
 	.header-inner {
-		padding: 10px 20px;
+		padding: 20px;
 	}
 }
 
@@ -76,11 +76,10 @@ a:focus {
 .logo {
 	font-size: 2.5em;
 	font-weight: bold;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	text-align: center;
 }
 
-@media(min-width: 280px) {
+@media(min-width: 400px) {
 	.logo {
 		float: left;
 		font-size: 1.5em;
@@ -98,12 +97,13 @@ a:focus {
 .navigation {
 	font-size: 1.5em;
 	text-align: center;
+	margin-top: 10px;
 }
 
-@media(min-width: 280px) {
+@media(min-width: 400px) {
 	.navigation {
 		float: right;
-		margin-top: 10px;
+		margin-top: 0;
 	}
 }
 
@@ -369,14 +369,12 @@ a.chapterNavigation-next:active {
 .hero-logo {
 	display: block;
 	margin: 0 auto 10px;
-	height: 180px;
-	width: 180px;
+	height: 100px;
 }
 
 @media(min-width: 500px) {
 	.hero-logo {
-		width: 250px;
-		height: 250px;
+		width: 200px;
 	}
 }
 
@@ -393,7 +391,7 @@ a.chapterNavigation-next:active {
 
 @media(min-width: 600px) {
 	.hero h1 {
-		font-size: 4.5em;
+		font-size: 4em;
 	}
 }
 
@@ -407,6 +405,7 @@ a.chapterNavigation-next:active {
 	margin-bottom: 30px;
 	padding: 0 20px 10px;
 	color: #fff;
+	font-family: 'PT serif';
 }
 
 @media(min-width: 600px) {
@@ -492,6 +491,7 @@ a.chapterNavigation-next:active {
 	margin-bottom: 30px;
 	padding: 0 20px 10px;
 	color: #222;
+	font-family: 'PT serif';
 }
 
 @media(min-width: 600px) {
@@ -555,6 +555,7 @@ a.chapterNavigation-next:active {
 	margin-left: 20px;
 	font-size: 1.8em;
 	line-height: 1.7em;
+	font-family: 'PT serif';
 }
 
 @media(min-width: 600px) {
@@ -700,6 +701,7 @@ a.chapterNavigation-next:active {
     max-width: 500px;
     color: #222;
     text-align: center;
+    font-family: 'PT serif';
 }
 
 @media(min-width: 600px) {
