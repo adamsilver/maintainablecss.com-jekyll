@@ -1,52 +1,4 @@
 /**********************************************************
-* Lato
-**********************************************************/
-
-@font-face {
-	font-family: 'Lato';
-	src: url('../fonts/Lato/Lato-Regular.eot');
-	src: local('Lato Regular'), local('Lato-Regular'),
-		url('../fonts/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Lato/Lato-Regular.woff') format('woff'),
-		url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Lato';
-	src: url('../fonts/Lato/Lato-Italic.eot');
-	src: local('Lato Italic'), local('Lato-Italic'),
-		url('../fonts/Lato/Lato-Italic.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Lato/Lato-Italic.woff') format('woff'),
-		url('../fonts/Lato/Lato-Italic.ttf') format('truetype');
-	font-weight: normal;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Lato';
-	src: url('../fonts/Lato/Lato-Bold.eot');
-	src: local('Lato Bold'), local('Lato-Bold'),
-		url('../fonts/Lato/Lato-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Lato/Lato-Bold.woff') format('woff'),
-		url('../fonts/Lato/Lato-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Lato';
-	src: url('../fonts/Lato/Lato-BoldItalic.eot');
-	src: local('Lato Bold Italic'), local('Lato-BoldItalic'),
-		url('../fonts/Lato/Lato-BoldItalic.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Lato/Lato-BoldItalic.woff') format('woff'),
-		url('../fonts/Lato/Lato-BoldItalic.ttf') format('truetype');
-	font-weight: bold;
-	font-style: italic;
-}
-
-/**********************************************************
 * General
 **********************************************************/
 
@@ -56,7 +8,7 @@
 }
 
 body {
-	font-family: Lato, 'helvetica neue', helvetica, arial, sans-serif;
+	font-family: 'Open sans', helvetica, arial, sans-serif;
     text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
     font-size: 62.5%;
@@ -64,7 +16,7 @@ body {
 
 a:link,
 a:visited {
-	color: #001F3F;
+	color: #222;
 }
 
 a:hover,
@@ -88,12 +40,12 @@ a:focus {
 }
 
 .footer p {
-	color: #001F3F;
+	color: #222;
 	font-size: 1.5em;
 }
 
 .footer a {
-	color: #001F3F;
+	color: #222;
 }
 
 /**********************************************************
@@ -101,7 +53,7 @@ a:focus {
 **********************************************************/
 
 .header {
-	background-color: #eee;
+	background-color: #FF851B;
 }
 
 .header-inner {
@@ -122,24 +74,21 @@ a:focus {
 **********************************************************/
 
 .logo {
-	font-size: 2em;
-	text-align: center;
-	margin-bottom: 20px;
+	font-size: 2.5em;
 	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 @media(min-width: 280px) {
 	.logo {
 		float: left;
-		margin-bottom: 0;
 		font-size: 1.5em;
-		font-weight: normal;
-		margin-top: 1px;
 	}
 }
 
-.logo a img {
-	border: none;
+.logo a {
+	text-decoration: none;
 }
 
 /**********************************************************
@@ -162,7 +111,7 @@ a:focus {
 	margin-left: 3px;
 	margin-right: 3px;
 	text-decoration: none;
-	color: #001F3F;
+	color: #222;
 }
 
 @media(min-width: 360px) {
@@ -174,7 +123,7 @@ a:focus {
 
 .navigation a:hover,
 .navigation a:active {
-	color: #7FDBFF;
+	color: #111;
 }
 
 a.navigation-isActive {
@@ -192,12 +141,13 @@ a.navigation-isActive {
 
 .content h1 {
 	font-size: 3em;
-	line-height: 1.2em;
+	line-height: 1.2;
 	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 20px 20px;
-	color: #001F3F;
+	color: #222;
+	letter-spacing: -1px;
 }
 
 @media(min-width: 600px) {
@@ -208,13 +158,14 @@ a.navigation-isActive {
 
 .content h2 {
 	font-size: 2.2em;
-	line-height: 1.2em;
+	line-height: 1.2;
 	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10px;
 	padding: 0 20px;
-	color: #001F3F;
+	color: #222;
+	letter-spacing: -0.01em;
 }
 
 @media(min-width: 600px) {
@@ -232,7 +183,7 @@ a.navigation-isActive {
 	margin-right: auto;
 	margin-bottom: 10px;
 	padding: 0 20px;
-	color: #001F3F;
+	color: #222;
 	text-transform: uppercase;
 }
 
@@ -251,7 +202,8 @@ a.navigation-isActive {
 	margin-right: auto;
 	margin-bottom: 20px;
 	padding: 0 20px 10px;
-	color: #001F3F;
+	color: #222;
+	font-family: 'PT serif';
 }
 
 @media(min-width: 600px) {
@@ -267,9 +219,9 @@ a.navigation-isActive {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 25px;
-	margin-top: -20px;
 	padding: 0 20px 10px;
-	color: #001F3F;
+	color: #222;
+	font-family: 'PT serif';
 }
 
 @media(min-width: 600px) {
@@ -302,7 +254,7 @@ a.navigation-isActive {
 	margin-right: auto;
 	margin-bottom: 30px;
 	padding: 0 20px;
-	color: #001F3F;
+	color: #222;
 }
 
 .content blockquote cite {
@@ -312,23 +264,23 @@ a.navigation-isActive {
 .content p code,
 .content ul code,
 .content li code {
-	background: #ddd;
 	font-size: 1.3em;
-	color: #001F3F;
+	color: #FF851B;
 }
 
 .content pre {
 	font-family: Monaco,'Courier New','Courier',monospace;
 	font-size: 1.9em;
-	background-color: #7FDBFF;
+	color: #FF851B;
 	margin-bottom: 30px;
-	padding: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 	white-space: pre-wrap;       /* css-3 */
 	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
 	white-space: -pre-wrap;      /* Opera 4-6 */
 	white-space: -o-pre-wrap;    /* Opera 7 */
 	word-wrap: break-word;       /* Internet Explorer 5.5+ */
-	max-width: 760px;
+	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -347,7 +299,7 @@ a.navigation-isActive {
 .chapterNavigation {
 	font-size: 1.5em;
 	overflow: hidden;
-	background-color: #001F3F;
+	background-color: #222;
 }
 
 .chapterNavigation-last {
@@ -379,7 +331,7 @@ a.chapterNavigation-previous:hover,
 a.chapterNavigation-next:hover,
 a.chapterNavigation-previous:active,
 a.chapterNavigation-next:active {
-	color: #7FDBFF;
+	color: #FF851B;
 }
 
 .chapterNavigation-label {
@@ -403,8 +355,8 @@ a.chapterNavigation-next:active {
 	padding-right: 20px;
 	padding-top: 30px;
 	padding-bottom: 50px;
-	background-color: #7FDBFF;
-	background-color: #001F3F;
+	background-color: #FF851B;
+	background-color: #222;
 }
 
 @media(min-width: 600px) {
@@ -430,14 +382,12 @@ a.chapterNavigation-next:active {
 
 .hero h1 {
 	font-size: 3em;
-	line-height: 1.2em;
+	line-height: 1.2;
 	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 20px 20px;
 	text-align: center;
-	position: absolute;
-	left: -999em;
 	color: #fff;
 }
 
@@ -472,8 +422,8 @@ a.chapterNavigation-next:active {
 	text-decoration: none;
 	padding: 15px 70px;
 	font-size: 1.3em;
-	border: 3px solid #7FDBFF;
-	color: #7FDBFF;
+	border: 3px solid #FF851B;
+	color: #FF851B;
 	font-weight: bold;
 	letter-spacing: 0.04em;
 	width: 100px;
@@ -483,8 +433,8 @@ a.chapterNavigation-next:active {
 }
 
 .hero-button:hover {
-	color: #001F3F;
-	background-color: #7FDBFF;
+	color: #222;
+	background-color: #FF851B;
 }
 
 /**********************************************************
@@ -504,7 +454,7 @@ a.chapterNavigation-next:active {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 50px;
-	color: #001F3F;
+	color: #222;
 }
 
 @media(min-width: 600px) {
@@ -523,7 +473,7 @@ a.chapterNavigation-next:active {
 	text-align: center;
 	font-size: 2em;
 	margin-bottom: 7px;
-	color: #001F3F;
+	color: #222;
 }
 
 @media(min-width: 600px) {
@@ -541,7 +491,7 @@ a.chapterNavigation-next:active {
 	margin-right: auto;
 	margin-bottom: 30px;
 	padding: 0 20px 10px;
-	color: #001F3F;
+	color: #222;
 }
 
 @media(min-width: 600px) {
@@ -557,8 +507,8 @@ a.chapterNavigation-next:active {
 	text-decoration: none;
 	padding: 15px 70px;
 	font-size: 1.3em;
-	border: 3px solid #001F3F;
-	color: #001F3F;
+	border: 3px solid #222;
+	color: #222;
 	font-weight: bold;
 	letter-spacing: 0.04em;
 	width: 100px;
@@ -569,7 +519,7 @@ a.chapterNavigation-next:active {
 
 .benefit-readNowButton:hover {
 	background-color: #00162D;
-	color: #7FDBFF;
+	color: #FF851B;
 }
 
 /**********************************************************
@@ -577,7 +527,7 @@ a.chapterNavigation-next:active {
 **********************************************************/
 
 .chapters {
-	background-color: #7FDBFF;
+	background-color: #d9d9d9;
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
@@ -679,7 +629,7 @@ a.chapterNavigation-next:active {
 	text-decoration: none;
 	padding: 12px 30px;
 	font-size: 1.1em;
-	color: #001F3F;
+	color: #222;
 	border: 2px solid #eee;
 	font-weight: bold;
 	letter-spacing: 0.04em;
@@ -708,7 +658,7 @@ a.chapterNavigation-next:active {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
-	color: #001F3F;
+	color: #222;
 }
 
 @media(min-width: 600px) {
@@ -723,7 +673,7 @@ a.chapterNavigation-next:active {
 	margin-right: auto;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	color: #001F3F;
+	color: #222;
 	padding-left: 20px;
 	padding-right: 20px;
 	border-bottom: 1px dotted #aaa;
@@ -748,7 +698,7 @@ a.chapterNavigation-next:active {
     margin-left: auto;
     margin-right: auto;
     max-width: 500px;
-    color: #001F3F;
+    color: #222;
     text-align: center;
 }
 
@@ -763,7 +713,7 @@ a.chapterNavigation-next:active {
 }
 
 .subscribeForm {
-	background-color: #001F3F;
+	background-color: #222;
 }
 
 .subscribeForm-inner {
@@ -786,23 +736,24 @@ a.chapterNavigation-next:active {
     line-height: 1.7em;
     margin-bottom: 20px;
     max-width: 620px;
+    font-family: 'PT serif'
 }
 
 .subscribeForm-email {
 	text-decoration: none;
 	padding: 15px;
 	font-size: 1.5em;
-	color: #001F3F;
+	color: #222;
 	border: 2px solid #eee;
 	font-weight: bold;
-	letter-spacing: 0.04em;
+	letter-spacing: -0.01em;
 	margin: 0 auto;
 	-webkit-appearance: none;
 	background-color: #fff;
 	width: 100%;
 	box-sizing: border-box;
 	margin-bottom: 15px;
-	font-family: Lato;
+	font-family: 'Open sans';
 }
 
 @media(min-width: 650px) {
@@ -818,17 +769,17 @@ a.chapterNavigation-next:active {
 	text-decoration: none;
 	padding: 17px;
 	font-size: 1.5em;
-	color: #001F3F;
+	color: #222;
 	font-weight: bold;
 	border: none;
 	letter-spacing: 0.04em;
 	text-align: center;
 	margin: 0 auto;
 	-webkit-appearance: none;
-	background-color: #7FDBFF;
+	background-color: #FF851B;
 	width: 100%;
 	box-sizing: border-box;
-	font-family: Lato;
+	font-family: 'Open sans';
 }
 
 @media(min-width: 650px) {
@@ -839,5 +790,5 @@ a.chapterNavigation-next:active {
 }
 
 .subscribeForm-button:hover {
-	background-color: #68CCF3;
+	background-color: #fb7909;
 }
