@@ -270,11 +270,11 @@ a.navigation-isActive {
 
 .content pre {
 	font-family: Monaco,'Courier New','Courier',monospace;
-	font-size: 1.9em;
-	color: #FF851B;
+	font-size: 2.3em;
+	color: #222;
+	background-color: #fcf6ff;
 	margin-bottom: 30px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 20px;
 	white-space: pre-wrap;       /* css-3 */
 	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
 	white-space: -pre-wrap;      /* Opera 4-6 */
@@ -287,7 +287,7 @@ a.navigation-isActive {
 
 @media(min-width: 600px) {
 	.content pre {
-		font-size: 2.6em;
+		font-size: 2.7em;
 		margin-bottom: 45px;
 	}
 }

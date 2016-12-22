@@ -6,7 +6,7 @@ permalink: /chapters/organisation/
 description: Learn how to organise your CSS files.
 ---
 
-*Discoverability* is an important part of writing maintainable stylesheets. Discovery is becomes harder as the project grows over time. There are two approaches to consider.
+Discoverability is an important part of writing maintainable stylesheets. Discovery is becomes harder as the project grows over time. There are two approaches to consider.
 
 ## 1. CSS in a single folder
 

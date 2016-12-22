@@ -6,7 +6,7 @@ permalink: /chapters/reuse/
 description: Learn why avoding reuse and embracing repetition makes CSS maintenance easier.
 ---
 
-**Summary:** Don't try and reuse styles. Adopt a duplication-first approach.
+Summary: Don't try and reuse styles. Adopt a duplication-first approach.
 
 > &ldquo;DRY is often misinterpreted as the necessity to never repeat the exact same thing twice [...]. This is impractical and usually counterproductive, and can lead to forced abstractions, over-thought and [over]-engineered code.&ldquo;
 <br>&mdash; <cite>Harry Roberts, CSS Wizardy</cite>
@@ -21,7 +21,7 @@ Responsive Design  means styling elements differently based on viewport size. Im
 2. Each column has 2em and 3em font-size on "small" and "large" screens respectively.
 3. On small screens, the columns are stacked. Note: "column" is now a misleading class name.
 
-Using atomic class names such as: `.grid`, `.col`, `.pd50`, `.pd20`, `.fs2` and `fs3` makes this difficult at best.
+Using atomic class names such as: `.grid`, `.col`, `.pd50`, `.pd20`, `.fs2` and `.fs3` makes this difficult at best.
 
 	<div class="grid">
 	  <div class="col pd20 pd50 fs2 fs3">Column 1</div>
