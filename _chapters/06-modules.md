@@ -14,7 +14,7 @@ In a living room, you can consider the TV, the sofa and the wall art modules. Al
 
 If you take one of the units away, the rest still works just fine. I don't need the TV to be able to sit on the sofa etc.
 
-**In a website each of these can be considered modules:** header, footer, search form, sign up form, shopping basket, article, product list, navigation, homepage promo, archive list etc.
+In a website each of these can be considered modules: header, footer, search form, sign up form, shopping basket, article, product list, navigation, homepage promo, archive list etc.
 
 ## What's a component?
 
@@ -56,8 +56,6 @@ And the selectors for that:
 	.basket-item {}
 	.basket-productTitle {}
 	.basket-removeButton {}
-
-That was straight forward.
 
 ## Creating a second version of a module
 
