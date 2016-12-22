@@ -732,6 +732,13 @@ a.chapterNavigation-next:active {
     margin-bottom: 10px;
 }
 
+@media (min-width: 600px) {
+	.subscribeForm-heading {
+	    font-size: 2.5em;
+	    margin-bottom: 15px;
+	}
+}
+
 .subscribeForm p {
 	color: #fff;
 	font-size: 1.8em;
