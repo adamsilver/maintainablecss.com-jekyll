@@ -113,7 +113,7 @@ Instead of updating a mixin, a developer could create a new, slightly different 
 
 Moreover, mixins can end up containing multiple parameters, conditionality and lots of rules. This makes CSS more complicated. Complicated is hard to maintain.
 
-To mitigate, you can create granular mixins. For example, you could have a "red text" mixin. This is better. However, the declaration of that mixin is basically the same as a declaring a rule: `color: red`. You might as well declare that instead.
+To mitigate, you can create granular mixins. For example, you could have a "red text" mixin. This is better. However, the declaration of that mixin is basically the same as a declaring `color: red`. You may as well declare that instead.
 
 If you need to update the rule in multiple places, a search and replace might be all you need. Even if you did use a mixin, if *red* changes to *orange*, for example, the name of the mixin will need to be changed anyway.
 
