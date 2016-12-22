@@ -741,6 +741,13 @@ a.chapterNavigation-next:active {
     font-family: 'PT serif'
 }
 
+@media(min-width: 600px) {
+	.subscribeForm p {
+		font-size: 2.2em;
+		margin-bottom: 30px;
+	}
+}
+
 .subscribeForm-email {
 	text-decoration: none;
 	padding: 15px;
