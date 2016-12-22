@@ -11,15 +11,15 @@ Summary: Don't try and reuse styles. Adopt a duplication-first approach.
 > &ldquo;DRY is often misinterpreted as the necessity to never repeat the exact same thing twice [...]. This is impractical and usually counterproductive, and can lead to forced abstractions, over-thought and [over]-engineered code.&ldquo;
 <br>&mdash; <cite>Harry Roberts, CSS Wizardy</cite>
 
-Don't take this advice the wrong way. MaintainableCSS has various strategies for reuse which I will talk about later. The problem is that trying to reuse the bits *in-between* the curly braces is problematic. Here's why:
+Don't take this in the wrong way. MaintainableCSS has various strategies for reuse which I will talk about later. The problem is that trying to reuse the bits *in-between* the curly braces is problematic. Here's why:
 
 ## 1. Because styles change based on breakpoints
 
-Responsive Design  means styling elements differently based on viewport size. Imagine coding a two-column grid to the following spec:
+Responsive Design means styling elements differently based on viewport size. Imagine coding a two-column grid to the following spec:
 
 1. Each column has 20px and 50px padding on "small" and "large" screens respectively.
 2. Each column has 2em and 3em font-size on "small" and "large" screens respectively.
-3. On small screens, the columns are stacked. Note: "column" is now a misleading class name.
+3. On small screens, the columns are stacked. Note that "column" is now a misleading class name.
 
 Using atomic class names such as: `.grid`, `.col`, `.pd50`, `.pd20`, `.fs2` and `.fs3` makes this difficult at best.
 
@@ -28,20 +28,18 @@ Using atomic class names such as: `.grid`, `.col`, `.pd50`, `.pd20`, `.fs2` and 
 	  <div class="col pd20 pd50 fs2 fs3">Column 2</div>
 	</div>
 
-The latter class names override the former. There is no responsive behaviour here. To achieve this you need a crazy class name such as `.fs3large`.
+The latter class names override the former. There is no responsive behaviour here. To achieve this you would need a class name such as `.fs3large`. This is merely scratching the surface of the problems you will face if you use this CSS approach.
 
-This is merely scratching the surface of the problems you will face with this approach to CSS development.
-
-Alternatively, take the following semantic mark-up:
+Alternatively, take the following *semantic* mark-up:
 
 	<div class="someModule">
 	  <div class="someModule-someComponent"></div>
 	  <div class="someModule-someOtherComponent"></div>
 	</div>
 
-The styles are isolated to the module. And you can apply the rules flexibly within CSS. Just 6 CSS declarations are needed with 3 of those inside Media Queries.
+The classes are isolated to the module. They enable you to style these components easily with how ever many media queries you need.
 
-As an aside, consider how valuable a responsive grid system is. A visual layout should adapt to the *content*, not the other way around. The content should not adapt to a predefined responsive grid. That's poor design.
+As an aside, think about how valuable a responsive grid system is. A visual layout should adapt to the *content*, not the other way around. The content should not adapt to a predefined responsive grid. That's poor design.
 
 ## 2. Because styles change based on states
 
