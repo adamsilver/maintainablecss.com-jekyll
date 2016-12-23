@@ -6,7 +6,14 @@ permalink: /chapters/state/
 description: Learn how to provide different styles to your modules and components based on state, such as showing, hiding and loading.
 ---
 
-Often, particularly with richer user interfaces, we need to style modules or components to look different based on state. States such as *showing*, *hiding*, *active*, *inactive*, *disabled*, *loading*, *loaded* etc. To do this we must communicate this with an additional class name.
+You might need to style elements differently based on state. This is particularly the case with richer User Interfaces. States might include:
+
+- showing/hiding
+- active/inactive
+- disabled/enabled
+- loading/loaded
+
+To style elements differently based on state, we need to use an additional class name. These states should be encapsulated to the module or component at hand.
 
 ## Encapsulating state
 
@@ -43,5 +50,3 @@ If you wanted to apply state to just the *title* component, then you would apply
 
 	<div class="myModule">
        <p class="myModule-title myModule-title-isDisabled">
-
-Phew, that was easy.
