@@ -21,16 +21,16 @@ It's easy to add class names without thinking about meaning but naming is very i
 
 This is because humans are good at understanding human communication and bad at understanding abbreviated, non-semantic abstractions.
 
-## Good and bad examples of class names
+## Good and bad class names
 
-Try and spot the difference between non-semantic and semantic class names...
+Can you spot the difference between semantic and non-semantic class names?
 
 	<!-- bad -->
 	<div class="red pull-left">
 	<div class="grid row">
 	<div class="col-xs-4">
 
-It's not clear at all *what* this HTML represents. You *might* have an *idea* of what these things *look like* (on small or large screens) but that is all.
+These classes don't tell you *what* this HTML represents. At best, you may have an *idea* of these elements look like (at certain sized viewports), but that's all.
 
 	<!-- good -->
 	<div class="header">
@@ -38,17 +38,17 @@ It's not clear at all *what* this HTML represents. You *might* have an *idea* of
 	<div class="product">
 	<div class="searchResults">
 
-Here I know exactly what I am looking at. I know the intention of what this HTML represents. And I have no idea how it looks&mdash;that's what CSS is responsible for. Semantic class names mean something to both HTML *and* CSS (and JS).
+These classes tell me *what* this HTML represents. The intention is clear. These classes don't tell me what these modules look like, but that's okay. That's what CSS is designed for. Semantic class names mean something to HTML and CSS, and Javascript for that matter.
 
-So **why** else should we use semantic class names?
+There are many reasons why we semantic class names are advantageous. Here are those reasons:
 
 ## 1. Because it's easier to understand
 
 Whether you're looking at HTML or CSS, you know what you're affecting. With visual class names you end up having to sprinkle several class names on to each element, ending up with a vague understanding of the intention of these visual class names. This is hard to maintain.
 
-## 2. Because we build responsive sites
+## 2. Because it's easier to build responsive sites
 
-Styles often need changing based on viewport size. For example, you might float elements on big screens and not on small screens. So if you have a class called `clearfix` but you don't clear on small screens, then you have misleading code.
+Styles often change based on viewport size. For example, you might float elements on big screens but not on small screens. If you have a class called `clearfix` but it doesn't clear on small screens, your code is misleading.
 
 If you use semantic class names, then you can style them differently based on media queries making it easier to maintain.
 
