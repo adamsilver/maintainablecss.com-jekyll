@@ -53,7 +53,7 @@ a:focus {
 **********************************************************/
 
 .header {
-	background-color: #FF851B;
+	background-color: #222;
 }
 
 .header-inner {
@@ -87,6 +87,7 @@ a:focus {
 }
 
 .logo a {
+	color: #FF851B;
 	text-decoration: none;
 }
 
@@ -111,7 +112,7 @@ a:focus {
 	margin-left: 3px;
 	margin-right: 3px;
 	text-decoration: none;
-	color: #222;
+	color: #FF851B;
 }
 
 @media(min-width: 360px) {
@@ -123,7 +124,7 @@ a:focus {
 
 .navigation a:hover,
 .navigation a:active {
-	color: #111;
+	color: #FF851B;
 }
 
 a.navigation-isActive {
@@ -414,13 +415,32 @@ a.chapterNavigation-next:active {
 	}
 }
 
+/*
+text-transform: uppercase;
+	text-decoration: none;
+	padding: 14px 17px;
+	font-size: 1.5em;
+	color: #222;
+	font-weight: bold;
+	border: none;
+	letter-spacing: 0.04em;
+	text-align: center;
+	margin: 0 auto;
+	-webkit-appearance: none;
+	border: 3px solid #FF851B;
+	background-color: transparent;
+	color: #FF851B;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: 'Open sans';
+ */
+
 .hero-button:link,
 .hero-button:visited {
-	border-radius: 30px;
 	text-transform: uppercase;
 	text-decoration: none;
-	padding: 15px 70px;
-	font-size: 1.3em;
+	padding: 14px 70px;
+	font-size: 1.5em;
 	border: 3px solid #FF851B;
 	color: #FF851B;
 	font-weight: bold;
@@ -499,35 +519,12 @@ a.chapterNavigation-next:active {
 		font-size: 2.2em;
 	}
 }
-
-.benefit-readNowButton:link,
-.benefit-readNowButton:visited {
-	border-radius: 30px;
-	text-transform: uppercase;
-	text-decoration: none;
-	padding: 15px 70px;
-	font-size: 1.3em;
-	border: 3px solid #222;
-	color: #222;
-	font-weight: bold;
-	letter-spacing: 0.04em;
-	width: 100px;
-	display: block;
-	text-align: center;
-	margin: 0 auto;
-}
-
-.benefit-readNowButton:hover {
-	background-color: #00162D;
-	color: #FF851B;
-}
-
 /**********************************************************
 * Chapters
 **********************************************************/
 
 .chapters {
-	background-color: #d9d9d9;
+	background-color: #fcf6ff;
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
@@ -783,7 +780,7 @@ a.chapterNavigation-next:active {
 .subscribeForm-button {
 	text-transform: uppercase;
 	text-decoration: none;
-	padding: 17px;
+	padding: 14px 17px;
 	font-size: 1.5em;
 	color: #222;
 	font-weight: bold;
@@ -792,7 +789,9 @@ a.chapterNavigation-next:active {
 	text-align: center;
 	margin: 0 auto;
 	-webkit-appearance: none;
-	background-color: #FF851B;
+	border: 3px solid #FF851B;
+	background-color: transparent;
+	color: #FF851B;
 	width: 100%;
 	box-sizing: border-box;
 	font-family: 'Open sans';
@@ -801,10 +800,11 @@ a.chapterNavigation-next:active {
 @media(min-width: 650px) {
 	.subscribeForm-button {
 		display: inline-block;
-		width: 240px;
+		width: 200px;
 	}
 }
 
 .subscribeForm-button:hover {
-	background-color: #fb7909;
+	background-color: #FF851B;
+	color: #222;
 }

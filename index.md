@@ -69,7 +69,6 @@ id: home
 			<h3>AB testing and easy upgrading</h3>
 			<p>Want to test module variants against each other? MaintainableCSS makes this easy.</p>
 		</div>
-		<a class="benefit-readNowButton" href="/chapters/introduction">Read now</a>
 	</div>
 </div>
 <div class="recommendations">
