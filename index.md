@@ -11,63 +11,63 @@ id: home
 </div>
 
 <div class="benefits">
-	<h2>Benefits of MaintainableCSS</h2>
+	<h2>Why MaintainableCSS?</h2>
 	<div class="benefits-wrapper">
 		<div class="benefit">
 			<h3>Modular and encapsulated</h3>
 			<p>Styles don't bleed or cascade without your permission.</p>
 		</div>
 		<div class="benefit">
-			<h3>Any design requirements</h3>
+			<h3>Build any design</h3>
 			<p>Completely flexible to your needs.</p>
 		</div>
 		<div class="benefit">
-			<h3>No tooling required</h3>
+			<h3>No tooling</h3>
 			<p>But you can use tooling if you want to.</p>
 		</div>
 		<div class="benefit">
 			<h3>Easy to learn</h3>
-			<p>Read the guides and see.</p>
+			<p>Takes less than 20 mins.</p>
 		</div>
 		<div class="benefit">
 			<h3>Any size project</h3>
-			<p>Whatever size project you have, <em>MaintainableCSS</em> will help.</p>
+			<p>Whatever size project you have, this approach can help.</p>
 		</div>
 		<div class="benefit">
-			<h3>Upgrade in your own time</h3>
-			<p>You can start applying the approach today, bit by bit. You don't need to upgrade the whole project in one go.</p>
+			<h3>Upgrade bit by bit</h3>
+			<p>You don't need to upgrade the whole project in one go.</p>
 		</div>
 		<div class="benefit">
-			<h3>No problems of specificity</h3>
-			<p>Avoid problems of specificity and override hell. Write CSS as if you always have a blank canvas.</p>
+			<h3>Avoid override hell</h3>
+			<p>And avoid problems of specificity.</p>
 		</div>
 		<div class="benefit">
 			<h3>Managing state is easy</h3>
-			<p>Change the look and feel based on states such as <em>loading</em>, <em>disabled</em> and <em>hiding</em>.</p>
+			<p>Change the styles based on state e.g. <em>loading</em> or <em>hiding</em>.</p>
 		</div>
 		<div class="benefit">
-			<h3>No worry of regression</h3>
-			<p>When you change existing styles, have no fear that you might have caused regression elsewhere.</p>
+			<h3>Avoid regression</h3>
+			<p>Change existing styles, without fear of causing regression elsewhere.</p>
 		</div>
 		<div class="benefit">
-			<h3>Any team size</h3>
-			<p>Useful in a team of one or in a team of 100.</p>
+			<h3>Big or small teams</h3>
+			<p>Useful in a team of 1 or 100.</p>
 		</div>
 		<div class="benefit">
 			<h3>Semantic HTML and CSS</h3>
-			<p>MaintainableCSS embraces semantic HTML and CSS, so you get all the benefits too.</p>
+			<p>Compliments a semantic HTML approach.</p>
 		</div>
 		<div class="benefit">
-			<h3>High performance CSS</h3>
-			<p>Flat and performant selectors by convention.</p>
+			<h3>High performance</h3>
+			<p>Flat and performant selectors by design.</p>
 		</div>
 		<div class="benefit">
-			<h3>Find redundant code easily</h3>
-			<p>It's easy to spot redundant code. Find it. Delete it.</p>
+			<h3>Remove redundancy</h3>
+			<p>It's easy to find redundant code and delete it.</p>
 		</div>
 		<div class="benefit">
 			<h3>AB testing and easy upgrading</h3>
-			<p>Want to test module variants against each other? MaintainableCSS makes this easy.</p>
+			<p>Test different variants against each other easily.</p>
 		</div>
 	</div>
 </div>
