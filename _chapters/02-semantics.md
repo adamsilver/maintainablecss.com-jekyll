@@ -14,12 +14,10 @@ Semantic HTML isn't just about the elements we use&mdash;it's pretty obvious tha
 
 It's also about the class names (and IDs) we add. These attributes provide *additional* hooks for CSS (and Javascript) to enhance as appropriate.
 
-It's easy to add class names without thinking about meaning but naming is very important.
-
 > &ldquo;There are only two hard things in Computer Science: cache invalidation and naming things.&rdquo;
 <br>&mdash; <cite>Phil Karlton</cite>
 
-This is because humans are good at understanding human communication and bad at understanding abbreviated, non-semantic abstractions.
+It's important to get naming right. Humans are not so good at understanding abbreviated, non-semantic abstractions.
 
 ## Good and bad class names
 
@@ -30,7 +28,7 @@ Can you spot the difference between semantic and non-semantic class names?
 	<div class="grid row">
 	<div class="col-xs-4">
 
-These classes don't tell you *what* this HTML represents. At best, you may have an *idea* of these elements look like (at certain sized viewports), but that's all.
+These classes don't tell you *what* this HTML represents. At best, you may have an *idea* of what these elements look like (at certain sized viewports), but that's all.
 
 	<!-- good -->
 	<div class="header">
@@ -38,9 +36,9 @@ These classes don't tell you *what* this HTML represents. At best, you may have 
 	<div class="product">
 	<div class="searchResults">
 
-These classes tell me *what* this HTML represents. The intention is clear. These classes don't tell me what these modules look like, but that's okay. That's what CSS is designed for. Semantic class names mean something to HTML and CSS, and Javascript for that matter.
+On the other hand, the intention of this HTML is clear. I don't have a clue what these things look like but that's okay. That's what CSS is for. Semantic class names mean something to HTML, CSS, Javascript and automation test scripts.
 
-There are many reasons why we semantic class names are advantageous. Here are those reasons:
+There are many reasons why semantic class names are advantageous:
 
 ## 1. Because it's easier to understand
 
@@ -48,41 +46,41 @@ Whether you're looking at HTML or CSS, you know what you're affecting. With visu
 
 ## 2. Because it's easier to build responsive sites
 
-Styles often change based on viewport size. For example, you might float elements on big screens but not on small screens. If you have a class called `clearfix` but it doesn't clear on small screens, your code is misleading.
+Styles often change based on viewport size. For example, you might float elements on big screens but not on small screens. ``If you have a class called `clearfix` but it doesn't clear on small screens, your code is misleading.
 
 If you use semantic class names, then you can style them differently based on media queries making it easier to maintain.
 
 ## 3. Because semantic class names are easier to find
 
-If an element has classes based on how it looks such as `.red`, `clearfix` and `.pull-left`, then these classes will be scattered all over the codebase&mdash;so if you’re trying to hunt for a particular piece of HTML, the class name won't help you.
+If an element has classes based on how it looks such as `.red`, `clearfix` and `.pull-left`, then they will be scattered all over the codebase&mdash;so if you’re trying to hunt for a particular piece of HTML, the class name won't help you.
 
 On the other hand, if your class names are semantic, a search will find the HTML in question. Or more typically, if you're beginning your search via the HTML (think: inspecting an element) then finding unique CSS selectors based on the class name will be far easier.
 
-## 4. Because you don't want unexpected regression
+## 4. Because you don't want regression
 
-When you edit a "utility" class that describes *style*, the change will propogate to every single element with that class. Knowing CSS as you do, do you feel comfortable that you didn't cause unexpected problems elsewhere?
+When you edit a utility class that describes *style*, the change will propogate to every single element with that class. Knowing CSS as you do, do you feel comfortable that you didn't cause unexpected problems elsewhere?
 
 Semantic class names are unique, so when editing one, you *can* feel comfortable that your change only applies to the module in question as you intended, making maintenance easier.
 
 ## 5. Because you don't want to be afraid to update code
 
-Directly linked with the previous point about regression, when you don't feel comfortable touching code, you end up causing problems or being afraid to touch it at all. Therefore you end up with redundant code, increasing maintenance issues.
+This point relates closely to the previous. When you don't feel comfortable touching code, you end up causing problems or being afraid to touch the code. Therefore you end up with redundant code, increasing maintenance issues.
 
 ## 6. Because it helps automated functional testing
 
 Automated functional tests work by searching for particular elements, interacting with them (typing in text, clicking buttons and links etc) and verifying based on that.
 
-If you have visual class names all over the HTML, then there is no reliable way to target particular elements and act upon them.
+If you have visual class names, then there is no reliable way to target particular elements and act upon them. This is because these visual class names will be used across several elements.
 
-## 7. Because it provides meaningful hooks for Javascript to enhance
+## 7. Because it provides meaningful hooks for Javascript enhancements
 
-Just like these hooks help automated testing, they are also useful to enhance behaviour with Javascript. Visual class names can't be used as a reliable way to target modules or components.
+Just like the previous point, these hooks are useful for Javascript. Visual class names can't be used as a reliable way to target elements.
 
 ## 8. Because of general maintenance concerns
 
-If you name something based on what it is, you won't have to touch the HTML again i.e. a heading is always a heading, no matter what it *looks* like.
+If you name something based on what it is, you won't have to touch the HTML again. A heading is always a heading, no matter what it *looks* like.
 
-The styling might change but you only have to update the CSS. This is otherwise known as Loose Coupling and this improves maintainability.
+The styling might change but you only have to update the CSS. This is known as Loose Coupling which improves maintainability.
 
 ## 9. Because utility classes increase noise when debugging
 
@@ -96,7 +94,7 @@ On using the class attribute, HTML5 specs say in 3.2.5.7:
 
 ## 11. Because you get a performance bump
 
-This is a *very* small benefit but when you have one class name per element, you end up with smaller HTML. With visual classes you end up with multiple class names per element and that can add up.
+This is a *very* small benefit but when you have one class name per element, you end up with smaller HTML. With visual classes you end up with multiple class names per element which can add up.
 
 ## 12. Because it adheres to the reuse rule
 
