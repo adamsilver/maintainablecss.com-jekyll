@@ -28,7 +28,7 @@ Yes. Please contact me to find out more. Here's the [Japanese version](http://co
 
 ## Must I give a class name to every element?
 
-The short answer is no. You can write `.module h2` if you want to and sometimes you may have to. Perhaps your using Markdown.
+The short answer is no. You can write `.module h2` if you want to and sometimes you may have to. Perhaps you're using Markdown.
 
 ## Why must I prefix components with the module name?
 
