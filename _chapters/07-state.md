@@ -6,47 +6,36 @@ permalink: /chapters/state/
 description: Learn how to provide different styles to your modules and components based on state, such as showing, hiding and loading.
 ---
 
-You might need to style elements differently based on state. This is particularly the case with richer User Interfaces. States might include:
+You might need to style elements differently based on state. Here some examples of state that could affect the styling of an element:
 
-- showing/hiding
-- active/inactive
-- disabled/enabled
-- loading/loaded
+- showing or hiding
+- active or inactive
+- disabled or enabled
+- loading or loaded
+- hasProducts or hasNoProducts
+- isEmpty or isFull
 
-To style elements differently based on state, we need to use an additional class name. These states should be encapsulated to the module or component at hand.
+To style elements differently based on their state, we need to use an additional class name. These states should be applied to the module or component.
 
-## Encapsulating state
+Imagine we have a module called *thing*. We might give this element a class of `isDisabled` as follows:
 
-Let's say a module is called *myModule*. You could apply an `isActive` class as follows:
+	<div class="thing isDisabled">
 
-	<div class="myModule isActive">
+But we shouldn't do this because different elements will look different when disabled. For example:
 
-But it is likely that `isActive` is going to be used in many different modules, and what it means to be active is different depending on the module, so this breaks the fundamental rules of *MaintainableCSS* i.e. it's not encapsulated to the module in question.
+* a disabled link may have a dark background colour; and
+* a disabled basket may have a greyed-out overlay.
 
-For this reason, state must be prefixed with the module (or component) it pertains to...
+Instead, we should prefix the module (or component) to the state class.
 
 ## Applying state to a module
 
-So let's say our module is called *myModule*.
+In this case the HTML will be:
 
-	.myModule {}
-
-Here are some states we might need to apply to `myModule`.
-
-	.myModule-isDisabled {}
-	.myModule-isActive {}
-	.myModule-hasProducts {}
-	.myModule-isHidden {}
-	.myModule-isLoading {}
-
-And the HTML needs to be as follows:
-
-	<div class="myModule myModule-isDisabled">
-	    <p class="myModule-title">
+	<div class="thing thing-isDisabled">
 
 ## Applying state to a component
 
-If you wanted to apply state to just the *title* component, then you would apply `myModule-title-isDisabled` to the title component as follows:
+If your components need state then you would prefix the component:
 
-	<div class="myModule">
-       <p class="myModule-title myModule-title-isDisabled">
+	<p class="thing-blah thing-blah-isDisabled">
