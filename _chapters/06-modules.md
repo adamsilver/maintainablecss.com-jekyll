@@ -34,10 +34,10 @@ Ultimately, nobody understands your requirements as well as you do. Through expe
 
 ## Creating a module
 
-Let's build a module together. We're going to build a simplified shopping basket which is made up of a title and some products each of which contain the product title and a remove button. Here is the HTML we might typically use:
+Let's build a shopping basket module together, which I have simplified for brevity. Each product contains a title and a remove button. The HTML might be as follows:
 
 	<div class="basket">
-	    <h2 class="basket-title">Basket</h2>
+	    <h2 class="basket-title">Your Basket</h2>
 	    <div class="basket-item">
 	        <h3 class="basket-productTitle">Product title</h3>
             <form>
@@ -46,7 +46,7 @@ Let's build a module together. We're going to build a simplified shopping basket
 	    </div>
 	</div>
 
-And the selectors for that:
+And the selectors for that might be:
 
 	/* module container */
 	.basket {}
@@ -59,18 +59,22 @@ And the selectors for that:
 
 ## Creating a second version of a module
 
-Now, let's say that during the checkout process there is a similar, cut-down version of the basket&mdash;perhaps it has a title of "Order Summary" as opposed to "Your Basket". And perhaps it doesn't have the capability to remove products.
+Now imagine that there's a cut-down version of the basket shown during checkout. It is titled "Order Summary" instead of "Your Basket" and users cannot remove a product.
 
 ### Don't reuse
 
-You might be tempted to reuse the basket, but as we have learnt in the chapter about Reuse, it's problematic for many reasons.
+You may be tempted to reuse the HTML and CSS because it looks similar. But resist this temptation. If you do this then:
 
-Also, your template or partial will require conditional logic to handle the differences. The more conditionality you have, the more complicated it is to touch. And, due to this conditionality, the changes you make to the template might cause regression, in a condition you're not currently testing. This makes it harder to maintain.
+* you'll need to add display logic to manage the differences. This is relatively hard work; and
+* you may need CSS overrides to acheive the two layouts using one template; and
+* the added complexity increases the chance of regression.
 
-### Duplicate instead
+Instead of trying to reuse, duplicate the module and remove the differences.
 
-In a recent project, I named the new version `.orderSummary`. There were similarities but some differences too. This was enough to make duplication a much better option instead of the pain of trying to reuse.
+### Create two modules instead
 
-It's also worth noting that it's harsh to call this *duplication*. Duplication is copying the *same* thing. These two modules might *look similar* but they are not the same.
+In a recent project, I named the new version `.orderSummary`. There were similarities but some differences too. This was enough to make duplication a much better prospect.
 
-Finally, notice how with the CSS above, we have ended up with Semantic naming and encapsulated styles, making this very easy to maintain, upgrade or AB test, as and when required without fear of regression elsewhere.
+Also, it's not really duplication. Duplication is copying the *same* thing. These two modules might *look* similar but they are not the same.
+
+We've encapsulated the styles to the module. This means we can edit the Basket without causing regression in the Order Summary. Our life is much easier this way.
