@@ -26,11 +26,11 @@ A logo *module* might consist of copy, an image and a link, each of which are co
 
 ## Modules vs components
 
-Sometimes it can be tricky to decide whether something is a component or a module. For example a header is a module and it might contain a logo and a navigation menu as part of it. Are these components or modules?
+Sometimes it's hard to decide whether something is a component or a module. For example, you might have a header module containing a logo and a menu. Are these components or modules?
 
-Ultimately it doesn't matter too much and you can use your own experience to decide. For me, in a recent project it made sense for the logo to be a component of the header, and the navigation menu to be a module within the header.
+In a recent project of mine, it made sense for the logo to be a component of the header. But the menu was a module within it.
 
-Ultimately, only you understand *your* project requirements and if you get this wrong, changing a component for a module or vice versa is a very easy thing to do.
+Ultimately, nobody understands your requirements as well as you do. Through experience you'll get a feel for it. And if you get it wrong, changing from a component to a module (and vice versa) is easy.
 
 ## Creating a module
 
