@@ -6,7 +6,9 @@ permalink: /chapters/conventions/
 description: Learn the simple conventions that MaintainableCSS employs to write modules, components and state.
 ---
 
-Conventions can be a bone of contention amongst engineers, but what matters most is readability and consistency. With that said, *MaintainableCSS* has the following convention:
+Conventions often cause dispute amongst engineers. If you agree with the rationale behind this approach, then tweaking the convention is hardly a big deal. What's most important is readability and consistency.
+
+With that said, *MaintainableCSS* has the following convention:
 
 	/* Square brackets denote optional parts */
 	.<moduleName>[-<componentName>][-<state>] {}
