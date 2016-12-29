@@ -6,16 +6,16 @@ permalink: /chapters/reuse/
 description: Learn why avoding reuse and embracing repetition makes CSS maintenance easier.
 ---
 
-Summary: Don't try and reuse styles. Adopt a duplication-first approach.
+Summary: Don't try too hard to reuse style rules across selectors. Adopt a duplication-first approach.
 
 > &ldquo;DRY is often misinterpreted as the necessity to never repeat the exact same thing twice [...]. This is impractical and usually counterproductive, and can lead to forced abstractions, over-thought and [over]-engineered code.&ldquo;
 <br>&mdash; <cite>Harry Roberts, CSS Wizardy</cite>
 
-Don't take this the wrong way. I'll discuss various strategies for reuse later. It's just that trying to reuse the bits between the curly braces across selectors is problematic for many reasons. Here's why:
+Don't take this the wrong way as I'll discuss ways to reuse CSS shortly. The problem is that we try too hard to reuse the rules inbetween the curly braces across selectors. This is problematic for many reasons:
 
 ## 1. Because styles change based on breakpoints
 
-If you're building a responsive website, element styles will change based on viewport size. Imagine coding a two-column grid to the following spec:
+If you're building a responsive website, element styles will change based on screen size. Imagine coding a two-column grid to the following spec:
 
 1. Each column has 20px and 50px padding on "small" and "large" screens respectively.
 2. Each column has 2em and 3em font-size on "small" and "large" screens respectively.
