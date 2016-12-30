@@ -10,7 +10,7 @@ id: home
 	<a class="hero-button" href="/chapters/introduction/">Read now</a>
 </div>
 
-<div class="benefits">
+<!-- <div class="benefits">
 	<h2>Why MaintainableCSS?</h2>
 	<div class="benefits-wrapper">
 		<div class="benefit">
@@ -70,7 +70,7 @@ id: home
 			<p>Test different variants against each other easily.</p>
 		</div>
 	</div>
-</div>
+</div> -->
 <div class="recommendations">
 	<h2 class="recommendations-title">What others say</h2>
 	<div class="recommendations-item">
@@ -94,20 +94,13 @@ id: home
 			</p>
 		</blockquote>
 	</div>
-	<div class="recommendations-item">
+	<!-- <div class="recommendations-item">
 		<blockquote>
 			<p>&ldquo;Totally agree with this approach to CSS.&rdquo;
 			<br>&mdash; <cite>Marcel Reyna</cite>
 			</p>
 		</blockquote>
-	</div>
+	</div> -->
 </div>
 
 {% include chapterList.html %}
-
-<!-- <div class="gotQuestion">
-	<div class="gotQuestion-inner">
-		<h2>Got a question, issue or suggestion?</h2>
-		<p>Just <a href="http://github.com/adamsilver/maintainablecss.com/issues/new/">raise an issue for discussion</a> on Github.</p>
-	</div>
-</div> -->

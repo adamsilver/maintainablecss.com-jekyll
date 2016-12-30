@@ -78,7 +78,7 @@ a:focus {
 	text-align: center;
 }
 
-@media(min-width: 400px) {
+@media(min-width: 340px) {
 	.logo {
 		float: left;
 		font-size: 1.5em;
@@ -100,7 +100,7 @@ a:focus {
 	margin-top: 10px;
 }
 
-@media(min-width: 400px) {
+@media(min-width: 340px) {
 	.navigation {
 		float: right;
 		margin-top: 0;
@@ -114,7 +114,7 @@ a:focus {
 	color: #fff;
 }
 
-@media(min-width: 360px) {
+@media(min-width: 340px) {
 	.navigation a {
 		margin-left: 7px;
 		margin-right: 7px;
