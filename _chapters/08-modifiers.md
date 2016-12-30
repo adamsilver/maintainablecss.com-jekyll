@@ -23,14 +23,14 @@ The HTML for Girls was:
 And the CSS was:
 
 	.categoryHeader {
-	    padding-top: 50px;
-	    padding-bottom: 50px;
+	  padding-top: 50px;
+	  padding-bottom: 50px;
 	}
 
 	.categoryHeader-boys {
-	    background-image: url(/path/to/boys.jpg);
+	  background-image: url(/path/to/boys.jpg);
 	}
 
 	.categoryHeader-girls {
-	    background-image: url(/path/to/girls.jpg);
+	  background-image: url(/path/to/girls.jpg);
 	}

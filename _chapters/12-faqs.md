@@ -35,7 +35,7 @@ The short answer is no. You can write `.module h2` if you want to and sometimes 
 Good question. I used to write components without the prefix too but ran into problems. I used to do this:
 
 	<div class="basket">
-	    <div class="heading">
+	  <div class="heading">
 
 And this:
 
@@ -48,7 +48,7 @@ And this:
 There are two problems:
 
 1. When viewing HTML, you can't easily differentiate between a module and a component.
-2. The `.basket .heading` component will inherit styles from the `.heading` module. 
+2. The `.basket .heading` component will inherit styles from the `.heading` module.
 
 ## What about common styles e.g. buttons?
 
@@ -112,11 +112,11 @@ Therefore, all styles&mdash;even those that are wrapped in Media Queries&mdash;s
 	.basket {}
 
 	@media(min-width: 500px) {
-        .basket {}
+      .basket {}
 	}
 
 	@media(min-width: 1000px) {
-	    .basket {}
+	  .basket {}
 	}
 
 	.basket-heading {}

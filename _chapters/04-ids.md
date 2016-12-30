@@ -15,21 +15,21 @@ Summary: Don't use IDs as hooks for styling.
 This is a problem when you need a way to provide additional meaning to the HTML, such as state, something I discuss in a chapter of its own.
 
 	#someModule {
-	    color: red;
+	  color: red;
 	}
 
 	.someModule-override {
-	    color: blue;
+	  color: blue;
 	}
 
 If you apply the ID and the class name to the element, the colour will always be red.
 
 	.someModule {
-	    color: red;
+	  color: red;
 	}
 
 	.someModule-override {
-	    color: blue;
+	  color: blue;
 	}
 
 Now the colour will be blue as intended.

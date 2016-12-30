@@ -37,13 +37,13 @@ Ultimately, nobody understands your requirements as well as you do. Through expe
 Let's build a shopping basket module together, which I have simplified for brevity. Each product contains a title and a remove button. The HTML might be as follows:
 
 	<div class="basket">
-	    <h2 class="basket-title">Your Basket</h2>
-	    <div class="basket-item">
-	        <h3 class="basket-productTitle">Product title</h3>
-            <form>
-                <input type="submit" class="basket-removeButton" value="Remove">
-	        </form>
-	    </div>
+	  <h2 class="basket-title">Your Basket</h2>
+	  <div class="basket-item">
+	      <h3 class="basket-productTitle">Product title</h3>
+          <form>
+              <input type="submit" class="basket-removeButton" value="Remove">
+	      </form>
+	  </div>
 	</div>
 
 And the selectors for that might be:

@@ -11,7 +11,9 @@ Summary: Don't try too hard to reuse style rules across selectors. Adopt a dupli
 > &ldquo;DRY is often misinterpreted as the necessity to never repeat the exact same thing twice [...]. This is impractical and usually counterproductive, and can lead to forced abstractions, over-thought and [over]-engineered code.&ldquo;
 <br>&mdash; <cite>Harry Roberts, CSS Wizardy</cite>
 
-Don't take this the wrong way as I'll discuss ways to reuse CSS shortly. The problem is that we try too hard to reuse the rules inbetween the curly braces across selectors. This is problematic for many reasons:
+Don't take this the wrong way. I'll talk about strategies to reuse CSS shortly.
+
+It's just that we try so hard to reuse the rules inbetween the curly braces across selectors. And this is problematic for many reasons:
 
 ## 1. Because styles change based on breakpoints
 
@@ -49,7 +51,7 @@ Consider the following HTML:
 
 Changing the padding and colour on hover is a difficult task. It's better to avoid having to fix self-induced problems like this.
 
-## 3. Because reuse makes debugging more difficult
+## 3. Because debugging is harder
 
 When inspecting an element, there will be several applicable CSS selectors. You will have to look through these. With a semantic class name there is just one.
 
@@ -63,15 +65,13 @@ For example, `.red` could mean a red background, text or perhaps a reddish gradi
 
 ## 6. Because updating a utility class applies to all instances
 
-This sounds good but it isn't. You'll end up applying changes to elements in the site you didn't even know existed. Or you'll be too scared to update the utility class. Instead you'll create a `.red2` resulting in redundant code. Either way, this is not maintainable.
+This sounds good but it isn't. You'll end up applying changes to elements in the site you didn't even know existed. Or you'll be afraid to update the class. Instead you'll create a `.red2` resulting in redundant code. Either way, this is not maintainable.
 
 ## 7. Because non-semantic class names are hard to find
 
-If an element has classes based on how it looks such as `.red`, `.col-lg-4` and `.large`, then these classes will be scattered all over the codebase so searching for "red" will yield many results across the HTML templates, making it hard to find the element in question.
+If an element has classes based on how it looks such as `.red` or `.col-lg-4`, then these classes will be scattered all over the codebase. In which case, searching for "red" will yield many results across the HTML templates, making it hard to find the element in question.
 
 If you use semantic class names, a search should yield just one result. And if it yields more than one result, then this indicates a problem that requires your attention.
-
-Note: if you have a repeated *component* within a module, then searching will yield several results within 1 file. That's to be expected.
 
 ## 8. Because reusing CSS causes HTML bloat
 
@@ -81,13 +81,9 @@ If you attempt to reuse *rules* you'll end up with classes such as: `red`, `clea
 
 Bloat makes it harder to maintain and degrades performance (albeit in a minor way).
 
-## 9. Because reuse breaks semantics
+## What if I really want to reuse a style?
 
-If you strive to reuse the bits inbetween the curly braces to create atomic class names, you'll encounter all the problems stated in the chapter about [Semantics](/chapters/semantics/). Read that chapter now, if you haven't already.
-
-## 10. What if I really want to reuse a style?
-
-It is rare, but there are times when it does make sense to reuse a style. In this case use the comma in your selectors and place it in a well named file.
+On occasion it makes sense to reuse a style. In this case use the comma in your selectors and place it in a well named file.
 
 For example let's say you wanted a bunch of different modules or components to have red text you might do this:
 
@@ -96,12 +92,12 @@ For example let's say you wanted a bunch of different modules or components to h
 	/* red text */
 	.someSelector,
 	.someOtherSelector {
-		color: red;
+	  color: red;
 	}
 
 If you have an abstraction that deals with more than one rule, when one selector deviates from the rule, you'll need to remove it from the list and duplicate. Otherwise you'll get into override hell.
 
-Take this comma-delimitted approach for convenience, not performance.
+You should use this approach for convenience, not for performance reasons.
 
 ## What about mixins?
 
@@ -111,13 +107,13 @@ But, you should use them with caution. Just like utility classes, updating a mix
 
 Instead of updating a mixin, a developer could create a new, slightly different mixin. This causes redundancy.
 
-Moreover, mixins can end up containing multiple parameters, conditionality and lots of rules. This makes CSS more complicated. Complicated is hard to maintain.
+Also, mixins can end up containing multiple parameters, conditionality and lots of rules. This is complicated. Complicated is hard to maintain.
 
-To mitigate, you can create granular mixins. For example, you could have a "red text" mixin. This is better. However, the declaration of that mixin is basically the same as a declaring `color: red`. You may as well declare that instead.
+To mitigate this complexity, you can create granular mixins. For example, you could have a "red text" mixin. This is better. However, the declaration of that mixin is basically the same as a declaring `color: red`. You may as well declare that instead.
 
-If you need to update the rule in multiple places, a search and replace might be all you need. Even if you did use a mixin, if *red* changes to *orange*, for example, the name of the mixin will need to be changed anyway.
+If you need to update the rule in multiple places, a search and replace might be all you need. Even if you did use a mixin, if *red* changes to *orange*, for example, you'll have to update the name of the mixin anyway.
 
-I am not saying Mixins are bad. They can be helpful in some cases. For example, you might want to apply *clearfix* rules across different breakpoints. Use them with care.
+I am not saying mixins are bad. They can be helpful in some cases. For example, you might want to apply *clearfix* rules across different breakpoints. I'm just saying that you should use them with care.
 
 ## What about performance?
 
@@ -133,4 +129,4 @@ Attempting to reuse, for example `float: left`, is akin to trying to reuse varia
 
 ## Final thoughts on reuse
 
-Reuse and DRY are important principles in software engineering. But, striving to reuse CSS too much ironically makes maintenance *harder*. Lastly, there are times when reuse through abstraction makes sense which I discuss in later chapters.
+Reuse and DRY are important principles in software engineering. But, striving to reuse CSS too much ironically makes maintenance *harder*.
