@@ -1,4 +1,6 @@
 <nav class="navigation">
-	<a class="{% if page.id == "home" %}navigation-isActive{% endif%}" href="/">Home</a>
-	<a class="{% if page.id == "chapters" %}navigation-isActive{% endif%}" href="/chapters/">Chapters</a>
+	<ul>
+		<li><a class="{% if page.id == "home" %}navigation-isActive{% endif%}" href="/">Home</a></li>
+		<li><a class="{% if page.id == "chapters" %}navigation-isActive{% endif%}" href="/chapters/">Chapters</a></li>
+	</ul>
 </nav>

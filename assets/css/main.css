@@ -107,6 +107,11 @@ a:focus {
 	}
 }
 
+.navigation li {
+	list-style: none;
+	display: inline;
+}
+
 .navigation a {
 	margin-left: 3px;
 	margin-right: 3px;
