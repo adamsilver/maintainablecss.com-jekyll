@@ -15,7 +15,7 @@ Don't take this the wrong way. I'll talk about strategies to reuse CSS shortly.
 
 It's just that we try so hard to reuse the rules inbetween the curly braces across selectors. And this is problematic for many reasons:
 
-## 1. Because styles change based on breakpoints
+## 1. Because styles change in response to screen size
 
 If you're building a responsive website, element styles will change based on screen size. Imagine coding a two-column grid to the following spec:
 
@@ -43,7 +43,7 @@ These classes are isolated to the module. They enable you to style these compone
 
 Note: think about how valuable a responsive grid system is. A visual layout should adapt to the *content*, not the other way around. The content should not adapt to a predefined responsive grid. That's poor design.
 
-## 2. Because styles change based on states
+## 2. Because styles change due to state
 
 Consider the following HTML:
 
@@ -55,7 +55,7 @@ Changing the padding and colour on hover is a difficult task. It's better to avo
 
 When inspecting an element, there will be several applicable CSS selectors. You will have to look through these. With a semantic class name there is just one.
 
-## 4. Because granular styles aren't worth bothering with
+## 4. Because granular styles aren't worth it
 
 If you're going to do `<div class="red">` you may as well do `<div style="color: red">`. It's more explicit. But this isn't advisable because it mixes concerns and removes the benefit of being able to cache CSS.
 

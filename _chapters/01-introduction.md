@@ -6,7 +6,7 @@ permalink: /chapters/introduction/
 description: An introduction to MaintainableCSS, an approach to writing modular, scalable and of course maintainable CSS.
 ---
 
-MaintainableCSS is an approach to architecting and writing modular, scalable and of course maintainable CSS. Not only does this guide tell you *how* to do this, but more importantly it tells you *why*.
+MaintainableCSS is an approach to architecting and writing modular, scalable and maintainable CSS. Not only does this guide tell you *how* to do this, but more importantly it tells you *why*.
 
 ## There's nothing to download
 
