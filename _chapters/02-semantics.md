@@ -61,7 +61,7 @@ When you edit a class that describes *style*, the change will propogate to every
 
 Semantic class names are unique, so when editing one, you'll feel confident that your change only applies to the module in question, making maintenance easier.
 
-## 5. Because you want to confident in making changes
+## 5. Because you want to be confident in making changes
 
 When you don't feel confident changing code, you either cause problems or you avoid it altogether. The latter means that you'll end up with redundancy which itself causes maintenance issues.
 
