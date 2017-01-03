@@ -63,13 +63,13 @@ Now imagine that there's a cut-down version of the basket shown during checkout.
 
 ### Don't reuse
 
-You may be tempted to reuse the HTML and CSS because it looks similar. But resist this temptation. If you do this then:
+You may be tempted to reuse the HTML and CSS because it looks similar. But resist this temptation, otherwise:
 
 * you'll need to add display logic to manage the differences. This is relatively hard work; and
 * you may need CSS overrides to acheive the two layouts using one template; and
 * the added complexity increases the chance of regression.
 
-Instead of trying to reuse, duplicate the module and remove the differences.
+As a tip, I've found that the way in which back-end developers organise their code can help us decide whether one module should be two. For example if there are separate actions or view-models, you should probably do the same in HTML.
 
 ### Create two modules instead
 
