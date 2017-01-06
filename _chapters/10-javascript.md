@@ -41,7 +41,7 @@ As discussed above, you might prefer to use a global state class which is applic
       display: none;
 	}
 
-This approach does away with the long comma-delimitted list. And it you no longer have to specify the module class during instantiation. This is because the global class will be referenced from within.
+This approach does away with the long comma-delimitted list. And you no longer have to specify the module class when instantiating. This is because the global class will be referenced from within.
 
 	var module1Collapser = new Collapser(element1);
 	var module2Collapser = new Collapser(element2);
