@@ -39,11 +39,11 @@ Semantic classes have a much clearer meaning. They don't tell you what they look
 
 There are many reasons why semantic class names are advantageous:
 
-## 1. Because they are easier to understand
+## 1. Because their intention is clear
 
 Whether you're looking at HTML or CSS, you know what you're affecting. With visual class names you end up having to sprinkle several class names on to each element, ending up with a vague understanding of the intention of these visual class names. This is hard to maintain.
 
-## 2. Because they make it easier to make responsive sites
+## 2. Because it's easier to build responsive sites
 
 Styles often change based on viewport size. For example, you might float elements on big screens but not on small screens. If you have, for example, a class called `clearfix` but it doesn't clear on small screens, your code is misleading.
 
@@ -61,11 +61,11 @@ When you edit a class that describes *style*, the change will propogate to every
 
 Semantic class names are unique, so when editing one, you'll feel confident that your change only applies to the module in question, making maintenance easier.
 
-## 5. Because you don't want to be afraid to update code
+## 5. Because you want to be confident in making changes
 
-When you don't feel confident modifying code, you either cause problems or you avoid it. The latter means that you'll end up with redundancy which causes maintenance issues.
+When you don't feel confident changing code, you either cause problems or you avoid it altogether. The latter means that you'll end up with redundancy which itself causes maintenance issues.
 
-## 6. Because they make it easier to write automated tests
+## 6. Because they provide hooks for automated tests too
 
 Automated functional tests work by searching for and interacting with elements. This may include:
 
@@ -77,11 +77,11 @@ Automated functional tests work by searching for and interacting with elements. 
 
 Visual class names don't allow you to target specific elements because they're applied to multiple elements. What I've seen people do in this case is apply an extra semantic class name just for the tests to work.
 
-## 7. Because they provide hooks for Javascript enhancements
+## 7. Because they provide hooks for Javascript too
 
 Just like the previous point, these hooks are useful for Javascript. Visual class names can't be used as a reliable way to target elements.
 
-## 8. Because they need less maintenance
+## 8. Because they don't need maintaining
 
 If you name something based on what it is, you won't have to update the HTML again. A heading is always a heading, no matter what it *looks* like. The styling might change but this only requires a CSS update. This is known as Loose Coupling which improves maintainability.
 
@@ -95,7 +95,7 @@ On using the class attribute, HTML5 specs say in 3.2.5.7:
 
 > "[...] authors are encouraged to use values that describe the nature of the content, rather than values that describe the desired presentation of the content."
 
-## 11. Because they reduce the size of the HTML
+## 11. Because they encourage lean HTML
 
 This is a *very* small benefit but when you have one class name per element, you end up with smaller HTML. And whilst the CSS might get a little bigger, it's cacheable.
 
