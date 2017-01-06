@@ -12,7 +12,7 @@ How might we do this whilst adhering to these guides and without having to repea
 
 There are two approaches you can take.
 
-## 1. Encapsulating states to the module
+## 1. Encapsulating state to the module
 
 If you have a constructor that is responsible for making an element toggle visibility then consider specifying a class name that pertains to the module during instantiation:
 
