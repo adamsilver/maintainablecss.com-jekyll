@@ -12,6 +12,7 @@ body {
     text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
     font-size: 62.5%;
+    font-size: 100%;
 }
 
 a:link,
@@ -29,7 +30,7 @@ a:focus {
 **********************************************************/
 
 .footer {
-	background-color: #eee;
+	background-color: #f5f5f5;
 	padding: 20px;
 	overflow: hidden;
 }
@@ -41,7 +42,7 @@ a:focus {
 
 .footer p {
 	color: #222;
-	font-size: 1.5em;
+	font-size: 0.94em;
 }
 
 .footer a {
@@ -74,14 +75,14 @@ a:focus {
 **********************************************************/
 
 .logo {
-	font-size: 2em;
+	font-size: 1.25em;
 	text-align: center;
 }
 
 @media(min-width: 340px) {
 	.logo {
 		float: left;
-		font-size: 1.5em;
+		font-size: 0.94em;
 	}
 }
 
@@ -95,7 +96,7 @@ a:focus {
 **********************************************************/
 
 .navigation {
-	font-size: 1.5em;
+	font-size: 0.94em;
 	text-align: center;
 	margin-top: 10px;
 }
@@ -145,7 +146,7 @@ a.navigation-isActive {
 }
 
 .content h1 {
-	font-size: 3em;
+	font-size: 1.88em;
 	line-height: 1.2;
 	max-width: 700px;
 	margin-left: auto;
@@ -155,14 +156,14 @@ a.navigation-isActive {
 	letter-spacing: -1px;
 }
 
-@media(min-width: 600px) {
+@media(min-width: 37.5em) {
 	.content h1 {
-		font-size: 4.5em;
+		font-size: 1.75em;
 	}
 }
 
 .content h2 {
-	font-size: 2.2em;
+	font-size: 1.38em;
 	line-height: 1.2;
 	max-width: 700px;
 	margin-left: auto;
@@ -173,9 +174,9 @@ a.navigation-isActive {
 	letter-spacing: -0.01em;
 }
 
-@media(min-width: 600px) {
+@media(min-width: 37.5em) {
 	.content h2 {
-		font-size: 2.5em;
+		font-size: 1.57em;
 		margin-bottom: 15px;
 	}
 }
@@ -192,7 +193,7 @@ a.navigation-isActive {
 	text-transform: uppercase;
 }
 
-@media(min-width: 600px) {
+@media(min-width: 37.5em) {
 	.content h3 {
 		font-size: 1.9em;
 		margin-bottom: 15px;
@@ -200,7 +201,7 @@ a.navigation-isActive {
 }
 
 .content p {
-	font-size: 1.8em;
+	font-size: 1.13em;
 	line-height: 1.7em;
 	max-width: 700px;
 	margin-left: auto;
@@ -211,9 +212,9 @@ a.navigation-isActive {
 	font-family: 'PT serif';
 }
 
-@media(min-width: 600px) {
+@media(min-width: 37.5em) {
 	.content p {
-		font-size: 2.2em;
+		font-size: 1.38em;
 		margin-bottom: 30px;
 	}
 }
@@ -229,7 +230,7 @@ a.navigation-isActive {
 	font-family: 'PT serif';
 }
 
-@media(min-width: 600px) {
+@media(min-width: 37.5em) {
 	.content ol,
 	.content ul {
 		margin-bottom: 30px;
@@ -238,16 +239,16 @@ a.navigation-isActive {
 
 .content ol li,
 .content ul li {
-	font-size: 1.8em;
+	font-size: 1.13em;
 	line-height: 1.7em;
 	margin-left: 30px;
 	margin-bottom: 5px;
 }
 
-@media(min-width: 600px) {
+@media(min-width: 37.5em) {
 	.content ol li,
 	.content ul li {
-		font-size: 2.2em;
+		font-size: 1.38em;
 		margin-bottom: 10px;
 	}
 }
@@ -275,7 +276,7 @@ a.navigation-isActive {
 
 .content pre {
 	font-family: Monaco,'Courier New','Courier',monospace;
-	font-size: 2.3em;
+	font-size: 1.44em;
 	color: #222;
 	background-color: #fcf6ff;
 	margin-bottom: 30px;
@@ -290,9 +291,9 @@ a.navigation-isActive {
 	margin-right: auto;
 }
 
-@media(min-width: 600px) {
+@media(min-width: 37.5em) {
 	.content pre {
-		font-size: 2.7em;
+		font-size: 1.69em;
 		margin-bottom: 45px;
 	}
 }
@@ -302,7 +303,7 @@ a.navigation-isActive {
 **********************************************************/
 
 .chapterNavigation {
-	font-size: 1.5em;
+	font-size: 0.94em;
 	overflow: hidden;
 	background-color: #222;
 }
@@ -364,7 +365,7 @@ a.chapterNavigation-next:active {
 	background-color: #222;
 }
 
-@media(min-width: 600px) {
+@media(min-width: 37.5em) {
 	.hero {
 		padding-top: 60px;
 		padding-bottom: 90px;
@@ -384,7 +385,7 @@ a.chapterNavigation-next:active {
 }
 
 .hero h1 {
-	font-size: 3em;
+	font-size: 1.7em;
 	line-height: 1.2;
 	max-width: 700px;
 	margin-left: auto;
@@ -394,15 +395,15 @@ a.chapterNavigation-next:active {
 	color: #fff;
 }
 
-@media(min-width: 600px) {
+@media(min-width: 37.5em) {
 	.hero h1 {
-		font-size: 4em;
+		font-size: 2.5em;
 	}
 }
 
 .hero p {
 	text-align: center;
-	font-size: 1.8em;
+	font-size: 1.13em;
 	line-height: 1.7em;
 	max-width: 620px;
 	margin-left: auto;
@@ -413,9 +414,9 @@ a.chapterNavigation-next:active {
 	font-family: 'PT serif';
 }
 
-@media(min-width: 600px) {
+@media(min-width: 37.5em) {
 	.hero p {
-		font-size: 2.2em;
+		font-size: 1.38em;
 	}
 }
 
@@ -423,7 +424,7 @@ a.chapterNavigation-next:active {
 text-transform: uppercase;
 	text-decoration: none;
 	padding: 14px 17px;
-	font-size: 1.5em;
+	font-size: 0.94em;
 	color: #222;
 	font-weight: bold;
 	border: none;
@@ -444,7 +445,7 @@ text-transform: uppercase;
 	text-transform: uppercase;
 	text-decoration: none;
 	padding: 14px 70px;
-	font-size: 1.5em;
+	font-size: 0.94em;
 	border: 3px solid #FF851B;
 	color: #FF851B;
 	font-weight: bold;
@@ -471,7 +472,7 @@ text-transform: uppercase;
 
 .benefits h2 {
 	text-align: center;
-	font-size: 2.8em;
+	font-size: 1.75em;
 	line-height: 1.2em;
 	max-width: 700px;
 	margin-left: auto;
@@ -480,9 +481,9 @@ text-transform: uppercase;
 	color: #222;
 }
 
-@media(min-width: 600px) {
+@media(min-width: 37.5em) {
 	.benefits h2 {
-		font-size: 3.5em;
+		font-size: 2.19em;
 	}
 }
 
@@ -494,20 +495,20 @@ text-transform: uppercase;
 
 .benefit h3 {
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.25em;
 	margin-bottom: 7px;
 	color: #222;
 }
 
-@media(min-width: 600px) {
+@media(min-width: 37.5em) {
 	.benefits h3 {
-		font-size: 2.5em;
+		font-size: 1.57em;
 	}
 }
 
 .benefit p {
 	text-align: center;
-	font-size: 1.8em;
+	font-size: 1.13em;
 	line-height: 1.4em;
 	max-width: 700px;
 	margin-left: auto;
@@ -518,9 +519,9 @@ text-transform: uppercase;
 	font-family: 'PT serif';
 }
 
-@media(min-width: 600px) {
+@media(min-width: 37.5em) {
 	.benefit p {
-		font-size: 2.2em;
+		font-size: 1.38em;
 	}
 }
 /**********************************************************
@@ -540,28 +541,28 @@ text-transform: uppercase;
 }
 
 .chapters h2 {
-	font-size: 2.2em;
+	font-size: 1.38em;
 	line-height: 1.2em;
 	margin-bottom: 10px;
 }
 
-@media(min-width: 600px) {
+@media(min-width: 37.5em) {
 	.chapters h2 {
-		font-size: 2.5em;
+		font-size: 1.57em;
 		margin-bottom: 15px;
 	}
 }
 
 .chapters ol {
 	margin-left: 20px;
-	font-size: 1.8em;
+	font-size: 1.13em;
 	line-height: 1.7em;
 	font-family: 'PT serif';
 }
 
-@media(min-width: 600px) {
+@media(min-width: 37.5em) {
 	.chapters ol {
-		font-size: 2.2em;
+		font-size: 1.38em;
 	}
 }
 
@@ -587,27 +588,27 @@ text-transform: uppercase;
 }
 
 .gotQuestion h2 {
-	font-size: 2.2em;
+	font-size: 1.38em;
 	line-height: 1.2em;
 	margin-bottom: 10px;
 }
 
-@media(min-width: 600px) {
+@media(min-width: 37.5em) {
 	.gotQuestion h2 {
-		font-size: 2.5em;
+		font-size: 1.57em;
 		margin-bottom: 15px;
 	}
 }
 
 .gotQuestion p {
-	font-size: 1.8em;
+	font-size: 1.13em;
 	line-height: 1.7em;
 	margin-bottom: 30px;
 }
 
-@media(min-width: 600px) {
+@media(min-width: 37.5em) {
 	.gotQuestion p {
-		font-size: 2.2em;
+		font-size: 1.38em;
 	}
 }
 
@@ -630,7 +631,7 @@ text-transform: uppercase;
 	text-transform: uppercase;
 	text-decoration: none;
 	padding: 12px 30px;
-	font-size: 1.1em;
+	font-size: 0.7em;
 	color: #222;
 	border: 2px solid #eee;
 	font-weight: bold;
@@ -654,7 +655,7 @@ text-transform: uppercase;
 
 .recommendations-title {
 	text-align: center;
-	font-size: 2.8em;
+	font-size: 1.75em;
 	line-height: 1.2em;
 	max-width: 700px;
 	margin-left: auto;
@@ -663,9 +664,9 @@ text-transform: uppercase;
 	color: #222;
 }
 
-@media(min-width: 600px) {
+@media(min-width: 37.5em) {
 	.recommendations-title {
-		font-size: 3.5em;
+		font-size: 2.19em;
 	}
 }
 
@@ -682,7 +683,7 @@ text-transform: uppercase;
 	max-width: 500px;
 }
 
-@media(min-width: 600px) {
+@media(min-width: 37.5em) {
 	.recommendations-item {
 		padding-left: 40px;
 		padding-right: 40px;
@@ -695,7 +696,7 @@ text-transform: uppercase;
 }
 
 .recommendations-item p {
-	font-size: 1.8em;
+	font-size: 1.13em;
     line-height: 1.7em;
     margin-left: auto;
     margin-right: auto;
@@ -705,9 +706,9 @@ text-transform: uppercase;
     font-family: 'PT serif';
 }
 
-@media(min-width: 600px) {
+@media(min-width: 37.5em) {
 	.recommendations-item p {
-		font-size: 2.2em;
+		font-size: 1.38em;
 	}
 }
 
@@ -727,37 +728,37 @@ text-transform: uppercase;
 }
 
 .subscribeForm-heading {
-	font-size: 2.2em;
+	font-size: 1.38em;
     line-height: 1.2em;
     color: #fff;
     margin-bottom: 10px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5em) {
 	.subscribeForm-heading {
-	    font-size: 2.5em;
+	    font-size: 1.57em;
 	    margin-bottom: 15px;
 	}
 }
 
 .subscribeForm p {
 	color: #fff;
-	font-size: 1.8em;
+	font-size: 1.13em;
     line-height: 1.7em;
     margin-bottom: 20px;
     max-width: 620px;
     font-family: 'PT serif';
 }
 
-@media(min-width: 600px) {
+@media(min-width: 37.5em) {
 	.subscribeForm p {
-		font-size: 2.2em;
+		font-size: 1.38em;
 		margin-bottom: 30px;
 	}
 }
 
 .subscribeForm-label {
-	font-size: 1.8em;
+	font-size: 1.13em;
 	line-height: 1.5;
 	margin-bottom: 5px;
 	display: block;
@@ -765,16 +766,16 @@ text-transform: uppercase;
 	color: #fff;
 }
 
-@media(min-width: 600px) {
+@media(min-width: 37.5em) {
 	.subscribeForm-label {
-		font-size: 2.2em;
+		font-size: 1.38em;
 	}
 }
 
 .subscribeForm-email {
 	text-decoration: none;
 	padding: 9px 10px;
-	font-size: 1.8em;
+	font-size: 1.13em;
 	color: #222;
 	border: 2px solid #eee;
 	letter-spacing: -0.01em;
@@ -787,9 +788,9 @@ text-transform: uppercase;
 	font-family: 'PT serif';
 }
 
-@media(min-width: 600px) {
+@media(min-width: 37.5em) {
 	.subscribeForm-email {
-		font-size: 2.2em;
+		font-size: 1.38em;
 	}
 }
 
@@ -810,7 +811,7 @@ text-transform: uppercase;
 	text-transform: uppercase;
 	text-decoration: none;
 	padding: 14px 17px;
-	font-size: 1.5em;
+	font-size: 0.94em;
 	color: #222;
 	font-weight: bold;
 	border: none;
