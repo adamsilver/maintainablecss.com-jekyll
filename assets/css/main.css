@@ -271,9 +271,6 @@ a.navigation-isActive {
 	white-space: -pre-wrap;      /* Opera 4-6 */
 	white-space: -o-pre-wrap;    /* Opera 7 */
 	word-wrap: break-word;       /* Internet Explorer 5.5+ */
-	max-width: 700px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 @media(min-width: 37.5em) {
@@ -288,7 +285,6 @@ a.navigation-isActive {
 **********************************************************/
 
 .chapterNavigation {
-	font-size: 0.94em;
 	overflow: hidden;
 	background-color: #222;
 }
@@ -299,9 +295,13 @@ a.navigation-isActive {
 
 .chapterNavigation-inner {
 	overflow: hidden;
-	max-width: 700px;
+	max-width: 43.75em;
 	padding: 20px;
 	margin: 0 auto;
+}
+
+.chapterNavigation a {
+	font-size: 0.94em;
 }
 
 a.chapterNavigation-previous:link,
@@ -330,7 +330,7 @@ a.chapterNavigation-next:active {
 	left: -999em;
 }
 
-@media(min-width: 360px) {
+@media(min-width: 22.5em) {
 	.chapterNavigation-label {
 		position: static;
 		left: auto;
@@ -363,7 +363,7 @@ a.chapterNavigation-next:active {
 	height: 100px;
 }
 
-@media(min-width: 500px) {
+@media(min-width: 31.25em) {
 	.hero-logo {
 		width: 200px;
 	}
