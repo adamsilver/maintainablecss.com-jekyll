@@ -41,7 +41,7 @@ There are many reasons why semantic class names are advantageous:
 
 ## 1. Because their intention is clear
 
-Whether you're looking at HTML or CSS, you know what you're affecting. With visual class names you end up having to sprinkle several class names on to each element, ending up with a vague understanding of the intention of these visual class names. This is hard to maintain.
+The intention of a semantic class name is clear, whether you're viewing the HTML or the CSS. Understanding the intention of an element when it has a sprinkling of visual classes is far less clear. At most you'll have a vague understanding of the stylistic intentions.
 
 ## 2. Because it's easier to build responsive sites
 
@@ -72,10 +72,10 @@ Automated functional tests work by searching for and interacting with elements. 
 * clicking a link;
 * finding a text box;
 * typing in text;
-* submitting a form; and
-* then verifying something.
+* submitting a form; and then
+* verifying some criteria.
 
-Visual class names don't allow you to target specific elements because they're applied to multiple elements. What I've seen people do in this case is apply an extra semantic class name just for the tests to work.
+Visual class names don't allow you to target specific elements because they're applied to multiple. What I've seen people do in this case is apply an extra semantic class name just for the tests to work.
 
 ## 7. Because they provide hooks for Javascript too
 
@@ -97,7 +97,7 @@ On using the class attribute, HTML5 specs say in 3.2.5.7:
 
 ## 11. Because they encourage lean HTML
 
-This is a *very* small benefit but when you have one class name per element, you end up with smaller HTML. And whilst the CSS might get a little bigger, it's cacheable.
+This is a small benefit but when an element has only one class, the HTML will be smaller. And whilst the CSS might get a little bigger, it's cacheable.
 
 <!--## Because visual class names might declare the same property!
 

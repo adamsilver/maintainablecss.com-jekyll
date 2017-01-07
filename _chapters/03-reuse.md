@@ -19,9 +19,9 @@ It's just that we try so hard to reuse the rules inbetween the curly braces acro
 
 If you're building a responsive website, element styles will change based on screen size. Imagine coding a two-column grid to the following spec:
 
-1. Each column has 20px and 50px padding on "small" and "large" screens respectively.
-2. Each column has 2em and 3em font-size on "small" and "large" screens respectively.
-3. On small screens, the columns are stacked. Note that "column" is now a misleading class name.
+* Each column has 20px and 50px padding on "small" and "large" screens respectively
+* Each column has 2em and 3em font-size on "small" and "large" screens respectively
+* On small screens, the columns are stacked. Note that "column" is now a misleading class name
 
 Using atomic class names such as: `.grid`, `.col`, `.pd50`, `.pd20`, `.fs2` and `.fs3` makes this hard.
 
@@ -41,7 +41,7 @@ Alternatively, take the following *semantic* mark-up:
 
 These classes are isolated to the module. They enable you to style these components with how ever many media queries you need.
 
-Note: think about how valuable a responsive grid system is. A visual layout should adapt to the *content*, not the other way around. The content should not adapt to a predefined responsive grid. That's poor design.
+*Think about how valuable a responsive grid system is. A visual layout should adapt to the *content*, not the other way around. The content should not adapt to a predefined responsive grid. That's poor design.*
 
 ## 2. Because styles change due to state
 
@@ -49,7 +49,7 @@ Consider the following HTML:
 
 	<a class="padding-left-20 red" href="#"></a>
 
-Changing the padding and colour on hover is a difficult task. It's better to avoid having to fix self-induced problems like this.
+Changing the padding and colour on hover is a difficult task. Better to avoid having to fix self-induced problems like this.
 
 ## 3. Because debugging is harder
 
@@ -81,9 +81,9 @@ If you attempt to reuse *rules* you'll end up with classes such as: `red`, `clea
 
 Bloat makes it harder to maintain and degrades performance (albeit in a minor way).
 
-## What if I really want to reuse a style?
+## What if you really want to reuse a style?
 
-On occasion it makes sense to reuse a style. In this case use the comma in your selectors and place it in a well named file.
+On occasion it can make sense to reuse a style. In this case use the comma in your selectors and place it in a well named file.
 
 For example let's say you wanted a bunch of different modules or components to have red text you might do this:
 
@@ -105,7 +105,7 @@ If you're using a CSS preprocessor, you can use mixins. They are helpful because
 
 But, you should use them with caution. Just like utility classes, updating a mixin propagates to all instances.
 
-Instead of updating a mixin, a developer could create a new, slightly different mixin. This causes redundancy.
+Instead of updating a mixin, you could create a new, slightly different mixin. But, this causes redundancy.
 
 Also, mixins can end up containing multiple parameters, conditionality and lots of rules. This is complicated. Complicated is hard to maintain.
 
@@ -113,15 +113,17 @@ To mitigate this complexity, you can create granular mixins. For example, you co
 
 If you need to update the rule in multiple places, a search and replace might be all you need. Even if you did use a mixin, if *red* changes to *orange*, for example, you'll have to update the name of the mixin anyway.
 
-I am not saying mixins are bad. They can be helpful in some cases. For example, you might want to apply *clearfix* rules across different breakpoints. I'm just saying that you should use them with care.
+I am not saying mixins are bad. They can be helpful in some cases. For example, you might want to apply *clearfix* rules across different breakpoints.
+
+I'm just saying that you should use them with care.
 
 ## What about performance?
 
-I don't have stats to hand, but I know it's not wise to practice premature optimisation.
+I don't have stats to hand, but it's not wise to practice premature optimisation.
 
-Even if you have a CSS codebase of 100kb or more, I doubt you can save that much anyway. Compressing just one image will probably be more valuable than shaving CSS.
+Even if you have a CSS codebase of 100kb or more, I doubt you'll save that much. Compressing just one image will probably be more valuable than shaving CSS.
 
-Moreover, there are other ways to improve performance. And lastly, you probably have some redundancy in your CSS because of the problems discussed in this guide.
+And there are other ways to improve performance. That is you could easily have redundancy in your CSS because of the problems I've mentioned so far.
 
 ## Is this violating DRY principles?
 
