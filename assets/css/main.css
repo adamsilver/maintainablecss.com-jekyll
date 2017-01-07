@@ -342,18 +342,21 @@ a.chapterNavigation-next:active {
 **********************************************************/
 
 .hero {
+	background-color: #222;
+}
+
+.hero-inner {
+	max-width: 43.75em;
+	margin: 0 auto;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 30px;
 	padding-bottom: 50px;
-	background-color: #FF851B;
-	background-color: #222;
 }
 
 @media(min-width: 37.5em) {
-	.hero {
-		padding-top: 60px;
-		padding-bottom: 90px;
+	.hero-inner {
+		padding: 60px 60px 90px;
 	}
 }
 
@@ -372,10 +375,7 @@ a.chapterNavigation-next:active {
 .hero h1 {
 	font-size: 1.7em;
 	line-height: 1.2;
-	max-width: 700px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0 20px 20px;
+	margin-bottom: 20px;
 	text-align: center;
 	color: #fff;
 }
@@ -390,11 +390,7 @@ a.chapterNavigation-next:active {
 	text-align: center;
 	font-size: 1.13em;
 	line-height: 1.7em;
-	max-width: 620px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 30px;
-	padding: 0 20px 10px;
+	margin-bottom: 40px;
 	color: #fff;
 	font-family: 'PT serif';
 }

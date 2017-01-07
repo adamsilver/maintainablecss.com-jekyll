@@ -4,10 +4,12 @@ id: home
 ---
 
 <div class="hero">
-	<img class="hero-logo" src="/assets/img/logo.png" alt="">
-	<h1>MaintainableCSS</h1>
-	<p>Write CSS without worrying that overzealous, pre-existing styles will cause problems. <em>MaintainableCSS</em> is an approach to writing <em>modular</em>, <em>scalable</em> and of course, <em>maintainable</em> CSS.</p>
-	<a class="hero-button" href="/chapters/introduction/">Read now</a>
+	<div class="hero-inner">
+		<img class="hero-logo" src="/assets/img/logo.png" alt="">
+		<h1>MaintainableCSS</h1>
+		<p>Write CSS without worrying that overzealous, pre-existing styles will cause problems. <em>MaintainableCSS</em> is an approach to writing <em>modular</em>, <em>scalable</em> and of course, <em>maintainable</em> CSS.</p>
+		<a class="hero-button" href="/chapters/introduction/">Read now</a>
+	</div>
 </div>
 
 <!-- <div class="benefits">
