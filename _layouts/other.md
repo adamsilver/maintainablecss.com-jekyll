@@ -6,10 +6,12 @@
 	</head>
 	<body>
 		{% include header.html %}
-        <div class="content">
-			<h1>{{page.title }}</h1>
-           	{{ content }}
-        </div>
+		<main>
+	        <div class="content">
+				<h1>{{page.title }}</h1>
+	           	{{ content }}
+	        </div>
+	    </main>
         {% include subscribeForm.html %}
         {% include footer.html %}
 	</body>

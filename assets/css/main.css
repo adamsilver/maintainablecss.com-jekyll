@@ -137,15 +137,17 @@ a.navigation-isActive {
 .content {
 	padding-top: 40px;
 	padding-bottom: 1px;
+	max-width: 740px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .content h1 {
 	font-size: 1.88em;
 	line-height: 1.2;
-	max-width: 700px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0 20px 20px;
+	margin-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 	color: #222;
 	letter-spacing: -1px;
 }
@@ -159,11 +161,9 @@ a.navigation-isActive {
 .content h2 {
 	font-size: 1.38em;
 	line-height: 1.2;
-	max-width: 700px;
-	margin-left: auto;
-	margin-right: auto;
 	margin-bottom: 10px;
-	padding: 0 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 	color: #222;
 	letter-spacing: -0.01em;
 }
@@ -176,20 +176,18 @@ a.navigation-isActive {
 }
 
 .content h3 {
-	font-size: 1.6em;
+	font-size: 1em;
 	line-height: 1.2;
-	max-width: 700px;
-	margin-left: auto;
-	margin-right: auto;
 	margin-bottom: 10px;
-	padding: 0 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 	color: #222;
 	text-transform: uppercase;
 }
 
 @media(min-width: 37.5em) {
 	.content h3 {
-		font-size: 1.9em;
+		font-size: 1.19em;
 		margin-bottom: 15px;
 	}
 }
@@ -197,11 +195,9 @@ a.navigation-isActive {
 .content p {
 	font-size: 1.13em;
 	line-height: 1.7em;
-	max-width: 700px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 20px;
-	padding: 0 20px 10px;
+	margin-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
 	color: #222;
 	font-family: 'PT serif';
 }
