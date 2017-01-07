@@ -19,9 +19,9 @@ It's just that we try so hard to reuse the rules inbetween the curly braces acro
 
 If you're building a responsive website, element styles will change based on screen size. Imagine coding a two-column grid to the following spec:
 
-* Each column has 20px and 50px padding on "small" and "large" screens respectively
-* Each column has 2em and 3em font-size on "small" and "large" screens respectively
-* On small screens, the columns are stacked. Note that "column" is now a misleading class name
+* Each column has `20px` and `50px` padding on "small" and "large" screens respectively.
+* Each column has `2em` and `3em` font-size on "small" and "large" screens respectively.
+* On "small" screens, the columns are stacked. Note that "column" is now a misleading class name.
 
 Using atomic class names such as: `.grid`, `.col`, `.pd50`, `.pd20`, `.fs2` and `.fs3` makes this hard.
 
