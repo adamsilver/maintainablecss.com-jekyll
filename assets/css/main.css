@@ -1,4 +1,77 @@
 /**********************************************************
+* Open Sans
+**********************************************************/
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans/OpenSans-Regular.woff2') format('woff2'),
+		url('../fonts/OpenSans/OpenSans-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans/OpenSans-Italic.woff2') format('woff2'),
+		url('../fonts/OpenSans/OpenSans-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans/OpenSans-Bold.woff2') format('woff2'),
+		url('../fonts/OpenSans/OpenSans-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans/OpenSans-BoldItalic.woff2') format('woff2'),
+		url('../fonts/OpenSans/OpenSans-BoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
+/**********************************************************
+* PT Serif
+**********************************************************/
+
+@font-face {
+	font-family: 'PT Serif';
+	src: url('../fonts/PTSerif/PTSerif-Regular.woff2') format('woff2'),
+		url('../fonts/PTSerif/PTSerif-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PT Serif';
+	src: url('../fonts/PTSerif/PTSerif-Italic.woff2') format('woff2'),
+		url('../fonts/PTSerif/PTSerif-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'PT Serif';
+	src: url('../fonts/PTSerif/PTSerif-Bold.woff2') format('woff2'),
+		url('../fonts/PTSerif/PTSerif-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PT Serif';
+	src: url('../fonts/PTSerif/PTSerif-BoldItalic.woff2') format('woff2'),
+		url('../fonts/PTSerif/PTSerif-BoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+/**********************************************************
 * General
 **********************************************************/
 
