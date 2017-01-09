@@ -6,15 +6,15 @@ permalink: /chapters/javascript/
 description: How to write maintainable CSS and maintainable Javascript at the same time.
 ---
 
-You may want to use Javascript to apply the *same* behaviour to multiple modules (or components). A basic example would be two modules that have the same *isHidden* state which hides the module.
+We may want to use Javascript to apply the same behaviour to multiple modules or components.
 
-How might we do this whilst adhering to these guides and without having to repeat ourselves?
+For example, we might have two completely different modules that have a hidden state. And to do this we may have a constructor that toggles an element's visibility.
 
-There are two approaches you can take.
+There are two approaches we can take. Both of which compliment the CSS approach we've discussed in previous chapters.
 
 ## 1. Encapsulating state to the module
 
-If you have a constructor that is responsible for making an element toggle visibility then consider specifying a class name that pertains to the module during instantiation:
+To do this, we would need to specify a module-specific state class to the constructor as follows:
 
 	var module1Collapser = new Collapser(element1, {
 	  cssHideClass: 'moduleA-isHidden'
@@ -31,23 +31,21 @@ Then reuse the CSS styles as follows:
       display: none;
 	}
 
-You might find that this list gets rather large. In which case you might decide to abstract this style into a global state class.
+The trade-off is that this list could grow quickly. And everytime we add behavior, we need to update the CSS. A small change, but a change nonetheless. In this case we might consider a global state class.
 
 ## 2. Creating a global state class
 
-As discussed above, you might prefer to use a global state class which is applicable *across* modules.
+As we just discussed, if we find ourselves repeating the exact same set of styles for multiple modules, it might be better to use a global state class as follows:
 
 	.globalState-isHidden {
       display: none;
 	}
 
-This approach does away with the long comma-delimitted list. And you no longer have to specify the module class when instantiating. This is because the global class will be referenced from within.
+This approach does away with the long comma-delimitted list. And we no longer need to specify the module class when instantiating. This is because the global class will be referenced from within.
 
 	var module1Collapser = new Collapser(element1);
 	var module2Collapser = new Collapser(element2);
 
-This may seems more maintainable because there's less code to update. But it does require your careful consideration.
-
-For example, there might be other visual differences specific to each module that hang off the *isHidden* class. If there are differences, it's probably better to go with the first approach.
+But beware that this approach doesn't always make sense. We may have two different modules that *behave* the same, but *look* different in response to that behaviour, something I've touched upon in chapter seven, [State](/chapters/state/).
 
 <!-- display: flex vs display: block -->

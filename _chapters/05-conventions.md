@@ -6,16 +6,16 @@ permalink: /chapters/conventions/
 description: Learn the simple conventions that MaintainableCSS employs to write modules, components and state.
 ---
 
-Conventions often cause dispute amongst engineers. If you agree with the rationale behind this approach, then tweaking the convention is hardly a big deal. What's most important is readability and consistency.
+Conventions can cause dispute amongst engineers. But, if you agree with the rationale up to now then the convention itself doesn't matter too much. You can always tweak it to your liking if you don't find this one readable.
 
-With that said, *MaintainableCSS* has the following convention:
+What's most important is consistency. And with that in-mind *MaintainableCSS* has the following convention:
 
 	/* Square brackets denote optional parts */
 	.<moduleName>[-<componentName>][-<state>] {}
 
-Here are some real examples pertaining to a "search results" module:
+Here are some examples of a *search results* module:
 
-	/* module container/root */
+	/* module container */
 	.searchResults {}
 
 	/* components of a module */
@@ -26,6 +26,4 @@ Here are some real examples pertaining to a "search results" module:
 	/* state: such as AJAX loading */
 	.searchResults-isLoading {}
 
-Each of these class names are semantic. Module, component and state are all delimited by dashes. Each bit is written in lowerCamelCase.
-
-You will see this convention in upcoming chapters.
+Each of these class names are semantic. Components and state are delimitted by dashes with each word written in lowerCamelCase. We'll use this convention going forwards.
