@@ -6,11 +6,14 @@ permalink: /chapters/organisation/
 description: Learn how to organise your CSS files.
 ---
 
-Discoverability is an important part of writing maintainable stylesheets. Discovery becomes harder as the project grows over time. There are two approaches you can take.
+The way in which we organise our code can have positive or negative side-effects. We want our code to be discoverable to ourselves and to others. There are two ways to do this:
+
+1. organise by type i.e. all CSS lives in a single folder; or
+2. organise by module i.e. the module's CSS lives in module's folder.
 
 ## 1. CSS in a single folder
 
-This approach places all CSS inside a single folder within your project:
+This approach puts all CSS inside a single folder within your project:
 
 	/path/to/css
 	  /vendor
@@ -21,16 +24,21 @@ This approach places all CSS inside a single folder within your project:
 	    global.css
 	    basket.css
 
-Third-party CSS files live under `/vendor` while the CSS you write should live under `/yourApp` where *yourApp* is the name of your project.
+### Notes
 
-This approach can simplify deployment because bundling and compressing can be targetted via single directory.
+* Third-party CSS files live under `/vendor`. Your CSS lives under `/yourApp` where *yourApp* is the name of your project.
+* This approach simplifies deployment because a build script can easily target a single directory in order to bundle and compress etc.
+* This is the most common approach I've seen but that doesn't mean it's the best.
 
-This is the approach I have used most, but that doesn't mean it's the best.
+## 2. CSS in a module folder
 
-## 2. CSS in separate module folders
+This approach puts module-specific CSS within a folder of its own:
 
-This approach puts module-specific CSS within a module folder. It's good because it encapsulates all related code under one roof, so to speak.
-
+	/global
+	  /css
+	    resetPerhaps.css
+	    global.css
+        etc.css
 	/basket
       /controllers
         ...
@@ -47,33 +55,21 @@ This approach puts module-specific CSS within a module folder. It's good because
 	/header
 	  ...
 
-If you, like me have used the first approach for a long time, this way of doing things can seem strange at first, but it's really nice to work with.
+### Notes
 
-### What about global CSS?
-
-You'll need a folder for global CSS or global stuff in general:
-
-	/global
-	  /css
-        resetPerhaps.css
-        global.css
-        etc.css
-	/basket
-	  ...as above...
-	/header
-       ...
+* We normally orientate ourselves by feature, not by technology when tackling a piece of work. This makes this approach a compelling one.
+* Global CSS needs a folder of its own because global styles by their very nature don't belong to a module.
+* This approach has more chance of suffering from the *31 CSS file limit problem*, which I'll explain next.
 
 ## The 31 CSS file limit problem
 
-Whatever approach you take, be aware of the 31 CSS file limit.
+Whichever approach you take, you should be aware of the 31 CSS file limit found in versions of Internet Explorer. IE9, for example, ignores styles stored in the 32nd (or 33rd etc) file.
 
-IE9 for example, will ignore styles that are included in the 32nd (or 33rd etc) file. For production this is fine, because you're probably bundling your CSS to reduce HTTP requests. But for local development you probably want to work with source files to make debugging easier.
+For production this is fine, because we should bundle our CSS to reduce HTTP requests. But for local development it's better to work with source files to make debugging easier. And it's in legacy browsers where bugs normally arise.
 
-If you have a compilation step for local development&mdash;as would be the case if you're using a CSS preprocessor&mdash;you don't need to worry. Your files will be bundled during development.
+**If you have a compilation step** for local development&mdash;as would be the case whenre using a CSS preprocessor&mdash;you don't need to worry. The preprocessor will bundle the files.
 
-If you don't have a compilation step for local development&mdash;because debugging source files is easier this way&mdash;then you may have to address this. Your options are as follows:
+**If you don't have a compilation step** for local development&mdash;because debugging source files is easier this way&mdash;then you may want to remedy this with one of two approaches:
 
-1. You can introduce a compilation step. Basically, you need to mimick what you're doing for production, so you can&mdash;where necessary&mdash;debug in offending browsers; or
-2. Make sure you don't use more than 31 files. Choosing this option probably means you can't use the modular approach (as described above) because most websites contain more than 31 modules.
-
-If you do take this approach, you'll need to work out how best to group modules into files. For example, I recently folded delivery address, payment details and order confirmation modules into `checkout.css`.
+1. **Add an optional to concatentate CSS.** By doing this you'll be able to mimick the production environment and be able to debug in offending legacy browsers.
+2. **Use less than 32 CSS files.** As you'll probably have more than 31 modules, you can't organise your CSS by module. In fact you'll need to put several modules within the same CSS file.

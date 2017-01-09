@@ -235,6 +235,7 @@ a.navigation-isActive {
 	font-size: 1.38em;
 	line-height: 1.2;
 	margin-bottom: 10px;
+	margin-top: 11px;
 	padding-left: 20px;
 	padding-right: 20px;
 	color: #222;
@@ -294,7 +295,7 @@ a.navigation-isActive {
 @media(min-width: 37.5em) {
 	.content ol,
 	.content ul {
-		margin-bottom: 30px;
+		margin-bottom: 40px;
 	}
 }
 
@@ -396,18 +397,6 @@ a.chapterNavigation-next:hover,
 a.chapterNavigation-previous:active,
 a.chapterNavigation-next:active {
 	color: #FF851B;
-}
-
-.chapterNavigation-label {
-	position: absolute;
-	left: -999em;
-}
-
-@media(min-width: 22.5em) {
-	.chapterNavigation-label {
-		position: static;
-		left: auto;
-	}
 }
 
 /**********************************************************
