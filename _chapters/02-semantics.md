@@ -69,17 +69,17 @@ When you don't feel confident changing code, you either cause problems or you av
 
 Automated functional tests work by searching for and interacting with elements. This may include:
 
-* clicking a link;
-* finding a text box;
-* typing in text;
-* submitting a form; and then
-* verifying some criteria.
+1. clicking a link;
+2. finding a text box;
+3. typing in text;
+4. submitting a form; and then
+5. verifying some criteria.
 
-Visual class names don't allow you to target specific elements because they're applied to multiple. What I've seen people do in this case is apply an extra semantic class name just for the tests to work.
+Visual class names don't allow you to target specific elements because they're applied to multiple. What I've seen people do in this case is apply an extra semantic class name just so the tests can work.
 
 ## 7. Because they provide hooks for Javascript too
 
-Just like the previous point, these hooks are useful for Javascript. Visual class names can't be used as a reliable way to target elements.
+Semantic class names are useful for Javascript too. We can't use visual class names as a reliable way to target elements for enhancement.
 
 ## 8. Because they don't need maintaining
 

@@ -17,7 +17,7 @@ It's just that we try so hard to reuse the rules inbetween the curly braces acro
 
 ## 1. Because styles change in response to screen size
 
-If you're building a responsive website, element styles will change based on screen size. Imagine coding a two-column grid to the following spec:
+If you're building a responsive website, element styles will change based on screen size. Imagine coding a two-column grid whereby:
 
 * Each column has `20px` and `50px` padding on "small" and "large" screens respectively.
 * Each column has `2em` and `3em` font-size on "small" and "large" screens respectively.
@@ -30,7 +30,7 @@ Using atomic class names such as: `.grid`, `.col`, `.pd50`, `.pd20`, `.fs2` and 
 	  <div class="col pd20 pd50 fs2 fs3">Column 2</div>
 	</div>
 
-The latter class names override the former. To make the coloumns responsive you would need another class such as `.fs3large`. You can start to get a feel for how difficult this is.
+The latter class names override the former. To make the columns responsive you would need another class such as `.fs3large`. You can start to get a feel for how difficult this is.
 
 Alternatively, take the following *semantic* mark-up:
 
@@ -41,7 +41,7 @@ Alternatively, take the following *semantic* mark-up:
 
 These classes are isolated to the module. They enable you to style these components with how ever many media queries you need.
 
-*Think about how valuable a responsive grid system is. A visual layout should adapt to the *content*, not the other way around. The content should not adapt to a predefined responsive grid. That's poor design.*
+*Think about how valuable a responsive grid system is. A visual layout should adapt to the content, not the other way around. The content should not adapt to a predefined responsive grid. That's poor design.*
 
 ## 2. Because styles change due to state
 
