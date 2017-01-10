@@ -6,14 +6,16 @@ permalink: /chapters/organisation/
 description: Learn how to organise your CSS files.
 ---
 
-The way in which we organise our code can have positive or negative side-effects. We want our code to be discoverable to ourselves and to others. There are two ways to do this:
+The way in which we organise our code can have positive or negative side-effects with regards to maintainability. Organisation has a direct impact on discoverability. We want our code to be discoverable to ourselves and to others.
 
-1. organise by type i.e. all CSS lives in a single folder; or
-2. organise by module i.e. the module's CSS lives in module's folder.
+There are two ways to organise CSS:
+
+1. **Organise by type**. All CSS under a single folder; or
+2. **Organise by module**. The CSS lives in module-specific folder.
 
 ## 1. CSS in a single folder
 
-This approach puts all CSS inside a single folder within your project:
+This approach puts all CSS inside a single folder within the project:
 
 	/path/to/css
 	  /vendor
@@ -26,7 +28,8 @@ This approach puts all CSS inside a single folder within your project:
 
 ### Notes
 
-* Third-party CSS files live under `/vendor`. Your CSS lives under `/yourApp` where *yourApp* is the name of your project.
+* Third-party CSS files live under `/vendor`.
+* The application's CSS lives under `/yourApp` where *yourApp* is the name of your project.
 * This approach simplifies deployment because a build script can easily target a single directory in order to bundle and compress etc.
 * This is the most common approach I've seen but that doesn't mean it's the best.
 
@@ -59,7 +62,7 @@ This approach puts module-specific CSS within a folder of its own:
 
 * We normally orientate ourselves by feature, not by technology when tackling a piece of work. This makes this approach a compelling one.
 * Global CSS needs a folder of its own because global styles by their very nature don't belong to a module.
-* This approach has more chance of suffering from the *31 CSS file limit problem*, which I'll explain next.
+* This approach is more likely to suffer from the *31 CSS file limit problem*, which is explained next.
 
 ## The 31 CSS file limit problem
 

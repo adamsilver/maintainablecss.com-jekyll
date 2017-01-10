@@ -6,25 +6,28 @@ permalink: /chapters/modifiers/
 description: Use modifiers to change appearance based on slight differences.
 ---
 
-Modifiers are similiar to states. Like states they can override certain rules. This is useful when modules (or components) are almost identical but have slight differences.
+Like state, a modifier can also override styles. This is useful when modules (or components) are almost identical but have slight differences.
 
-In this case, reusing and abstracting common CSS rules is useful for maintainability, which I'll explain with an example.
+In this case, reusing and abstracting common CSS rules is useful for maintainability, which is best explained with an example.
 
-Recently, I was working on an e-commerce website. Each category had a header at the top with a background image. The background image was unique per category. The difference was just one style rule.
+Imagine an e-commerce site whereby each category has a unique background image in the header.
 
-The HTML for Boys was:
+All headers have the same padding etc. The only difference is the background image. To achieve this we added a unique modifier.
+
+The *boys* category had the following HTML:
 
 	<div class="categoryHeader categoryHeader-boys">
 
-The HTML for Girls was:
+And the *girls* category had the following HTML:
 
 	<div class="categoryHeader categoryHeader-girls">
 
-And the CSS was:
+And the CSS was as follows:
 
 	.categoryHeader {
 	  padding-top: 50px;
 	  padding-bottom: 50px;
+	  /* etc */
 	}
 
 	.categoryHeader-boys {
@@ -34,3 +37,5 @@ And the CSS was:
 	.categoryHeader-girls {
 	  background-image: url(/path/to/girls.jpg);
 	}
+
+This is a good example of reuse because the differences are small and they are well understood.

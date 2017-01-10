@@ -8,35 +8,42 @@ description: Learn why using IDs as hooks for styling are problematic and what y
 
 Summary: Don't use IDs as hooks for styling.
 
-## Why shouldn't we use IDs for CSS?
+[IDs overpower class names](http://www.w3.org/TR/css3-selectors/#specificity) by orders of magnitude, which is a problem when we need two hooks on a single element&mdash;which is something we'll cover in upcoming chapters.
 
-[IDs overpower class names](http://www.w3.org/TR/css3-selectors/#specificity) by orders of magnitude. For this reason classes can't override IDs easily.
+To show you the ID problem in isolation imagine we want to override the colour of an element from red to blue.
 
-This is a problem when you need a way to provide additional meaning to the HTML, such as state, something I discuss in a chapter of its own.
+Here's the HTML using an ID:
 
-	#someModule {
+	<div id="module" class="module-override">
+
+And the CSS:
+
+	#module {
 	  color: red;
 	}
 
-	.someModule-override {
+	.module-override {
 	  color: blue;
 	}
 
-With the example above, the colour will always be red which is not our intention. But if we avoid classes the colour will be blue as follows:
+The element will be red when we intended for it to be blue. To solve this problem we just need to exchange the ID for a class:
 
-	.someModule {
+	<div class="module module-override">
+
+And the CSS:
+
+	.module {
 	  color: red;
 	}
 
-	.someModule-override {
+	.module-override {
 	  color: blue;
 	}
 
-## But sometimes we need to use IDs?
+Here the element will be blue as we intended.
 
-Sometimes we must use an ID. For example:
+## But sometimes we must use IDs?
 
-- A form control is linked to a label using the ID; and
-- Internal anchors are often bound using IDs.
+Sometimes we must use an ID. For example, labels are linked to form controls using the ID. For another, internal anchors are bound by ID. Both examples improve the user experience from a behavioural perspective but they have no bearing on styles.
 
-Both of which improve the experience. So in short use IDs, but not as hooks for styling.
+It's not that we can't use IDs. It's just that we should avoid them as hooks for *styling*.

@@ -6,14 +6,18 @@ permalink: /chapters/versioning/
 description: Learn how MaintainableCSS makes it really easy to upgrade and AB test modules for rapidly evolving websites.
 ---
 
-We may need to have multiple versions of the same module in the codebase at the same time. For example we may want to AB test two different versions of a Basket to see which converts better.
+We may need multiple versions of the same module at any given time. For example we may want to AB test two different versions of a basket to see which converts better.
 
-This is easy. Just duplicate the module and give each a unique name:
+To do this, we just need to duplicate the module and give it a unique name. For example for a the basket we may have:
 
 	/* existing module (variant A) */
 	.basket {}
 
+	.basket-componentEtc {}
+
 	/* new version (variant B) */
 	.basketVariant2 {}
+
+	.basketVariant2-componentEtc {}
 
 This way we can maintain two versions during testing until we settle on the best one.

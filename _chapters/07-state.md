@@ -6,7 +6,7 @@ permalink: /chapters/state/
 description: Learn how to provide different styles to your modules and components based on state, such as showing, hiding and loading.
 ---
 
-We may need to style elements differently when a module (or component) is in a particular state. Here some different states that could require different styling:
+We may need to style elements differently when a module (or component) is in a particular state. Here some examples:
 
 - showing or hiding
 - active or inactive
