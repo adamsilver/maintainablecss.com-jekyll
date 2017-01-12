@@ -29,7 +29,7 @@ And the CSS should be:
 
 We should prefix state classes with the module (or component) because while the states are common, the styles could be different.
 
-For example, an empty *basket* may have a gray background. But an empty list of *search results* may have an absolutely position image.
+For example, an empty *basket* may have a gray background. But an empty list of *search results* may have an absolutely positioned image.
 
 ## What about reusing state?
 
@@ -39,4 +39,4 @@ Sometimes, we may in fact want to reuse state across modules or components. For 
 
 Not all visual states can be represented by an [ARIA attribute](https://www.w3.org/TR/wai-aria/states_and_properties#attrs_widgets). For example, there is no attribute to represent `hasProducts`. Therefore, we should use them only when necessary and in *addition* to classes.
 
-Also, using an attribute (instead of a class) selector has [less support](https://www.impressivewebs.com/attribute-selectors/). Whilst developers may consider these browsers "old", "insecure" or "irrelevant" we should avoid techniques that may exclude users unnecessarily.
+Also, using an attribute (instead of a class) selector has [less support](https://www.impressivewebs.com/attribute-selectors/). Whilst developers may consider these browsers "old", "insecure" or "irrelevant", we should avoid techniques that may exclude users unnecessarily.
