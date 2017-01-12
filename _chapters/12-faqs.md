@@ -50,6 +50,10 @@ There are two problems:
 1. When viewing HTML, you can't easily differentiate between a module and a component.
 2. The `.basket .heading` component will inherit styles from the `.heading` module.
 
+## Could we chain classes for state?
+
+We could use a chained selector for state e.g. `.module.isDisabled`. The problem is that this approach has less browser support. We should avoid patterns that unnecessarily exclude users, unless there is a compelling reason to do so.
+
 ## What about common styles e.g. buttons?
 
 Depending on your visual design requirements buttons can be problematic. They often have different spacing, floating, and other display rules depending on their location. There is also Media Queries to consider.

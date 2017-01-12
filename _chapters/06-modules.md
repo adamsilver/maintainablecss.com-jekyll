@@ -69,7 +69,7 @@ You may be tempted to reuse the HTML and CSS because it looks similar. But resis
 * you may need CSS overrides to acheive the two layouts using one template; and
 * the added complexity increases the chance of regression.
 
-As a tip, I've found that the way in which back-end developers organise their code can help us decide whether one module should be two. For example if there are separate actions or view-models, you should probably do the same in HTML.
+Instead of trying to reuse, duplicate the module and remove the differences.
 
 ### Create two modules instead
 
