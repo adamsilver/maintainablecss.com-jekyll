@@ -11,17 +11,15 @@ Summary: Don't try too hard to reuse style rules across selectors. Adopt a dupli
 > &ldquo;DRY is often misinterpreted as the necessity to never repeat the exact same thing twice [...]. This is impractical and usually counterproductive, and can lead to forced abstractions, over-thought and [over]-engineered code.&ldquo;
 <br>&mdash; <cite>Harry Roberts, CSS Wizardy</cite>
 
-Don't take this the wrong way. I'll talk about strategies to reuse CSS shortly.
-
-It's just that we try so hard to reuse the rules inbetween the curly braces across selectors. And this is problematic for many reasons:
+Don't take this the wrong way. We'll discuss strategies for reuse later on. It's just that we try so hard to reuse the rules inbetween the curly braces across selectors. And this is problematic for many reasons:
 
 ## 1. Because styles change in response to screen size
 
-If you're building a responsive website, element styles will change based on screen size. Imagine coding a two-column grid whereby:
+Imagine coding a two-column responsive grid whereby:
 
 * Each column has `20px` and `50px` padding on "small" and "large" screens respectively.
 * Each column has `2em` and `3em` font-size on "small" and "large" screens respectively.
-* On "small" screens, the columns are stacked. Note that "column" is now a misleading class name.
+* On "small" screens, the columns stack. Note that *column* is now a misleading class name.
 
 Using atomic class names such as: `.grid`, `.col`, `.pd50`, `.pd20`, `.fs2` and `.fs3` makes this hard.
 
@@ -30,7 +28,7 @@ Using atomic class names such as: `.grid`, `.col`, `.pd50`, `.pd20`, `.fs2` and 
 	  <div class="col pd20 pd50 fs2 fs3">Column 2</div>
 	</div>
 
-The latter class names override the former. To make the columns responsive you would need another class such as `.fs3large`. You can start to get a feel for how difficult this is.
+The latter class names override the former. To make the columns responsive we would need another class such as `.fs3large`. We start to see how painful this could get.
 
 Alternatively, take the following *semantic* mark-up:
 
@@ -39,9 +37,9 @@ Alternatively, take the following *semantic* mark-up:
 	  <div class="someModule-someOtherComponent"></div>
 	</div>
 
-These classes are isolated to the module. They enable you to style these components with how ever many media queries you need.
+These classes are isolated to the module. They enable us to style these components how ever we need to, and using media queries where necessary.
 
-*Think about how valuable a responsive grid system is. A visual layout should adapt to the content, not the other way around. The content should not adapt to a predefined responsive grid. That's poor design.*
+*Think about how valuable a responsive grid system is. A visual layout should adapt to the content, not the other way around.*
 
 ## 2. Because styles change due to state
 
@@ -53,39 +51,43 @@ Changing the padding and colour on hover is a difficult task. Better to avoid ha
 
 ## 3. Because debugging is harder
 
-When inspecting an element, there will be several applicable CSS selectors. You will have to look through these. With a semantic class name there is just one.
+When inspecting an element, there will be several applicable CSS selectors. We'll have to look through these. With a semantic class name there is just one.
 
 ## 4. Because granular styles aren't worth it
 
-If you're going to do `<div class="red">` you may as well do `<div style="color: red">`. It's more explicit. But this isn't advisable because it mixes concerns and removes the benefit of being able to cache CSS.
+If we're going to do `<div class="red">` we may as well do `<div style="color: red">`. It's more explicit.
+
+But this isn't advisable because it mixes concerns and removes the benefit of being able to cache CSS.
 
 ## 5. Because visual class names are ambiguous
 
-For example, `.red` could mean a red background, text or perhaps a reddish gradient. I don't know.
+For example, `.red` could mean red text, background or perhaps a reddish gradient. We can't be sure.
 
 ## 6. Because updating a utility class applies to all instances
 
-This sounds good but it isn't. You'll end up applying changes to elements in the site you didn't even know existed. Or you'll be afraid to update the class. Instead you'll create a `.red2` resulting in redundant code. Either way, this is not maintainable.
+This sounds good but it isn't. We'll end up applying changes to elements we didn't even know existed. Or we'll be afraid to update the class altogether. Instead we'll create a `.red2` resulting in redundant code. Either way, this is not maintainable.
 
 ## 7. Because non-semantic class names are hard to find
 
-If an element has classes based on how it looks such as `.red` or `.col-lg-4`, then these classes will be scattered all over the codebase. In which case, searching for "red" will yield many results across the HTML templates, making it hard to find the element in question.
+If an element has classes based on how it looks such as `.red` or `.col-lg-4`, then these classes will be scattered all over the codebase.
 
-If you use semantic class names, a search should yield just one result. And if it yields more than one result, then this indicates a problem that requires your attention.
+In which case, searching for *red* will yield many results across the HTML templates, making it hard to find the element in question.
+
+If we use semantic class names, a search should yield just one result. And if it yields more than one result, then this indicates a problem that requires our attention.
 
 ## 8. Because reusing CSS causes HTML bloat
 
-If you attempt to reuse *rules* you'll end up with classes such as: `red`, `clearfix` and `pull-left` which leads to HTML like this:
+If we attempt to reuse *rules* we'll end up with classes such as: `red`, `clearfix` and `pull-left` which leads to HTML like this:
 
 	<div class="clearfix pull-left red etc">
 
 Bloat makes it harder to maintain and degrades performance (albeit in a minor way).
 
-## What if you really want to reuse a style?
+## What if we really want to reuse a style?
 
-On occasion it can make sense to reuse a style. In this case use the comma in your selectors and place it in a well named file.
+On occasion it can make sense to reuse a style. In this case we should use comma-delimitted selectors residing in a well named file.
 
-For example let's say you wanted a bunch of different modules or components to have red text you might do this:
+For example, let's say we wanted a bunch of different elements to have red text we might do this:
 
 	/* colours.css */
 
@@ -95,35 +97,33 @@ For example let's say you wanted a bunch of different modules or components to h
 	  color: red;
 	}
 
-If you have an abstraction that deals with more than one rule, when one selector deviates from the rule, you'll need to remove it from the list and duplicate. Otherwise you'll get into override hell.
+If an abstraction has more than one rule, if one selector needs something different, that selector should be removed from the list. Otherwise we'll end experience override hell down the line.
 
-You should use this approach for convenience, not for performance reasons.
+We should use this technique for convenience, not for performance.
 
 ## What about mixins?
 
-If you're using a CSS preprocessor, you can use mixins. They are helpful because they can provide the best of both worlds.
+If we're using a CSS preprocessor, we can use mixins. They are helpful because they provide the best of both worlds. But, we should use them with caution.
 
-But, you should use them with caution. Just like utility classes, updating a mixin propagates to all instances.
-
-Instead of updating a mixin, you could create a new, slightly different mixin. But, this causes redundancy.
+Just like utility classes, updating a mixin propagates to all instances. Instead of updating a mixin, we could create a new, slightly different mixin. But, this causes redundancy.
 
 Also, mixins can end up containing multiple parameters, conditionality and lots of rules. This is complicated. Complicated is hard to maintain.
 
-To mitigate this complexity, you can create granular mixins. For example, you could have a "red text" mixin. This is better. However, the declaration of that mixin is basically the same as a declaring `color: red`. You may as well declare that instead.
+To mitigate this complexity, we can create granular mixins For example, a "red text" mixin. This is better. However, the declaration of that mixin is basically the same as a declaring `color: red`. We may as well declare that instead.
 
-If you need to update the rule in multiple places, a search and replace might be all you need. Even if you did use a mixin, if *red* changes to *orange*, for example, you'll have to update the name of the mixin anyway.
+If we need to update the rule in multiple places, a search and replace might be all that's necessary. Even if we did use a mixin, if *red* changes to *orange*, for example, the mixin's name will need updating.
 
-I am not saying mixins are bad. They can be helpful in some cases. For example, you might want to apply *clearfix* rules across different breakpoints.
+Sometimes mixins are useful in some cases. For example, we might want to apply *clearfix* rules across different elements and breakpoints.
 
-I'm just saying that you should use them with care.
+So it's not that mixins are *bad*, it's just we probably shouldn't be so quick to use them.
 
 ## What about performance?
 
-I don't have stats to hand, but it's not wise to practice premature optimisation.
+We developers are prone to overcomplicating matters when it comes to performance. We get obsessed with the smallest of details.
 
-Even if you have a CSS codebase of 100kb or more, I doubt you'll save that much. Compressing just one image will probably be more valuable than shaving CSS.
+Even if the CSS totals more than 100kb, in the grand schemes of things, there's probably very little gain from mindlessly striving for DRYness.
 
-And there are other ways to improve performance. That is you could easily have redundancy in your CSS because of the problems I've mentioned so far.
+Compressing just one image will give us a better return on our investment. And as we've already discussed, there are other forms of CSS redundancy. If we resolve that we improve maintainability *and* performance.
 
 ## Is this violating DRY principles?
 

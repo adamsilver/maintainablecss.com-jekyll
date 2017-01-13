@@ -32,12 +32,12 @@ The short answer is no. You can write `.module h2` if you want to and sometimes 
 
 ## Why must I prefix components with the module name?
 
-Good question. I used to write components without the prefix too but ran into problems. I used to do this:
+Good question. Here's the HTML without a prefix:
 
 	<div class="basket">
 	  <div class="heading">
 
-And this:
+And the CSS:
 
 	/* module */
 	.basket {}
@@ -45,10 +45,10 @@ And this:
 	/* heading component of basket module */
 	.basket .heading {}
 
-There are two problems:
+There are two problems with this:
 
-1. When viewing HTML, you can't easily differentiate between a module and a component.
-2. The `.basket .heading` component will inherit styles from the `.heading` module.
+1. when viewing HTML, we can't easily differentiate between a module and a component; and more importantly
+2. the `.basket .heading` component will inherit styles from the `.heading` module.
 
 ## Could we chain classes for state?
 
@@ -78,7 +78,7 @@ The second approach is to make a button into a module:
 	  /*common styles*/
 	}
 
-On a recent project I went for something in between. I was building a checkout flow. On each page there was a "continue" button that was identical on each page. There was also a "back" link. I ended up with this:
+On a recent project we went for something in between. Imagine a checkout flow. On each page there's an identical "continue" button. Beside the continue button is a "back" link. We ended up with the following CSS:
 
 	.checkoutActions-continueButton {
 	  /*...*/
@@ -88,20 +88,18 @@ On a recent project I went for something in between. I was building a checkout f
 	  /*...*/
 	}
 
-This approach meant that I segmented the abstraction to known identical modules, improving maintainability without affecting other similar (but not identical) buttons.
+We abstracted the styles to a well understood set of modules, improving maintainability without affecting other similar (but not identical) buttons.
 
-## What about inheritance for things like `h1`s etc?
+## What about inheritance for `h1`s etc?
 
-If your `h1`s are (almost always) identical on every page and every module then feel free to specify styles like this:
+Ideally our semantic HTML matches the integrity of the visual design. Meaning that we would hope that all `h1`s are always indentical. In this case we can declare the following CSS:
 
 	h1 {
-      font-size: ...;
-	  color: ...;
+      /* etc */
 	}
 
-However, in my experience, this is *rarely* the case, and so I wouldn't advise this&mdash;instead keep styles encapsulated to the module like this:
+However, this is rarely the case, in commercial, large-scale websites. In this case we should encapsulate styles to the module in question:
 
-	/* <h1 class="module-heading"> */
 	.module-heading {
 	  font-size: ...;
 	  color: ...;

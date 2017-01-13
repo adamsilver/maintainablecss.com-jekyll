@@ -8,9 +8,9 @@ description: Learn why using IDs as hooks for styling are problematic and what y
 
 Summary: Don't use IDs as hooks for styling.
 
-[IDs overpower class names](http://www.w3.org/TR/css3-selectors/#specificity) by orders of magnitude, which is a problem when we need two hooks on a single element&mdash;which is something we'll cover in upcoming chapters.
+[IDs overpower class names](http://www.w3.org/TR/css3-selectors/#specificity) by orders of magnitude. This is a problem when we need two hooks on a single element&mdash;something we'll cover in upcoming chapters.
 
-To show you the ID problem in isolation imagine we want to override the colour of an element from red to blue.
+To demonstrate the problem in isolation imagine we want to override the colour of an element from *red* to *blue*.
 
 Here's the HTML using an ID:
 
@@ -26,7 +26,7 @@ And the CSS:
 	  color: blue;
 	}
 
-The element will be red when we intended for it to be blue. To solve this problem we just need to exchange the ID for a class:
+The element will be red when we intended for it to be blue. To solve this problem we need to swap the ID for a class:
 
 	<div class="module module-override">
 
@@ -40,7 +40,7 @@ And the CSS:
 	  color: blue;
 	}
 
-Here the element will be blue as we intended.
+Here the element will be blue as intended.
 
 ## But sometimes we must use IDs?
 

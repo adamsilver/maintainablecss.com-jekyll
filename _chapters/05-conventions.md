@@ -6,9 +6,9 @@ permalink: /chapters/conventions/
 description: Learn the simple conventions that MaintainableCSS employs to write modules, components and state.
 ---
 
-Sometimes conventions cause dispute. But, if you agree with the rationale up to this point, the convention itself doesn't matter too much. You can always tweak to your liking if necessary.
+Conventions can be a bone of contention amongst developers. Whilst we may not always agree, it doesn't matter too much. We can always tweak the convention, if necessary.
 
-What's most important is consistency. With that in-mind *MaintainableCSS* has the following convention:
+What's most important is consistency. And, with that in-mind *MaintainableCSS* has the following convention:
 
 	/* Square brackets are optional */
 	.<module>[-<component>][-<state>] {}
@@ -24,8 +24,8 @@ Here are some examples of a *search results* module:
 	/* state e.g. AJAX loading */
 	.searchResults-isLoading {}
 
-The key points are as follows:
+Notes:
 
-- Component and state are delimitted by a dash
+- Component and state are both delimitted by a dash
 - Each segment is written with lowerCamelCase
 - Every class is always prefixed with the module name

@@ -10,9 +10,9 @@ description: Learn the differences between modules and components and how to ide
 
 A module is a distinct, independent unit, that can be combined with other modules to form a more complex structure.
 
-In a living room, you can consider the TV, the sofa and the wall art modules. All coming together to create a useable room.
+In a living room, we can consider the TV, the sofa and the wall art modules. All coming together to create a useable room.
 
-If you take one of the units away, the rest still works just fine. I don't need the TV to be able to sit on the sofa etc.
+If we take one of the units away, the rest still works just fine. We don't need the TV to be able to sit on the sofa etc.
 
 In a website each of these can be considered modules: header, footer, search form, sign up form, shopping basket, article, product list, navigation, homepage promo, archive list etc.
 
@@ -26,15 +26,15 @@ A logo *module* might consist of copy, an image and a link, each of which are co
 
 ## Modules vs components
 
-Sometimes it's hard to decide whether something is a component or a module. For example, you might have a header module containing a logo and a menu. Are these components or modules?
+Sometimes it's hard to decide whether something is a component or a module. For example, we might have a header containing a logo and a menu. Are these components or modules?
 
-In a recent project of mine, it made sense for the logo to be a component of the header. But the menu was a module within it.
+In a recent project of mine, it made sense for the logo to be a component and the menu to be a module of its own.
 
 Ultimately, nobody understands your requirements as well as you do. Through experience you'll get a feel for it. And if you get it wrong, changing from a component to a module (and vice versa) is easy.
 
 ## Creating a module
 
-Let's build a shopping basket module together, which I have simplified for brevity. Each product contains a title and a remove button. The HTML might be as follows:
+Let's build a shopping basket module together, which we'll simplify for brevity. Each product contains a title and a remove button. The HTML might be as follows:
 
 	<div class="basket">
 	  <h2 class="basket-title">Your Basket</h2>
@@ -63,17 +63,17 @@ Now imagine that there's a cut-down version of the basket shown during checkout.
 
 ### Don't reuse
 
-You may be tempted to reuse the HTML and CSS because it looks similar. But resist this temptation, otherwise:
+We may be tempted to reuse the HTML and CSS because it looks similar. But resist this temptation, otherwise:
 
-* you'll need to add display logic to manage the differences. This is relatively hard work; and
-* you may need CSS overrides to acheive the two layouts using one template; and
+* we'll need to add display logic to manage the differences. This is relatively hard work; and
+* we may need CSS overrides to acheive the two layouts using one template; and
 * the added complexity increases the chance of regression.
 
 Instead of trying to reuse, duplicate the module and remove the differences.
 
 ### Create two modules instead
 
-In a recent project, I named the new version `.orderSummary`. There were similarities but some differences too. This was enough to make duplication a much better prospect.
+In a recent project, we named the new version `.orderSummary`. There were similarities but some differences too. This was enough to make duplication a much better prospect.
 
 Also, it's not really duplication. Duplication is copying the *same* thing. These two modules might *look* similar but they are not the same.
 

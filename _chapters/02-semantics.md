@@ -12,16 +12,16 @@ Summary: Name something based on what it *is*, not how it *looks* or *behaves*.
 
 Semantic HTML isn't just about the elements we use. It's quite obvious that we should use `<a>` for links, `<table>` for tabular data and `<p>` for paragraphs etc.
 
-What's not quite so obvious is the values we give to class names (and IDs). These attributes allow us to enhance a web page with style (and behaviour) using CSS (and Javascript).
+What's not quite so obvious is the values we use for classes. This is important because they enable us to enhance a web page with style (and behaviour).
 
 > &ldquo;There are only two hard things in Computer Science: cache invalidation and naming things.&rdquo;
 <br>&mdash; <cite>Phil Karlton</cite>
 
-It's important to get naming right. Humans are not so good at understanding abbreviated, non-semantic abstractions.
+It's important to name elements well. We are not so good at understanding abbreviated, non-semantic abstractions.
 
 ## Good and bad class names
 
-Can you spot the difference between semantic and non-semantic class names?
+Here are some examples of semantic and non-semantic class names:
 
 	<!-- non semantic -->
 	<div class="red pull-left">
@@ -33,37 +33,37 @@ Can you spot the difference between semantic and non-semantic class names?
 	<div class="product">
 	<div class="searchResults">
 
-Non semantic classes don't tell you *what* the HTML represents. At best, they give you an idea of what the elements look like (at certain screen sizes), but that's all.
+Non semantic classes don't tell us *what* the HTML represents. At most, they give us an idea of what elements look like.
 
-Semantic classes have a much clearer meaning. They don't tell you what they look like, but that's okay. That's what CSS is for. Semantic class names mean something to HTML, CSS, Javascript and automation test scripts.
+Semantic classes have a much clearer meaning. They don't tell us what they look like, but that's okay. That's what CSS is for. Semantic class names mean something to HTML, CSS, Javascript and automated tests.
 
 There are many reasons why semantic class names are advantageous:
 
 ## 1. Because their intention is clear
 
-The intention of a semantic class name is clear, whether you're viewing the HTML or the CSS. Understanding the intention of an element when it has a sprinkling of visual classes is far less clear. At most you'll have a vague understanding of the stylistic intentions.
+The intention of a semantic class name is clear, whether we're looking at the HTML or the CSS. Understanding the intention of an element when it has a sprinkling of visual classes is far less clear. At most we'll gain a vague understanding of the stylistic intentions.
 
 ## 2. Because it's easier to build responsive sites
 
-Styles often change based on viewport size. For example, you might float elements on big screens but not on small screens. If you have, for example, a class called `clearfix` but it doesn't clear on small screens, your code is misleading.
+Styles often change based on viewport size. For example, elements may sit beside each other when there is enough space. When there isn't they'll be stacked.
 
-If you use semantic class names, then you can style them differently based on media queries making it easier to maintain.
+When the elements are stacked, a `clearfix` class, for example, makes are code misleading. Semantic class names can be styled easily through media queries making it easier to maintain.
 
 ## 3. Because they are easier to find
 
-Non semantic classes such as `.red` and `.pull-left` will be scattered all over the code. This means a search will yield many results, making it hard to find a particular portion of HTML.
+Classes such as `.red` and `.pull-left` will reside across many elements within the codebase. Therefore, a search will yield many results. This means it will be hard to track down the HTML in question.
 
-On the other hand, searching for a semantic class will find the HTML in question. And if you're inspecting an element, finding the related CSS will be far easier.
+A semantic class such as `.basket` should yield just one result making it much easier to find. And if we inspect an element, it will be quicker to track down the releated selector.
 
 ## 4. Because they reduce the risk of regression
 
-When you edit a class that describes *style*, the change will propogate to every single element with that class. Knowing CSS as you do, do you feel comfortable that you didn't cause unexpected problems elsewhere?
+Editing a stylistic class propogates to every element that uses it. Therefore, updating its styles increases the chance of regression drastically.
 
-Semantic class names are unique, so when editing one, you'll feel confident that your change only applies to the module in question, making maintenance easier.
+Semantic class names are unique, so when editing one, we can be confident that our changes apply only to the module in question, making maintenance easier.
 
-## 5. Because you want to be confident in making changes
+## 5. Because we want to make changes with confidence
 
-When you don't feel confident changing code, you either cause problems or you avoid it altogether. The latter means that you'll end up with redundancy which itself causes maintenance issues.
+When we don't feel confident changing code, we either cause problems or we  avoid doing the work. The latter of which, causes redundancy. This makes it harder to maintain.
 
 ## 6. Because they provide hooks for automated tests too
 
@@ -75,7 +75,7 @@ Automated functional tests work by searching for and interacting with elements. 
 4. submitting a form; and then
 5. verifying some criteria.
 
-Visual class names don't allow you to target specific elements because they're applied to multiple. What I've seen people do in this case is apply an extra semantic class name just so the tests can work.
+Visual class names don't allow us to target specific elements because they apply to many different elements. In this case we might apply semantic classes just for tests which is unnecessary.
 
 ## 7. Because they provide hooks for Javascript too
 
@@ -83,11 +83,11 @@ Semantic class names are useful for Javascript too. We can't use visual class na
 
 ## 8. Because they don't need maintaining
 
-If you name something based on what it is, you won't have to update the HTML again. A heading is always a heading, no matter what it *looks* like. The styling might change but this only requires a CSS update. This is known as Loose Coupling which improves maintainability.
+If we name something based on what it is, we won't have to update the HTML again. A heading is always a heading, no matter what it *looks* like. The styling might change but this only requires a CSS update. This is known as Loose Coupling which improves maintainability.
 
 ## 9. Because they are easier to debug
 
-If you use visual class names, when inspecting an element there will be several applicable CSS selectors. This means you have to wade through many more lines of code. With semantic class names there will be just one.
+If we use visual class names, when inspecting an element there will be several applicable CSS selectors. This means we have to wade through more code. With semantic class names there will be just one.
 
 ## 10. Because the standards recommend it
 

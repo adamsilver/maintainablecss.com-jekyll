@@ -8,7 +8,7 @@ description: How to write maintainable CSS and maintainable Javascript at the sa
 
 We may want to use Javascript to apply the same behaviour to multiple modules or components.
 
-For example, we might have two completely different modules that have a hidden state. And to do this we may have a constructor that toggles an element's visibility.
+For example, we may use a `Collapser` constructor that toggles an element's visibility.
 
 There are two approaches we can take. Both of which compliment the CSS approach we've discussed in previous chapters.
 
