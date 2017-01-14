@@ -108,6 +108,6 @@ It's likely that several different utility classes could refer to the same prope
 Think of an example of this.
 -->
 
-## End note
+## Final thought
 
 Semantic class names are a corner stone of *MaintainableCSS*. Without them, everything else makes little sense. So name something based on what it is and everything else falls into place.
