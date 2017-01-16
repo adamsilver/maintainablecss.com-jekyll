@@ -33,15 +33,29 @@ Here are some examples of semantic and non-semantic class names:
 	<div class="product">
 	<div class="searchResults">
 
-Non semantic classes don't tell us *what* the HTML represents. At most, they give us an idea of what elements look like.
+Non semantic classes don't tell us *what* the HTML represents. At *most*, they give us an idea of what elements *look* like.
 
-Semantic classes have a much clearer meaning. They don't tell us what they look like, but that's okay. That's what CSS is for. Semantic class names mean something to HTML, CSS, Javascript and automated tests.
+Semantic classes don't tell us what they look like, but that's okay. That's what CSS is for. Semantic class names mean something to HTML, CSS, Javascript and automated functional tests.
 
 There are many reasons why semantic class names are advantageous:
 
-## 1. Because their intention is clear
+## 1. Because they are easy to understand
 
-The intention of a semantic class name is clear, whether we're looking at the HTML or the CSS. Understanding the intention of an element when it has a sprinkling of visual classes is far less clear. At most we'll gain a vague understanding of the stylistic intentions.
+Here's a real world example using atomic classes:
+
+	<div class="pb3 pb4-ns pt4 pt5-ns mt4 black-70 fl-l w-50-l">
+	  <h1 class="f4 fw6 f1-ns lh-title measure mt0">Heading</h1>
+	  <p class="f5 f4-ns fw4 b measure dib-m lh-copy">Tagline</p>
+	</div>
+
+Here's the same thing with semantic classes:
+
+	<div class="hero">
+	  <h1 class="hero-heading">Heading</h1>
+	  <p class="hero-tagline">Tagline</p>
+	</div>
+
+Semantic classes are easy to read. On the other hand, atomic classes are  hard to read. At best they give us a vague understanding of their stylistic intentions.
 
 ## 2. Because it's easier to build responsive sites
 
