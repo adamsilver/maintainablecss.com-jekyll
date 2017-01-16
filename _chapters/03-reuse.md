@@ -21,7 +21,7 @@ Imagine coding a two-column responsive grid whereby:
 * Each column has `2em` and `3em` font-size on "small" and "large" screens respectively.
 * On "small" screens, the columns stack. Note that *column* is now a misleading class name.
 
-### 1.1 Using atomic class names
+### Using atomic class names
 
 Taking an atomic approach results in the following HTML:
 
@@ -40,7 +40,7 @@ Here are some notes:
 
 We've barely evaluated this simple component and yet there is so much pain already. Let's see what a semantic approach would look like.
 
-### 1.2 Using semantic class names
+### Using semantic class names
 
 Taking a semantic approach results in the following HTML:
 
