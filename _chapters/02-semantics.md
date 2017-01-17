@@ -37,7 +37,7 @@ Non semantic classes don't tell us *what* the HTML represents. At *most*, they g
 
 Semantic classes don't tell us what they look like, but that's okay. That's what CSS is for. Semantic class names mean something to HTML, CSS, Javascript and automated functional tests.
 
-There are many reasons why we should use semantic classes are advantageous:
+There are many reasons why semantic classes are advantageous:
 
 ## 1. Because they are easy to understand
 
