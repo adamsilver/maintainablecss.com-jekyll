@@ -61,16 +61,16 @@ This is far cleaner. If we want to understand how this is styled, it's easy to d
 
 ## 2. Because it's easier to build responsive sites
 
-A common example is elements will be stacked by default and when there is enough room they'll sit beside each other.
+Let's look at a typical responsive module. There are two elements which stack on small screens but sit beside each other when there is enough room.
 
 	<div class="clearfix">
-		<div></div>
-		<div></div>
+	  <div></div>
+      <div></div>
 	</div>
 
-When they are stacked, `clearfix` is not only redundant but it's misleading.
+When the elements are stacked, `clearfix` is not only redundant but it's misleading.
 
-However, Semantic class names enable us to style elements easily through media queries. If we need to clear we can do so when it counts within CSS.
+Semantic class names are meaningful all the time. If we need to clear, then we can apply those styles within a media query inside the CSS. This is not only powerful, but this is where it makes most sense.
 
 ## 3. Because they are easier to find
 
