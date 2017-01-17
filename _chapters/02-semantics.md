@@ -33,7 +33,7 @@ Here are some examples of semantic and non-semantic class names:
 	<div class="product">
 	<div class="searchResults">
 
-Non semantic classes don't tell us *what* the HTML represents. At *most*, they give us an idea of what elements *look* like. Atomic, visual, behavioural and  utility classes all forms of non semantic classes.
+Non semantic classes don't tell us *what* the HTML represents. At *most*, they give us an idea of what elements *look* like. Atomic, visual, behavioural and  utility classes are all forms of non semantic classes.
 
 Semantic classes don't tell us what they look like, but that's okay. That's what CSS is for. Semantic class names mean something to HTML, CSS, Javascript and automated functional tests.
 
