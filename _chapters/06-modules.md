@@ -34,7 +34,7 @@ Ultimately, nobody understands your requirements as well as you do. Through expe
 
 ## Creating a module
 
-Let's build a shopping basket module together, which we'll simplify for brevity. Each product contains a title and a remove button. The HTML might be as follows:
+Let's build a *basket* module which we'll simplify for brevity. Each product contains a title and a remove button. The HTML might be:
 
 	<div class="basket">
 	  <h2 class="basket-title">Your Basket</h2>
