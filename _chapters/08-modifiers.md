@@ -10,19 +10,17 @@ Like state, a modifier can also override styles. This is useful when modules (or
 
 In this case, reusing and abstracting common CSS rules is useful for maintainability, which is best explained with an example.
 
-Imagine an e-commerce site whereby each category has a unique background image in the header.
+Take an e-commerce site whereby each category has a unique background image in the header.
 
-All headers have the same padding etc. The only difference is the background image. To achieve this we added a unique modifier.
-
-The *boys* category had the following HTML:
+All headers have the same padding, and margin etc. The only difference is the background image. To apply the differences, we can use a modify. For example, the HTML for the *boys* category would be:
 
 	<div class="categoryHeader categoryHeader-boys">
 
-And the *girls* category had the following HTML:
+And similarly, the *girls* category would be:
 
 	<div class="categoryHeader categoryHeader-girls">
 
-And the CSS was as follows:
+And the CSS would be:
 
 	.categoryHeader {
 	  padding-top: 50px;
