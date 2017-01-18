@@ -8,9 +8,16 @@ description: Learn why using IDs as hooks for styling are problematic and what y
 
 Summary: Don't use IDs as hooks for styling.
 
-[IDs overpower class names](http://www.w3.org/TR/css3-selectors/#specificity) by orders of magnitude. This is a problem when we need two hooks on a single element&mdash;something we'll cover in upcoming chapters.
+Sometimes we *must* use an ID to enable certain behaviour. Two examples of this include the fact that:
 
-To demonstrate the problem in isolation imagine we want to override the colour of an element from *red* to *blue*.
+1. labels are linked to form fields via ID; and
+2. internal anchors are bound by ID;
+
+Both of which improve the user experience.
+
+The *problem* with using IDs for styles is that they [overpower class names](http://www.w3.org/TR/css3-selectors/#specificity) which is a problem when we need to override styles.
+
+To demonstrate the problem, imagine we want to override the colour of an element from *red* to *blue*.
 
 Here's the HTML using an ID:
 
@@ -26,7 +33,7 @@ And the CSS:
 	  color: blue;
 	}
 
-The element will be red when we intended for it to be blue. To solve this problem we need to swap the ID for a class:
+The element will be red which is not what we wanted. However, exchanging the ID for a class results in the following HTML:
 
 	<div class="module module-override">
 
@@ -40,10 +47,4 @@ And the CSS:
 	  color: blue;
 	}
 
-Here the element will be blue as intended.
-
-## But sometimes we must use IDs?
-
-Sometimes we must use an ID. For example, labels are linked to form controls using the ID. For another, internal anchors are bound by ID. Both examples improve the user experience from a behavioural perspective but they have no bearing on styles.
-
-It's not that we can't use IDs. It's just that we should avoid them as hooks for *styling*.
+In this case, the element will be blue as we intended. So it's not that we can't use IDs, it's just that we should avoid them as hooks *styling*.

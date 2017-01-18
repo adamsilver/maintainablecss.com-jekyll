@@ -336,6 +336,7 @@ a.navigation-isActive {
 .content pre {
 	font-family: Monaco,'Courier New','Courier',monospace;
 	font-size: 1.44em;
+	font-size: 1.2em;
 	color: #222;
 	background-color: #fcf6ff;
 	margin-bottom: 30px;
@@ -412,7 +413,7 @@ a.chapterNavigation-next:active {
 	margin: 0 auto;
 	padding-left: 20px;
 	padding-right: 20px;
-	padding-top: 30px;
+	padding-top: 15px;
 	padding-bottom: 50px;
 }
 
