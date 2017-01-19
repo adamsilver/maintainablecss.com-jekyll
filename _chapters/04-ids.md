@@ -8,12 +8,7 @@ description: Learn why using IDs as hooks for styling are problematic and what y
 
 Summary: Don't use IDs as hooks for styling.
 
-Sometimes we *must* use an ID to enable certain behaviour. Two examples of this include the fact that:
-
-1. labels are linked to form fields via ID; and
-2. internal anchors are bound by ID;
-
-Both of which improve the user experience.
+Sometimes we *must* use an ID to enable certain browser behaviours. For example, labels are linked to form fields via ID; and internal anchors are bound by ID&mdash;both of which improve the user experience.
 
 The *problem* with using IDs for styles is that they [overpower class names](http://www.w3.org/TR/css3-selectors/#specificity) which is a problem when we need to override styles.
 
