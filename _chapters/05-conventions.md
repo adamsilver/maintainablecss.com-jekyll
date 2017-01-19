@@ -25,4 +25,4 @@ Important notes:
 
 - Component and state are both delimitted by a dash;
 - Names are written with lowerCamelCase; and
-- Every selector is prefixed with the module name.
+- Selectors are prefixed with the module name.

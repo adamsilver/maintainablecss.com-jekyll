@@ -59,22 +59,21 @@ And the selectors for that might be:
 
 ## Creating a second version of a module
 
-Now imagine that there's a cut-down version of the basket shown during checkout. It is titled "Order Summary" instead of "Your Basket" and users cannot remove a product.
+Now imagine that there's an *order summary* module shown during checkout. It it similar to the basket, in that it contains a list of products.
 
 ### Don't reuse
 
-We may be tempted to reuse the HTML and CSS because it looks similar. But resist this temptation, otherwise:
+We may be tempted to reuse the basket HTML template and CSS because it bares some resemblance. It would be wise not to do this, otherwise we'll have to add:
 
-* we'll need to add display logic to manage the differences. This is relatively hard work; and
-* we may need CSS overrides to acheive the two layouts using one template; and
-* the added complexity increases the chance of regression.
+* display logic to manage the differences; and
+* CSS overrides to styles the two modules using one template.
 
-Instead of trying to reuse, duplicate the module and remove the differences.
+This intertwining of modules by definition is complex. This complexity is hard to maintain.
 
-### Create two modules instead
+### Split into two modules
 
-In a recent project, we named the new version `.orderSummary`. There were similarities but some differences too. This was enough to make duplication a much better prospect.
+Instead create another module and name it `.orderSummary`. As counterintutive as it may seem, duplication is a much better prospect.
 
 Also, it's not really duplication. Duplication is copying the *same* thing. These two modules might *look* similar but they are not the same.
 
-We've encapsulated the styles to the module. This means we can edit the Basket without causing regression in the Order Summary. Our life is much easier this way.
+Keeping things separate, keeps things simple. Simple is the most important aspect of building reliable, scalable and maintainable software.
