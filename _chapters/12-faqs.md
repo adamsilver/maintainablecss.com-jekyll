@@ -10,13 +10,13 @@ If you can't find an answer, please [raise an issue on Github](https://github.co
 
 ## When should I use this?
 
-This approach works well when your building long-lived, bespokely designed, responsive sites that scale and evolve over time.
+If you like to keep things truly simple, use this approach. It works well if your building long-lived, bespokely designed, responsive sites that scale and evolve over time.
 
 ## What if I don't want to use it?
 
-If you don't like it, feel free not to use it. Or use the bits you do like. If something isn't working well, please let me know and perhaps we can document how to solve this for everyone else.
+If you don't like it, feel free not to use it. Or use the bits you do like. If something doesn't work well, let me know and we can work out.
 
-## Isn't this the same as [insert methodology here]?
+## Isn't this the same as [methodology]?
 
 These guides are the result of building many different types of websites. I've been influenced by many different experiences, requirements and people that I've worked with.
 
@@ -28,9 +28,9 @@ Yes. Please contact me to find out more. Here's the [Japanese version](http://co
 
 ## Must I give a class name to every element?
 
-The short answer is no. You can write `.module h2` if you want to and sometimes you may have to. Perhaps you're using Markdown.
+No. You can write `.module h2 {}` if you want to. And sometimes you may have to, if for example you're using markdown.
 
-## Why must I prefix components with the module name?
+## Why must I prefix the module name?
 
 Good question. Here's the HTML without a prefix:
 
@@ -45,10 +45,10 @@ And the CSS:
 	/* heading component of basket module */
 	.basket .heading {}
 
-There are two problems with this:
+There are two problems:
 
-1. when viewing HTML, we can't easily differentiate between a module and a component; and more importantly
-2. the `.basket .heading` component will inherit styles from the `.heading` module.
+1. when viewing HTML, it's hard to differentiate between a module and a component; and
+2. the `.basket .heading` component will inherit styles from the `.heading` module which has unintended side effects.
 
 ## Could we chain classes for state?
 
@@ -56,11 +56,11 @@ We could use a chained selector for state e.g. `.module.isDisabled`. The problem
 
 ## What about common styles e.g. buttons?
 
-Depending on your visual design requirements buttons can be problematic. They often have different spacing, floating, and other display rules depending on their location. There is also Media Queries to consider.
+Depending on the requirements buttons can be painful. They often have different spacing, floating, and other display rules depending on their location. There is also media queries to consider.
 
-For example, in one module a button might be floated right within a container that has some text to the left of it. In another module it might be centered with a fixed width and some small text beneath with `margin-bottom` for spacing.
+For example, in one module a button might be floated right within a container that has some text to the left of it. In another it might be centered with a fixed width and some text beneath with `margin-bottom` for spacing.
 
-It becomes really tricky trying to abstract the common rules because you don't want to end up in a situation where you have to override. Or worse that you're worried to update the abstracted set of CSS rules.
+It's tricky to abstract the common rules because you don't want to end up in override hell. Or worse that you're worried to update the abstracted set of CSS rules.
 
 However, if you do decide that abstraction is useful there are two approaches you can take.
 
@@ -78,7 +78,7 @@ The second approach is to make a button into a module:
 	  /*common styles*/
 	}
 
-On a recent project we went for something in between. Imagine a checkout flow. On each page there's an identical "continue" button. Beside the continue button is a "back" link. We ended up with the following CSS:
+On a recent project we did something in between. Imagine a checkout flow. On each page there's an identical continue button. Beside the continue button is a back link. We ended up with the following CSS:
 
 	.checkoutActions-continueButton {
 	  /*...*/
@@ -90,9 +90,9 @@ On a recent project we went for something in between. Imagine a checkout flow. O
 
 We abstracted the styles to a well understood set of modules, improving maintainability without affecting other similar (but not identical) buttons.
 
-## What about inheritance for `h1`s etc?
+## What about inheritance for headings etc?
 
-Ideally our semantic HTML matches the integrity of the visual design. Meaning that we would hope that all `h1`s are always indentical. In this case we can declare the following CSS:
+Ideally our semantic HTML matches the integrity of the visual design. Meaning that we would hope that `h1`s are indentical. In this case we can declare the following CSS:
 
 	h1 {
       /* etc */
@@ -105,11 +105,13 @@ However, this is rarely the case, in commercial, large-scale websites. In this c
 	  color: ...;
 	}
 
-## Where do I put Media Queries?
+## Where do I put media queries?
 
-Generally speaking, the screen should adapt to the content, not the other way around. This means that a module's breakpoints are determined by the module itself, and *not* by a predetermined set of breakpoints such as "small", "medium" and "large". Doing it this way would constrain the design and quite possibly degrade the User Experience unnecessarily.
+The screen should adapt to the content, not the other way around.
 
-Therefore, all styles&mdash;even those that are wrapped in Media Queries&mdash;should be located next to regular styles:
+This means a module's breakpoints shouldn't be predetermined by *small*, *medium* and *large*. Doing this constrains the design and degrades the user experience.
+
+Therefore, all styles&mdash;even those that are wrapped in media queries&mdash;should be located next to regular styles:
 
 	.basket {}
 

@@ -6,9 +6,7 @@ permalink: /chapters/organisation/
 description: Learn how to organise your CSS files.
 ---
 
-The way in which we organise our code can have positive or negative side-effects with regards to maintainability. Organisation has a direct impact on discoverability. We want our code to be discoverable to ourselves and to others.
-
-There are two ways to organise CSS:
+Good code is easy to find. Easy to find code is well organised. We want our CSS to be well organised. There are two approaches we can take:
 
 1. **Organise by type**. All CSS under a single folder; or
 2. **Organise by module**. The CSS lives in module-specific folder.
@@ -66,13 +64,18 @@ This approach puts module-specific CSS within a folder of its own:
 
 ## The 31 CSS file limit problem
 
-Whichever approach you take, you should be aware of the 31 CSS file limit found in versions of Internet Explorer. IE9, for example, ignores styles stored in the 32nd (or 33rd etc) file.
+Whichever approach you take, be aware of the 31 CSS file limit found in versions of Internet Explorer. Internet Explorer 9, for example, ignores styles stored in the 32nd (or 33rd etc) file.
 
 For production this is fine, because we should bundle our CSS to reduce HTTP requests. But for local development it's better to work with source files to make debugging easier. And it's in legacy browsers where bugs normally arise.
 
-**If you have a compilation step** for local development&mdash;as would be the case whenre using a CSS preprocessor&mdash;you don't need to worry. The preprocessor will bundle the files.
+**If you have a compilation step** for local development&mdash;as would be the case when using a CSS preprocessor&mdash;you don't need to worry. The preprocessor will bundle the files.
 
 **If you don't have a compilation step** for local development&mdash;because debugging source files is easier this way&mdash;then you may want to remedy this with one of two approaches:
 
-1. **Add an optional to concatentate CSS.** By doing this you'll be able to mimick the production environment and be able to debug in offending legacy browsers.
-2. **Use less than 32 CSS files.** As you'll probably have more than 31 modules, you can't organise your CSS by module. In fact you'll need to put several modules within the same CSS file.
+### 1. Add an option to concatenate CSS locally
+
+By doing this you'll be able to mimick production and debug CSS in offending legacy browsers.
+
+### 2. Use less than 32 CSS files
+
+As you'll probably have more than 31 modules, you can't organise your CSS by module. Instead you'll have to put several modules within the same CSS file.
