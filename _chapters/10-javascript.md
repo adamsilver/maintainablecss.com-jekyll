@@ -46,6 +46,6 @@ This approach does away with the long comma-delimitted list. And we no longer ne
 	var module1Collapser = new Collapser(element1);
 	var module2Collapser = new Collapser(element2);
 
-But beware that this approach doesn't always make sense. We may have two different modules that *behave* the same, but *look* different in response to that behaviour, something I've touched upon in chapter seven, [State](/chapters/state/).
+However, this approach doesn't always make sense. We may have two different modules that *behave* the same, but *look* different, something we've talked about in [State](/chapters/state/).
 
 <!-- display: flex vs display: block -->
