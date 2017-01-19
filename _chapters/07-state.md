@@ -6,18 +6,18 @@ permalink: /chapters/state/
 description: Learn how to provide different styles to your modules and components based on state, such as showing, hiding and loading.
 ---
 
-We may need to give elements a different visual treatment in response to their state changing. Here are some examples of state:
+We may need to give elements a different visual treatment in response to some state. Here are some examples:
 
-- showing or hiding
-- active or inactive
-- disabled or enabled
-- loading or loaded
-- hasProducts or hasNoProducts
-- isEmpty or isFull
+- showing / hiding
+- active / inactive
+- disabled / enabled
+- loading / loaded
+- hasProducts / hasNoProducts
+- isEmpty / isFull
 
-We'll need an additional class to represent state. It should be added to the module or component element to which it pertains.
+To represent state we need an additional class which should be added to the module (or component) element to which it pertains.
 
-For example, if our *basket* needs a gray background when it's empty, the HTML should be:
+For example, if our basket module needs a gray background when it's empty, the HTML should be:
 
 	<div class="basket basket-isEmpty">
 
@@ -27,9 +27,7 @@ And the CSS should be:
       background-color: #eee;
 	}
 
-We should prefix state classes with the module (or component) because while the states are common, the styles could be different.
-
-For example, an empty *basket* may have a gray background. But an empty list of *search results* may have an absolutely positioned image.
+We prefix the class name with the module (or component) because even though the states could be common, the styles may not be. For example, an empty *basket* may have a gray background. But an empty list of *search results* may have an absolutely positioned image.
 
 ## What about reusing state?
 
@@ -39,4 +37,4 @@ Sometimes, we may in fact want to reuse state across modules or components. For 
 
 Not all visual states can be represented by an [ARIA attribute](https://www.w3.org/TR/wai-aria/states_and_properties#attrs_widgets). For example, there is no attribute to represent `hasProducts`. Therefore, we should use them only when necessary and in *addition* to classes.
 
-Also, using an attribute (instead of a class) selector has [less support](https://www.impressivewebs.com/attribute-selectors/). Whilst developers may consider these browsers "old", "insecure" or "irrelevant", we should avoid techniques that may exclude users unnecessarily.
+Also, using an attribute (instead of a class) selector has [less support](https://www.impressivewebs.com/attribute-selectors/). Whilst developers may consider these browsers old, insecure or irrelevant, we should avoid techniques that may exclude users.
