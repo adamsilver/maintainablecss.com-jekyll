@@ -22,4 +22,4 @@ To do this, we just need to duplicate the module and give it a unique name. For 
 
 This way we can maintain two versions during testing until we settle on the best one.
 
-And, once we do, it's easy to discard the redundant module as they are not intertwined. A quality of *good* code is that it's easy to delete.
+And, once we do, it's easy to discard the redundant module as they are not intertwined. Good code is easy to delete.
