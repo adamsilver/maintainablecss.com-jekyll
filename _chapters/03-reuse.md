@@ -23,7 +23,7 @@ If we do want to reuse a style we can use comma-delimitted selectors inside a we
 	  color: red;
 	}
 
-If one module deviates from the styles in the abstraction, it should be removed. Otherwise we'll end experience override hell later on. Use this technique for convenience, not for performance.
+If one module deviates from the styles in the abstraction, it should be removed. Otherwise we'll experience override hell later on. Use this technique for convenience, not for performance.
 
 There are times when overrides makes sense, which we'll discuss in [State](/chapters/state/) and [Modifiers](/chapters/modifiers/).
 
