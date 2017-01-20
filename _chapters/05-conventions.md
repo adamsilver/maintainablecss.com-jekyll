@@ -21,8 +21,8 @@ Square brackets are optional depending on the module in question. Here are some 
 	/* State */
 	.searchResults-isLoading {}
 
-Important notes:
+Notes:
 
-- Component and state are both delimitted by a dash;
-- Names are written with lowerCamelCase; and
-- Selectors are prefixed with the module name.
+- component and state are both delimitted by a dash
+- names are written with lowerCamelCase
+- selectors are prefixed with the module name
