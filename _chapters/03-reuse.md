@@ -11,7 +11,7 @@ Summary: Don't try too hard to reuse style rules across selectors. Adopt a dupli
 > &ldquo;DRY is often misinterpreted as the necessity to never repeat the exact same thing twice [...]. This is impractical and usually counterproductive, and can lead to forced abstractions, over-thought and over-engineered code.&ldquo;
 <br>&mdash; <cite>Harry Roberts, CSS Wizardy</cite>
 
-We'll discuss strategies for reuse in [State](/chapters/state/), [Modifiers](/chapters/modifiers/) and later on in this chapter. 
+Don't worry! We'll discuss strategies for reuse in [State](/chapters/state/), [Modifiers](/chapters/modifiers/) and later on in this chapter. 
 
 The problem is that when we try too hard, too early to reuse the bits between curly braces, we end up with visual and atomic classes which cause several problems:
 
