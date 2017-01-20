@@ -32,7 +32,7 @@ Taking an atomic approach results in the following HTML:
 	  <div class="col pd20 pd50 fs2 fs3">Column 2</div>
 	</div>
 
-Here are some notes:
+Notes:
 
 - There are 6 classes.
 - They override each other.
@@ -51,7 +51,7 @@ Taking a semantic approach results in the following HTML:
 	  <div class="thing-thingB"></div>
 	</div>
 
-Here are some notes:
+Notes:
 
 - These classes are isolated to the module.
 - Any differences can be handled easily using media queries.
