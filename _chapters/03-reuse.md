@@ -11,7 +11,9 @@ Summary: Don't try too hard to reuse style rules across selectors. Adopt a dupli
 > &ldquo;DRY is often misinterpreted as the necessity to never repeat the exact same thing twice [...]. This is impractical and usually counterproductive, and can lead to forced abstractions, over-thought and over-engineered code.&ldquo;
 <br>&mdash; <cite>Harry Roberts, CSS Wizardy</cite>
 
-When we try *too* hard and *too* early to reuse the bits inbetween the curly braces, we end up with visual and atomic classes. This causes many problems, as we discussed in the previous chapter [semantics](/chapters/semantics/).
+When we try *too* hard *too* soon to reuse the bits inbetween the curly braces, we end up with visual and atomic classes. As we've discussed in [semantics](/chapters/semantics/), this causes many problems.
+
+## But what if we did want to reuse a style?
 
 If we do want to reuse a style we can use comma-delimitted selectors inside a well-named file. For example, if  multiple elements need red text, we could do this:
 

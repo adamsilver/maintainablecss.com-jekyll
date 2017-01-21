@@ -10,11 +10,11 @@ MaintainableCSS is an approach to writing modular, scalable and maintainable CSS
 
 ## There's nothing to download
 
-MaintainableCSS is not something you can download. It's a set of principles, guides and conventions to help you write CSS for small or large-scale websites.
+This is not a library or framework. It's a set of principles, guides and conventions to help you write CSS for small or large-scale websites.
 
 ## What does maintainable mean?
 
-Maintainable CSS is CSS that you can edit without worrying that you've accidentally caused problems elsewhere.
+Maintainable CSS is CSS that we can edit without worrying that we've accidentally caused problems elsewhere.
 
 ## What does scalable mean?
 
