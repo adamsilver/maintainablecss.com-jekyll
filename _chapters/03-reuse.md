@@ -31,9 +31,9 @@ There are times when overrides makes sense, which we'll discuss in [State](/chap
 
 ## What about mixins?
 
-Mixins are helpful because they provide the best of both worlds. At least in theory.
+Mixins provide the best of both worlds. At least in theory.
 
-Like utility classes, updating a mixin propagates to all instances. Instead of updating a mixin, we could create a new one, but this causes redundancy.
+Like utility classes, updating a mixin propagates to all instances. If we don't have a handle of what's using the mixin, we increase the risk of regression. Instead of updating a mixin, we can create another, but this causes redundancy.
 
 Also, mixins can easily end up with many rules, multiple parameters, and conditionality. This is complicated. Complicated is hard to maintain.
 
@@ -41,7 +41,7 @@ To mitigate this complexity, we can create granular mixins, such as one for red 
 
 If we need to update the rule in multiple places, a search and replace might be all that's necessary. Also, when the red *mixin* changes to *orange*, its name will need updating anyway.
 
-With all that said, mixins are useful in some cases. We might, for example, want to apply a *clearfix* across different elements and breakpoints.
+With all that said, mixins are useful in some cases. We might, for example, want to apply a *clearfix* across different elements and only within certain breakpoints. This well understood *group* of rules, can be used many times over.
 
 So it's not that mixins are *bad*, it's just we probably shouldn't be so quick to use them.
 
