@@ -8,8 +8,6 @@ description: Why naming something based on what it is, instead of how it looks o
 
 Summary: Name something based on what it *is*, not how it *looks* or *behaves*.
 
-## The longer explanation
-
 Semantic HTML isn't just about the elements we use. It's quite obvious that we should use `<a>` for links, `<table>` for tabular data and `<p>` for paragraphs etc.
 
 > &ldquo;There are only two hard things in Computer Science: cache invalidation and naming things.&rdquo;
@@ -17,27 +15,27 @@ Semantic HTML isn't just about the elements we use. It's quite obvious that we s
 
 What's less obvious is the names we use for classes. This is important because they enable us to enhance a web page with style (and behaviour).
 
-## Good and bad class names
+## Semantic versus non-semantic classes
 
-Here are some examples of semantic and non-semantic class names:
+Here are some non-semantic classes:
 
-	<!-- non semantic -->
 	<div class="red pull-left">
 	<div class="grid row">
 	<div class="col-xs-4">
 
-	<!-- semantic -->
+non-semantic classes don't tell us *what* the HTML represents. At best, they give us an idea of what elements *look* like. Atomic, visual, behavioural and utility classes are all forms of non-semantic classes.
+
+Here are some semantic classes:
+
 	<div class="basket">
 	<div class="product">
 	<div class="searchResults">
 
-Non semantic classes don't tell us *what* the HTML represents. At best, they give us an idea of what elements *look* like. Atomic, visual, behavioural and  utility classes are all forms of non semantic classes.
-
-Semantic classes don't tell us what they look like, but that's okay. That's what CSS is for. Semantic class names mean something to HTML, CSS, Javascript and automated functional tests.
+Semantic classes don't tell us what they look like, but that's okay. That's what CSS is for. Semantic classes mean something to HTML, CSS, Javascript and automated functional tests.
 
 There are many reasons why semantic classes are advantageous:
 
-## 1. Because they are easy to understand
+## 1. Because they are readable
 
 Here's a real snippet of HTML using atomic classes:
 
@@ -46,9 +44,12 @@ Here's a real snippet of HTML using atomic classes:
 	  <p class="f5 f4-ns fw4 b measure dib-m lh-copy">Tagline</p>
 	</div>
 
-Not only do we need to mentally map these abbreviations (assuming we know what they mean in the first place), but we need to wade through a load of classes just to work out what's going on. The content itself is somewhat obfuscated.
+Notes:
 
-Visual class names are ambiguous. For example, `.red` could mean red text, a red background or perhaps a reddish gradient. It's hard to know.
+- We need to mentally map these abbreviations, assuming we know what they mean in the first place.
+- We need to wade through many classes to work out what's happening; which classes override which; and which apply at certain break points etc.
+- These classes are ambiguous. For example, does `black-70` refer to the colour or the background? If we need the inspector to find out, this implies the class names are not readable.
+- The content itself is somehwat obfuscated by the noise.
 
 Here's the same thing using semantic classes:
 
@@ -57,7 +58,12 @@ Here's the same thing using semantic classes:
 	  <p class="hero-tagline">Tagline</p>
 	</div>
 
-The classes are human-friendly and easy to read. The content itself is no longer obfuscated. And we can use browser tools to inspect the element styles.
+Notes:
+
+- These classes are easy to read. No mental mapping, and no abbreviations to work out.
+- The content is no longer obfuscated.
+- We know where the module begins and ends.
+- We can inspect the element's styles easily.
 
 ## 2. Because it's easier to build responsive sites
 
@@ -67,9 +73,7 @@ Imagine coding a two-column responsive grid whereby:
 * each column has `2em` and `3em` font-size on small and large screens; and
 * the columns stack on small screens. Note that *column* is now a misleading class name.
 
-### Using atomic class names
-
-Taking an atomic approach results in the following HTML:
+Here's how this is typically done using visual and utility classes:
 
 	<div class="grid clearfix">
 	  <div class="col pd20 pd50 fs2 fs3">Column 1</div>
@@ -79,14 +83,12 @@ Taking an atomic approach results in the following HTML:
 Notes:
 
 - There are 7 classes, some of which override each other.
-- To make the columns actually responsive we would need a `fs3large` class etc.
-- At certain break points, the classes are misleading and redundant e.g. clearfix.
+- To make the columns actually responsive we would need a `fs3large` class etc. This means using a naming convention that recreates language constructs found in CSS.
+- At certain break points, the classes are misleading and redundant. For example `.clearfix` doesn't clear on small screens.
 
-We've barely evaluated this simple component and yet there is so much pain already. Let's see what a semantic approach looks like.
+We've barely evaluated this simple component and yet there is significant pain already.
 
-### Using semantic class names
-
-Taking a semantic approach results in the following HTML:
+Here's the same thing using semantic classes:
 
 	<div class="thing">
 	  <div class="thing-thingA"></div>
@@ -104,21 +106,17 @@ Notes:
 
 ## 3. Because they are easier to find
 
-Visual classes are used on a multitude of elements. So searching for HTML with a visual class will yield many results.
-
-Semantic class names are unique, so a search will yield just one result making it easy to track down the HTML.
+Searching for HTML with a non-semantic classes will yield many results. Semantic class are unique, so a search will yield just one result making it easy to track down the HTML.
 
 ## 4. Because they reduce the risk of regression
 
-Editing a visual class increases the chance of regression because they appear on a multitude of elements.
-
-As semantic class names are unique, changes will only apply to the module in question reducing the risk of regression.
+Editing a visual class increases the chance of regression elsewhere. As semantic classes are unique, changes will only apply to the module in question reducing the risk of regression.
 
 ## 5. Because visual classes aren't worth it
 
-If we're going to do `<div class="red">` we may as well do `<div style="color: red">`. Afterall, it's more explicit.
+We may as well inline styles. It's more explicit and reduces the CSS footprint to zero. But mixing concerns is impractical and removes our ability to cache.
 
-But this mixes concerns and removes the benefit of being able to cache CSS. Also, isn't `.red` a repeat of the exact same abstraction that CSS gives us for free with `color: red`?
+> Isn't `.red`, for example, the exact same abstraction that CSS already gives us for free with `color: red`?
 
 ## 6. Because they provide hooks for automated tests
 
@@ -130,11 +128,11 @@ Automated functional tests work by searching for, and interacting with elements.
 4. submitting a form; and then
 5. verifying some criteria.
 
-Visual class names don't allow us to target specific elements because they apply to many. Adding hooks just for tests is foolhardy.
+non-semantic classes don't allow us to target specific elements. Adding hooks just for tests seems foolhardy.
 
 ## 7. Because they provide hooks for Javascript
 
-Semantic class names are useful for Javascript too. We can't use visual class names as a reliable way to retrieve elements.
+Semantic class are useful for Javascript too. We can't use visual classes as a reliable way to retrieve elements.
 
 ## 8. Because they don't need maintaining
 
@@ -162,11 +160,11 @@ Changing the padding and colour on hover is a difficult task. It's better to avo
 
 ## 12. Because they encourage lean HTML
 
-As we've seen above, atomic classes bloat the HTML. Semantic classes result in smaller HTML. And whilst the CSS may increase in size, it's cacheable.
+As we've seen above, atomic classes bloat HTML. Semantic classes result in smaller HTML. And whilst the CSS may increase in size, it's cacheable.
 
 ## Final thought
 
-Semantic class names are a corner stone of *MaintainableCSS*. Without them, everything else makes little sense. So name something based on what it is and everything else falls into place.
+Semantic classes are a corner stone of *MaintainableCSS*. Without them, everything else makes little sense. So name something based on what it is and everything else falls into place.
 
 <!--## Because visual class names might declare the same property!
 
