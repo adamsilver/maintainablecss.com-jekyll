@@ -23,7 +23,7 @@ Here are some non-semantic classes:
 	<div class="grid row">
 	<div class="col-xs-4">
 
-non-semantic classes don't tell us *what* the HTML represents. At best, they give us an idea of what elements *look* like. Atomic, visual, behavioural and utility classes are all forms of non-semantic classes.
+Non-semantic classes don't tell us *what* the HTML represents. At best, they give us an idea of what elements *look* like. Atomic, visual, behavioural and utility classes are all forms of non-semantic classes.
 
 Here are some semantic classes:
 
@@ -128,7 +128,7 @@ Automated functional tests work by searching for, and interacting with elements.
 4. submitting a form; and then
 5. verifying some criteria.
 
-non-semantic classes don't allow us to target specific elements. Adding hooks just for tests seems foolhardy.
+Non-semantic classes don't allow us to target specific elements. Adding hooks just for tests seems foolhardy.
 
 ## 7. Because they provide hooks for Javascript
 
