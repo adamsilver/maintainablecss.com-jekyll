@@ -22,7 +22,7 @@ Here are some non-semantic classes:
 	<div class="grid row">
 	<div class="col-xs-4">
 
-Non-semantic classes don't tell us *what* the HTML represents. At best, they give us an idea of what elements *look* like. Atomic, visual, behavioural and utility classes are all forms of non-semantic classes.
+Non-semantic classes don't convey *what* an element represents. At best, they give us an idea of what an element *looks* like. Atomic, visual, behavioural and utility classes are all forms of non-semantic classes.
 
 Here are some semantic classes:
 
@@ -30,7 +30,7 @@ Here are some semantic classes:
 	<div class="product">
 	<div class="searchResults">
 
-Semantic classes don't tell us what they look like, but that's okay. That's what CSS is for. Semantic classes mean something to HTML, CSS, Javascript and automated functional tests.
+Semantic classes don't convey their styles, but that's okay. That's what CSS is for. Semantic classes mean something to HTML, CSS, Javascript and automated functional tests.
 
 There are many reasons why semantic classes are advantageous:
 
