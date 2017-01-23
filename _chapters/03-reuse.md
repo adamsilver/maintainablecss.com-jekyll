@@ -60,4 +60,4 @@ Attempting to reuse, for example `float: left`, is akin to trying to reuse varia
 
 ## Final thought
 
-Reuse and DRY are important principles in software engineering. But, striving to reuse CSS too much ironically makes maintenance *harder*.
+Striving for DRY leads to over-thought and over-engineered code. In doing so we make maintenance harder, not easier. Instead of obsessing over styles, we should focus on reusing tangible modules. Something we'll discuss in upcoming chapters.
