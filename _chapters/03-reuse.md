@@ -12,9 +12,9 @@ As Harry Roberts says, *DRY is often misinterpreted as the necessity to never re
 
 This forced abstraction, over-thought and over-engineered code manifests itself in visual and atomic classes. We know how painful they can be because we discussed them thoroughly in the previous chapter about [semantics](/chapters/semantics/). But let's talk more about reuse.
 
-## But what if we did want to reuse a style?
+## How can we reuse a style?
 
-If we do want to reuse a style we can use comma-delimitted selectors inside a well-named file. For example, if  multiple elements need red text, we could do this:
+If we want to reuse a style we can use comma-delimitted selectors inside a well-named file. For example, if multiple elements need red text, we could do this:
 
 	/* colours.css */
 
@@ -24,9 +24,11 @@ If we do want to reuse a style we can use comma-delimitted selectors inside a we
 	  color: red;
 	}
 
-If one module deviates from the styles in the abstraction, it should be removed. Otherwise we'll experience override hell later on. Use this technique for convenience, not for performance.
+We should use this approach for convenience, not for performance. Think about it: every time we remove a rule, we have to add a selector to the list which exchanges one line of code for another.
 
-There are times when overrides makes sense, which we'll discuss in [State](/chapters/state/) and [Modifiers](/chapters/modifiers/).
+If a module deviates from the abstraction, remove it from the list. Otherwise we'll experience override hell later on. Or we'll spend a lot more time trying to come up with a new abstraction.
+
+Overriding makes sense when a module is well understood and encapsulated. This is something we'll discuss further in [State](/chapters/state/) and [Modifiers](/chapters/modifiers/).
 
 ## What about mixins?
 
