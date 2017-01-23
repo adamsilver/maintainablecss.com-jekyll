@@ -54,42 +54,6 @@ There are two problems:
 
 We could use a chained selector for state e.g. `.module.isDisabled`. The problem is that this approach has less browser support. We should avoid patterns that unnecessarily exclude users, unless there is a compelling reason to do so.
 
-## What about common styles e.g. buttons?
-
-Depending on the requirements buttons can be painful. They often have different spacing, floating, and other display rules depending on their location. There is also media queries to consider.
-
-For example, in one module a button might be floated right within a container that has some text to the left of it. In another it might be centered with a fixed width and some text beneath with `margin-bottom` for spacing.
-
-It's tricky to abstract the common rules because you don't want to end up in override hell. Or worse that you're worried to update the abstracted set of CSS rules.
-
-However, if you do decide that abstraction is useful there are two approaches you can take.
-
-The first is to comma delimit several different buttons to apply the same styles as follows:
-
-	.basket-removeButton,
-	.another-loginButton,
-	.another-deleteButton {
-      /*common styles*/
-	}
-
-The second approach is to make a button into a module:
-
-	.primaryButton {
-	  /*common styles*/
-	}
-
-On a recent project we did something in between. Imagine a checkout flow. On each page there's an identical continue button. Beside the continue button is a back link. We ended up with the following CSS:
-
-	.checkoutActions-continueButton {
-	  /*...*/
-	}
-
-	.checkoutActions-backButton {
-	  /*...*/
-	}
-
-We abstracted the styles to a well understood set of modules, improving maintainability without affecting other similar (but not identical) buttons.
-
 ## What about inheritance for headings etc?
 
 Ideally our semantic HTML matches the integrity of the visual design. Meaning that we would hope that `h1`s are indentical. In this case we can declare the following CSS:

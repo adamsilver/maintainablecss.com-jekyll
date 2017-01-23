@@ -14,7 +14,7 @@ In a living room, we can consider the TV, the sofa and the wall art modules. All
 
 If we take one of the units away, the rest still works just fine. We don't need the TV to be able to sit on the sofa etc.
 
-In a website each of these can be considered modules: header, footer, search form, sign up form, shopping basket, article, product list, navigation, homepage promo, archive list etc.
+In a website the header, registration form, shopping basket, article, product list, navigation and homepage promo can all be considered to be modules.
 
 ## What's a component?
 
@@ -30,7 +30,7 @@ Sometimes it's hard to decide whether something is a component or a module. For 
 
 In a recent project of mine, it made sense for the logo to be a component and the menu to be a module of its own.
 
-Ultimately, nobody understands your requirements as well as you do. Through experience you'll get a feel for it. And if you get it wrong, changing from a component to a module (and vice versa) is easy.
+Nobody understands your requirements as well as you do. Through experience you'll get a feel for it. And if you get it wrong, changing from a component to a module (and vice versa) is easy.
 
 ## Creating a module
 
@@ -77,3 +77,43 @@ Instead create another module and name it `.orderSummary`. As counterintutive as
 Also, it's not really duplication. Duplication is copying the *same* thing. These two modules might *look* similar but they are not the same.
 
 Keeping things separate, keeps things simple. Simple is the most important aspect of building reliable, scalable and maintainable software.
+
+## What about a module used in more than one place?
+
+Our basket module only appears on the basket page. It requires less thinking about. But we didn't really address the fact that the remove button was a *component* of the basket.
+
+Buttons are an example of something that we probably want to reuse in lot's of places, and potentially *within* different modules.
+
+To do this, we could upgrade our component into a button module. The problem is that they often have different position, sizing and spacing depending on their context. And of course there is media queries to consider.
+
+For example, in one module a button might be floated right within a container that has some text to the left of it. In another it might be centered with a fixed width and some text beneath with some bottom margin.
+
+It's tricky to abstract the common rules because we don't want to end up in override hell. Or worse that we're afraid to update the abstracted set of CSS rules. If you still want to go ahead with this approach it looks like this:
+
+	.primaryButton {
+		/* Button styles */
+	}
+
+To avoid override hell, we can comma-delimit several buttons to apply the common rules that aren't affected by their context. For example:
+
+	.basket-removeButton,
+	.another-loginButton,
+	.another-deleteButton {
+      background-color: green;
+      padding: 10px;
+      color: #fff;
+	}
+
+Notice that in this example, we don't specify `float`, `margin` or `width` etc.
+
+There's a third inbetweeny option. Imagine a checkout flow. On each page there's an identical continue button. Beside the continue button is a back link. We ended up with the following CSS:
+
+	.checkoutActions-continueButton {
+	  /*...*/
+	}
+
+	.checkoutActions-backButton {
+	  /*...*/
+	}
+
+We abstracted the styles to a well understood set of modules, improving maintainability without affecting other similar (but not identical) buttons.
