@@ -19,8 +19,8 @@ If we want to reuse a style, one option would be to comma-delimit selectors insi
 	/* colours.css */
 
 	/* red text */
-	.someSelector,
-	.someOtherSelector {
+	.someThing,
+	.anotherThing {
 	  color: red;
 	}
 
