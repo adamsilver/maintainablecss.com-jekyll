@@ -14,7 +14,7 @@ This forced abstraction, over-thought and over-engineered code manifests itself 
 
 ## How can we reuse a style?
 
-If we want to reuse a style we can use comma-delimitted selectors inside a well-named file. For example, if multiple elements need red text, we could do this:
+If we want to reuse a style, one option would be to comma-delimit selectors inside a well-named file. For example, if multiple elements need red text, we could do this:
 
 	/* colours.css */
 
@@ -26,9 +26,9 @@ If we want to reuse a style we can use comma-delimitted selectors inside a well-
 
 We should use this approach for convenience, not for performance. Think about it: every time we remove a rule, we have to add a selector to the list which exchanges one line of code for another.
 
-If a module deviates from the abstraction, remove it from the list. Otherwise we'll experience override hell later on. Or we'll spend a lot more time trying to come up with a new abstraction.
+If a module deviates from the abstraction, remove it from the list. Otherwise we'll experience override hell. Or we'll spend a lot more time trying to come up with a new abstraction.
 
-Overriding makes sense when a module is well understood and encapsulated. This is something we'll discuss further in [State](/chapters/state/) and [Modifiers](/chapters/modifiers/).
+However, this is just one technique at our disposal. When a *thing* is well understood we can make use of other techniques, which we'll discuss in [Modules](/chapters/modules/), [State](/chapters/state/) and [Modifiers](/chapters/modifiers/).
 
 ## What about mixins?
 
