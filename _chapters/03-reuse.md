@@ -38,13 +38,13 @@ Like utility classes, updating a mixin propagates to all instances. If we don't 
 
 Also, mixins easily end up with many rules, multiple parameters, and conditionality. This is complicated. Complicated is hard to maintain.
 
-To mitigate this complexity, we can create granular mixins, such as one for red text. At first this seems better. But isn't the declaration of a red mixin, the same as the declaring the rule itself i.e. `color: red`?
+To mitigate this complexity, we can create granular mixins, such as one for red text. At first this seems better. But isn't the declaration of a red mixin, the same as the rule itself i.e. `color: red`?
 
 If we need to update the rule in multiple places, a search and replace might be all that's necessary. Also, when the red *mixin* changes to *orange*, its name will need updating anyway.
 
-With all that said, mixins can be very useful. We might, for example, want to apply *clearfix* rules across different elements and only within certain breakpoints. The mixin, allows us to use this well-understood set of related rules many times over.
+With all that said, mixins can be very useful. We might, for example, want to apply *clearfix* rules across different elements and only within certain breakpoints. This is something that vanilla CSS can't do.
 
-So mixins are not *bad* as such, we just have to be careful with them. We should use them, but do so judiciously.
+So mixins are not *bad* as such, it's just that we should use them *judiciously*.
 
 ## What about performance?
 
