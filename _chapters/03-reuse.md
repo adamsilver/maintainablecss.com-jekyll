@@ -8,10 +8,9 @@ description: Learn why avoding reuse and embracing repetition makes CSS maintena
 
 Summary: Don't try too hard to reuse style rules across selectors. Adopt a duplication-first approach.
 
-> &ldquo;DRY is often misinterpreted as the necessity to never repeat the exact same thing twice [...]. This is impractical and usually counterproductive, and can lead to forced abstractions, over-thought and over-engineered code.&ldquo;
-<br>&mdash; <cite>Harry Roberts, CSS Wizardy</cite>
+As Harry Roberts says, *DRY is often misinterpreted as the necessity to never repeat the exact same thing twice. This is impractical and usually counterproductive, and can lead to forced abstractions, over-thought and over-engineered code.*
 
-When we try *too* hard *too* soon to reuse the bits inbetween the curly braces, we end up with visual and atomic classes. As we've discussed in [semantics](/chapters/semantics/), this causes many problems.
+This forced abstraction, over-thought and over-engineered code manifests itself in visual and atomic classes. We know how painful they can be because we discussed them thoroughly in the previous chapter about [semantics](/chapters/semantics/). But let's talk more about reuse.
 
 ## But what if we did want to reuse a style?
 
