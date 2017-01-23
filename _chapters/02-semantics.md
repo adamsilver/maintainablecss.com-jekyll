@@ -8,12 +8,11 @@ description: Why naming something based on what it is, instead of how it looks o
 
 Summary: Name something based on what it *is*, not how it *looks* or *behaves*.
 
-Semantic HTML isn't just about the elements we use. It's quite obvious that we should use `<a>` for links, `<table>` for tabular data and `<p>` for paragraphs etc.
+Semantic HTML isn't just about the elements we use. It's quite obvious that we should use `<a>` for links, `<table>` for tabular data and `<p>` for paragraphs etc. What's less obvious is the names we use for classes.
 
-> &ldquo;There are only two hard things in Computer Science: cache invalidation and naming things.&rdquo;
-<br>&mdash; <cite>Phil Karlton</cite>
+As Phil Karton says, *there are only two hard things in Computer Science: cache invalidation and naming things*. So spending an entire chapter talking about it seems like an appropriate thing to do.
 
-What's less obvious is the names we use for classes. This is important because they enable us to enhance a web page with style (and behaviour).
+Our approach to naming is quite frankly one of the most important aspects of writing maintainable CSS. And there are two main approaches: the semantic approach and the non-semantic approach. Let's first discuss what they are.
 
 ## Semantic versus non-semantic classes
 
