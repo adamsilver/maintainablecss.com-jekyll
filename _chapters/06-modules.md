@@ -78,13 +78,13 @@ Also, it's not really duplication. Duplication is copying the *same* thing. Thes
 
 Keeping things separate, keeps things simple. Simple is the most important aspect of building reliable, scalable and maintainable software.
 
-## What about a module used in more than one place?
+## What about a module appearing in many places?
 
-Our basket module only appears on the basket page. It requires less thinking about. But we didn't really address the fact that the remove button was a *component* of the basket.
+Our basket module only appears on the basket page. We didn't need to think about it too much. But we didn't really address the fact that the remove button was a *component* of the basket.
 
 Buttons are an example of something that we probably want to reuse in lot's of places, and potentially *within* different modules.
 
-To do this, we could upgrade our component into a button module. The problem is that they often have different position, sizing and spacing depending on their context. And of course there is media queries to consider.
+To do this, we could upgrade our component into a button module. The problem is that different buttons often have slightly different positioning, sizing and spacing depending on context. And of course there is media queries to consider.
 
 For example, in one module a button might be floated right within a container that has some text to the left of it. In another it might be centered with a fixed width and some text beneath with some bottom margin.
 
