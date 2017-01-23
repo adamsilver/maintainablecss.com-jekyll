@@ -12,7 +12,7 @@ Semantic HTML isn't just about the elements we use. It's quite obvious that we s
 
 As Phil Karton says, *there are only two hard things in Computer Science: cache invalidation and naming things*. So spending an entire chapter talking about it seems like an appropriate thing to do.
 
-Naming is quite frankly the most important aspects of writing maintainable CSS. There are two main approaches: the semantic approach and the non-semantic approach. Let's first discuss what they are.
+Naming is quite frankly the most important aspects of writing maintainable CSS. There are two main approaches: the semantic approach and the non-semantic approach. Let's discuss what they are.
 
 ## Semantic versus non-semantic classes
 
