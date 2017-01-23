@@ -12,7 +12,7 @@ Semantic HTML isn't just about the elements we use. It's quite obvious that we s
 
 As Phil Karton says, *there are only two hard things in Computer Science: cache invalidation and naming things*. So spending an entire chapter talking about it seems like an appropriate thing to do.
 
-Naming is quite frankly the most important aspects of writing maintainable CSS. There are two main approaches: the semantic approach and the non-semantic approach. Let's discuss what they are.
+Naming is quite frankly the most important aspect of writing maintainable CSS. There are two main approaches: the semantic approach and the non-semantic approach. Let's discuss what they are.
 
 ## Semantic vs non-semantic classes
 
@@ -59,7 +59,7 @@ Here's the same thing using semantic classes:
 
 Notes:
 
-- These classes are easy to read. No mental mapping, and no abbreviations to work out.
+- These classes are easy to read. No mental mapping is required.
 - The content is no longer obfuscated.
 - We know where the module begins and ends.
 - We can inspect the element's styles easily.
@@ -105,7 +105,7 @@ Notes:
 
 ## 3. Because they are easier to find
 
-Searching for HTML with a non-semantic classes will yield many results. Semantic class are unique, so a search will yield just one result making it easy to track down the HTML.
+Searching for HTML with a non-semantic class yields many results. Semantic class are unique, so a search yields just one result making it easy to track down the HTML.
 
 ## 4. Because they reduce the risk of regression
 
