@@ -48,7 +48,7 @@ So it's not that mixins are *bad*, it's just we probably shouldn't be so quick t
 
 ## What about performance?
 
-We developers are prone to overcomplicating matters when it comes to performance. We get obsessed with the smallest details.
+We overcomplicate matters when it comes to performance. We get obsessed with the smallest details.
 
 Even if CSS totals more than 100kb, in the grand schemes of things, there's probably very little gain from mindlessly striving for DRYness. And as we've discussed making CSS small makes HTML big.
 
