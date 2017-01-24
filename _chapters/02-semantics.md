@@ -102,7 +102,7 @@ Notes:
 - These classes are meaningful in small and big screens.
 - We can use a media query, to clear elements only when needed.
 
-> Question: How valuable is a codified responsive grid system is? A layout should adapt to the content, not the other way around.
+> Question: How valuable is a codified responsive grid system? A layout should adapt to the content, not the other way around.
 
 ## 3. Because they are easier to find
 
