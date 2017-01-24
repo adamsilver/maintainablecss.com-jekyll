@@ -14,9 +14,7 @@ This is not a library or framework. It's a set of principles, guides and convent
 
 ## What does maintainable mean?
 
-Maintainable means editing or writing CSS
-
-Maintainable CSS can be defined as being able to make changes to it, without worrying about accidentally causing problems elsewhere.
+Maintainable CSS can be defined as being able to make styling changes, without worrying about accidentally causing problems elsewhere.
 
 ## What does scalable mean?
 
