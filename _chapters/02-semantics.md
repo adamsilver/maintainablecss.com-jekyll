@@ -157,7 +157,7 @@ Consider the following HTML:
 
 Changing the padding and colour on hover is a difficult task. It's better to avoid having to fix self-induced problems like this.
 
-## 12. Because they encourage lean HTML
+## 12. Because they produce a small HTML footprint
 
 As we've seen above, atomic classes bloat HTML. Semantic classes result in smaller HTML. And whilst the CSS may increase in size, it's cacheable.
 
