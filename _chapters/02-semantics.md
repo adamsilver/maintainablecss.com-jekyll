@@ -136,9 +136,9 @@ We can't use non-semantic classes to target specific elements in order to enhanc
 
 ## 8. Because they don't need maintaining
 
-If we name something based on what it is, we won't have to update the HTML again. A heading is always a heading, no matter what it *looks* like. The styling might change but this only requires a CSS update.
+If we name a thing based on what it is, we won't have to update the HTML again e.g. a heading is always a heading, no matter what it *looks* like.
 
-With visual classes, a change of style requires change to both HTML and CSS (assuming there aren't any selectors available for use).
+With visual classes, both the HTML and the CSS need updating (assuming there aren't any selectors available for use).
 
 ## 9. Because they are easier to debug
 
@@ -165,11 +165,3 @@ As we've seen above, atomic classes bloat HTML. Semantic classes result in small
 ## Final thought
 
 Semantic classes are a corner stone of *MaintainableCSS*. Without them, everything else makes little sense. So name something based on what it is and everything else falls into place.
-
-<!--## Because visual class names might declare the same property!
-
-It's likely that several different utility classes could refer to the same property meaning order matters and performance degrades.
-
-Think of an example of this.
--->
-
