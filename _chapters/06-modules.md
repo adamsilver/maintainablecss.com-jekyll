@@ -63,10 +63,10 @@ Now imagine that there's an *order summary* module shown during checkout. It it 
 
 ### Don't reuse
 
-We may be tempted to reuse the basket HTML template and CSS because it bares some resemblance. It would be wise not to do this, otherwise we'll have to add:
+Don't be tempted to reuse the basket template and CSS just because it bares some resemblance. Otherwise we'll entangle two modules together meaning that we'll need:
 
-* display logic to manage the differences; and
-* CSS overrides to styles the two modules using one template.
+* display logic to manage the differences inside the template; and
+* CSS overrides to manage any styling differences.
 
 This intertwining of modules by definition is complex. This complexity is hard to maintain.
 
@@ -106,7 +106,7 @@ To avoid override hell, we can comma-delimit several buttons to apply the common
 
 Notice that in this example, we don't specify `float`, `margin` or `width` etc.
 
-There's a third inbetweeny option. Imagine a checkout flow. On each page there's an identical continue button. Beside the continue button is a back link. We ended up with the following CSS:
+There's a third inbetweeny option. Imagine a checkout flow whereby each page has an identical continue button. Beside the continue button is a back link. We can do this:
 
 	.checkoutActions-continueButton {
 	  /*...*/
@@ -116,4 +116,4 @@ There's a third inbetweeny option. Imagine a checkout flow. On each page there's
 	  /*...*/
 	}
 
-We abstracted the styles to a well understood set of modules, improving maintainability without affecting other similar (but not identical) buttons.
+In doing this, we have abstracted and applied the styles to a well understood *checkoutActions* module. And we've done this without affecting similar, but not identical buttons.
