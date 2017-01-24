@@ -63,6 +63,7 @@ Notes:
 - The content is no longer obfuscated.
 - We know where the module begins and ends.
 - We can inspect the element's styles easily.
+- The HTML is half the size.
 
 ## 2. Because it's easier to build responsive sites
 
