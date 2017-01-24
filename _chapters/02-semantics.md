@@ -107,9 +107,9 @@ Notes:
 
 Searching for HTML with a non-semantic class yields many results. Semantic class are unique, so a search yields just one result making it easy to track down the HTML.
 
-## 4. Because they reduce the risk of regression
+## 4. Because they eliminate the risk of regression
 
-Editing a visual class increases the chance of regression elsewhere. As semantic classes are unique, changes will only apply to the module in question reducing the risk of regression.
+Updating a visual class could cause regression across a multitude of elements. Updating a semantic class only applies to the module in question, eliminating regression altogether.
 
 ## 5. Because visual classes aren't worth it
 
