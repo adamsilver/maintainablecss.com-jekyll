@@ -29,7 +29,7 @@ This approach puts all CSS inside a single folder within the project:
 * Third-party CSS files live under `/vendor`.
 * The application's CSS lives under `/yourApp` where *yourApp* is the name of your project.
 * This approach simplifies deployment because a build script can easily target a single directory in order to bundle and compress etc.
-* This is the most common approach I've seen but that doesn't mean it's the best.
+* This seems to be the most common approach but that doesn't mean it's the best.
 
 ## 2. CSS in a module folder
 
