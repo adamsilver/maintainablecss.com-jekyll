@@ -105,7 +105,7 @@ Notes:
 
 ## 3. Because they are easier to find
 
-Searching for HTML with a non-semantic class yields many results. Semantic class are unique, so a search yields just one result making it easy to track down the HTML.
+Searching for HTML with a non-semantic class yields many results. As semantic classes are unique, a search yields only one result, making it easy to track down the HTML.
 
 ## 4. Because they eliminate the risk of regression
 
