@@ -27,7 +27,7 @@ And the CSS should be:
       background-color: #eee;
 	}
 
-We prefix the class name with the module (or component) because even though the states could be common, the styles may not be. For example, an empty *basket* may have a gray background. But an empty list of *search results* may have an absolutely positioned image.
+The class name is prefixed with the module (or component) because whilst states maybe common, the associated styles may not be. For example, an empty *basket* might have a gray background. But an empty list of *search results* might have an absolutely positioned image.
 
 ## What about reusing state?
 
