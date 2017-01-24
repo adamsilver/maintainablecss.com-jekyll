@@ -24,11 +24,11 @@ If we want to reuse a style, one option would be to comma-delimit selectors insi
 	  color: red;
 	}
 
-We should use this approach for convenience, not for performance. Think about it: every time we remove a rule, we have to add a selector to the list which exchanges one line of code for another.
+This approach should be used for convenience, not for performance. Think about it: every time we remove a rule, we have to add a selector to the list which exchanges one line of code for another.
 
-If a module deviates from the abstraction, remove it from the list. Otherwise we'll experience override hell. Or we'll spend a lot more time trying to come up with a new abstraction.
+If a selector deviates from the rules inside the abstraction, it should be removed from the list. Otherwise we could regress the other selectors and potentially experience override issues.
 
-However, this is just one technique at our disposal. When a *thing* is well understood we can make use of other techniques, which we'll discuss in [Modules](/chapters/modules/), [State](/chapters/state/) and [Modifiers](/chapters/modifiers/).
+This is just one technique at our disposal. When a *thing* is well understood we can make use of other techniques, which we'll discuss in [Modules](/chapters/modules/), [State](/chapters/state/) and [Modifiers](/chapters/modifiers/).
 
 ## What about mixins?
 
