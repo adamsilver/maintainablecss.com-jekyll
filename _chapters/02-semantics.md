@@ -128,11 +128,11 @@ Automated functional tests work by searching for, and interacting with elements.
 4. submitting a form; and then
 5. verifying some criteria.
 
-Non-semantic classes don't allow us to target specific elements. Adding hooks just for tests seems foolhardy.
+We can't use non-semantic classes to target specific elements. And adding hooks just for tests is wasteful as the user has to download this stuff.
 
 ## 7. Because they provide hooks for Javascript
 
-Semantic class are useful for Javascript too. We can't use visual classes as a reliable way to retrieve elements.
+We can't use non-semantic classes to target specific elements in order to enhance them with Javascript.
 
 ## 8. Because they don't need maintaining
 
