@@ -14,7 +14,9 @@ This is not a library or framework. It's a set of principles, guides and convent
 
 ## What does maintainable mean?
 
-Maintainable CSS is CSS that we can edit without worrying that we've accidentally caused problems elsewhere.
+Maintainable means editing or writing CSS
+
+Maintainable CSS can be defined as being able to make changes to it, without worrying about accidentally causing problems elsewhere.
 
 ## What does scalable mean?
 
@@ -24,7 +26,7 @@ Scalable CSS means that as CSS increases in size, it's still easy to maintain. I
 
 A module is a distinct, independent unit that can be combined with other modules to form a more complex structure. In a living room, we can consider the TV, the sofa and the wall art to be modules, all coming together to create a room.
 
-If we take one of the units away, the rest still works just fine. We don't need the TV to be able to sit on the sofa etc. In a website, we can consider these things to be be modules: header, product list, article.
+If we take one of the units away, the rest still works just fine. We don't need the TV to be able to sit on the sofa etc. In a website the header, registration form, shopping basket, article, product list, navigation and homepage promo can all be considered to be modules.
 
 ## Is this for you?
 
