@@ -102,7 +102,7 @@ Notes:
 - These classes are meaningful in small and big screens.
 - We can use a media query, to clear elements only when needed.
 
-*Think about how valuable a codified responsive grid system is. A visual layout should adapt to the content, not the other way around.*
+> Question: How valuable is a codified responsive grid system is? A layout should adapt to the content, not the other way around.
 
 ## 3. Because they are easier to find
 
@@ -116,7 +116,7 @@ Updating a visual class could cause regression across a multitude of elements. U
 
 We may as well inline styles. It's more explicit and reduces the CSS footprint to zero. But mixing concerns is impractical and removes our ability to cache.
 
-> Isn't `.red`, for example, the exact same abstraction that CSS already gives us for free with `color: red`?
+> Question: Isn't `.red` the exact same abstraction that CSS already gives us for free with `color: red`?
 
 ## 6. Because they provide hooks for automated tests
 
