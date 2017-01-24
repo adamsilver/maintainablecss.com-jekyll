@@ -91,7 +91,7 @@ Therefore, all styles&mdash;even those that are wrapped in media queries&mdash;s
 
 ## Where do I put modifiers and states?
 
-Just like media queries, states and modifiers should be located in close proximity to the element they pertain to:
+States and modifiers, similarly to media queries, should be located in close proximity to the element they pertain to:
 
 	.basket {}
 

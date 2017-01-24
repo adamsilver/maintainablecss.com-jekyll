@@ -8,7 +8,7 @@ description: Why naming something based on what it is, instead of how it looks o
 
 Summary: Name something based on what it *is*, not how it *looks* or *behaves*.
 
-Semantic HTML isn't just about the elements we use. It's quite obvious that we should use `<a>` for links, `<table>` for tabular data and `<p>` for paragraphs etc. What's less obvious is the names we use for classes.
+Semantic HTML isn't only about the elements we use. It's quite obvious that we should use `<a>` for links, `<table>` for tabular data and `<p>` for paragraphs etc. What's less obvious is the names we use for classes.
 
 As Phil Karton says, *there are only two hard things in Computer Science: cache invalidation and naming things*. So spending an entire chapter talking about it seems like an appropriate thing to do.
 
@@ -128,7 +128,7 @@ Automated functional tests work by searching for, and interacting with elements.
 4. submitting a form; and then
 5. verifying some criteria.
 
-We can't use non-semantic classes to target specific elements. And adding hooks just for tests is wasteful as the user has to download this stuff.
+We can't use non-semantic classes to target specific elements. And adding hooks specifically for tests is wasteful as the user has to download this stuff.
 
 ## 7. Because they provide hooks for Javascript
 
@@ -142,7 +142,7 @@ With visual classes, both the HTML and the CSS need updating (assuming there are
 
 ## 9. Because they are easier to debug
 
-Inspecting an element with a multitude of atomic classes, means wading through many selectors. With a semantic class, there is just one, making it far easier to work with.
+Inspecting an element with a multitude of atomic classes, means wading through many selectors. With a semantic class, there is only one, making it far easier to work with.
 
 ## 10. Because the standards recommend it
 

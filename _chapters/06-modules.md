@@ -12,7 +12,7 @@ A module is a distinct, independent unit, that can be combined with other module
 
 In a living room, we can consider the TV, the sofa and the wall art modules. All coming together to create a useable room.
 
-If we take one of the units away, the rest still works just fine. We don't need the TV to be able to sit on the sofa etc.
+If we take one of the units away, the others still work. We don't need the TV to be able to sit on the sofa etc.
 
 In a website the header, registration form, shopping basket, article, product list, navigation and homepage promo can all be considered to be modules.
 
@@ -65,7 +65,7 @@ Next, we will build an order summary module. This module is shown during checkou
 
 It does, however, have a different aesthetic and the products can no longer be removed i.e. no form and no remove button.
 
-The first thing to address is the temptation to reuse the basket template (and CSS). Just because there are similarities does not mean they are the same. 
+The first thing to address is the temptation to reuse the basket template (and CSS). Even though there are similarities, this does not mean they are the same.
 
 If we try to combine them we'll entangle two modules with display logic and CSS overrides. This entangling by definition is complex which in turn is hard to maintain and easily avoidable.
 

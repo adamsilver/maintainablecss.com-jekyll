@@ -28,7 +28,7 @@ This approach should be used for convenience, not for performance. Think about i
 
 If a selector deviates from the rules inside the abstraction, it should be removed from the list. Otherwise we could regress the other selectors and potentially experience override issues.
 
-It's important to note that this is just one technique at our disposal. When a *thing* is well understood we can make use of other techniques, which we'll discuss in [Modules](/chapters/modules/), [State](/chapters/state/) and [Modifiers](/chapters/modifiers/).
+It's important to note that this is one of several techniques at our disposal. When a *thing* is well understood we can make use of other techniques, which we'll discuss in [Modules](/chapters/modules/), [State](/chapters/state/) and [Modifiers](/chapters/modifiers/).
 
 ## What about mixins?
 
@@ -44,7 +44,7 @@ If we need to update the rule in multiple places, a search and replace might be 
 
 With all that said, mixins can be very useful. We might, for example, want to apply *clearfix* rules across different elements and only within certain breakpoints. This is something that vanilla CSS can't do.
 
-So mixins are not *bad* as such, it's just that we should use them *judiciously*.
+As such, mixins are not *bad*, we should use them, but use them judiciously.
 
 ## What about performance?
 
@@ -52,7 +52,7 @@ We overcomplicate matters when it comes to performance. We get obsessed with the
 
 Even if CSS totals more than 100kb, in the grand schemes of things, there's probably very little gain from mindlessly striving for DRYness. And as we've discussed making CSS small makes HTML big.
 
-Compressing just one image will give us a better return on our investment. And as we've discussed, resolving other forms of redundancy improves maintainability *and* performance.
+The compression of a single image gives us a better return on our investment. And as we've discussed, resolving other forms of redundancy improves maintainability *and* performance.
 
 ## Is this violating DRY principles?
 

@@ -35,7 +35,7 @@ The trade-off is that this list could grow quickly. And everytime we add behavio
 
 ## 2. Creating a global state class
 
-As we just discussed, if we find ourselves repeating the exact same set of styles for multiple modules, it might be better to use a global state class as follows:
+If we find ourselves repeating the exact same set of styles for multiple modules, it might be better to use a global state class as follows:
 
 	.globalState-isHidden {
       display: none;
