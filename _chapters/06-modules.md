@@ -61,29 +61,29 @@ And the selectors for that might be:
 
 ## 2. Creating an order summary module
 
-Next, we will build an order summary module. This module is shown during checkout and bears some resemblnace the basket. For example, it has a title and it displays a list of products.
+Next, we will build an order summary module. This module is shown during checkout and bears some resemblance to the basket. For example, it has a title and it displays a list of products.
 
-It's got a slightly different aesthetic and products can no longer be removed from it i.e. no form and no remove button.
+It does, however, have a different aesthetic and the products can no longer be removed i.e. no form and no remove button.
 
-The first thing to address, is the temptation to reuse the basket template (and CSS.) Just because there are similarities does not mean they are the same. If we try to combine them we'll entangle two modules with display logic and CSS overrides.
+The first thing to address is the temptation to reuse the basket template (and CSS). Just because there are similarities does not mean they are the same. 
 
-This entangling of HTML, display logic and CSS by definition is complex. This complexity is hard to maintain and easily avoidable.
+If we try to combine them we'll entangle two modules with display logic and CSS overrides. This entangling by definition is complex which in turn is hard to maintain and easily avoidable.
 
-Instead, a new module should be created and named `.orderSummary`. As counterintutive as it may seem, duplication is a much better prospect. It's worth noting that this is not really duplication. Duplication is copying the *same* thing. These two modules might *look* similar but they are not the same.
+Instead, we should create a new module named `.orderSummary`. As counterintutive as this may seem, duplication is a much better prospect. And, this is not really duplication. Duplication is copying the *same* thing. These two modules might look similar but they are not the same.
 
 Keeping things separate, keeps things simple. Simple is the most important aspect of building reliable, scalable and maintainable software.
 
 ## 3. Creating a button module
 
-Our basket module only appears on the basket page and so we didn't really consider being able to reuse it. And we also forgot to address the fact that the remove button was a *component* of the basket.
+Our basket module only appears on the basket page; we didn't really consider being able to reuse it. And we also forgot to address the fact that the remove button was a *component* of the basket.
 
-Buttons are an example of something that we probably want to reuse in lot's of places, and potentially *within* different modules.
+But buttons are a common example of something that we probably want to reuse in lot's of places, and potentially *within* different modules.
 
-To do this, we could upgrade the component into a module. The problem is that different buttons often have slightly different positioning, sizing and spacing depending on context. And of course there is media queries to consider.
+To do this, we could upgrade the button component into a module. The problem is that different buttons often have slightly different positioning, sizing and spacing depending on context. And of course there is media queries to consider.
 
-For example, in one module a button might be floated to the right next to some text. In another it might be centered with some text beneath spaced appropriately with some bottom margin.
+For example, in one module a button might be floated to the right next to some text. In another it might be centered with some text beneath with some bottom margin.
 
-It's tricky to abstract the common rules because we don't want to end up in override hell. Or worse that we're afraid to update the abstracted set of CSS rules. If you still want to go ahead with this approach it looks like this:
+It's tricky to abstract the common rules because we don't want to end up in override hell. Or worse that we're afraid to update the abstracted CSS rules. However, if you still want to go ahead with this approach it looks like this:
 
 	.primaryButton {
 	  /* Button styles */
@@ -109,7 +109,7 @@ Notice that in this example, we don't specify `float`, `margin` or `width` etc. 
 	  margin-bottom: 10px;
 	}
 
-There's a third option. Imagine a checkout flow whereby each page has an identical continue button. Beside the continue button is a back link. We can do this:
+There's a third option. Imagine a checkout flow whereby each page has an identical continue button. And next to it is a link to go back to the previous step. We can do this:
 
 	.checkoutActions-continueButton {
 	  /*...*/
@@ -119,4 +119,4 @@ There's a third option. Imagine a checkout flow whereby each page has an identic
 	  /*...*/
 	}
 
-In doing this, we have abstracted and applied the styles to a well understood *checkoutActions* module. And we've done this without affecting similar, but not identical buttons.
+In doing this, we have abstracted and applied the styles to a well understood `.checkoutActions` module. And we've done this without affecting similar, but not identical buttons.
