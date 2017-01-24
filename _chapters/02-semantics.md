@@ -14,7 +14,7 @@ As Phil Karton says, *there are only two hard things in Computer Science: cache 
 
 Naming is quite frankly the most important aspect of writing maintainable CSS. There are two main approaches: the semantic approach and the non-semantic approach. Let's discuss what they are.
 
-## Semantic vs non-semantic classes
+## Semantic vs non-semantic
 
 Here are some non-semantic classes:
 
