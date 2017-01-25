@@ -677,7 +677,7 @@ text-transform: uppercase;
 	padding: 12px 30px;
 	font-size: 0.7em;
 	color: #222;
-	border: 2px solid #eee;
+	border: 2px solid #f5f5f5;
 	font-weight: bold;
 	letter-spacing: 0.04em;
 	width: 150px;
@@ -686,7 +686,7 @@ text-transform: uppercase;
 }
 
 .share-button:hover {
-	background-color: #eee;
+	background-color: #f5f5f5;
 }
 
 /**********************************************************
@@ -821,7 +821,7 @@ text-transform: uppercase;
 	padding: 9px 10px;
 	font-size: 1.13em;
 	color: #222;
-	border: 2px solid #eee;
+	border: 2px solid #f5f5f5;
 	letter-spacing: -0.01em;
 	margin: 0 auto;
 	-webkit-appearance: none;
