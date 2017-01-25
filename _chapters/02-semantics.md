@@ -48,7 +48,7 @@ Notes:
 - We need to mentally map these abbreviations, assuming we know what they mean in the first place.
 - We need to wade through many classes to work out what's happening; which classes override which; and which apply at certain break points etc.
 - These classes are ambiguous. For example, does `black-70` refer to the colour or the background? If we need the inspector to find out, this implies the class names are not readable.
-- The content is obfuscated by size of the surrounding HTML.
+- The content is obfuscated by the surrounding HTML.
 
 Here's the same thing using semantic classes:
 
