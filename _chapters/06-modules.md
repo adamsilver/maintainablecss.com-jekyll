@@ -52,7 +52,6 @@ The HTML might be:
 
 And the selectors for that might be:
 
-	/* module container */
 	.basket {}
 	.basket-title {}
 	.basket-item {}
@@ -85,9 +84,7 @@ For example, in one module a button might be floated to the right next to some t
 
 It's tricky to abstract the common rules because we don't want to end up in override hell. Or worse that we're afraid to update the abstracted CSS rules. However, if you still want to go ahead with this approach it looks like this:
 
-	.primaryButton {
-	  /* Button styles */
-	}
+	.primaryButton {}
 
 To avoid override hell, we can comma-delimit several buttons to apply the common rules that aren't affected by their context. For example:
 
@@ -111,12 +108,8 @@ Notice that in this example, we don't specify `float`, `margin` or `width` etc. 
 
 There's a third option. Imagine a checkout flow whereby each page has an identical continue button. And next to it is a link to go back to the previous step. We can do this:
 
-	.checkoutActions-continueButton {
-	  /*...*/
-	}
+	.checkoutActions-continueButton { }
 
-	.checkoutActions-backButton {
-	  /*...*/
-	}
+	.checkoutActions-backButton { }
 
 In doing this, we have abstracted and applied the styles to a well understood `.checkoutActions` module. And we've done this without affecting similar, but not identical buttons.

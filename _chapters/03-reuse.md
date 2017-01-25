@@ -16,9 +16,6 @@ This forced abstraction, over-thought and over-engineered code manifests itself 
 
 If we want to reuse a style, one option would be to comma-delimit selectors inside a well-named file. For example, if multiple elements need red text, we could do this:
 
-	/* colours.css */
-
-	/* red text */
 	.someThing,
 	.anotherThing {
 	  color: red;
