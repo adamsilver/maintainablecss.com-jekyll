@@ -114,7 +114,7 @@ Updating a visual class could cause regression across a multitude of elements. U
 
 ## 5. Because visual classes aren't worth it
 
-We may as well inline styles. It's more explicit and reduces the CSS footprint to zero. But mixing concerns is impractical and removes our ability to cache.
+In some respects we may as well inline styles. This is more explicit and reduces the CSS footprint to zero. Inline CSS is a problem though, because we can't use media queries for example. And placing CSS in HTML mixes concerns and removes the ability to cache it.
 
 > Question: Isn't `.red` the exact same abstraction that CSS already gives us for free with `color: red`?
 
