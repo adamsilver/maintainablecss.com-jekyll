@@ -26,13 +26,13 @@ A logo *module* might consist of copy, an image and a link, each of which are co
 
 ## Modules vs components
 
-Sometimes it's hard to decide whether something is a component or a module. For example, we might have a header containing a logo and a menu. Are these components or modules?
+Sometimes it's hard to decide whether something should be a component or a module. For example, we might have a header containing a logo and a menu. Are these components or modules?
 
-In a recent project of mine, it made sense for the logo to be a component and the menu to be a module of its own.
+In a recent project it made most sense for the logo to be a component and the menu to be a module of its own. What's a header without logo? And the navigation might be moved below the header.
 
 Nobody understands your requirements as well as you do. Through experience you'll get a feel for it. And if you get it wrong, changing from a component to a module is easy.
 
-That's enough of the theory. Let's build three different modules together. In doing so, the hope is to cover most of the things we think about when writing CSS.
+That's enough theory. Let's build three different modules together. In doing so, the hope is to cover most of the things we think about when writing CSS.
 
 ## 1. Creating a basket module
 
@@ -74,19 +74,19 @@ Keeping things separate, keeps things simple. Simple is the most important aspec
 
 ## 3. Creating a button module
 
-Our basket module only appears on the basket page; we didn't really consider being able to reuse it. And we also forgot to address the fact that the remove button was a *component* of the basket.
+Our basket module only appears on the basket page; we didn't really consider being able to reuse it. And we didn't address the fact that the remove button was a *component* of the basket.
 
-But buttons are a common example of something that we probably want to reuse in lot's of places, and potentially *within* different modules.
+Buttons are an example of something that we want to reuse in lot's of places, and potentially *within* different modules. A button is not particularly useful on its own.
 
-To do this, we could upgrade the button component into a module. The problem is that different buttons often have slightly different positioning, sizing and spacing depending on context. And of course there is media queries to consider.
+One option would be to upgrade the button component into a module. The problem is that different buttons often have slightly different positioning, sizing and spacing depending on context. And of course there is media queries to consider.
 
-For example, in one module a button might be floated to the right next to some text. In another it might be centered with some text beneath with some bottom margin.
+For example, within one module a button might be floated to the right next to some text. In another it might be centered with some text beneath with some bottom margin. That is the button is aware of its surroundings.
 
-It's tricky to abstract the common rules because we don't want to end up in override hell. Or worse that we're afraid to update the abstracted CSS rules. However, if you still want to go ahead with this approach it looks like this:
+Because of this, it's tricky to abstract the common rules because we don't want to end up in override hell. Or worse that we're afraid to update the abstracted CSS rules. However, if you still want to go ahead with this approach it looks like this:
 
 	.primaryButton {}
 
-To avoid override hell, we can comma-delimit several buttons to apply the common rules that aren't affected by their context. For example:
+To avoid these problems, we can use a mixin or comma-delimit the common rules that aren't affected by their context. For example:
 
 	.basket-removeButton,
 	.another-loginButton,
@@ -106,7 +106,7 @@ Notice that in this example, we don't specify `float`, `margin` or `width` etc. 
 	  margin-bottom: 10px;
 	}
 
-There's a third option. Imagine a checkout flow whereby each page has an identical continue button. And next to it is a link to go back to the previous step. We can do this:
+There's a third option. Imagine a checkout flow whereby each page has a continue button and a link to the previous step. We can reuse it like this:
 
 	.checkoutActions-continueButton { }
 
