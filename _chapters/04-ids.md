@@ -8,9 +8,13 @@ description: Learn why using IDs as hooks for styling are problematic and what y
 
 Summary: Don't use IDs as hooks for styling.
 
-Sometimes we have to use IDs. For example, labels are linked to form fields via ID; and internal anchors are bound by ID, both of which improve the user experience. But they have no bearing on *style*.
+IDs enable specific browser features. For example:
 
-If we were to use IDs as hooks for style, we would run into [specificity problems](http://www.w3.org/TR/css3-selectors/#specificity). To demonstrate, imagine we want to override the colour of an element from *red* to *blue*.
+- Labels are linked to form fields by ID
+- Internal anchors are bound by ID
+- Various ARIA attributes are connected by ID
+
+All of these features improve the user experience. We don't have to use IDs for styling. If we did, we would run into [specificity problems](http://www.w3.org/TR/css3-selectors/#specificity). To demonstrate the problem, we're going to override the colour of an element from *red* to *blue* using an ID.
 
 Here's the HTML:
 
@@ -40,8 +44,8 @@ And the CSS:
 	  color: blue;
 	}
 
-Now, the element is blue. Problem solved.
+Now, the element is blue&mdash;problem solved.
 
 ## Final thought
 
-Use IDs to enable browser functionality. But never use them as hooks for styling.
+Don't be afraid to use IDs to enable browser features, but avoid them for styling purposes.
