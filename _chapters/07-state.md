@@ -6,18 +6,16 @@ permalink: /chapters/state/
 description: Learn how to provide different styles to your modules and components based on state, such as showing, hiding and loading.
 ---
 
-We may need to give elements a different visual treatment in response to some state. Here are some examples:
+Quite often, particularly with richer user interfaces, styling needs to be applied in response to an element's change of state. For example, we may have different styles when a module (or component) is:
 
-- showing / hiding
-- active / inactive
-- disabled / enabled
-- loading / loaded
-- hasProducts / hasNoProducts
-- isEmpty / isFull
+- showing or hiding;
+- active or inactive;
+- disabled or enabled;
+- loading or loaded;
+- hasProducts or hasNoProducts;
+- isEmpty or isFull;
 
-To represent state we need an additional class which should be added to the module (or component) element to which it pertains.
-
-For example, if our basket module needs a gray background when it's empty, the HTML should be:
+To represent state we need an additional class which should be added to the module (or component) element to which it pertains. For example, if our basket module needs a gray background when it's empty, the HTML should be:
 
 	<div class="basket basket-isEmpty">
 
@@ -38,3 +36,7 @@ Sometimes, we may in fact want to reuse state across modules or components. For 
 Not all visual states can be represented by an [ARIA attribute](https://www.w3.org/TR/wai-aria/states_and_properties#attrs_widgets). For example, there is no attribute to represent `hasProducts`. Therefore, we should use them only when necessary and in *addition* to classes.
 
 Also, using an attribute (instead of a class) selector has [less support](https://www.impressivewebs.com/attribute-selectors/). Whilst developers may consider these browsers old, insecure or irrelevant, we should avoid techniques that may exclude users.
+
+## Final thought
+
+If we need to style an element based on state apply an extra class. When necessary, use ARIA attributes in addition to a class, and avoid techniques that unnecessarily exclude users.

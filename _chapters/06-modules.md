@@ -143,7 +143,7 @@ In doing this, we have abstracted and applied the styles to a well understood `.
 
 We haven't discussed having more than one type of button yet. To do this we can use modifiers, which is addressed later.
 
-## Final thoughts
+## Final thought
 
 Modules allow us to reuse HTML and CSS across a website. By definition a module is reusable. Before something can be upgraded into a module, we must first understood what it is and what the different use cases are.
 
