@@ -46,6 +46,10 @@ This approach does away with the long comma-delimitted list. And we no longer ne
 	var module1Collapser = new Collapser(element1);
 	var module2Collapser = new Collapser(element2);
 
-However, this approach doesn't always make sense. We may have two different modules that *behave* the same, but *look* different, something we've talked about in [State](/chapters/state/).
+However, this approach doesn't always make sense. We may have two different modules that *behave* the same, but *look* different, which is something we've discussed in [State](/chapters/state/).
+
+Lastly, we could always default to this approach and if we need to specify a class, just pass it into the constructor as shown in the first example above.
+
+
 
 <!-- display: flex vs display: block -->
