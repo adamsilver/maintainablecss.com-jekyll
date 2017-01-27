@@ -38,7 +38,7 @@ That's enough theory. Let's build three different modules together. In doing so,
 
 We'll simplify this basket for brevity. Each product within the basket will display the product's title with the ability to remove it from the basket.
 
-The HTML might be:
+The basket template might be:
 
 	<div class="basket">
 	  <h1 class="basket-title">Your basket</h1>
@@ -50,7 +50,7 @@ The HTML might be:
 	  </div>
 	</div>
 
-And the selectors for that might be:
+And the CSS would be:
 
 	.basket {}
 	.basket-title {}
@@ -68,7 +68,21 @@ The first thing to address is the temptation to reuse the basket template (and C
 
 If we try to combine them we'll entangle two modules with display logic and CSS overrides. This entangling by definition is complex which in turn is hard to maintain and easily avoidable.
 
-Instead, we should create a new module named `.orderSummary`. As counterintutive as this may seem, duplication is a much better prospect. And, this is not really duplication. Duplication is copying the *same* thing. These two modules might look similar but they are not the same.
+Instead, we should create a new module with the following template:
+
+	<div class="orderSummary">
+	  <h2 class="orderSummary-title">Order summary</h2>
+	  <div class="orderSummary-item">...</div>
+	  <div class="orderSummary-item">...</div>
+	</div>
+
+And the CSS would be:
+
+	.orderSummary {}
+	.orderSummary-title {}
+	.orderSummary-item {}
+
+As counterintutive as this may seem, duplication is a better prospect. And, this is not really duplication. Duplication is copying the *same* thing. These two modules might look similar but they are not the same.
 
 Keeping things separate, keeps things simple. Simple is the most important aspect of building reliable, scalable and maintainable software.
 
@@ -78,13 +92,19 @@ Our basket module only appears on the basket page; we didn't really consider bei
 
 Buttons are an example of something that we want to reuse in lot's of places, and potentially *within* different modules. A button is not particularly useful on its own.
 
-One option would be to upgrade the button component into a module. The problem is that different buttons often have slightly different positioning, sizing and spacing depending on context. And of course there is media queries to consider.
+One option would be to upgrade the button component into a module as follows:
 
-For example, within one module a button might be floated to the right next to some text. In another it might be centered with some text beneath with some bottom margin. That is the button is aware of its surroundings.
+	<input class="primaryButton" type="submit" value="{%raw%}{{text}}{%endraw%}" ...>
 
-Because of this, it's tricky to abstract the common rules because we don't want to end up in override hell. Or worse that we're afraid to update the abstracted CSS rules. However, if you still want to go ahead with this approach it looks like this:
+And the the CSS would be:
 
 	.primaryButton {}
+
+The problem is that different buttons often have slightly different positioning, sizing and spacing depending on context. And of course there is media queries to consider.
+
+For example, within one module a button might be floated to the right next to some text. In another it might be centered with some text beneath with some bottom margin.
+
+Because of this, it's tricky to abstract the common rules because we don't want to end up in override hell. Or worse that we're afraid to update the abstracted CSS rules.
 
 To avoid these problems, we can use a mixin or comma-delimit the common rules that aren't affected by their context. For example:
 
@@ -106,10 +126,25 @@ Notice that in this example, we don't specify `float`, `margin` or `width` etc. 
 	  margin-bottom: 10px;
 	}
 
-There's a third option. Imagine a checkout flow whereby each page has a continue button and a link to the previous step. We can reuse it like this:
+There's a third option. Imagine a checkout flow whereby each page has a continue button and a link to the previous step. We can again reuse it by upgrading it into a module:
 
-	.checkoutActions-continueButton { }
+	<div class="checkoutActions">
+	  <input class="continue" ...>
+	  <a class="checkoutActions-back" ...></a>
+	</div>
 
-	.checkoutActions-backButton { }
+And the CSS would be:
+
+	.checkoutActions-continue { }
+
+	.checkoutActions-back { }
 
 In doing this, we have abstracted and applied the styles to a well understood `.checkoutActions` module. And we've done this without affecting similar, but not identical buttons.
+
+We haven't discussed having more than one type of button yet. To do this we can use modifiers, which is addressed later.
+
+## Final thoughts
+
+Modules allow us to reuse HTML and CSS across a website. By definition a module is reusable. Before something can be upgraded into a module, we must first understood what it is and what the different use cases are.
+
+Once we do, we can abstract the HTML and styling accordingly. With careful thought we can make the right abstraction and avoid complexity at the same time.
