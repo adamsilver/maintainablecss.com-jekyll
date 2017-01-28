@@ -6,15 +6,9 @@ permalink: /chapters/ids/
 description: Learn why using IDs as hooks for styling are problematic and what you should do instead.
 ---
 
-Summary: Don't use IDs as hooks for styling.
+When I first wrote CSS, I used IDs because semantically speaking, we should use an ID when there is one of something, and a class when there are several. For example, a footer would use an ID; a list of products would use a class.
 
-IDs enable specific browser features. For example:
-
-- Labels are linked to form fields by ID
-- Internal anchors are bound by ID
-- Various ARIA attributes are connected by ID
-
-All of these features improve the user experience. We don't have to use IDs for styling. If we did, we would run into [specificity problems](http://www.w3.org/TR/css3-selectors/#specificity). To demonstrate the problem, we're going to override the colour of an element from *red* to *blue* using an ID.
+The problem occurs when we need to override styles that are applied with an ID. This is because [IDs overpower class names](http://www.w3.org/TR/css3-selectors/#specificity) by orders of magnitude. To demonstrate the problem, we're going to override the colour of an element from *red* to *blue* using an ID.
 
 Here's the HTML:
 
@@ -46,6 +40,10 @@ And the CSS:
 
 Now, the element is blue&mdash;problem solved.
 
-## Final thought
+However, it's not that we shouldn't use IDs. In fact IDs enable specific browser features such as:
 
-Don't be afraid to use IDs to enable browser features, but avoid them for styling purposes.
+- Labels are linked to form fields by ID
+- Internal anchors are bound by ID
+- Various ARIA attributes are connected by ID
+
+So it's not that we shouldn't use them at all, it's just that we shouldn't use them as hooks for *styling*.

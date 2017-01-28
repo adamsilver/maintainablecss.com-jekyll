@@ -6,11 +6,9 @@ permalink: /chapters/semantics/
 description: Why naming something based on what it is, instead of how it looks or behaves is a cornerstone of writing well architected and maintainable CSS code.
 ---
 
-Summary: Name something based on what it *is*, not how it *looks* or *behaves*.
-
 Semantic HTML isn't only about the elements we use. It's quite obvious that we should use `<a>` for links, `<table>` for tabular data and `<p>` for paragraphs etc. What's less obvious is the names we use for classes.
 
-As Phil Karton says, *there are only two hard things in Computer Science: cache invalidation and naming things*. So spending an entire chapter talking about it seems like an appropriate thing to do.
+As Phil Karton says, *there are only two hard things in Computer Science: cache invalidation and **naming things***. So spending an entire chapter talking about it seems like an appropriate thing to do.
 
 Naming is quite frankly the most important aspect of writing maintainable CSS. There are two main approaches: the semantic approach and the non-semantic approach. Let's discuss what they are.
 
