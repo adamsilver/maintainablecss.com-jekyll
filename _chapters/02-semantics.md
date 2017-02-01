@@ -96,7 +96,7 @@ Here's the same thing using semantic classes:
 Notes:
 
 - These classes are encapsulated to the module's design and content.
-- We can style the elements however we need to (with media queries).
+- It's easy to style elements without having to write a multitude of classes and changing the HTML again.
 - These classes are meaningful in small and big screens.
 - We can use a media query, to clear elements only when needed.
 
