@@ -461,6 +461,9 @@ a.chapterNavigation-next:active {
 @media(min-width: 37.5em) {
 	.hero p {
 		font-size: 1.38em;
+		max-width: 27em;
+	    margin-left: auto;
+	    margin-right: auto;
 	}
 }
 
