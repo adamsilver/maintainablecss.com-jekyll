@@ -127,7 +127,7 @@ a:focus {
 **********************************************************/
 
 .header {
-	background-color: #222;
+	background-color: #fcf6ff;
 }
 
 .header-inner {
@@ -154,8 +154,8 @@ a:focus {
 }
 
 .logo a {
-	color: #fff;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 /**********************************************************
@@ -184,7 +184,6 @@ a:focus {
 	margin-left: 3px;
 	margin-right: 3px;
 	text-decoration: none;
-	color: #fff;
 }
 
 @media(min-width: 340px) {
@@ -196,11 +195,11 @@ a:focus {
 
 .navigation a:hover,
 .navigation a:active {
-	color: #FF851B;
+	color: #935EAC;
 }
 
 a.navigation-isActive {
-	border-bottom: 1px solid #FF851B;
+	border-bottom: 1px solid #935EAC;
 }
 
 /**********************************************************
@@ -209,7 +208,7 @@ a.navigation-isActive {
 
 .content {
 	padding-top: 40px;
-	padding-bottom: 1px;
+	padding-bottom: 40px;
 	max-width: 740px;
 	margin-left: auto;
 	margin-right: auto;
@@ -405,12 +404,10 @@ a.chapterNavigation-next:active {
 **********************************************************/
 
 .hero {
-	background-color: #222;
+	background-color: #fcf6ff;
 }
 
 .hero-inner {
-	max-width: 43.75em;
-	margin: 0 auto;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 15px;
@@ -419,19 +416,19 @@ a.chapterNavigation-next:active {
 
 @media(min-width: 37.5em) {
 	.hero-inner {
-		padding: 60px 60px 90px;
+		padding: 40px 60px 90px;
 	}
 }
 
 .hero-logo {
 	display: block;
 	margin: 0 auto 10px;
-	height: 100px;
+	width: 75px;
 }
 
 @media(min-width: 31.25em) {
 	.hero-logo {
-		width: 200px;
+		width: 150px;
 	}
 }
 
@@ -440,7 +437,6 @@ a.chapterNavigation-next:active {
 	line-height: 1.2;
 	margin-bottom: 20px;
 	text-align: center;
-	color: #fff;
 }
 
 @media(min-width: 37.5em) {
@@ -454,8 +450,10 @@ a.chapterNavigation-next:active {
 	font-size: 1.13em;
 	line-height: 1.7em;
 	margin-bottom: 40px;
-	color: #fff;
 	font-family: 'PT serif';
+	max-width: 30em;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @media(min-width: 37.5em) {
@@ -464,34 +462,14 @@ a.chapterNavigation-next:active {
 	}
 }
 
-/*
-text-transform: uppercase;
-	text-decoration: none;
-	padding: 14px 17px;
-	font-size: 0.94em;
-	color: #222;
-	font-weight: bold;
-	border: none;
-	letter-spacing: 0.04em;
-	text-align: center;
-	margin: 0 auto;
-	-webkit-appearance: none;
-	border: 3px solid #FF851B;
-	background-color: transparent;
-	color: #FF851B;
-	width: 100%;
-	box-sizing: border-box;
-	font-family: 'Open sans';
- */
-
 .hero-button:link,
 .hero-button:visited {
 	text-transform: uppercase;
 	text-decoration: none;
 	padding: 14px 70px;
 	font-size: 0.94em;
-	border: 3px solid #FF851B;
-	color: #FF851B;
+	border: 3px solid #935EAC;
+	color: #935EAC;
 	font-weight: bold;
 	letter-spacing: 0.04em;
 	width: 100px;
@@ -501,73 +479,11 @@ text-transform: uppercase;
 }
 
 .hero-button:hover {
-	color: #222;
-	background-color: #FF851B;
+	color: #fff;
+	background-color: #935EAC;
 }
 
-/**********************************************************
-* Benefits
-**********************************************************/
 
-.benefits {
-	padding: 50px 20px;
-	background-color: #f5f5f5;
-}
-
-.benefits h2 {
-	text-align: center;
-	font-size: 1.75em;
-	line-height: 1.2em;
-	max-width: 700px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 50px;
-	color: #222;
-}
-
-@media(min-width: 37.5em) {
-	.benefits h2 {
-		font-size: 2.19em;
-	}
-}
-
-.benefit {
-	border-bottom: 1px dotted #aaa;
-    max-width: 600px;
-    margin: 0 auto 40px;
-}
-
-.benefit h3 {
-	text-align: center;
-	font-size: 1.25em;
-	margin-bottom: 7px;
-	color: #222;
-}
-
-@media(min-width: 37.5em) {
-	.benefits h3 {
-		font-size: 1.57em;
-	}
-}
-
-.benefit p {
-	text-align: center;
-	font-size: 1.13em;
-	line-height: 1.4em;
-	max-width: 700px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 30px;
-	padding: 0 20px 10px;
-	color: #222;
-	font-family: 'PT serif';
-}
-
-@media(min-width: 37.5em) {
-	.benefit p {
-		font-size: 1.38em;
-	}
-}
 /**********************************************************
 * Chapters
 **********************************************************/
