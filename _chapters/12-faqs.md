@@ -28,7 +28,7 @@ Yes. Please contact me to find out more. Here's the [Japanese version](http://co
 
 ## Must I give a class name to every element?
 
-No. You can write `.module h2 {}` if you want to. And sometimes you may have to, if for example you're using markdown.
+No. You can write `.module p {}` if you want to. And sometimes you may have to, if for example you're using markdown. But beware that if you nest a module which contains a `p` it will inherit the styles and need overriding.
 
 ## Why must I prefix the module name?
 

@@ -22,7 +22,7 @@ If we want to reuse a style, one option would be to comma-delimit selectors insi
 	  color: red;
 	}
 
-This approach should be used for convenience, not for performance. Think about it: every time we remove a rule, we have to add a selector to the list which exchanges one line of code for another.
+This approach should be used for convenience, not for performance. (If the abstraction only has one rule, we're simply exchanging one line of code for another.)
 
 If a selector deviates from the rules inside the abstraction, it should be removed from the list. Otherwise we could regress the other selectors and potentially experience override issues.
 
