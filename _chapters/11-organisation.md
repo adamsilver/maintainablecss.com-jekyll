@@ -6,14 +6,11 @@ permalink: /chapters/organisation/
 description: Learn how to organise your CSS files.
 ---
 
-Good code is easy to find. Easy to find code is well organised. We want our CSS to be well organised. There are two approaches we can take:
-
-1. **Organise by type**. All CSS under a single folder; or
-2. **Organise by module**. The CSS lives in module-specific folder.
+Good code is easy to find nad easy to find code is well organised. And so it follows we want our CSS to be well organised. There are, generally speaking, two approaches to choose from, both of which we'll discuss in this chapter.
 
 ## 1. CSS in a single folder
 
-This approach puts all CSS inside a single folder within the project:
+This approach puts all CSS inside a single folder:
 
 	/path/to/css
 	  /vendor
@@ -28,7 +25,7 @@ This approach puts all CSS inside a single folder within the project:
 
 * Third-party CSS files live under `/vendor`.
 * The application's CSS lives under `/yourApp` where *yourApp* is the name of your project.
-* This approach simplifies deployment because a build script can easily target a single directory in order to bundle and compress etc.
+* This approach simplifies deployment because a build script can easily target a single directory in order to bundle and compress the files.
 * This seems to be the most common approach but that doesn't mean it's the best.
 
 ## 2. CSS in a module folder
@@ -58,7 +55,7 @@ This approach puts module-specific CSS within a folder of its own:
 
 ### Notes
 
-* We normally orientate ourselves by feature, not by technology when tackling a piece of work. This makes this approach a compelling one.
+* We normally orientate ourselves by feature as opposed to technology, making this approach a compelling one.
 * Global CSS needs a folder of its own because global styles by their very nature don't belong to a module.
 * This approach is more likely to suffer from the *31 CSS file limit problem*, which is explained next.
 
@@ -79,3 +76,7 @@ By doing this you'll be able to mimick production and debug CSS in offending leg
 ### 2. Use less than 32 CSS files
 
 As you'll probably have more than 31 modules, you can't organise your CSS by module. Instead you'll have to put several modules within the same CSS file.
+
+## Final note
+
+In this chapter we have discussed two ways to organise our CSS. Whichever approach you take, be aware of the 31 CSS file limit problem that will make debugging CSS harder in various versions of Internet Explorer.
