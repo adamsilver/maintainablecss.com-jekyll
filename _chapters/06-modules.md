@@ -88,7 +88,7 @@ Keeping things separate, keeps things simple. Simple is the most important aspec
 
 ## 3. Creating a button module
 
-Our basket module only appears on the basket page; we didn't really consider being able to reuse it. And we didn't address the fact that the remove button was a *component* of the basket.
+As our basket module only appears in the basket page, we didn't consider being able to reuse it elsewhere. Also, we didn't address the fact that the remove button is a component of the basket, making them harder to reuse across modules.
 
 Buttons are an example of something that we want to reuse in lot's of places, and potentially *within* different modules. A button is not particularly useful on its own.
 
@@ -122,7 +122,7 @@ Notice that in this example, we don't specify `float`, `margin` or `width` etc. 
 	  float: right;
 	}
 
-	.another-DeleteButton {
+	.another-deleteButton {
 	  margin-bottom: 10px;
 	}
 

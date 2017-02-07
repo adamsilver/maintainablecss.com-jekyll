@@ -25,7 +25,7 @@ And the CSS should be:
       background-color: #eee;
 	}
 
-The class name is prefixed with the module (or component) because whilst states maybe common, the associated styles may not be. For example, an empty *basket* might have a gray background. But an empty list of *search results* might have an absolutely positioned image.
+The class name is prefixed with the module (or component) because whilst states might be common, associated styles might not. For example, an empty *basket* has a gray background, where as an empty search has an absolutely-positioned image.
 
 ## What about reusing state?
 
@@ -39,4 +39,4 @@ Also, using an attribute (instead of a class) selector has [less support](https:
 
 ## Final thought
 
-If we need to style an element based on state apply an extra class. When necessary, use ARIA attributes in addition to a class, and avoid techniques that unnecessarily exclude users.
+If we need to style an element based on state apply an extra class. When necessary, use ARIA in addition to a class, to avoid techniques that unnecessarily exclude users.
