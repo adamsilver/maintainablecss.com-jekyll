@@ -145,6 +145,4 @@ We haven't discussed having more than one type of button yet. To do this we can 
 
 ## Final thought
 
-Modules allow us to reuse HTML and CSS across a website. By definition a module is reusable. Before something can be upgraded into a module, we must first understood what it is and what the different use cases are.
-
-Once we do, we can abstract the HTML and styling accordingly. With careful thought we can make the right abstraction and avoid complexity at the same time.
+A module by definition is a reusable chunk of HTML and CSS. Before a group of elements can be upgraded into a module, we must first understand what it is and what its different use cases are, in order to make the right abstraction Thus avoiding complexity at the same time, which is the source of unmaintainable CSS.

@@ -6,7 +6,7 @@ permalink: /chapters/organisation/
 description: Learn how to organise your CSS files.
 ---
 
-Good code is easy to find nad easy to find code is well organised. And so it follows we want our CSS to be well organised. There are, generally speaking, two approaches to choose from, both of which we'll discuss in this chapter.
+Good code is easy-to-find and easy-to-find code is well organised. And so it follows we want our CSS to be well-organised. There are, generally speaking, two approaches to choose from, both of which we'll discuss in this chapter.
 
 ## 1. CSS in a single folder
 
@@ -79,4 +79,4 @@ As you'll probably have more than 31 modules, you can't organise your CSS by mod
 
 ## Final note
 
-In this chapter we have discussed two ways to organise our CSS. Whichever approach you take, be aware of the 31 CSS file limit problem that will make debugging CSS harder in various versions of Internet Explorer.
+In this chapter we have discussed two ways in which to organise CSS. Whichever approach we take, we must be aware of the 31 CSS file limit problem because it makes debugging CSS much harder in the very browsers that cause most trouble.
