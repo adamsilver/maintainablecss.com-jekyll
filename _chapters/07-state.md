@@ -39,4 +39,4 @@ Also, using an attribute (instead of a class) selector has [less support](https:
 
 ## Final thought
 
-If an element's style needs changing based on it's state, we should add an extra class to apply the differences. When necessary, use ARIA in addition to a class, which avoids using techniques that unnecessarily exclude users.
+If an element's style needs changing based on its state, we should add an extra class to apply the differences. When necessary, use ARIA in addition to a class, which avoids using techniques that unnecessarily exclude users.
