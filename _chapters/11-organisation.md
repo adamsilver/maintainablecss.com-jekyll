@@ -6,7 +6,7 @@ permalink: /chapters/organisation/
 description: Learn how to organise your CSS files.
 ---
 
-Good code is easy-to-find and easy-to-find code is well organised. And so it follows we want our CSS to be well-organised. There are, generally speaking, two approaches to choose from, both of which we'll discuss in this chapter.
+Good code is easy-to-find and easy-to-find code is well-organised. And so it follows we want our CSS to be well-organised. There are, generally speaking, two approaches to choose from, both of which we'll discuss in this chapter.
 
 ## 1. CSS in a single folder
 
