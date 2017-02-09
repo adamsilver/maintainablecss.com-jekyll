@@ -145,4 +145,4 @@ We haven't discussed having more than one type of button yet. To do this we can 
 
 ## Final thought
 
-A module by definition is a reusable chunk of HTML and CSS. Before a group of elements can be upgraded into a module, we must first understand what it is and what its different use cases are, in order to make the right abstraction Thus avoiding complexity at the same time, which is the source of unmaintainable CSS.
+A module by definition is a reusable chunk of HTML and CSS. Before a group of elements can be upgraded into a module, we must first understand what it is and what its different use cases are, in order to make the right abstraction. Thus avoiding complexity at the same time, which is the source of unmaintainable CSS.
