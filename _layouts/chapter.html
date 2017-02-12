@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html dir="ltr" lang="en">
 	<head>
-	    <title>{{ page.title }} | {{ site.name }}</title>
+	    <title>{{ page.title }} - {{ site.name }}</title>
 	    {% include head.html %}
 	</head>
 	<body>
