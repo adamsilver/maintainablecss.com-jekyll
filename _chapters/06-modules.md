@@ -88,7 +88,7 @@ Keeping things separate, keeps things simple. Simple is the most important aspec
 
 ## 3. Creating a button module
 
-Our basket module only appears on the basket page; we didn't really consider being able to reuse it. And we didn't address the fact that the remove button was a *component* of the basket.
+As our basket module only appears in the basket page, we didn't consider being able to reuse it elsewhere. Also, we didn't address the fact that the remove button is a component of the basket, making them harder to reuse across modules.
 
 Buttons are an example of something that we want to reuse in lot's of places, and potentially *within* different modules. A button is not particularly useful on its own.
 
@@ -122,7 +122,7 @@ Notice that in this example, we don't specify `float`, `margin` or `width` etc. 
 	  float: right;
 	}
 
-	.another-DeleteButton {
+	.another-deleteButton {
 	  margin-bottom: 10px;
 	}
 
@@ -145,6 +145,4 @@ We haven't discussed having more than one type of button yet. To do this we can 
 
 ## Final thought
 
-Modules allow us to reuse HTML and CSS across a website. By definition a module is reusable. Before something can be upgraded into a module, we must first understood what it is and what the different use cases are.
-
-Once we do, we can abstract the HTML and styling accordingly. With careful thought we can make the right abstraction and avoid complexity at the same time.
+A module by definition is a reusable chunk of HTML and CSS. Before a group of elements can be upgraded into a module, we must first understand what it is and what its different use cases are, in order to make the right abstraction. Thus avoiding complexity at the same time, which is the source of unmaintainable CSS.

@@ -48,3 +48,7 @@ Whilst using IDs for styling is problematic, we can still use them for other thi
 - to link labels to form fields;
 - to bind internal anchors to a hash fragment in the URL; and
 - to connect up variaous ARIA attributes to help screen reader users.
+
+## Final thought
+
+Use IDs whenever you need to enable particular behaviours for browsers and assistive technology. But avoid using them for styles.

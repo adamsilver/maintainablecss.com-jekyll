@@ -28,7 +28,7 @@ If we take one of the units away, the others still work. We don't need the TV to
 
 ## Is this for you?
 
-If you've ever experienced pain when writing or maintaining CSS, then you'll find useful information in this book. And if you work in a team, this book can save you documenting your approach to share with other team mates.
+If you've ever experienced pain when writing or maintaining CSS, then you'll find useful information in this book. And if you work in a team, this book can serve as documentation for you and your team.
 
 ## Is this hard to learn?
 
