@@ -10,7 +10,7 @@ If you can't find an answer, please [raise an issue on Github](https://github.co
 
 ## When should I use this?
 
-If you like to keep things truly simple, use this approach. It works well if your building long-lived, bespokely designed, responsive sites that scale and evolve over time.
+If you like to keep things truly simple, use this approach. It works well if you're building long-lived, bespokely designed, responsive sites that scale and evolve over time.
 
 ## What if I don't want to use it?
 
