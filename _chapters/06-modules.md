@@ -100,7 +100,7 @@ And the the CSS would be:
 
 	.primaryButton {}
 
-The problem is that different buttons often have slightly different positioning, sizing and spacing depending on context. And of course there is media queries to consider.
+The problem is that different buttons often have slightly different positioning, sizing and spacing depending on context. And of course there are media queries to consider.
 
 For example, within one module a button might be floated to the right next to some text. In another it might be centered with some text beneath with some bottom margin.
 
@@ -129,8 +129,8 @@ Notice that in this example, we don't specify `float`, `margin` or `width` etc. 
 There's a third option. Imagine a checkout flow whereby each page has a continue button and a link to the previous step. We can again reuse it by upgrading it into a module:
 
 	<div class="checkoutActions">
-	  <input class="continue" ...>
-	  <a class="checkoutActions-back" ...></a>
+	  <input class="checkoutActions-continue">
+	  <a class="checkoutActions-back"></a>
 	</div>
 
 And the CSS would be:
