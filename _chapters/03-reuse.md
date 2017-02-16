@@ -9,7 +9,7 @@ description: Learn why avoding reuse and embracing repetition makes CSS maintena
 As Harry Roberts says, *DRY is often misinterpreted as the necessity to never repeat the exact same thing twice. This is impractical and usually counterproductive, and can lead to forced abstractions, over-thought and over-engineered code.*
 
 
-This forced abstraction, over-thought and over-engineered code manifests itself in visual and atomic classes. We know how painful they can be because we discussed them thoroughly in [semantics](/chapters/semantics/).
+This forced abstraction, over-thought and over-engineered code may result in visual and atomic classes (and mixins). We know how painful they can be because we discussed them thoroughly in [semantics](/chapters/semantics/).
 
 Whilst we often try to abstract CSS too much too soon, there are obviously going to be times when reuse makes sense. The question must be answered, *how can we reuse a style?*
 
