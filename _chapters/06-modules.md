@@ -88,23 +88,25 @@ Keeping things separate, keeps things simple. Simple is the most important aspec
 
 ## 3. Creating a button module
 
-As our basket module only appears in the basket page, we didn't consider being able to reuse it elsewhere. Also, we didn't address the fact that the remove button is a component of the basket, making them harder to reuse across modules.
+As our basket module only appears in the basket page, we didn't consider being able to reuse it elsewhere. Also, we didn't address the fact that the remove button is a component of the basket, making it harder to reuse across modules.
 
-Buttons are an example of something that we want to reuse in lot's of places, and potentially *within* different modules. A button is not particularly useful on its own.
+Buttons are an example of something that we want to reuse in lot's of places, and potentially *within* different modules. (A button is not particularly useful on its own.)
 
 One option would be to upgrade the button component into a module as follows:
 
-	<input class="primaryButton" type="submit" value="{%raw%}{{text}}{%endraw%}" ...>
+	<input class="button" type="submit" value="{%raw%}{{text}}{%endraw%}" ...>
 
 And the the CSS would be:
 
-	.primaryButton {}
+	.button {}
 
-The problem is that different buttons often have slightly different positioning, sizing and spacing depending on context. And of course there are media queries to consider.
+The problem is that buttons often have slightly different positioning, sizing and spacing depending on context. And of course there are media queries to consider.
 
 For example, within one module a button might be floated to the right next to some text. In another it might be centered with some text beneath with some bottom margin.
 
-Because of this, it's tricky to abstract the common rules because we don't want to end up in override hell. Or worse that we're afraid to update the abstracted CSS rules.
+Ideally, we should iron out these inconsistences in *design*, before they even make their way into code. But as this is not always possible and for the purposes of example, we'll assume we have to deal with these issues.
+
+And so, because of these differences, it's tricky to abstract the common rules because we don't want to end up in override hell. Or worse that we're afraid to update the abstracted CSS rules.
 
 To avoid these problems, we can use a mixin or comma-delimit the common rules that aren't affected by their context. For example:
 
@@ -126,7 +128,9 @@ Notice that in this example, we don't specify `float`, `margin` or `width` etc. 
 	  margin-bottom: 10px;
 	}
 
-There's a third option. Imagine a checkout flow whereby each page has a continue button and a link to the previous step. We can again reuse it by upgrading it into a module:
+This seems sensible as it means we can opt in to these common styles. The opposite, of course being having to override. But there's another, third option.
+
+Imagine a checkout flow whereby each page has a continue button and a link to the previous step. We can reuse this by upgrading it into a module:
 
 	<div class="checkoutActions">
 	  <input class="checkoutActions-continue">
@@ -139,10 +143,12 @@ And the CSS would be:
 
 	.checkoutActions-back { }
 
-In doing this, we have abstracted and applied the styles to a well understood `.checkoutActions` module. And we've done this without affecting similar, but not identical buttons.
+In doing this, we abstracted and applied the styles to a well understood `.checkoutActions` module. And we've done this without affecting similar, but not identical buttons.
 
-We haven't discussed having more than one type of button yet. To do this we can use modifiers, which is addressed later.
+We haven't discussed having more than one type of button (primary and secondary etc) yet. To do this we can use modifiers, which is addressed later.
 
 ## Final thought
 
-A module by definition is a reusable chunk of HTML and CSS. Before a group of elements can be upgraded into a module, we must first understand what it is and what its different use cases are, in order to make the right abstraction. Thus avoiding complexity at the same time, which is the source of unmaintainable CSS.
+A module, by definition, is a reusable chunk of HTML and CSS. Before a group of elements can be upgraded into a module, we must first understand what it is and what its different use cases are.
+
+Only then, can we design the right abstraction. And in doing so, we avoid complexity at the same time, which is the source of unmaintainable CSS.
