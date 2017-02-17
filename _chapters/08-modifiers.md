@@ -35,3 +35,25 @@ The CSS would be:
 	}
 
 Because the differences are small and well understood, this type of reuse is more maintainable.
+
+We can use the same approach to buttons. Most sites have a primary and secondary button style. If all that changes is one or two styles we can have a modifier for primary and secondary buttons as follows:
+
+	.button {
+	  padding: 20px;
+	  border-radius: 3px;
+	  /* etc */
+	}
+
+	.button-primary {
+	  background-color: green;
+	}
+
+	.button-secondary {
+	  background-color: #eee;
+	}
+
+Again, this only works because the differences are well contained and well understood.
+
+## Final thought
+
+Modifiers are a good way to reuse styles across a well understood element. But, the modifier itself should be a tweak. If it contains a lot of overrides, then modifiers are probably not the way to go.
