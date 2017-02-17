@@ -94,7 +94,7 @@ Buttons are an example of something that we want to reuse in lot's of places, an
 
 One option would be to upgrade the button component into a module as follows:
 
-	<input class="button" type="submit" value="{%raw%}{{text}}{%endraw%}" ...>
+	<input class="button" type="submit" value="{%raw%}{{text}}{%endraw%}">
 
 And the the CSS would be:
 

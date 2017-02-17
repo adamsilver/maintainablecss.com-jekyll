@@ -36,7 +36,7 @@ The CSS would be:
 
 Because the differences are small and well understood, this type of reuse is more maintainable.
 
-We can use the same approach to buttons. Most sites have a primary and secondary button style. If all that changes is one or two styles we can have a modifier for primary and secondary buttons as follows:
+We can use the same approach for buttons. Most sites have a primary and secondary button style. If all that changes is one or two styles we can have a modifier for primary and secondary buttons as follows:
 
 	.button {
 	  padding: 20px;
