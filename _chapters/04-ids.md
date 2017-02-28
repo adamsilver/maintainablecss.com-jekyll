@@ -8,7 +8,7 @@ description: Learn why using IDs as hooks for styling are problematic and what y
 
 Semantically speaking, we should use an ID when there is only one instance of a thing. And we should use a class when there are several.
 
-However, [IDs overpower class names](http://www.w3.org/TR/css3-selectors/#specificity) by orders of magnitude, which is problem when we want to override a style.
+However, [IDs overpower class names](http://www.w3.org/TR/css3-selectors/#specificity) by orders of magnitude, which is a problem when we want to override a style.
 
 
 To demonstrate the problem, let's override the colour of an element from *red* to *blue* using an ID.
@@ -43,12 +43,12 @@ And the CSS:
 
 Now, the element is blue&mdash;problem solved.
 
-Whilst using IDs for styling is problematic, we can still use them for other things. For example, we'll most certainly need to use them:
+Whilst using IDs for styling is problematic, we can still use them for other things. For example, we'll most certainly need to use them to:
 
-- to link labels to form fields;
-- to bind internal anchors to a hash fragment in the URL; and
-- to connect up variaous ARIA attributes to help screen reader users.
+- link labels to form fields;
+- bind internal anchors to a hash fragment in the URL; and
+- connect variaous ARIA attributes to help screen reader users.
 
 ## Final thought
 
-Use IDs whenever you need to enable particular behaviours for browsers and assistive technology. But avoid using them for styles.
+Use IDs whenever you need to enable particular behaviours for browsers and assistive technology. But avoid using them as hooks for styles.
