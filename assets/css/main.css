@@ -479,6 +479,7 @@ a.chapterNavigation-next:active {
 	margin: 0 auto;
 	display: block;
 	text-align: center;
+	border-radius: 16px;
 }
 
 .hero-button:hover {
@@ -782,12 +783,13 @@ a.chapterNavigation-next:active {
 	text-align: center;
 	margin: 0 auto;
 	-webkit-appearance: none;
-	border: 3px solid #fff;
+	border: 3px solid #ff851b;
 	background-color: transparent;
-	color: #fff;
+	color: #ff851b;
 	width: 100%;
 	box-sizing: border-box;
 	font-family: 'Open sans';
+	border-radius: 16px;
 }
 
 @media(min-width: 650px) {
@@ -798,6 +800,6 @@ a.chapterNavigation-next:active {
 }
 
 .subscribeForm-button:hover {
-	background-color: #fff;
+	background-color: #ff851b;
 	color: #222;
 }
