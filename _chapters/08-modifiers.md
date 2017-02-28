@@ -6,11 +6,11 @@ permalink: /chapters/modifiers/
 description: Use modifiers to change appearance based on slight differences.
 ---
 
-Like state, a modifier can also override styles. This is useful when modules (or components) have small and well understood differences.
+Like state, modifiers also override styles. This is useful when modules (or components) have small and well understood differences.
 
-Take an e-commerce site whereby each category has a unique background image in the header.
+Take an e-commerce site whereby each category has a unique background image in the header. All headers have the same padding, and margin etc. The only difference is the background image. 
 
-All headers have the same padding, and margin etc. The only difference is the background image. For example, the *boys* category would have a modifier as follows:
+For example, the *boys* category would have a modifier as follows:
 
 	<div class="categoryHeader categoryHeader-boys">
 
@@ -56,4 +56,4 @@ Again, this only works because the differences are well contained and well under
 
 ## Final thought
 
-Modifiers are a good way to reuse styles across a well understood element. But, the modifier itself should be a tweak. If it contains a lot of overrides, then modifiers are probably not the way to go.
+Modifiers are a good way to reuse styles across a well understood element. But, the modifier itself should be a tweak. If it contains a lot of overrides, then modifiers are not the way to go. Instead use a [module](/chapters/modules/).
