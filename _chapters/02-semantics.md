@@ -16,7 +16,7 @@ Naming is quite frankly the most important aspect of writing maintainable CSS. T
 
 Here are some non-semantic classes:
 
-	<div class="red pull-left">
+	<div class="red pull-left pb3">
 	<div class="grid row">
 	<div class="col-xs-4">
 
