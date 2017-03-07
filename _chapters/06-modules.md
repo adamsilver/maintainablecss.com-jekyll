@@ -82,7 +82,7 @@ And the CSS would be:
 	.orderSummary-title {}
 	.orderSummary-item {}
 
-As counterintutive as this may seem, duplication is a better prospect. And, this is not really duplication. Duplication is copying the *same* thing. These two modules might look similar but they are not the same.
+As counterintuitive as this may seem, duplication is a better prospect. And, this is not really duplication. Duplication is copying the *same* thing. These two modules might look similar but they are not the same.
 
 Keeping things separate, keeps things simple. Simple is the most important aspect of building reliable, scalable and maintainable software.
 
@@ -104,7 +104,7 @@ The problem is that buttons often have slightly different positioning, sizing an
 
 For example, within one module a button might be floated to the right next to some text. In another it might be centered with some text beneath with some bottom margin.
 
-Ideally, we should iron out these inconsistences in *design*, before they even make their way into code. But as this is not always possible and for the purposes of example, we'll assume we have to deal with these issues.
+Ideally, we should iron out these inconsistencies in *design*, before they even make their way into code. But as this is not always possible and for the purposes of example, we'll assume we have to deal with these issues.
 
 And so, because of these differences, it's tricky to abstract the common rules because we don't want to end up in override hell. Or worse that we're afraid to update the abstracted CSS rules.
 

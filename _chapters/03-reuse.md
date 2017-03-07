@@ -3,7 +3,7 @@ layout: chapter
 title: Reuse
 section: Background
 permalink: /chapters/reuse/
-description: Learn why avoding reuse and embracing repetition makes CSS maintenance easier.
+description: Learn why avoiding reuse and embracing repetition makes CSS maintenance easier.
 ---
 
 As Harry Roberts says, *DRY is often misinterpreted as the necessity to never repeat the exact same thing twice. This is impractical and usually counterproductive, and can lead to forced abstractions, over-thought and over-engineered code.*

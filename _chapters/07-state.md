@@ -39,4 +39,4 @@ Also, using an attribute (instead of a class) selector has [less support](https:
 
 ## Final thought
 
-If an element's style needs changing based on its state, we should add an extra class to apply the differences. When necessary, use ARIA attributes for assistive technologyy, not for styling. In doing so we employ a consistent and inclusive approach to styling.
+If an element's style needs changing based on its state, we should add an extra class to apply the differences. When necessary, use ARIA attributes for assistive technology, not for styling. In doing so we employ a consistent and inclusive approach to styling.
