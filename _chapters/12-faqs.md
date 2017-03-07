@@ -56,7 +56,7 @@ We could use a chained selector for state e.g. `.module.isDisabled`. The problem
 
 ## What about inheritance for headings etc?
 
-Ideally our semantic HTML matches the integrity of the visual design. Meaning that we would hope that `h1`s are indentical. In this case we can declare the following CSS:
+Ideally our semantic HTML matches the integrity of the visual design. Meaning that we would hope that `h1`s are identical. In this case we can declare the following CSS:
 
 	h1 {
       /* etc */

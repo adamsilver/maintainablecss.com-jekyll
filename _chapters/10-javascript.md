@@ -10,7 +10,7 @@ We may want to use Javascript to apply the same behaviour to multiple modules or
 
 For example, we may use a `Collapser` constructor that toggles an element's visibility.
 
-There are two approaches we can take. Both of which compliment the CSS approach we've discussed in previous chapters.
+There are two approaches we can take, both of which complement the CSS approach we've discussed in previous chapters.
 
 ## 1. Encapsulating state to the module
 
@@ -31,7 +31,7 @@ Then reuse the CSS styles as follows:
       display: none;
 	}
 
-The trade-off is that this list could grow quickly. And everytime we add behavior, we need to update the CSS. A small change, but a change nonetheless. In this case we might consider a global state class.
+The trade-off is that this list could grow quickly. And every time we add behavior, we need to update the CSS. A small change, but a change nonetheless. In this case we might consider a global state class.
 
 ## 2. Creating a global state class
 
@@ -41,7 +41,7 @@ If we find ourselves repeating the exact same set of styles for multiple modules
       display: none;
 	}
 
-This approach does away with the long comma-delimitted list. And we no longer need to specify the module class when instantiating. This is because the global class will be referenced from within.
+This approach does away with the long comma-delimited list. And we no longer need to specify the module class when instantiating. This is because the global class will be referenced from within.
 
 	var module1Collapser = new Collapser(element1);
 	var module2Collapser = new Collapser(element2);

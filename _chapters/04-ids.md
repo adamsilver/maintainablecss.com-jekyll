@@ -47,7 +47,7 @@ Whilst using IDs for styling is problematic, we can still use them for other thi
 
 - link labels to form fields;
 - bind internal anchors to a hash fragment in the URL; and
-- connect variaous ARIA attributes to help screen reader users.
+- connect various ARIA attributes to help screen reader users.
 
 ## Final thought
 
