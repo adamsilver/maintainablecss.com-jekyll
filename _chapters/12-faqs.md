@@ -99,7 +99,7 @@ States and modifiers, similarly to media queries, should be located in close pro
 
 	.basket-heading {}
 
-	.basket-heading-someModifier {}
+	.basket-heading--someModifier {}
 
 ## Should I add comments?
 
