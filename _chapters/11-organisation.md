@@ -77,6 +77,6 @@ By doing this you'll be able to mimick production and debug CSS in offending leg
 
 As you'll probably have more than 31 modules, you can't organise your CSS by module. Instead you'll have to put several modules within the same CSS file.
 
-## Final note
+## Final thought
 
-In this chapter we have discussed two ways in which to organise CSS. Whichever approach we take, we must be aware of the 31 CSS file limit problem because it makes debugging CSS much harder in the very browsers that cause most trouble.
+In this chapter we've discussed two ways in which to organise CSS. Whichever approach we take, we should be aware of the 31 CSS file limit problem because it makes debugging CSS much harder in the very browsers that cause most trouble.

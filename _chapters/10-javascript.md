@@ -48,8 +48,12 @@ This approach does away with the long comma-delimited list. And we no longer nee
 
 However, this approach doesn't always make sense. We may have two different modules that *behave* the same, but *look* different, which is something we've discussed in [State](/chapters/state/).
 
-Lastly, we could always default to this approach and if we need to specify a class, just pass it into the constructor as shown in the first example above.
+## 3. The best of both worlds
 
+We could combine the two approaches by defaulting the class to the global state class. And then only when needed we can specify a class during instantiation as shown in the first example above.
 
+## Final thought
+
+When we think about state, particularly with our Javascript hat on, we need to consider how this state affects behaviour as well as style. Different components may share the same behaviour, but they may look rather different. After careful consideration, we can choose the right solution to the problem.
 
 <!-- display: flex vs display: block -->
