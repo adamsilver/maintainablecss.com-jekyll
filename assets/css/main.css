@@ -470,7 +470,7 @@ a.chapterNavigation-next:active {
 	margin: 0 auto;
 	display: block;
 	text-align: center;
-	border-radius: 16px;
+	border-radius: 30px;
 }
 
 .hero-button:hover {
@@ -780,7 +780,7 @@ a.chapterNavigation-next:active {
 	width: 100%;
 	box-sizing: border-box;
 	font-family: 'Open sans';
-	border-radius: 16px;
+	border-radius: 30px;
 }
 
 @media(min-width: 650px) {
