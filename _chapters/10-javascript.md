@@ -31,7 +31,7 @@ Then reuse the CSS styles as follows:
       display: none;
 	}
 
-The trade-off is that this list could grow quickly. And every time we add behavior, we need to update the CSS. A small change, but a change nonetheless. In this case we might consider a global state class.
+The trade-off is that this list could grow quickly (or use a mixin). And every time we add behavior, we need to update the CSS. A small change, but a change nonetheless. In this case we might consider a global state class.
 
 ## 2. Creating a global state class
 
