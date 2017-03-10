@@ -403,20 +403,16 @@ a.chapterNavigation-next:active {
 * Hero
 **********************************************************/
 
-.hero {
-
-}
-
 .hero-inner {
 	padding-left: 20px;
 	padding-right: 20px;
-	padding-top: 15px;
+	padding-top: 30px;
 	padding-bottom: 50px;
 }
 
 @media(min-width: 37.5em) {
 	.hero-inner {
-		padding: 40px 60px 90px;
+		padding: 55px 60px 90px;
 	}
 }
 

@@ -8,6 +8,14 @@ description: Your questions about MaintainableCSS are answered here.
 
 If you can't find an answer, please [raise an issue on Github](https://github.com/adamsilver/maintainablecss.com/issues/new). Thanks!
 
+## Can I translate your book?
+
+Yes. To do this:
+
+1. [Fork the repo](https://github.com/adamsilver/maintainablecss.com/).
+2. Point your (country code) domain to it.
+3. Cite the original and let me know :).
+
 ## When should I use this?
 
 If you like to keep things truly simple, use this approach. It works well if you're building long-lived, bespokely designed, responsive sites that scale and evolve over time.
@@ -21,10 +29,6 @@ If you don't like it, feel free not to use it. Or use the bits you do like. If s
 These guides are the result of building many different types of websites. I've been influenced by many different experiences, requirements and people that I've worked with.
 
 No doubt, there is a resemblance to BEM and ECSS. If you're using those happily, stick with them. These guides are here if and when you need them.
-
-## Can I translate your book?
-
-Yes. Please contact me to find out more. Here's the [Japanese version](http://coliss.com/articles/build-websites/operation/css/maintainable-css-by-adam.html).
 
 ## Must I give a class name to every element?
 
