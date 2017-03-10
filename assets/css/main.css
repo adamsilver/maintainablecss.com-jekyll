@@ -359,44 +359,39 @@ a.navigation-isActive {
 **********************************************************/
 
 .chapterNavigation {
-	overflow: hidden;
-	background-color: #222;
+	margin-bottom: 60px;
+	text-align: center;
 }
 
-.chapterNavigation-last {
-	margin-bottom: 10px;
-}
-
-.chapterNavigation-inner {
-	overflow: hidden;
-	max-width: 43.75em;
-	padding: 20px;
-	margin: 0 auto;
+@media(min-width: 37.5em) {
+	.chapterNavigation {
+		margin-bottom: 80px;
+	}
 }
 
 .chapterNavigation a {
 	font-size: 0.94em;
-}
-
-a.chapterNavigation-previous:link,
-a.chapterNavigation-previous:visited {
-	float: left;
+	display: inline-block;
 	text-decoration: none;
-	color: #fff;
-}
-
-a.chapterNavigation-next:link,
-a.chapterNavigation-next:visited {
-	float: right;
-	text-decoration: none;
-	color: #fff;
+	margin: 0 auto;
+	border-radius: 30px;
+	text-transform: uppercase;
+	padding: 12px 30px;
+	color: #222;
+	border: 2px solid #222;
+	font-weight: bold;
+	letter-spacing: 0.04em;
+	width: 150px;
+	text-align: center;
+	margin: 0 auto;
 }
 
 a.chapterNavigation-previous:hover,
 a.chapterNavigation-next:hover,
 a.chapterNavigation-previous:active,
 a.chapterNavigation-next:active {
-	color: #e9c9f9;
+	color: #fff;
+	background-color: #222;
 }
 
 /**********************************************************
