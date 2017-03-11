@@ -8,7 +8,7 @@ id: home
 		<img class="hero-logo" src="/assets/img/logo.png" alt="">
 		<h1>MaintainableCSS</h1>
 		<p>Write CSS without worrying that overzealous, pre-existing styles will cause problems. MaintainableCSS is an approach to writing modular, scalable and of course, maintainable CSS.</p>
-		<a class="hero-button" href="/chapters/introduction/">Read now</a>
+		<a class="primaryLinkButton" href="/chapters/introduction/">Read now &rarr;</a>
 	</div>
 </div>
 <div class="recommendations">
