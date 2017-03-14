@@ -90,7 +90,7 @@ Keeping things separate, keeps things simple. Simple is the most important aspec
 
 As our basket module only appears in the basket page, we didn't consider being able to reuse it elsewhere. Also, we didn't address the fact that the remove button is a component of the basket, making it harder to reuse across modules.
 
-Buttons are an example of something that we want to reuse in lot's of places, and potentially *within* different modules. (A button is not particularly useful on its own.)
+Buttons are an example of something that we want to reuse in lots of places, and potentially *within* different modules. (A button is not particularly useful on its own.)
 
 One option would be to upgrade the button component into a module as follows:
 
