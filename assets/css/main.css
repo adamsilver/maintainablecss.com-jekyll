@@ -649,10 +649,6 @@ a.navigation-isActive {
 	font-weight: bold;
 }
 
-.subscribeForm {
-	background-color: #222;
-}
-
 .subscribeForm-inner {
 	margin-right: auto;
 	margin-left: auto;
@@ -663,7 +659,6 @@ a.navigation-isActive {
 .subscribeForm-heading {
 	font-size: 1.38em;
     line-height: 1.2em;
-    color: #fff;
     margin-bottom: 10px;
 }
 
@@ -675,7 +670,6 @@ a.navigation-isActive {
 }
 
 .subscribeForm p {
-	color: #fff;
 	font-size: 1.13em;
     line-height: 1.7em;
     margin-bottom: 20px;
@@ -696,7 +690,6 @@ a.navigation-isActive {
 	margin-bottom: 5px;
 	display: block;
 	font-family: 'PT serif';
-	color: #fff;
 }
 
 @media(min-width: 37.5em) {
@@ -710,7 +703,7 @@ a.navigation-isActive {
 	padding: 9px 10px;
 	font-size: 1.13em;
 	color: #222;
-	border: 2px solid #f5f5f5;
+	border: 2px solid #222;
 	letter-spacing: -0.01em;
 	margin: 0 auto;
 	-webkit-appearance: none;
@@ -727,23 +720,23 @@ a.navigation-isActive {
 	}
 }
 
-@media(min-width: 650px) {
+@media(min-width: 36em) {
 	.subscribeForm-email {
 		display: inline-block;
-		max-width: 350px;
+		max-width: 330px;
 		margin-right: 10px;
 	}
 }
 
 .subscribeForm-email:focus {
-	outline: 3px solid #fff;
-	border: 2px solid #fff;
+	outline: 3px solid #222;
+	border: 2px solid #222;
 }
 
 .subscribeForm-button {
 	text-transform: uppercase;
 	text-decoration: none;
-	padding: 14px 17px;
+	padding: 13px 17px;
 	font-size: 0.94em;
 	color: #222;
 	font-weight: bold;
@@ -752,23 +745,23 @@ a.navigation-isActive {
 	text-align: center;
 	margin: 0 auto;
 	-webkit-appearance: none;
-	border: 2px solid #ff851b;
+	border: 2px solid #222;
 	background-color: transparent;
-	color: #ff851b;
+	color: #222;
 	width: 100%;
 	box-sizing: border-box;
 	font-family: 'Open sans';
 	border-radius: 30px;
 }
 
-@media(min-width: 650px) {
+@media(min-width: 36em) {
 	.subscribeForm-button {
 		display: inline-block;
-		width: 200px;
+		width: 180px;
 	}
 }
 
 .subscribeForm-button:hover {
-	background-color: #ff851b;
-	color: #222;
+	background-color: #222;
+	color: #fff;
 }
