@@ -44,8 +44,8 @@ Here's a real snippet of HTML using atomic classes:
 Notes:
 
 - Reading words is much easier than reading abbreviations.
-- Abbreviations have to be broken down and mapped cognitively, assuming we know what htey mean in the first place.
-- It's also very hard to read the large cluster class names. We just don't find this easy. That's why CSS has syntax.
+- Abbreviations have to be broken down and mapped cognitively, assuming we know what they mean in the first place.
+- It's also very hard to read the large cluster of class names. That's why CSS has syntax.
 - We need to wade through many classes to work out what's happening; which classes override which; and which apply at certain break points etc.
 - These classes are ambiguous. For example, does `black-70` refer to the colour or the background? If we need the inspector to find out, this implies the class names are not readable.
 - The content is obfuscated by the surrounding HTML.
@@ -62,9 +62,8 @@ Notes:
 - These classes are easy to read. No mental mapping is required.
 - The content is no longer obfuscated.
 - We know where the module begins and ends.
-- We can inspect the element's styles easily.
 - The HTML is half the size.
-- When we read the related CSS, we have a dedicated constructs, properties and values that exist for this very purpose. To manage styles in a readable fashion.
+- It's easy to read the CSS (in the inspector or in the file) because it has dedicated language constructs that exist for this purpose. 
 
 ## 2. Because it's easier to build responsive sites
 
