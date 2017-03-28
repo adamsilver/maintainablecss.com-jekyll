@@ -63,7 +63,7 @@ Notes:
 - The content is no longer obfuscated.
 - We know where the module begins and ends.
 - The HTML is half the size.
-- It's easy to read the CSS (in the inspector or in the file) because it has dedicated language constructs that exist for this purpose. 
+- It's easy to read the CSS (in the inspector or in the file) because it has dedicated language constructs that exist for this purpose.
 
 ## 2. Because it's easier to build responsive sites
 
@@ -102,7 +102,7 @@ Notes:
 - These classes are meaningful in small and big screens.
 - We can use a media query, to clear elements only when needed.
 
-> Question: How valuable is a codified responsive grid system? A layout should adapt to the content, not the other way around.
+> Question: How valuable is a codified responsive grid system? A [layout should adapt to the content](http://adamsilver.io/articles/stop-using-device-breakpoints/), not the other way around.
 
 ## 3. Because they are easier to find
 
