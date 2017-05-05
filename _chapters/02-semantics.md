@@ -122,11 +122,11 @@ In some respects we may as well inline styles. This is more explicit and reduces
 
 Automated functional tests work by searching for, and interacting with elements. This may include:
 
-1. clicking a link;
-2. finding a text box;
-3. typing in text;
-4. submitting a form; and then
-5. verifying some criteria.
+1. clicking a link
+2. finding a text box
+3. typing in text
+4. submitting a form
+5. verifying some criteria
 
 We can't use non-semantic classes to target specific elements. And adding hooks specifically for tests is wasteful as the user has to download this stuff.
 

@@ -43,11 +43,11 @@ And the CSS:
 
 Now, the element is blue&mdash;problem solved.
 
-Whilst using IDs for styling is problematic, we can still use them for other things. For example, we'll most certainly need to use them to:
+Whilst using IDs for styling is problematic, we can still use them for other things. For example, we'll most certainly need to use them to connect:
 
-- link labels to form fields;
-- bind internal anchors to a hash fragment in the URL; and
-- connect various ARIA attributes to help screen reader users.
+- labels to form fields
+- in-page anchors to a hash fragment in the URL
+- ARIA attributes to help screen reader users
 
 ## Final thought
 
