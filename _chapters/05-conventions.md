@@ -31,6 +31,10 @@ Notes:
 
 No. You can write `.searchResults p` if you want to. And sometimes you may have to, if for example you're using markdown. But beware that if you nest a module which contains a `p` it will inherit the styles and need overriding.
 
+Also, remember that it is hard to find if/where styles are used or not if you're creating css selectors as the one defined above, which is not good for maintainability.
+
+However, it seems righteous to only give class name to elements that are actually styled.
+
 ## Why must I prefix the module name?
 
 Good question. Here's some HTML without a prefix:
