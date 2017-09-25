@@ -41,6 +41,8 @@ Also, using an attribute (instead of a class) selector has [less support](https:
 
 We could use a chained selector for state e.g. `.module.isDisabled`. The problem is that this approach has less browser support. We should avoid patterns that unnecessarily exclude users, unless there is a compelling reason to do so.
 
+This also makes it harder to find out if/where the style is used, which makes maintaining harder.
+
 ## Final thought
 
 If an element's style needs changing based on its state, we should add an extra class to apply the differences. When necessary, use ARIA attributes for assistive technology, not for styling. In doing so we employ a consistent and inclusive approach to styling.
