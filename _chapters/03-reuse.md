@@ -45,11 +45,13 @@ As such, mixins are not *bad*, we should use them, but use them judiciously.
 
 ## What about performance?
 
-We overcomplicate matters when it comes to performance. We get obsessed with the smallest details.
+We often overthink performance and get obsessed with tiny details. Even if CSS did total more than 100kb, there's little to gain from mindlessly striving for DRYness.
 
-Even if CSS totals more than 100kb, in the grand schemes of things, there's probably very little gain from mindlessly striving for DRYness. And as we've discussed making CSS small makes HTML big.
+Making CSS small makes HTML big. CSS can always be cached. But HTML often contains dynamic and personalised content&mdash;so it can't be cached.
 
-The compression of a single image gives us a better return on our investment. And as we've discussed, resolving other forms of redundancy improves maintainability *and* performance.
+The compression of a single image gives us a better return on investment. And as we've discussed, resolving other forms of redundancy improves maintainability *and* performance.
+
+As you'll see in later chapters, the conventions in this guide, mean CSS class names have repeated prefixes which works especially well with GZip.
 
 ## Is this violating DRY principles?
 
