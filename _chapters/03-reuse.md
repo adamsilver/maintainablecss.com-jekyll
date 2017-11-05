@@ -14,7 +14,7 @@ Whilst we often try to abstract CSS too much too soon, there are obviously going
 
 ## How can we reuse a style?
 
-If we want to reuse a style, one option would be to comma-delimit selectors inside a well-named file, which if you're into SASS is exactly what `@extends` does. For example, if multiple elements need red text, we could do this:
+If we want to reuse a style, one option would be to comma-delimit selectors inside a well-named file, which if you're into SASS is exactly what `@extend` does. For example, if multiple elements need red text, we could do this:
 
 	.someThing,
 	.anotherThing {
