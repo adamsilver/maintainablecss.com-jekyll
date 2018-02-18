@@ -102,7 +102,8 @@ a:focus {
 * Primary button
 **********************************************************/
 
-.primaryLinkButton {
+.primaryLinkButton:link,
+.primaryLinkButton:visited {
 	font-size: 0.94em;
 	display: inline-block;
 	text-decoration: none;
@@ -110,8 +111,8 @@ a:focus {
 	border-radius: 30px;
 	text-transform: uppercase;
 	padding: 12px 30px;
-	color: #222;
-	border: 2px solid #222;
+	color: #8E55A9;
+	border: 2px solid #8E55A9;
 	font-weight: bold;
 	letter-spacing: 0.04em;
 	width: 150px;
@@ -121,7 +122,7 @@ a:focus {
 
 .primaryLinkButton:hover {
 	color: #fff;
-	background-color: #222;
+	background-color: #8E55A9;
 }
 
 /**********************************************************
@@ -398,63 +399,10 @@ a.navigation-isActive {
 * Hero
 **********************************************************/
 
-.hero-inner {
+.hero {
 	padding-left: 20px;
 	padding-right: 20px;
-	padding-top: 30px;
 	padding-bottom: 50px;
-	text-align: center;
-}
-
-@media(min-width: 37.5em) {
-	.hero-inner {
-		padding: 55px 60px 90px;
-	}
-}
-
-.hero-logo {
-	display: block;
-	margin: 0 auto 10px;
-	width: 75px;
-}
-
-@media(min-width: 31.25em) {
-	.hero-logo {
-		width: 150px;
-	}
-}
-
-.hero h1 {
-	font-size: 1.7em;
-	line-height: 1.2;
-	margin-bottom: 20px;
-	text-align: center;
-}
-
-@media(min-width: 37.5em) {
-	.hero h1 {
-		font-size: 2.5em;
-	}
-}
-
-.hero p {
-	text-align: center;
-	font-size: 1.13em;
-	line-height: 1.7em;
-	margin-bottom: 40px;
-	font-family: 'PT serif';
-	max-width: 30em;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-@media(min-width: 37.5em) {
-	.hero p {
-		font-size: 1.38em;
-		max-width: 27em;
-	    margin-left: auto;
-	    margin-right: auto;
-	}
 }
 
 /**********************************************************

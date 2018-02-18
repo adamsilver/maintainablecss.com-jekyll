@@ -22,7 +22,7 @@ If you like to keep things truly simple, use this approach. It works well if you
 
 ## What about inheritance for headings etc?
 
-Ideally our semantic HTML matches the integrity of the visual design. Meaning that we would hope that `h1`s are identical. In this case we can declare the following CSS:
+Ideally our semantic HTML matches the integrity of the visual design. Meaning that we would hope that all `h1`s are identical. In this case we can declare the following CSS:
 
 	h1 {
       /* etc */

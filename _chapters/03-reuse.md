@@ -6,9 +6,9 @@ permalink: /chapters/reuse/
 description: Learn why avoiding reuse and embracing repetition makes CSS maintenance easier.
 ---
 
-As Harry Roberts says, *DRY is often misinterpreted as the necessity to never repeat the exact same thing twice. This is impractical and usually counterproductive, and can lead to forced abstractions, over-thought and over-engineered code.*
+As Harry Roberts says, “DRY is often misinterpreted as the necessity to never repeat the exact same thing twice. This is impractical and usually counterproductive, and can lead to forced abstractions, over-thought and over-engineered code.”
 
-This forced abstraction, over-thought and over-engineered code often results in visual and atomic classes. We know how painful they are because we discussed them thoroughly in [semantics](/chapters/semantics/). Mixins may also be a problem as we'll discuss shortly.
+This forced abstraction, over-thought and over-engineered code often results in visual and atomic classes. We know how painful they are because we discussed them thoroughly in [semantics](/chapters/semantics/). Mixins may also be a problem which we'll discuss shortly.
 
 Whilst we often try to abstract CSS too much too soon, there are obviously going to be times when reuse makes sense. The question must be answered, *how can we reuse a style?*
 
@@ -23,7 +23,7 @@ If we want to reuse a style, one option would be to comma-delimit selectors insi
 
 This approach should be used for convenience, not for performance. (If the abstraction only has one rule, we're simply exchanging one line of code for another.)
 
-If a selector deviates from the rules inside the abstraction, it should be removed from the list. Otherwise we could regress the other selectors and potentially experience override issues.
+If a selector deviates from the rules inside the abstraction, it should be removed from the list. Otherwise it could regress the other selectors and cause override issues.
 
 It's important to note that this is one of several techniques at our disposal. When a *thing* is well understood we can make use of other techniques, which we'll discuss in [Modules](/chapters/modules/), [State](/chapters/state/) and [Modifiers](/chapters/modifiers/).
 
@@ -39,9 +39,9 @@ To mitigate this complexity, we can create granular mixins, such as one for red 
 
 If we need to update the rule in multiple places, a search and replace might be all that's necessary. Also, when the red *mixin* changes to *orange*, its name will need updating anyway.
 
-With all that said, mixins can be very useful. We might, for example, want to apply *clearfix* rules across different elements and only within certain breakpoints. This is something that vanilla CSS can't do.
+With all that said, mixins can be very useful. We might, for example, want to apply *clearfix* rules across different elements and only within certain breakpoints. This is something that vanilla CSS can't do elegantly.
 
-As such, mixins are not *bad*, we should use them, but use them judiciously.
+As such, mixins are not *bad*, it's just that we should use them judiciously.
 
 ## What about performance?
 

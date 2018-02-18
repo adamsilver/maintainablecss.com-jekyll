@@ -8,29 +8,27 @@ description: Why naming something based on what it is, instead of how it looks o
 
 Semantic HTML isn't only about the elements we use. It's quite obvious that we should use `<a>` for links, `<table>` for tabular data and `<p>` for paragraphs etc. What's less obvious is the names we use for classes.
 
-As Phil Karton says, *there are only two hard things in Computer Science: cache invalidation and **naming things***. So spending an entire chapter talking about it seems like an appropriate thing to do.
+As Phil Karton says, “there are only two hard things in Computer Science: cache invalidation and **naming things**.” So spending an entire chapter talking about it seems like an appropriate thing to do.
 
 Naming is quite frankly the most important aspect of writing maintainable CSS. There are two main approaches: the semantic approach and the non-semantic approach. Let's discuss what they are.
 
 ## Semantic vs non-semantic
 
-Here are some non-semantic classes:
-
+	<!-- non semantic -->
 	<div class="red pull-left pb3">
 	<div class="grid row">
 	<div class="col-xs-4">
 
-Non-semantic classes don't convey *what* an element represents. At best, they give us an idea of what an element *looks* like. Atomic, visual, behavioural and utility classes are all forms of non-semantic classes.
-
-Here are some semantic classes:
-
+	<!-- semantic -->
 	<div class="basket">
 	<div class="product">
 	<div class="searchResults">
 
+Non-semantic classes don't convey *what* an element represents. At best, they give us an idea of what an element *looks* like. Atomic, visual, behavioural and utility classes are all forms of non-semantic classes.
+
 Semantic classes don't convey their styles, but that's okay. That's what CSS is for. Semantic classes mean something to HTML, CSS, Javascript and automated functional tests.
 
-There are many reasons why semantic classes are advantageous:
+Reasons why semantic classes work better:
 
 ## 1. Because they are readable
 
@@ -41,12 +39,8 @@ Here's a real snippet of HTML using atomic classes:
 	  <p class="f5 f4-ns fw4 b measure dib-m lh-copy">Tagline</p>
 	</div>
 
-Notes:
-
-- Reading words is much easier than reading abbreviations.
-- Abbreviations have to be broken down and mapped cognitively, assuming we know what they mean in the first place.
-- It's also very hard to read the large cluster of class names. That's why CSS has syntax.
-- We need to wade through many classes to work out what's happening; which classes override which; and which apply at certain break points etc.
+- It's easier to read words than abbreviations.  Abbreviations have to be broken down and mapped cognitively, assuming we know what they mean in the first place.
+- It's hard to read the large cluster of class names. That's why CSS has syntax. We need to wade through many classes to work out what's happening; which classes override which; and which apply at certain break points etc.
 - These classes are ambiguous. For example, does `black-70` refer to the colour or the background? If we need the inspector to find out, this implies the class names are not readable.
 - The content is obfuscated by the surrounding HTML.
 
@@ -57,13 +51,11 @@ Here's the same thing using semantic classes:
 	  <p class="hero-tagline">Tagline</p>
 	</div>
 
-Notes:
-
 - These classes are easy to read. No mental mapping is required.
 - The content is no longer obfuscated.
 - We know where the module begins and ends.
 - The HTML is half the size.
-- It's easy to read the CSS (in the inspector or in the file) because it has dedicated language constructs that exist for this purpose.
+- It's easy to read the CSS (in the inspector or in the file) because it has dedicated language constructs that exist for this purpose already.
 
 ## 2. Because it's easier to build responsive sites
 
@@ -73,34 +65,30 @@ Imagine coding a two-column responsive grid whereby:
 * each column has `2em` and `3em` font-size on small and large screens; and
 * the columns stack on small screens. Note that *column* is now a misleading class name.
 
-Here's how this is typically done using visual and utility classes:
+With visual/utility classes it looks like this:
 
 	<div class="grid clearfix">
 	  <div class="col pd20 pd50 fs2 fs3">Column 1</div>
 	  <div class="col pd20 pd50 fs2 fs3">Column 2</div>
 	</div>
 
-Notes:
-
 - There are 7 classes, some of which override each other.
-- To make the columns actually responsive we would need a `fs3large` class etc. This means using a naming convention that recreates language constructs found in CSS.
+- To make the columns actually responsive we would need a `fs3large` class etc. This means using a naming convention that recreates language constructs already found and standardised in CSS.
 - At certain break points, the classes are misleading and redundant. For example `.clearfix` doesn't clear on small screens.
 
-We've barely evaluated this simple component and yet there is significant pain already.
+A quick evaluation shows significant pain already.
 
-Here's the same thing using semantic classes:
+With semantic classes it looks like this:
 
 	<div class="thing">
 	  <div class="thing-thingA"></div>
 	  <div class="thing-thingB"></div>
 	</div>
 
-Notes:
-
 - These classes are encapsulated to the module's design and content.
 - It's easy to style elements without having to write a multitude of classes and changing the HTML again.
 - These classes are meaningful in small and big screens.
-- We can use a media query, to clear elements only when needed.
+- Media queries can be used to clear elements only when needed.
 
 > Question: How valuable is a codified responsive grid system? A [layout should adapt to the content](http://adamsilver.io/articles/stop-using-device-breakpoints/), not the other way around.
 
@@ -142,7 +130,7 @@ With visual classes, both the HTML and the CSS need updating (assuming there are
 
 ## 9. Because they are easier to debug
 
-Inspecting an element with a multitude of atomic classes, means wading through many selectors. With a semantic class, there is only one, making it far easier to work with.
+Inspecting an element with a multitude of atomic classes, means wading through many selectors. With a semantic class, there's only one, making it far easier to work with.
 
 ## 10. Because the standards recommend it
 
@@ -164,4 +152,4 @@ As we've seen above, atomic classes bloat HTML. Semantic classes result in small
 
 ## Final thought
 
-Semantic classes are a corner stone of *MaintainableCSS*. Without them, everything else makes little sense. So name something based on what it is and everything else falls into place.
+Semantic classes are a corner stone of *MaintainableCSS*. Without them, everything else makes little sense. Name something based on what it is and everything else falls into place.
