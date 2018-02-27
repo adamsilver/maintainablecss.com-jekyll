@@ -111,18 +111,17 @@ a:focus {
 	border-radius: 30px;
 	text-transform: uppercase;
 	padding: 12px 30px;
-	color: #8E55A9;
-	border: 2px solid #8E55A9;
 	font-weight: bold;
 	letter-spacing: 0.04em;
-	width: 150px;
+	min-width: 150px;
 	text-align: center;
 	margin: 0 auto;
+	background-color: #8E55A9;
+	color: #fff;
 }
 
 .primaryLinkButton:hover {
-	color: #fff;
-	background-color: #8E55A9;
+	background-color: #6e4284;
 }
 
 /**********************************************************
@@ -248,11 +247,13 @@ a.navigation-isActive {
 	padding-right: 20px;
 	color: #222;
 	letter-spacing: -1px;
+	text-align: center;
 }
 
 @media(min-width: 37.5em) {
 	.content h1 {
 		font-size: 2.8em;
+		text-align: left;
 	}
 }
 
@@ -265,12 +266,14 @@ a.navigation-isActive {
 	padding-right: 20px;
 	color: #222;
 	letter-spacing: -0.01em;
+	text-align: center;
 }
 
 @media(min-width: 37.5em) {
 	.content h2 {
 		font-size: 1.57em;
 		margin-bottom: 15px;
+		text-align: left;
 	}
 }
 
@@ -282,12 +285,14 @@ a.navigation-isActive {
 	padding-right: 20px;
 	color: #222;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 @media(min-width: 37.5em) {
 	.content h3 {
 		font-size: 1.19em;
 		margin-bottom: 15px;
+		text-align: left;
 	}
 }
 
@@ -340,14 +345,13 @@ a.navigation-isActive {
 	}
 }
 
-.content blockquote {
+blockquote {
 	font-style: italic;
 	margin-bottom: 30px;
-	padding: 0 20px;
 	color: #222;
 }
 
-.content blockquote cite {
+blockquote cite {
 	font-weight: bold;
 }
 
@@ -400,9 +404,21 @@ a.navigation-isActive {
 **********************************************************/
 
 .hero {
-	padding-left: 20px;
-	padding-right: 20px;
 	padding-bottom: 50px;
+	text-align: center;
+}
+
+@media(min-width: 37.5em) {
+	.hero {
+		text-align: left;
+	}
+}
+
+.hero .primaryLinkButton {
+	display: inline-block;
+	text-align: center;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 /**********************************************************
@@ -684,7 +700,7 @@ a.navigation-isActive {
 .subscribeForm-button {
 	text-transform: uppercase;
 	text-decoration: none;
-	padding: 13px 17px;
+	padding: 14px 17px;
 	font-size: 0.94em;
 	color: #222;
 	font-weight: bold;
@@ -693,9 +709,8 @@ a.navigation-isActive {
 	text-align: center;
 	margin: 0 auto;
 	-webkit-appearance: none;
-	border: 2px solid #222;
-	background-color: transparent;
-	color: #222;
+	background-color: #8E55A9;
+	color: #fff;
 	width: 100%;
 	box-sizing: border-box;
 	font-family: 'Open sans';
@@ -710,6 +725,5 @@ a.navigation-isActive {
 }
 
 .subscribeForm-button:hover {
-	background-color: #222;
-	color: #fff;
+	background-color: #6e4284;
 }
