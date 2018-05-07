@@ -82,10 +82,9 @@
 
 body {
 	font-family: 'Open sans', helvetica, arial, sans-serif;
-    text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
-    font-size: 62.5%;
-    font-size: 100%;
+  font-size: 100%;
 }
 
 a:link,
@@ -107,7 +106,6 @@ a:focus {
 	font-size: 0.94em;
 	display: inline-block;
 	text-decoration: none;
-	margin: 0 auto;
 	border-radius: 30px;
 	text-transform: uppercase;
 	padding: 12px 30px;
@@ -115,9 +113,11 @@ a:focus {
 	letter-spacing: 0.04em;
 	min-width: 150px;
 	text-align: center;
-	margin: 0 auto;
 	background-color: #8E55A9;
 	color: #fff;
+
+	margin-bottom: 30px;
+	margin-left: 20px;
 }
 
 .primaryLinkButton:hover {
@@ -231,7 +231,7 @@ a.navigation-isActive {
 * Content
 **********************************************************/
 
-.content {
+main {
 	padding-top: 40px;
 	padding-bottom: 40px;
 	max-width: 740px;
@@ -239,7 +239,7 @@ a.navigation-isActive {
 	margin-right: auto;
 }
 
-.content h1 {
+main h1 {
 	font-size: 1.88em;
 	line-height: 1.2;
 	margin-bottom: 20px;
@@ -247,17 +247,15 @@ a.navigation-isActive {
 	padding-right: 20px;
 	color: #222;
 	letter-spacing: -1px;
-	text-align: center;
 }
 
 @media(min-width: 37.5em) {
-	.content h1 {
+	main h1 {
 		font-size: 2.8em;
-		text-align: left;
 	}
 }
 
-.content h2 {
+main h2 {
 	font-size: 1.38em;
 	line-height: 1.2;
 	margin-bottom: 10px;
@@ -266,18 +264,16 @@ a.navigation-isActive {
 	padding-right: 20px;
 	color: #222;
 	letter-spacing: -0.01em;
-	text-align: center;
 }
 
 @media(min-width: 37.5em) {
-	.content h2 {
+	main h2 {
 		font-size: 1.57em;
 		margin-bottom: 15px;
-		text-align: left;
 	}
 }
 
-.content h3 {
+main h3 {
 	font-size: 1em;
 	line-height: 1.2;
 	margin-bottom: 10px;
@@ -285,18 +281,16 @@ a.navigation-isActive {
 	padding-right: 20px;
 	color: #222;
 	text-transform: uppercase;
-	text-align: center;
 }
 
 @media(min-width: 37.5em) {
-	.content h3 {
+	main h3 {
 		font-size: 1.19em;
 		margin-bottom: 15px;
-		text-align: left;
 	}
 }
 
-.content p {
+main p {
 	font-size: 1.13em;
 	line-height: 1.7em;
 	margin-bottom: 30px;
@@ -307,14 +301,14 @@ a.navigation-isActive {
 }
 
 @media(min-width: 37.5em) {
-	.content p {
+	main p {
 		font-size: 1.38em;
 		margin-bottom: 40px;
 	}
 }
 
-.content ol,
-.content ul {
+main ol,
+main ul {
 	margin-bottom: 35px;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -323,14 +317,14 @@ a.navigation-isActive {
 }
 
 @media(min-width: 37.5em) {
-	.content ol,
-	.content ul {
+	main ol,
+	main ul {
 		margin-bottom: 40px;
 	}
 }
 
-.content ol li,
-.content ul li {
+main ol li,
+main ul li {
 	font-size: 1.13em;
 	line-height: 1.7em;
 	margin-left: 30px;
@@ -338,8 +332,8 @@ a.navigation-isActive {
 }
 
 @media(min-width: 37.5em) {
-	.content ol li,
-	.content ul li {
+	main ol li,
+	main ul li {
 		font-size: 1.38em;
 		margin-bottom: 10px;
 	}
@@ -355,14 +349,14 @@ blockquote cite {
 	font-weight: bold;
 }
 
-.content p code,
-.content ul code,
-.content li code {
+main p code,
+main ul code,
+main li code {
 	font-size: 1.3em;
 	color: #ff851b;
 }
 
-.content pre {
+main pre {
 	font-family: Monaco,'Courier New','Courier',monospace;
 	font-size: 1.44em;
 	font-size: 1.2em;
@@ -378,7 +372,7 @@ blockquote cite {
 }
 
 @media(min-width: 37.5em) {
-	.content pre {
+	main pre {
 		font-size: 1.69em;
 		margin-bottom: 45px;
 	}
@@ -397,28 +391,6 @@ blockquote cite {
 	.chapterNavigation {
 		margin-bottom: 80px;
 	}
-}
-
-/**********************************************************
-* Hero
-**********************************************************/
-
-.hero {
-	padding-bottom: 50px;
-	text-align: center;
-}
-
-@media(min-width: 37.5em) {
-	.hero {
-		text-align: left;
-	}
-}
-
-.hero .primaryLinkButton {
-	display: inline-block;
-	text-align: center;
-	margin-left: 20px;
-	margin-right: 20px;
 }
 
 /**********************************************************

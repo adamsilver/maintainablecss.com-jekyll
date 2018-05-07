@@ -1,21 +1,19 @@
 <!DOCTYPE HTML>
 <html dir="ltr" lang="en">
-	<head>
-	    <title>{{ page.title }} - {{ site.name }}</title>
-	    {% include head.html %}
-	</head>
-	<body>
-		{% include header.html %}
+    <head>
+        <title>{{ page.title }} - {{ site.name }}</title>
+        {% include head.html %}
+    </head>
+    <body>
+        {% include header.html %}
         <main>
-            <div class="content">
-    			<h1>{{page.title }}</h1>
-               	{{ content }}
-            </div>
+            <h1>{{page.title }}</h1>
+            {{ content }}
         </main>
         <!-- {% include share.html %} -->
         {% include chapterNavigation.html %}
         {% include chapterList.html %}
         {% include subscribeForm.html %}
         {% include footer.html %}
-	</body>
+    </body>
 </html>

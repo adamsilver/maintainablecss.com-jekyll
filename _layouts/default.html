@@ -1,15 +1,16 @@
 <!DOCTYPE HTML>
 <html dir="ltr" lang="en">
-	<head>
-        <title>{% if page.title %}{{ page.title }} - {% endif %} {{ site.name }}</title>
-        {% include head.html %}
-	</head>
-	<body>
-        {% include header.html %}
-        <main>
-			{{ content }}
-		</main>
-		{% include subscribeForm.html %}
-        {% include footer.html %}
-	</body>
+  <head>
+    <title>{% if page.title %}{{ page.title }} - {% endif %} {{ site.name }}</title>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include header.html %}
+    <main>
+      <h1>{{page.title }}</h1>
+      {{ content }}
+    </main>
+    {% include subscribeForm.html %}
+    {% include footer.html %}
+  </body>
 </html>
