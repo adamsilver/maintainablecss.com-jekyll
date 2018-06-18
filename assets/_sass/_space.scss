@@ -1,0 +1,12 @@
+$multiple       : 8px !default;
+$spacing-scale-1: $multiple;
+
+// Multiples of 8px
+$spacing-scale-2: $multiple * 2; // 16px
+$spacing-scale-3: $multiple * 3; // 24px
+$spacing-scale-4: $multiple * 4; // 32px
+$spacing-scale-5: $multiple * 5; // 40px
+$spacing-scale-6: $multiple * 6; // 48px
+$spacing-scale-7: $multiple * 7; // 56px
+$spacing-scale-8: $multiple * 8; // 64px
+$spacing-scale-9: $multiple * 9; // 72px

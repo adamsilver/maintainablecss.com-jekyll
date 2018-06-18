@@ -12,7 +12,7 @@ main h1 {
 	margin-bottom: 20px;
 	padding-left: 20px;
 	padding-right: 20px;
-	color: #222;
+	color: $colour-black;
 	letter-spacing: -1px;
 }
 
@@ -29,7 +29,7 @@ main h2 {
 	margin-top: 11px;
 	padding-left: 20px;
 	padding-right: 20px;
-	color: #222;
+	color: $colour-black;
 	letter-spacing: -0.01em;
 }
 
@@ -46,7 +46,7 @@ main h3 {
 	margin-bottom: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
-	color: #222;
+	color: $colour-black;
 	text-transform: uppercase;
 }
 
@@ -63,7 +63,7 @@ main p {
 	margin-bottom: 30px;
 	padding-left: 20px;
 	padding-right: 20px;
-	color: #222;
+	color: $colour-black;
 	font-family: 'PT serif';
 }
 
@@ -79,7 +79,7 @@ main ul {
 	margin-bottom: 35px;
 	padding-left: 20px;
 	padding-right: 20px;
-	color: #222;
+	color: $colour-black;
 	font-family: 'PT serif';
 }
 
@@ -109,7 +109,7 @@ main ul li {
 blockquote {
 	font-style: italic;
 	margin-bottom: 30px;
-	color: #222;
+	color: $colour-black;
 }
 
 blockquote cite {
@@ -120,15 +120,14 @@ main p code,
 main ul code,
 main li code {
 	font-size: 1.3em;
-	color: #ff851b;
+	color: $colour-orange;
 }
 
 main pre {
 	font-family: Monaco,'Courier New','Courier',monospace;
-	font-size: 1.44em;
 	font-size: 1.2em;
-	color: #222;
-	background-color: #fcf6ff;
+	color: $colour-black;
+	background-color: $colour-purple-light;
 	margin-bottom: 30px;
 	padding: 20px;
 	white-space: pre-wrap;       /* css-3 */

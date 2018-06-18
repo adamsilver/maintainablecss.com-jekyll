@@ -10,13 +10,13 @@
 	letter-spacing: 0.04em;
 	min-width: 150px;
 	text-align: center;
-	background-color: #8E55A9;
-	color: #fff;
+	background-color: $colour-purple;
+	color: $colour-white;
 
 	margin-bottom: 30px;
 	margin-left: 20px;
 }
 
 .primaryLinkButton:hover {
-	background-color: #6e4284;
+	background-color: $colour-purple-dark;
 }

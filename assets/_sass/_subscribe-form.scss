@@ -51,12 +51,12 @@
 	text-decoration: none;
 	padding: 9px 10px;
 	font-size: 1.13em;
-	color: #222;
-	border: 2px solid #222;
+	color: $colour-black;
+	border: 2px solid $colour-black;
 	letter-spacing: -0.01em;
 	margin: 0 auto;
 	-webkit-appearance: none;
-	background-color: #fff;
+	background-color: $colour-white;
 	width: 100%;
 	box-sizing: border-box;
 	margin-bottom: 15px;
@@ -78,8 +78,8 @@
 }
 
 .subscribeForm-email:focus {
-	outline: 3px solid #222;
-	border: 2px solid #222;
+	outline: 3px solid $colour-black;
+	border: 2px solid $colour-black;
 }
 
 .subscribeForm-button {
@@ -87,15 +87,15 @@
 	text-decoration: none;
 	padding: 14px 17px;
 	font-size: 0.94em;
-	color: #222;
+	color: $colour-black;
 	font-weight: bold;
 	border: none;
 	letter-spacing: 0.04em;
 	text-align: center;
 	margin: 0 auto;
 	-webkit-appearance: none;
-	background-color: #8E55A9;
-	color: #fff;
+	background-color: $colour-purple;
+	color: $colour-white;
 	width: 100%;
 	box-sizing: border-box;
 	font-family: 'Open sans';
@@ -110,5 +110,5 @@
 }
 
 .subscribeForm-button:hover {
-	background-color: #6e4284;
+	background-color: $colour-purple-dark;
 }

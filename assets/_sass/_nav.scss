@@ -31,9 +31,9 @@
 
 .navigation a:hover,
 .navigation a:active {
-	color: #8E55A9;
+	color: $colour-purple-dark;
 }
 
 a.navigation-isActive {
-	border-bottom: 1px solid #8E55A9;
+	border-bottom: 1px solid $colour-purple-dark;
 }
