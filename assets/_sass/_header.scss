@@ -1,23 +1,23 @@
 .header {
-
+	border-top: 6px solid $colour-purple;
 }
 
 .header-inner {
 	overflow: hidden;
-	padding: ($spacing-scale-2 - 3) $spacing-scale-3 ($spacing-scale-2 - 3);
+	padding: $spacing-scale-2 $spacing-scale-3 ($spacing-scale-2 - 6);
 	max-width: 700px;
 	margin: 0 auto;
 }
 
 .logo {
-	font-size: 1.25em;
+	font-size: em(16);
+	line-height: 1;
 	text-align: center;
 }
 
 @media(min-width: 21.25em) {
 	.logo {
 		float: left;
-		font-size: 0.94em;
 	}
 }
 

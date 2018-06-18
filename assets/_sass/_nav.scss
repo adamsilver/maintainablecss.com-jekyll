@@ -1,5 +1,6 @@
 .nav {
-	font-size: 0.94em;
+	font-size: em(16);
+	line-height: 1;
 	text-align: center;
 	margin-top: $spacing-scale-1;
 }

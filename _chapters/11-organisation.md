@@ -12,11 +12,11 @@ Good code is easy-to-find and easy-to-find code is well-organised. And so it fol
 
 This approach puts all CSS inside a single folder:
 
-	/path/to/css
-	  /vendor
+	path/to/css/
+	  vendor/
         some3rdParty.css
         someOther3rdParty.css
-	  /yourApp
+	  yourApp/
 	    some.css
 	    global.css
 	    basket.css
@@ -32,25 +32,25 @@ This approach puts all CSS inside a single folder:
 
 This approach puts module-specific CSS within a folder of its own:
 
-	/global
-	  /css
+	global/
+	  css/
 	    resetPerhaps.css
 	    global.css
         etc.css
-	/basket
-      /controllers
+	basket/
+      controllers/
         ...
-      /templates
+      templates/
         basket.html
         emptyBasket.html
-      /partials
+      partials/
         basketHeader.html
         basketSummary.html
-      /js
+      js/
         ...
-      /css
+      css/
         basket.css
-	/header
+	header/
 	  ...
 
 ### Notes

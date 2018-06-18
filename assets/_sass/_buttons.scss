@@ -1,19 +1,21 @@
 .primaryLinkButton:link,
 .primaryLinkButton:visited {
-	font-size: 0.94em;
+	@include typography(body);
+	line-height: 1;
 	display: inline-block;
 	text-decoration: none;
 	border-radius: $spacing-scale-3;
-	text-transform: uppercase;
 	padding: $spacing-scale-2 $spacing-scale-3;
 	font-weight: bold;
-	letter-spacing: 0.04em;
 	text-align: center;
 	background-color: $colour-purple;
 	color: $colour-white;
 
 	margin-bottom: $spacing-scale-4;
 	margin-left: $spacing-scale-3;
+	@include mq($from: md) {
+		line-height: 1;
+	}
 }
 
 .primaryLinkButton:hover {

@@ -6,61 +6,40 @@
 }
 
 .subscribeForm-heading {
-	font-size: 1.38em;
-    line-height: 1.2em;
-    margin-bottom: $spacing-scale-1;
-}
-
-@media (min-width: 37.5em) {
-	.subscribeForm-heading {
-	    font-size: 1.57em;
-	    margin-bottom: $spacing-scale-2;
+	@include typography(l);
+	margin-bottom: $spacing-scale-1;
+	@include mq($from: md) {
+		margin-bottom: $spacing-scale-2;
 	}
 }
 
 .subscribeForm p {
-	font-size: 1.13em;
-    line-height: 1.7em;
-    margin-bottom: $spacing-scale-3;
-    max-width: 620px;
-    font-family: 'PT serif';
-}
-
-@media(min-width: 37.5em) {
-	.subscribeForm p {
-		font-size: 1.38em;
+	@include typography(body);
+  margin-bottom: $spacing-scale-3;
+	max-width: 620px;
+	@include mq($from: md) {
 		margin-bottom: $spacing-scale-4;
 	}
 }
 
 .subscribeForm-label {
-	font-size: 1.13em;
-	line-height: 1.5;
-	margin-bottom: $spacing-scale-1 / 2;
+	@include typography(body);
+  margin-bottom: $spacing-scale-1;
 	display: block;
-	font-family: 'PT serif';
-}
-
-@media(min-width: 37.5em) {
-	.subscribeForm-label {
-		font-size: 1.38em;
-	}
 }
 
 .subscribeForm-email {
 	text-decoration: none;
 	padding: $spacing-scale-1;
-	font-size: 1.13em;
+	font-size: 1.25em;
 	color: $colour-black;
 	border: 3px solid $colour-black;
-	letter-spacing: -0.01em;
 	margin: 0 auto;
 	-webkit-appearance: none;
 	background-color: $colour-white;
 	width: 100%;
 	box-sizing: border-box;
 	margin-bottom: $spacing-scale-2;
-	font-family: 'PT serif';
 }
 
 @media(min-width: 37.5em) {
@@ -97,7 +76,6 @@
 	color: $colour-white;
 	width: 100%;
 	box-sizing: border-box;
-	font-family: 'Open sans';
 	border-radius: $spacing-scale-3;
 }
 

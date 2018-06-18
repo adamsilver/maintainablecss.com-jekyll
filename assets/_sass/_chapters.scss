@@ -11,29 +11,16 @@
 }
 
 .chapters h2 {
-	font-size: 1.38em;
-	line-height: 1.2em;
+	@include typography(l);
 	margin-bottom: $spacing-scale-1;
-}
-
-@media(min-width: 37.5em) {
-	.chapters h2 {
-		font-size: 1.57em;
+	@include mq($from: md) {
 		margin-bottom: $spacing-scale-2;
 	}
 }
 
 .chapters ol {
 	margin-left: $spacing-scale-3;
-	font-size: 1.13em;
-	line-height: 1.7em;
-	font-family: 'PT serif';
-}
-
-@media(min-width: 37.5em) {
-	.chapters ol {
-		font-size: 1.38em;
-	}
+	@include typography(body);
 }
 
 .chapters-isCurrentPage {

@@ -1,77 +1,45 @@
 main {
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: $spacing-scale-5;
+	padding-bottom: $spacing-scale-5;
 	max-width: 748px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 main h1 {
-	font-size: 1.88em;
-	line-height: 1.2;
-	margin-bottom: 20px;
+	@include typography(xl);
+	margin-bottom: $spacing-scale-3;
 	padding-left: $spacing-scale-3;
 	padding-right: $spacing-scale-3;
 	color: $colour-black;
-	letter-spacing: -1px;
-}
-
-@media(min-width: 37.5em) {
-	main h1 {
-		font-size: 2.8em;
-	}
 }
 
 main h2 {
-	font-size: 1.38em;
-	line-height: 1.2;
-	margin-bottom: $spacing-scale-1;
+	@include typography(l);
+	margin-bottom: $spacing-scale-2;
 	margin-top: $spacing-scale-2;
 	padding-left: $spacing-scale-3;
 	padding-right: $spacing-scale-3;
 	color: $colour-black;
-	letter-spacing: -0.01em;
-}
-
-@media(min-width: 37.5em) {
-	main h2 {
-		font-size: 1.57em;
-		margin-bottom: $spacing-scale-2;
-	}
 }
 
 main h3 {
-	font-size: 1em;
-	line-height: 1.2;
+	@include typography(body);
 	margin-bottom: $spacing-scale-1;
 	padding-left: $spacing-scale-3;
 	padding-right: $spacing-scale-3;
 	color: $colour-black;
-	text-transform: uppercase;
-}
-
-@media(min-width: 37.5em) {
-	main h3 {
-		font-size: 1.19em;
+	@include mq($from: md) {
 		margin-bottom: $spacing-scale-2;
 	}
 }
 
 main p {
-	font-size: 1.13em;
-	line-height: 1.7em;
+	@include typography(body);
 	margin-bottom: $spacing-scale-4;
 	padding-left: $spacing-scale-3;
 	padding-right: $spacing-scale-3;
 	color: $colour-black;
-	font-family: 'PT serif';
-}
-
-@media(min-width: 37.5em) {
-	main p {
-		font-size: 1.38em;
-		margin-bottom: $spacing-scale-5;
-	}
 }
 
 main ol,
@@ -80,7 +48,6 @@ main ul {
 	padding-left: $spacing-scale-3;
 	padding-right: $spacing-scale-3;
 	color: $colour-black;
-	font-family: 'PT serif';
 }
 
 @media(min-width: 37.5em) {
@@ -92,16 +59,10 @@ main ul {
 
 main ol li,
 main ul li {
-	font-size: 1.13em;
-	line-height: 1.7em;
+	@include typography(body);
 	margin-left: $spacing-scale-4;
 	margin-bottom: $spacing-scale-1 / 2;
-}
-
-@media(min-width: 37.5em) {
-	main ol li,
-	main ul li {
-		font-size: 1.38em;
+	@include mq($from: md) {
 		margin-bottom: $spacing-scale-1;
 	}
 }
