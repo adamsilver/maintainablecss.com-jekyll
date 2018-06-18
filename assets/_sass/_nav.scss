@@ -1,39 +1,39 @@
-.navigation {
+.nav {
 	font-size: 0.94em;
 	text-align: center;
 	margin-top: $spacing-scale-1;
 }
 
 @media(min-width: 21.25em) {
-	.navigation {
+	.nav {
 		float: right;
 		margin-top: 0;
 	}
 }
 
-.navigation li {
+.nav li {
 	list-style: none;
 	display: inline;
 }
 
-.navigation a {
+.nav a {
 	margin-left: $spacing-scale-1 / 2;
 	margin-right: $spacing-scale-1 / 2;
 	text-decoration: none;
 }
 
 @media(min-width: 21.25em) {
-	.navigation a {
+	.nav a {
 		margin-left: $spacing-scale-1;
 		margin-right: $spacing-scale-1;
 	}
 }
 
-.navigation a:hover,
-.navigation a:active {
+.nav a:hover,
+.nav a:active {
 	color: $colour-purple-dark;
 }
 
-a.navigation-isActive {
+a.nav-isActive {
 	border-bottom: 1px solid $colour-purple-dark;
 }

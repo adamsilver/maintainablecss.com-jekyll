@@ -1,10 +1,10 @@
 .header {
-	background-color: $colour-grey-light;
+
 }
 
 .header-inner {
 	overflow: hidden;
-	padding: $spacing-scale-2 $spacing-scale-3;
+	padding: ($spacing-scale-2 - 3) $spacing-scale-3 ($spacing-scale-2 - 3);
 	max-width: 700px;
 	margin: 0 auto;
 }

@@ -1,0 +1,58 @@
+$type: (
+  xl: (
+    base: (
+      font-size: em(32),
+      line-height: 40/32
+    ),
+    md: (
+      font-size: em(48),
+		  line-height: 56/48
+    )
+  ),
+
+  l: (
+    base: (
+      font-size: em(24),
+	    line-height: 32/24
+    ),
+    md: (
+      font-size: em(32),
+		  line-height: 40/32
+    )
+  ),
+
+  body: (
+    base: (
+      font-size: em(16),
+	    line-height: 24/16
+    ),
+    md: (
+      font-size: em(19),
+		  line-height: 32/19
+    )
+  )
+
+);
+
+@mixin propValue($map) {
+  @each $prop, $value in $map {
+    #{$prop}: #{$value};
+  }
+}
+
+@mixin typography($element) {
+
+  $map: map-get($type, $element);
+  $base: map-get($map, base);
+
+  @include propValue($base);
+
+  $mq: map-remove($map, base);
+
+  @each $bp, $attr in $mq {
+    @include mq($bp) {
+      @include propValue($attr);
+    }
+  }
+
+}
