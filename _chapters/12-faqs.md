@@ -8,7 +8,7 @@ description: Your questions about MaintainableCSS are answered here.
 
 If you can't find an answer, please [raise an issue on Github](https://github.com/adamsilver/maintainablecss.com/issues/new). Thanks!
 
-## Can I translate your book?
+## Can I translate this?
 
 Yes. To do this:
 

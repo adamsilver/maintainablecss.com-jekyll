@@ -16,11 +16,14 @@ main h1 {
 
 main h2 {
 	@include typography(l);
-	margin-bottom: $spacing-scale-2;
+	margin-bottom: $spacing-scale-1;
 	margin-top: $spacing-scale-2;
 	padding-left: $spacing-scale-3;
 	padding-right: $spacing-scale-3;
 	color: $colour-black;
+	@include mq($from: md) {
+		// margin-bottom: $spacing-scale-2;
+	}
 }
 
 main h3 {
@@ -30,7 +33,7 @@ main h3 {
 	padding-right: $spacing-scale-3;
 	color: $colour-black;
 	@include mq($from: md) {
-		margin-bottom: $spacing-scale-2;
+		// margin-bottom: $spacing-scale-2;
 	}
 }
 
