@@ -1,7 +1,7 @@
 .navigation {
 	font-size: 0.94em;
 	text-align: center;
-	margin-top: 10px;
+	margin-top: $spacing-scale-1;
 }
 
 @media(min-width: 21.25em) {
@@ -17,15 +17,15 @@
 }
 
 .navigation a {
-	margin-left: 3px;
-	margin-right: 3px;
+	margin-left: $spacing-scale-1 / 2;
+	margin-right: $spacing-scale-1 / 2;
 	text-decoration: none;
 }
 
 @media(min-width: 21.25em) {
 	.navigation a {
-		margin-left: 7px;
-		margin-right: 7px;
+		margin-left: $spacing-scale-1;
+		margin-right: $spacing-scale-1;
 	}
 }
 

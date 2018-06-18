@@ -3,18 +3,17 @@
 	font-size: 0.94em;
 	display: inline-block;
 	text-decoration: none;
-	border-radius: 30px;
+	border-radius: $spacing-scale-3;
 	text-transform: uppercase;
-	padding: 12px 30px;
+	padding: $spacing-scale-2 $spacing-scale-3;
 	font-weight: bold;
 	letter-spacing: 0.04em;
-	min-width: 150px;
 	text-align: center;
 	background-color: $colour-purple;
 	color: $colour-white;
 
-	margin-bottom: 30px;
-	margin-left: 20px;
+	margin-bottom: $spacing-scale-4;
+	margin-left: $spacing-scale-3;
 }
 
 .primaryLinkButton:hover {

@@ -2,26 +2,26 @@
 	margin-right: auto;
 	margin-left: auto;
 	max-width: 700px;
-	padding: 40px 20px;
+	padding: $spacing-scale-5 $spacing-scale-3;
 }
 
 .subscribeForm-heading {
 	font-size: 1.38em;
     line-height: 1.2em;
-    margin-bottom: 10px;
+    margin-bottom: $spacing-scale-1;
 }
 
 @media (min-width: 37.5em) {
 	.subscribeForm-heading {
 	    font-size: 1.57em;
-	    margin-bottom: 15px;
+	    margin-bottom: $spacing-scale-2;
 	}
 }
 
 .subscribeForm p {
 	font-size: 1.13em;
     line-height: 1.7em;
-    margin-bottom: 20px;
+    margin-bottom: $spacing-scale-3;
     max-width: 620px;
     font-family: 'PT serif';
 }
@@ -29,14 +29,14 @@
 @media(min-width: 37.5em) {
 	.subscribeForm p {
 		font-size: 1.38em;
-		margin-bottom: 30px;
+		margin-bottom: $spacing-scale-4;
 	}
 }
 
 .subscribeForm-label {
 	font-size: 1.13em;
 	line-height: 1.5;
-	margin-bottom: 5px;
+	margin-bottom: $spacing-scale-1 / 2;
 	display: block;
 	font-family: 'PT serif';
 }
@@ -49,17 +49,17 @@
 
 .subscribeForm-email {
 	text-decoration: none;
-	padding: 9px 10px;
+	padding: $spacing-scale-1;
 	font-size: 1.13em;
 	color: $colour-black;
-	border: 2px solid $colour-black;
+	border: 3px solid $colour-black;
 	letter-spacing: -0.01em;
 	margin: 0 auto;
 	-webkit-appearance: none;
 	background-color: $colour-white;
 	width: 100%;
 	box-sizing: border-box;
-	margin-bottom: 15px;
+	margin-bottom: $spacing-scale-2;
 	font-family: 'PT serif';
 }
 
@@ -73,19 +73,18 @@
 	.subscribeForm-email {
 		display: inline-block;
 		max-width: 330px;
-		margin-right: 10px;
+		margin-right: $spacing-scale-1;
 	}
 }
 
 .subscribeForm-email:focus {
 	outline: 3px solid $colour-black;
-	border: 2px solid $colour-black;
 }
 
 .subscribeForm-button {
 	text-transform: uppercase;
 	text-decoration: none;
-	padding: 14px 17px;
+	padding: $spacing-scale-2;
 	font-size: 0.94em;
 	color: $colour-black;
 	font-weight: bold;
@@ -99,7 +98,7 @@
 	width: 100%;
 	box-sizing: border-box;
 	font-family: 'Open sans';
-	border-radius: 30px;
+	border-radius: $spacing-scale-3;
 }
 
 @media(min-width: 36em) {

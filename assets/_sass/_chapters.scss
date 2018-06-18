@@ -6,25 +6,25 @@
 
 .chapters-inner {
 	max-width: 700px;
-	padding: 0 20px;
+	padding: 0 $spacing-scale-3;
 	margin: 0 auto;
 }
 
 .chapters h2 {
 	font-size: 1.38em;
 	line-height: 1.2em;
-	margin-bottom: 10px;
+	margin-bottom: $spacing-scale-1;
 }
 
 @media(min-width: 37.5em) {
 	.chapters h2 {
 		font-size: 1.57em;
-		margin-bottom: 15px;
+		margin-bottom: $spacing-scale-2;
 	}
 }
 
 .chapters ol {
-	margin-left: 20px;
+	margin-left: $spacing-scale-3;
 	font-size: 1.13em;
 	line-height: 1.7em;
 	font-family: 'PT serif';
@@ -37,6 +37,6 @@
 }
 
 .chapters-isCurrentPage {
-	padding-left: 5px;
+	padding-left: $spacing-scale-1;
 	font-weight: bold;
 }

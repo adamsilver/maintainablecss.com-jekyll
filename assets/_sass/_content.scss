@@ -10,8 +10,8 @@ main h1 {
 	font-size: 1.88em;
 	line-height: 1.2;
 	margin-bottom: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: $spacing-scale-3;
+	padding-right: $spacing-scale-3;
 	color: $colour-black;
 	letter-spacing: -1px;
 }
@@ -25,10 +25,10 @@ main h1 {
 main h2 {
 	font-size: 1.38em;
 	line-height: 1.2;
-	margin-bottom: 10px;
-	margin-top: 11px;
-	padding-left: 20px;
-	padding-right: 20px;
+	margin-bottom: $spacing-scale-1;
+	margin-top: $spacing-scale-2;
+	padding-left: $spacing-scale-3;
+	padding-right: $spacing-scale-3;
 	color: $colour-black;
 	letter-spacing: -0.01em;
 }
@@ -36,16 +36,16 @@ main h2 {
 @media(min-width: 37.5em) {
 	main h2 {
 		font-size: 1.57em;
-		margin-bottom: 15px;
+		margin-bottom: $spacing-scale-2;
 	}
 }
 
 main h3 {
 	font-size: 1em;
 	line-height: 1.2;
-	margin-bottom: 10px;
-	padding-left: 20px;
-	padding-right: 20px;
+	margin-bottom: $spacing-scale-1;
+	padding-left: $spacing-scale-3;
+	padding-right: $spacing-scale-3;
 	color: $colour-black;
 	text-transform: uppercase;
 }
@@ -53,16 +53,16 @@ main h3 {
 @media(min-width: 37.5em) {
 	main h3 {
 		font-size: 1.19em;
-		margin-bottom: 15px;
+		margin-bottom: $spacing-scale-2;
 	}
 }
 
 main p {
 	font-size: 1.13em;
 	line-height: 1.7em;
-	margin-bottom: 30px;
-	padding-left: 20px;
-	padding-right: 20px;
+	margin-bottom: $spacing-scale-4;
+	padding-left: $spacing-scale-3;
+	padding-right: $spacing-scale-3;
 	color: $colour-black;
 	font-family: 'PT serif';
 }
@@ -70,15 +70,15 @@ main p {
 @media(min-width: 37.5em) {
 	main p {
 		font-size: 1.38em;
-		margin-bottom: 40px;
+		margin-bottom: $spacing-scale-5;
 	}
 }
 
 main ol,
 main ul {
-	margin-bottom: 35px;
-	padding-left: 20px;
-	padding-right: 20px;
+	margin-bottom: $spacing-scale-4;
+	padding-left: $spacing-scale-3;
+	padding-right: $spacing-scale-3;
 	color: $colour-black;
 	font-family: 'PT serif';
 }
@@ -86,7 +86,7 @@ main ul {
 @media(min-width: 37.5em) {
 	main ol,
 	main ul {
-		margin-bottom: 40px;
+		margin-bottom: $spacing-scale-5;
 	}
 }
 
@@ -94,21 +94,21 @@ main ol li,
 main ul li {
 	font-size: 1.13em;
 	line-height: 1.7em;
-	margin-left: 30px;
-	margin-bottom: 5px;
+	margin-left: $spacing-scale-4;
+	margin-bottom: $spacing-scale-1 / 2;
 }
 
 @media(min-width: 37.5em) {
 	main ol li,
 	main ul li {
 		font-size: 1.38em;
-		margin-bottom: 10px;
+		margin-bottom: $spacing-scale-1;
 	}
 }
 
 blockquote {
 	font-style: italic;
-	margin-bottom: 30px;
+	margin-bottom: $spacing-scale-4;
 	color: $colour-black;
 }
 
@@ -128,8 +128,8 @@ main pre {
 	font-size: 1.2em;
 	color: $colour-black;
 	background-color: $colour-purple-light;
-	margin-bottom: 30px;
-	padding: 20px;
+	margin-bottom: $spacing-scale-4;
+	padding: $spacing-scale-3;
 	white-space: pre-wrap;       /* css-3 */
 	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
 	white-space: -pre-wrap;      /* Opera 4-6 */
@@ -140,6 +140,6 @@ main pre {
 @media(min-width: 37.5em) {
 	main pre {
 		font-size: 1.69em;
-		margin-bottom: 45px;
+		margin-bottom: $spacing-scale-5;
 	}
 }
