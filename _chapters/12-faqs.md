@@ -16,10 +16,6 @@ Yes. To do this:
 2. Point your (country code) domain to it.
 3. Cite the original and let me know :).
 
-<!-- ## When should I use this?
-
-If you like to keep things truly simple, use this approach. It works well if you're building long-lived, bespokely designed, responsive sites that scale and evolve over time. -->
-
 ## What about inheritance for headings etc?
 
 Ideally our semantic HTML matches the integrity of the visual design. Meaning that we would hope that all `h1`s are identical. In this case we can declare the following CSS:
