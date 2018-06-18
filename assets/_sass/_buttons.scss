@@ -1,0 +1,22 @@
+.primaryLinkButton:link,
+.primaryLinkButton:visited {
+	font-size: 0.94em;
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 30px;
+	text-transform: uppercase;
+	padding: 12px 30px;
+	font-weight: bold;
+	letter-spacing: 0.04em;
+	min-width: 150px;
+	text-align: center;
+	background-color: #8E55A9;
+	color: #fff;
+
+	margin-bottom: 30px;
+	margin-left: 20px;
+}
+
+.primaryLinkButton:hover {
+	background-color: #6e4284;
+}

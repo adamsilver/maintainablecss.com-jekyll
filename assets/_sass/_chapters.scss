@@ -1,0 +1,42 @@
+.chapters {
+	background-color: #fafafa;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.chapters-inner {
+	max-width: 700px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.chapters h2 {
+	font-size: 1.38em;
+	line-height: 1.2em;
+	margin-bottom: 10px;
+}
+
+@media(min-width: 37.5em) {
+	.chapters h2 {
+		font-size: 1.57em;
+		margin-bottom: 15px;
+	}
+}
+
+.chapters ol {
+	margin-left: 20px;
+	font-size: 1.13em;
+	line-height: 1.7em;
+	font-family: 'PT serif';
+}
+
+@media(min-width: 37.5em) {
+	.chapters ol {
+		font-size: 1.38em;
+	}
+}
+
+.chapters-isCurrentPage {
+	padding-left: 5px;
+	font-weight: bold;
+}

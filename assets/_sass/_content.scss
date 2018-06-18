@@ -1,0 +1,146 @@
+main {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	max-width: 740px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main h1 {
+	font-size: 1.88em;
+	line-height: 1.2;
+	margin-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #222;
+	letter-spacing: -1px;
+}
+
+@media(min-width: 37.5em) {
+	main h1 {
+		font-size: 2.8em;
+	}
+}
+
+main h2 {
+	font-size: 1.38em;
+	line-height: 1.2;
+	margin-bottom: 10px;
+	margin-top: 11px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #222;
+	letter-spacing: -0.01em;
+}
+
+@media(min-width: 37.5em) {
+	main h2 {
+		font-size: 1.57em;
+		margin-bottom: 15px;
+	}
+}
+
+main h3 {
+	font-size: 1em;
+	line-height: 1.2;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #222;
+	text-transform: uppercase;
+}
+
+@media(min-width: 37.5em) {
+	main h3 {
+		font-size: 1.19em;
+		margin-bottom: 15px;
+	}
+}
+
+main p {
+	font-size: 1.13em;
+	line-height: 1.7em;
+	margin-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #222;
+	font-family: 'PT serif';
+}
+
+@media(min-width: 37.5em) {
+	main p {
+		font-size: 1.38em;
+		margin-bottom: 40px;
+	}
+}
+
+main ol,
+main ul {
+	margin-bottom: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #222;
+	font-family: 'PT serif';
+}
+
+@media(min-width: 37.5em) {
+	main ol,
+	main ul {
+		margin-bottom: 40px;
+	}
+}
+
+main ol li,
+main ul li {
+	font-size: 1.13em;
+	line-height: 1.7em;
+	margin-left: 30px;
+	margin-bottom: 5px;
+}
+
+@media(min-width: 37.5em) {
+	main ol li,
+	main ul li {
+		font-size: 1.38em;
+		margin-bottom: 10px;
+	}
+}
+
+blockquote {
+	font-style: italic;
+	margin-bottom: 30px;
+	color: #222;
+}
+
+blockquote cite {
+	font-weight: bold;
+}
+
+main p code,
+main ul code,
+main li code {
+	font-size: 1.3em;
+	color: #ff851b;
+}
+
+main pre {
+	font-family: Monaco,'Courier New','Courier',monospace;
+	font-size: 1.44em;
+	font-size: 1.2em;
+	color: #222;
+	background-color: #fcf6ff;
+	margin-bottom: 30px;
+	padding: 20px;
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+@media(min-width: 37.5em) {
+	main pre {
+		font-size: 1.69em;
+		margin-bottom: 45px;
+	}
+}

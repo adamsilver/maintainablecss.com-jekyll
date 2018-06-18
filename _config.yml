@@ -7,3 +7,5 @@ collections:
     output: true
     permalink: /:collection/:title/
 description: MaintainableCSS is an approach to writing modular, scalable and of course, maintainable CSS.
+sass:
+  sass_dir: assets/_sass
