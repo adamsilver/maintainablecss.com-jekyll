@@ -6,7 +6,7 @@ title: MaintainableCSS
 
 <p>Write CSS without worrying that overzealous, pre-existing styles will cause problems. MaintainableCSS is an approach to writing modular, scalable and of course, maintainable CSS.</p>
 
-<div><a class="primaryLinkButton" href="/chapters/introduction/">Read now</a></div>
+<div><a class="primaryLinkButton" href="/chapters/introduction/">Start reading</a></div>
 
 ## What others say
 

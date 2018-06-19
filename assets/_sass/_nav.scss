@@ -30,11 +30,15 @@
 	}
 }
 
-.nav a:hover,
-.nav a:active {
+.nav a:hover {
 	color: $colour-purple-dark;
 }
 
+.nav a:active {
+	color: $colour-white;
+	background-color: $colour-purple-dark;
+}
+
 a.nav-isActive {
-	border-bottom: 1px solid $colour-purple-dark;
+	font-weight: bold;
 }

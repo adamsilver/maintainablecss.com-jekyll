@@ -1,7 +1,9 @@
 .primaryLinkButton:link,
 .primaryLinkButton:visited {
-	@include typography(body);
+	font-size: em(14);
+	text-transform: uppercase;
 	line-height: 1;
+	letter-spacing: 0.75;
 	display: inline-block;
 	text-decoration: none;
 	border-radius: $spacing-scale-3;
@@ -14,7 +16,7 @@
 	margin-bottom: $spacing-scale-4;
 	margin-left: $spacing-scale-3;
 	@include mq($from: md) {
-		line-height: 1;
+		font-size: em(16);
 	}
 }
 

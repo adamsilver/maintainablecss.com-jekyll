@@ -40,35 +40,29 @@
 	width: 100%;
 	box-sizing: border-box;
 	margin-bottom: $spacing-scale-2;
-}
-
-@media(min-width: 37.5em) {
-	.subscribeForm-email {
-		font-size: 1.38em;
-	}
-}
-
-@media(min-width: 36em) {
-	.subscribeForm-email {
+	vertical-align: top;
+	@include mq($from: md) {
 		display: inline-block;
 		max-width: 330px;
 		margin-right: $spacing-scale-1;
 	}
-}
-
-.subscribeForm-email:focus {
-	outline: 3px solid $colour-black;
+	&:focus {
+		outline: 3px solid $colour-orange;
+		outline-offset: 0px;
+	}
 }
 
 .subscribeForm-button {
+	vertical-align: top;
+	font-size: em(14);
 	text-transform: uppercase;
-	text-decoration: none;
-	padding: $spacing-scale-2;
-	font-size: 0.94em;
+	line-height: 1;
+	border-radius: $spacing-scale-3;
+	padding: $spacing-scale-2 $spacing-scale-3;
 	color: $colour-black;
 	font-weight: bold;
 	border: none;
-	letter-spacing: 0.04em;
+	letter-spacing: 0.75;
 	text-align: center;
 	margin: 0 auto;
 	-webkit-appearance: none;
@@ -77,15 +71,11 @@
 	width: 100%;
 	box-sizing: border-box;
 	border-radius: $spacing-scale-3;
-}
-
-@media(min-width: 36em) {
-	.subscribeForm-button {
+	@include mq($from: md) {
 		display: inline-block;
-		width: 180px;
+		width: auto;
 	}
-}
-
-.subscribeForm-button:hover {
-	background-color: $colour-purple-dark;
+	&:hover {
+		background-color: $colour-purple-dark;
+	}
 }
