@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
 <html dir="ltr" lang="en">
   <head>
-    <title>{% if page.title %}{{ page.title }} - {% endif %} {{ site.name }}</title>
+    <title>
+      {% if page.title and page.id != 'home' %}{{ page.title }} - {% endif %} {{ site.name }}</title>
     {% include head.html %}
   </head>
   <body>
