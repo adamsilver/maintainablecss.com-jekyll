@@ -46,7 +46,8 @@ And the CSS:
 	/* heading component of basket module */
 	.basket .heading {}
 
-There are two problems:
+There are problems:
 
-1. when viewing HTML, it's hard to differentiate between a module and a component; and
-2. the `.basket .heading` component will inherit styles from the `.heading` module which has unintended side effects.
+* when viewing HTML, it's hard to differentiate between a module and a component or a state.
+* the `.basket .heading` component will inherit styles from the `.heading` module which has unintended side effects.
+* for large projects, we have to create many classes. So, it's hard to distinguish between modules in project.
